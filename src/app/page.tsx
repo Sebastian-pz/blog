@@ -2,7 +2,12 @@ import "./page.css";
 import { posts } from "./utils/const";
 import Link from "next/link";
 
-export default function Home() {
+import { getPosts } from "./services/posts";
+import { postInterface } from "./utils/interfaces";
+
+export default async function Home() {
+  const posts: Array<postInterface> = await getPosts();
+
   return (
     <main className="m-auto w-3/4 flex">
       <section className="home__mainSection w-3/4 flex flex-col">
