@@ -25,7 +25,7 @@ export default async function Home() {
                   className="home__post__image"
                 />
               </div>
-              <div className="home__info">
+              <div className="home__post__info">
                 <Link className="" href={`/post/${index}`}>
                   {post.title}
                 </Link>

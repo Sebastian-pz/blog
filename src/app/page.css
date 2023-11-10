@@ -15,8 +15,9 @@
   height: 30vw;
 }
 
-.home__info {
+.home__post__info {
   margin-left: 10px;
+  width: 60vw;
 }
 
 /* responsive iPad */
