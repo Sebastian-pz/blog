@@ -12,6 +12,7 @@ export default async function Home() {
     <main className="home">
       <section className="">
         {posts.map((post, index) => {
+          const [introductionParagraph] = post.description;
           return (
             <div
               key={index}
@@ -28,7 +29,9 @@ export default async function Home() {
                 <Link className="" href={`/post/${index}`}>
                   {post.title}
                 </Link>
-                <p className="text-slate-500 text-xs">{post.description[0]}</p>
+                <p className="text-slate-500 text-xs">
+                  {introductionParagraph}
+                </p>
               </div>
             </div>
           );
