@@ -6,15 +6,24 @@ import { getPosts } from "./services/posts";
 import { postInterface } from "./utils/interfaces";
 
 export default async function Home() {
-  const posts: Array<postInterface> = await getPosts();
+  const posts: Array<postInterface> = (await getPosts()).slice(0, 5);
 
   return (
-    <main className="m-auto w-3/4 flex">
-      <section className="home__mainSection w-3/4 flex flex-col">
+    <main className="home">
+      <section className="">
         {posts.map((post, index) => {
           return (
-            <div key={index} className={`home__post home__post${index} p-2`}>
-              <img src={post.image.src} alt="post image" />
+            <div
+              key={index}
+              className="home__post border-b-2 border-slate-100 pt-9 pb-9"
+            >
+              <div className="m-auto">
+                <img
+                  src={post.image.src}
+                  alt="post image"
+                  className="home__post__image"
+                />
+              </div>
               <div className="home__info">
                 <Link className="" href={`/post/${index}`}>
                   {post.title}
@@ -25,7 +34,7 @@ export default async function Home() {
           );
         })}
       </section>
-      <section className="home__sideSection w-1/4">
+      <section className="">
         <h2 className="text-xl ">Información sobre el proyecto</h2>
         <p className="text-sm  text-slate-700 mt-3">
           En este blog me enfoco en compartir las últimas actualizaciones sobre
