@@ -1,5 +1,5 @@
 import "./page.css";
-import { posts } from "./utils/const";
+// import { posts } from "./utils/const";
 import Link from "next/link";
 
 import { getPosts } from "./services/posts";
@@ -26,10 +26,14 @@ export default async function Home() {
         })}
       </section>
       <section className="home__sideSection w-1/4">
-        <h2 className="text-xl border border-b-2">Contenido destacado</h2>
-        <p className="text-sm text-slate-700">
-          Learn how about we're helping people stay connected, engaged and
-          productive today - At work, at school, at home, and at play{" "}
+        <h2 className="text-xl ">Información sobre el proyecto</h2>
+        <p className="text-sm  text-slate-700 mt-3">
+          En este blog me enfoco en compartir las últimas actualizaciones sobre
+          mis proyectos, consejos de programación e información relevante de la
+          industria. ¡Vamos a codificar, aprender y crecer juntos! 💡👨‍💻
+        </p>
+        <p className="text-sm text-slate-700 mt-3">
+          Si tienes alguna sugerencia ¡No dudes en contactarme!
         </p>
       </section>
     </main>
