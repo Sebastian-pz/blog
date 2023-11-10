@@ -8,8 +8,8 @@
 }
 
 .home__post__image {
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 200px;
+  max-height: 200px;
 
   width: 30vw;
   height: 30vw;
@@ -18,6 +18,15 @@
 .home__post__info {
   margin-left: 10px;
   width: 60vw;
+}
+
+/* responsive desktop */
+@media only screen and (min-width: 1300px) {
+  /* Para saber en qué pantalla estoy trabajando */
+
+  .home {
+    width: 50%;
+  }
 }
 
 /* responsive iPad */

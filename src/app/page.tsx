@@ -1,5 +1,5 @@
 import "./page.css";
-// import { posts } from "./utils/const";
+import womanPhoto from "../../public/woman.png";
 import Link from "next/link";
 
 import { getPosts } from "./services/posts";
@@ -8,9 +8,29 @@ import { postInterface } from "./utils/interfaces";
 export default async function Home() {
   const posts: Array<postInterface> = (await getPosts()).slice(0, 5);
 
+  const [mainPost] = posts;
+
+  console.log(mainPost);
+
   return (
     <main className="home">
       <section className="">
+        <div className="home__mainPost text-center border-b-2 border-slate-200 pb-6">
+          <h2 className="text-3xl font-bold mb-3">
+            Titulo de la publicación principal
+          </h2>
+          <img
+            src={womanPhoto.src}
+            alt=""
+            className="h-2/4 mb-3 max-h-[350px] m-auto"
+          />
+          <p>
+            Esta es una descripción genérica de una publicación en el blog,
+            estamos buscando probar los estilos en la publicación que se
+            encuentra al inicio de todo
+          </p>
+        </div>
+
         {posts.map((post, index) => {
           const [introductionParagraph] = post.description;
           return (
@@ -21,7 +41,7 @@ export default async function Home() {
               <div className="m-auto">
                 <img
                   src={post.image.src}
-                  alt="post image"
+                  alt={`post image about ${introductionParagraph}`}
                   className="home__post__image"
                 />
               </div>
