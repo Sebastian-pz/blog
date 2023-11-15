@@ -20,18 +20,16 @@ export default function Page({ params }: paramsInterface) {
     if (!post) setPost(getPost(id || 0));
   }, [post]);
 
-  console.log(post);
-
   if (post) {
     return (
-      <div className="m-auto w-3/5">
+      <div className="m-auto w-3/4 sm:w-3/5 lg:w-2/5">
         <h1 className="text-3xl mb-3">{post.title}</h1>
         <p className="text-sm text-gray-500">{post.author}</p>
         <p className="text-sm text-gray-500">{`Created at: ${post.creationDate}`}</p>
         <img
           src={post.image.src}
           alt="post main image"
-          className="w-[80%] ml-auto mr-auto mb-10 max-h-[600px] overflow-hidden"
+          className="m-auto mb-6 w-[90%] lg:w-3/5"
         />
         <section className="">
           {post.description.map((text, index) => {

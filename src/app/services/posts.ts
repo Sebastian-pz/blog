@@ -1,6 +1,7 @@
 import personImage from "../../../public/person.jpg";
+import { postInterface } from "../utils/interfaces";
 
-export async function getPosts() {
+export async function getPosts(): Promise<Array<postInterface>> {
   const data = await fetch("https://jsonplaceholder.typicode.com/posts").then(
     (res) => res.json()
   );
