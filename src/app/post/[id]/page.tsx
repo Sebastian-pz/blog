@@ -1,4 +1,5 @@
-"use client";
+// En el caso de utilizar el método de client rendering
+// "use client"
 
 import { useEffect, useState } from "react";
 import { postInterface } from "../../utils/interfaces";
@@ -12,18 +13,20 @@ interface paramsInterface {
 
 export default function Page({ params }: paramsInterface) {
   const { id } = params;
-  console.log(id);
 
-  const [post, setPost] = useState<postInterface | undefined>(undefined);
+  const post = getPost(id);
 
-  useEffect(() => {
-    if (!post) setPost(getPost(id || 0));
-  }, [post]);
-
+  // Método tradicional con React ->
+  /*
+    const [post, setPost] = useState<postInterface | undefined>(undefined);
+    useEffect(() => {
+      if (!post) setPost(getPost(id || 0));
+    }, [post]);
+    */
   if (post) {
     return (
       <div className="m-auto w-3/4 sm:w-3/5 lg:w-2/5">
-        <h1 className="text-3xl mb-3">{post.title}</h1>
+        <h1 className="text-3xl font-bold mb-3 mt-6">{post.title}</h1>
         <p className="text-sm text-gray-500">{post.author}</p>
         <p className="text-sm text-gray-500">{`Created at: ${post.creationDate}`}</p>
         <img
