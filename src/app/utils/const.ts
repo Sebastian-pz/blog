@@ -5,25 +5,39 @@ export function getPost(id: number) {
   return posts[id];
 }
 
+export function getPosts(limit = 5) {
+  return posts.slice(1, limit);
+}
+
+export function getMainPost() {
+  return posts[0];
+}
+
 export const posts: Array<postInterface> = [
   {
-    title: "Nueva publicación en el blog",
+    title: "¡El blog está casi listo 🚀👨🏻‍🚀!",
     image: PersonImage,
     description: [
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dolor dolores amet mollitia fugiat debitis sequi ad harum, earum quidem,possimus nihil neque hic quas obcaecati magni impedit rem!",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dolor dolores amet mollitia fugiat debitis sequi ad harum, earum quidem,possimus nihil neque hic quas obcaecati magni impedit rem!",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dolor dolores amet mollitia fugiat debitis sequi ad harum, earum quidem,possimus nihil neque hic quas obcaecati magni impedit rem!",
+      "Enfocado principalmente en las publicaciones tecnológicas y actualizaciones sobre mis proyectos ya está casi completa, quedan pocas cosas que ultimar, pero los detalles y el funcionamiento general de la aplicación ya está completo. ",
+
+      "La creación de la aplicación inició la primera semana de noviembre 2023 y se fue desarrollando poco a poco, después de terminado mi periodo académico en la universidad el proyecto ya estaba casi en su totalidad completo, de hecho, solo faltaba ultimar detalles en cuanto a los estilos.",
+
+      "Inicialmente no se tenía una estimación del tiempo de desarrollo que tomaría este blog, de hecho, el estar tan cerca de los periodos de exámenes finales hacía que realizar presupuestos fuese algo incierto.",
+
+      "Finalmente, a día de hoy 16 de noviembre de 2023, el proyecto ya se encuentra prácticamente terminado.",
+
+      "Las tecnologías utilizadas para este proyecto fueron principalmente TypeScript, NextJS - React, Tailwind para los estilos y ESLint con standard para mejorar el código.",
     ],
 
     author: "Sebastian Pérez",
-    creationDate: "11/03/2023",
+    creationDate: "11/16/2023",
   },
   {
     title: "Nueva publicación en el blog 2",
     image: PersonImage,
     description: [
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas Letraset, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.",
+      " No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas Letraset, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dolor dolores amet mollitia fugiat debitis sequi ad harum, earum quidem,possimus nihil neque hic quas obcaecati magni impedit rem!",
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dolor dolores amet mollitia fugiat debitis sequi ad harum, earum quidem,possimus nihil neque hic quas obcaecati magni impedit rem!",
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dolor dolores amet mollitia fugiat debitis sequi ad harum, earum quidem,possimus nihil neque hic quas obcaecati magni impedit rem!",
@@ -36,7 +50,8 @@ export const posts: Array<postInterface> = [
     title: "Nueva publicación en el blog 3",
     image: PersonImage,
     description: [
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas Letraset, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.",
+      " No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas Letraset, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dolor dolores amet mollitia fugiat debitis sequi ad harum, earum quidem,possimus nihil neque hic quas obcaecati magni impedit rem!",
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dolor dolores amet mollitia fugiat debitis sequi ad harum, earum quidem,possimus nihil neque hic quas obcaecati magni impedit rem!",
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dolor dolores amet mollitia fugiat debitis sequi ad harum, earum quidem,possimus nihil neque hic quas obcaecati magni impedit rem!",
