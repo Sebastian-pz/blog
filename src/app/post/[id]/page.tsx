@@ -1,8 +1,8 @@
 // En el caso de utilizar el método de client rendering
 // "use client"
+// import { useEffect, useState } from "react";
+// import { postInterface } from "../../utils/interfaces";
 
-import { useEffect, useState } from "react";
-import { postInterface } from "../../utils/interfaces";
 import { getPost } from "../../utils/const";
 
 interface paramsInterface {
