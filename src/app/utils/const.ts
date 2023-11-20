@@ -1,18 +1,6 @@
 import { postInterface } from "./interfaces";
 import PersonImage from "../../../public/person.jpg";
 
-export function getPost(id: number) {
-  return posts[id];
-}
-
-export function getPosts(limit = 5) {
-  return posts.slice(1, limit);
-}
-
-export function getMainPost() {
-  return posts[0];
-}
-
 export const posts: Array<postInterface> = [
   {
     title: "¡El blog está casi listo 🚀👨🏻‍🚀!",
@@ -73,3 +61,21 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
 ];
+
+const defaultPost = posts[0];
+
+export function getPost(id: number) {
+  if (isNaN(Number(id))) {
+    return defaultPost;
+  }
+
+  return posts[id];
+}
+
+export function getPosts(limit = 5) {
+  return posts.slice(1, limit);
+}
+
+export function getMainPost() {
+  return posts[0];
+}

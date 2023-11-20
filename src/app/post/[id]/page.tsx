@@ -1,8 +1,8 @@
 // En el caso de utilizar el método de client rendering
 // "use client"
+// import { useEffect, useState } from "react";
+// import { postInterface } from "../../utils/interfaces";
 
-import { useEffect, useState } from "react";
-import { postInterface } from "../../utils/interfaces";
 import { getPost } from "../../utils/const";
 
 interface paramsInterface {
@@ -12,9 +12,8 @@ interface paramsInterface {
 }
 
 export default function Page({ params }: paramsInterface) {
-  const { id } = params;
-
-  const post = getPost(id);
+  // Método con NextJS (server rendering)
+  const post = getPost(params.id);
 
   // Método tradicional con React ->
   /*
@@ -23,6 +22,7 @@ export default function Page({ params }: paramsInterface) {
       if (!post) setPost(getPost(id || 0));
     }, [post]);
     */
+
   if (post) {
     return (
       <div className="m-auto w-3/4 sm:w-3/5 lg:w-2/5">

@@ -22,7 +22,11 @@ export default function Posts() {
               />
             </div>
             <div className="home__post__info">
-              <Link className="" href={`/post/${index}`}>
+              {/* Using API */}
+              {/* <Link className="" href={`/post/${post.id}`}>
+                {post.title}
+              </Link> */}
+              <Link className="" href={`/post/${index + 1}`}>
                 {post.title}
               </Link>
               <p className="text-slate-500 text-xs">{introductionParagraph}</p>
