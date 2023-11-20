@@ -24,7 +24,7 @@ const LINK_LIST = [
   },
   {
     label: "Post",
-    path: "/post/0",
+    path: `/post/${Math.floor(Math.random() * 4)}`,
     styles: "",
   },
 ];

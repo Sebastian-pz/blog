@@ -1,10 +1,12 @@
 import { postInterface } from "./interfaces";
 import PersonImage from "../../../public/person.jpg";
+import BlogPostMedia from "../../../public/blog-post.webp";
 
 export const posts: Array<postInterface> = [
   {
     title: "¡El blog está casi listo 🚀👨🏻‍🚀!",
-    image: PersonImage,
+    mediaType: "image",
+    image: BlogPostMedia,
     description: [
       "Enfocado principalmente en las publicaciones tecnológicas y actualizaciones sobre mis proyectos ya está casi completa, quedan pocas cosas que ultimar, pero los detalles y el funcionamiento general de la aplicación ya está completo. ",
 
@@ -22,6 +24,7 @@ export const posts: Array<postInterface> = [
   },
   {
     title: "Nueva publicación en el blog 2",
+    mediaType: "image",
     image: PersonImage,
     description: [
       "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.",
@@ -36,6 +39,7 @@ export const posts: Array<postInterface> = [
   },
   {
     title: "Nueva publicación en el blog 3",
+    mediaType: "image",
     image: PersonImage,
     description: [
       "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.",
@@ -50,6 +54,8 @@ export const posts: Array<postInterface> = [
   },
   {
     title: "Nueva publicación en el blog 4",
+    mediaType: "video",
+    media: "https://www.youtube.com/embed/LZVsATLj4Tw?si=W8-D0aI4fgW24d3-",
     image: PersonImage,
     description: [
       "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. ",
