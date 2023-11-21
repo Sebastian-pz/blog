@@ -23,15 +23,16 @@ export const posts: Array<postInterface> = [
     creationDate: "11/16/2023",
   },
   {
-    title: "Nueva publicación en el blog 2",
-    mediaType: "image",
+    title: "The Commit Show de BettaTech y su charla con MiduDev",
+    mediaType: "video",
+    media: "https://www.youtube.com/embed/fL83GTilWjw",
     image: PersonImage,
     description: [
       "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.",
-      " No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas Letraset, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dolor dolores amet mollitia fugiat debitis sequi ad harum, earum quidem,possimus nihil neque hic quas obcaecati magni impedit rem!",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dolor dolores amet mollitia fugiat debitis sequi ad harum, earum quidem,possimus nihil neque hic quas obcaecati magni impedit rem!",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, dolor dolores amet mollitia fugiat debitis sequi ad harum, earum quidem,possimus nihil neque hic quas obcaecati magni impedit rem!",
+      "Como programador, llevo siguiendo el contenido de Midudev desde hace años, es uno de mis referentes tecnológicos y con la cual he aprendido mucho.",
+      "Durante la charla en The Commit Show de BettaTech, Midu habla de muchos temas referentes al ámbito de la tecnología y programación en general, habla de quién es, de su experiencia y cómo es su perspectiva sobre la actualidad y futuro del mundo del desarrollo.",
+      "Uno de los temas más relevantes tratados en esta charla, es el hecho de que cuando un programador está buscando introducirse en el mercado por primera (o primeras) vez, es muy importante llegar a una empresa la cual te ofrezca mentorías, es decir, que tengas a una persona que pueda hacer de guía en tu proceso, siendo esta parte una de las que más se aprende. De hecho, él define que `Es mucho más importante que el sueldo en un inicio`.",
+      "Si bien es verdad que la carencia de este mentor hace que el programador desarrolle autosuficiencia, en algunos casos esto tiende a convertirse en una carga mental que afecta la salud y que, a final de cuentas, no vale la pena.",
     ],
 
     author: "Sebastian Pérez",
@@ -55,7 +56,7 @@ export const posts: Array<postInterface> = [
   {
     title: "Nueva publicación en el blog 4",
     mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw?si=W8-D0aI4fgW24d3-",
+    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
     description: [
       "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. ",
