@@ -5,6 +5,7 @@
 
 .home__post {
   display: flex;
+  /* border: 1px solid red; */
 }
 
 .home__post__image {
@@ -39,10 +40,20 @@
 }
 
 /* responsive mobile */
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 450px) {
   /* Para saber en qué pantalla estoy trabajando */
 
   .home {
     width: 90%;
+  }
+
+  .home__post {
+    height: 200px;
+    padding-bottom: 10px;
+  }
+
+  .home__post p {
+    height: 80px;
+    overflow: hidden;
   }
 }

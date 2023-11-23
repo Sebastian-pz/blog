@@ -5,6 +5,8 @@
 
 import { getPost } from "../../utils/const";
 
+import MediaComponent from "@/app/components/Media/MediaComponent";
+
 interface paramsInterface {
   params: {
     id: number;
@@ -29,11 +31,18 @@ export default function Page({ params }: paramsInterface) {
         <h1 className="text-3xl font-bold mb-3 mt-6">{post.title}</h1>
         <p className="text-sm text-gray-500">{post.author}</p>
         <p className="text-sm text-gray-500">{`Created at: ${post.creationDate}`}</p>
-        <img
-          src={post.image.src}
+
+        <MediaComponent
+          mediaType={post.mediaType}
+          media={post.media ? post.media : post.image}
+          introductionParagraph={post.description[0]}
+        />
+
+        {/* <img
+          src={post.media.src}
           alt="post main image"
           className="m-auto mb-6 w-[90%] lg:w-3/5"
-        />
+        /> */}
         <section className="">
           {post.description.map((text, index) => {
             return (

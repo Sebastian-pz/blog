@@ -12,7 +12,7 @@ export default function Posts() {
         return (
           <div
             key={index}
-            className="home__post border-b-2 border-slate-100 pt-9 pb-9"
+            className="home__post border-b-2 border-slate-200 pt-9 pb-9"
           >
             <div className="m-auto">
               <img
