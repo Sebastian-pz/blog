@@ -73,6 +73,26 @@ export const posts: Array<postInterface> = [
     author: "Sebastian Pérez",
     creationDate: "11/03/2023",
   },
+  {
+    title: "¡Ayudé a dos empresas utilizando programación en Excel con VBA!",
+    mediaType: "video",
+    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: PersonImage,
+    description: [
+      "Debido a contactos en mi universidad, dos empresas me contactaron para ayudarles a optimizar sus libros de Excel utilizando programación (VBA) a través de macros.",
+      "Inicialmente, para 'Empresa A' (como la llamaré para salvaguardar su privacidad), una empresa internacional muy grande en el país, me contactó una regional para ayudar con un proceso de transición de plataformas por el que estaban pasando.",
+      "Había mucha información dispersa en muchas partes, muchos archivos y muchas plataformas.",
+      "Mi función fue unificar la información de diferentes Excels con los perfiles de los empleados y crear un algoritmo que se encargara de validar los cargos (comparar lo del perfil del cargo contra el perfil del empleado).",
+      "En el caso de que un empleado NO cumpliera con el perfil del cargo, lo que hacía era alertar al responsable de recursos humanos y lo ponía en una lista de personas que no eran válidas. De ahí se notificaba a cada jefe de sección para que se encargara de mandar al empleado a completar su perfil si el caso así lo requería.",
+      "En el caso de que el empleado sí cumpliera con el perfil, se añadía a la lista de los que están en orden o al corriente con la empresa.",
+      "De estas dos listas, también se sacaron estadísticas que permitían definir cuáles eran los sectores más afectados y cuáles eran los requisitos que con mayor frecuencia no eran cumplidos correctamente.",
+      "Después de haber desarrollado todo el algoritmo para la empresa en VBA, logré optimizar los tiempos de consulta de información de los empleados en más de un 99% (pues antes era buscar Excel por Excel y plataforma por plataforma). Procesos de búsqueda que podían demorar 1 hora y media pasaron a tardar lo de un par de clics.",
+      "De esto, cabe resaltar que la empresa intervenida tenía serios problemas en cuanto al cumplimiento de sus perfiles y gracias al desarrollo del programa se logró ir mejorando progresivamente este punto de la empresa para poder responder de mejor manera a sus procesos de auditorias.",
+    ],
+
+    author: "Sebastian Pérez",
+    creationDate: "11/03/2023",
+  },
 ];
 
 const defaultPost = posts[0];
