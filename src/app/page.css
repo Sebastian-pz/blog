@@ -50,6 +50,7 @@
   .home__post {
     height: 200px;
     padding-bottom: 10px;
+    overflow: hidden;
   }
 
   .home__post p {
