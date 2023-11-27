@@ -1,4 +1,5 @@
 export interface postInterface {
+  type: PostTypes;
   title: string;
   mediaType: string;
   media?: any;
@@ -6,4 +7,10 @@ export interface postInterface {
   description: Array<String>;
   author: string;
   creationDate: string;
+}
+
+export enum PostTypes {
+  experience = "EXPERIENCE",
+  opinion = "OPINION",
+  project = "PROJECT",
 }
