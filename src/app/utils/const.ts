@@ -242,3 +242,9 @@ export function getPosts(limit = 5) {
 export function getMainPost() {
   return posts[0];
 }
+
+export function getFilteredPosts(filter: PostTypes, limit = 5) {
+  const filteredPosts = posts.filter((post) => post.type === filter);
+  if (!filteredPosts.length) return getPosts(limit);
+  return filteredPosts;
+}
