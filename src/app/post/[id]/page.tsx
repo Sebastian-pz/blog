@@ -3,6 +3,7 @@
 // import { useEffect, useState } from "react";
 // import { postInterface } from "../../utils/interfaces";
 
+import Link from "next/link";
 import { getPost } from "../../utils/const";
 
 import MediaComponent from "@/app/components/Media/MediaComponent";
@@ -45,6 +46,19 @@ export default function Page({ params }: paramsInterface) {
         /> */}
         <section className="">
           {post.description.map((text, index) => {
+            // Me sorprende lo bien optimizado que está el método includes
+            if (text.includes("https://")) {
+              return (
+                <Link
+                  href={encodeURI(text.toString())}
+                  target="_blank"
+                  className="text-lime-700 hover:text-lime-600"
+                >
+                  {text}
+                </Link>
+              );
+            }
+
             return (
               <p key={index} className="leading-9 mb-7">
                 {text}
