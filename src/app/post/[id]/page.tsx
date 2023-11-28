@@ -39,11 +39,6 @@ export default function Page({ params }: paramsInterface) {
           introductionParagraph={post.description[0]}
         />
 
-        {/* <img
-          src={post.media.src}
-          alt="post main image"
-          className="m-auto mb-6 w-[90%] lg:w-3/5"
-        /> */}
         <section className="">
           {post.description.map((text, index) => {
             // Me sorprende lo bien optimizado que está el método includes
