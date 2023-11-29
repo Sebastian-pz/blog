@@ -1,5 +1,6 @@
 import { postInterface } from "@/app/utils/interfaces";
 import Link from "next/link";
+import GoBack from "../GoBack/GoBack";
 
 interface ComponentProps {
   title: string;
@@ -9,7 +10,8 @@ interface ComponentProps {
 export default function FilteredPosts({ posts, title }: ComponentProps) {
   return (
     <>
-      <h1 className="text-center mt-6 mb-3 pl-2 pr-2 font-bold text-lg">
+      <GoBack />
+      <h1 className="text-center mt-2 mb-3 pl-2 pr-2 font-bold text-lg">
         {title}
       </h1>
       {posts.map((post, index) => {
