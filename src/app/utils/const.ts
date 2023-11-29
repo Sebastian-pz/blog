@@ -24,6 +24,36 @@ export const posts: Array<postInterface> = [
     creationDate: "11/16/2023",
   },
   {
+    type: PostTypes.project,
+    title:
+      "¿Cómo fue trabajar con VBA por primera vez en la regional de una multinacional 😬?",
+    mediaType: "image",
+    image: BlogPostMedia,
+    description: [
+      "Cómo fue mi experiencia trabajando para una empresa multinacional en un proyecto regional.",
+
+      "Inicialmente, si no has leído el artículo de mi experiencia como desarrollador para la empresa, acá te dejo el link para que lo veas antes:",
+
+      "LINK",
+
+      "Como mencioné en ese artículo, mi experiencia trabajando para esta empresa fue curiosa, inicialmente se me contacto evitando en la medida de lo posible brindarme mayores informaciones, sabía que mi trabajo consistía en unificar información, pero nada en detalle.",
+
+      "Fue bastante curioso trabajar con una empresa no desde su sector de TI, sino más bien desde el sector legal - recursos humanos, es muy diferente a lo que había trabajado con anterioridad, hay mucho en juego y los procesos se llevan de maneras muy diversas.",
+
+      "También el resultado de este trabajo me hizo sentir realizado, lograr que a través de programación un proceso que es realmente tedioso y tardío se convierta en cosa de un par de clics, es algo que realmente me parece reconfortante, comparar el hecho de que antes para obtener la información de un empleado de la regional se demoraban horas literalmente y ahora se pueda conseguir digitando su nombre y dando un clic es algo que me emociona.",
+
+      "Sinceramente, consideraba que iba a ser un proceso más difícil; sin embargo, por mis conocimientos previos en programación no me tomó tanto tiempo adecuarme a utilizar VBA.",
+
+      "Hice la herramienta relativamente de manera sencilla, quizá hecho en falta utilizar un poco de mejores prácticas, pero fue un trabajo que me pareció reconfortante y que cuando lo terminé me sentí orgulloso de él.",
+
+      "¡Gracias a la empresa en cuestión!",
+      "Ojalá que se preparen con más cuidado para sus próximas auditorias 🤣",
+    ],
+
+    author: "Sebastian Pérez",
+    creationDate: "11/28/2023",
+  },
+  {
     type: PostTypes.opinion,
     title: "The Commit Show de BettaTech y su charla con MiduDev",
     mediaType: "video",
@@ -49,8 +79,10 @@ export const posts: Array<postInterface> = [
     image: PersonImage,
     description: [
       "Creé una aplicación web inspirada en el popular juego de piedra, papel o tijera para poner a prueba mis conocimientos en mis tiempos libres de la universidad y de mis trabajos freelance.",
-      "Inicialmente, quería practicar mis habilidades de frontend y me topé con este reto en *frontend mentor*, únicamente estaba enfocado en desarrollar el apartado visual, sin embargo, en mi caso lo que quise fue llevarlo un paso más allá y darle la lógica necesaria para poder jugar realmente.",
-      "Lo principal fue desarrollar el apartado visual para probar mis habilidades frontend, como tal. Lo que quería era poner a prueba mis conocimientos de vanilla CSS. Luego, una vez terminado ese apartado, lo que hice fue meterme con el manejo de la lógica.",
+      "Inicialmente, quería practicar mis habilidades de frontend y me topé con este reto en *frontend mentor*, únicamente estaba enfocado en desarrollar el apartado visual, sin embargo, en mi caso lo que hice fue llevarlo un paso más allá y darle la lógica necesaria para poder jugar realmente.",
+      "Como tal, lo primero fue desarrollar el apartado visual para probar mis habilidades frontend. Como lo dije anteriormente, me metí en este reto para mejorar mi entendimiento del front, lo que quería era poner a prueba mis conocimientos de vanilla CSS y mejorar en lo que tuviese que hacerlo.",
+      "Una vez estuvo terminado el apartado visual, lo que hice fue meterme con el manejo de la lógica. En otras palabras, le metí JS al HTML y CSS, o sea, se le añadió la interactividad.",
+      "Realmente fue un proyecto divertido de realizar que me ayudó a mejorar mi código, mis estilos y buenas prácticas.",
       "Para desarrollar el proyecto utilicé las tecnologías: TypeScript como lenguaje de programación, Vite como herramienta de compilación, React como librería principal de desarrollo y CSS vanilla para estilizar la aplicación.",
       "Si quieres ver el juego, acá está: ",
       "https://rps-game-navy.vercel.app/",
@@ -67,11 +99,13 @@ export const posts: Array<postInterface> = [
     image: PersonImage,
     description: [
       "¡Creé un juego de retos de rapidez matemática! Con la finalidad de mejorar el tiempo de respuesta y la asertividad de los estudiantes de mi universidad frente a problemas matemáticos básicos, creé una aplicación para que entrenaran.",
-      "La idea surgió de un momento en mis clases de universidad donde querían poner a prueba la fluidez con la que diferentes estudiantes respondíamos con respecto a preguntas matemáticas, en lo personal me fue bien (#humildad), pero a mis compañeros no tanto.",
+      "La idea surgió de un momento en mis clases de universidad donde querían poner a prueba la fluidez con la que diferentes estudiantes respondíamos a preguntas matemáticas, en lo personal me fue bien (#humildad), pero a mis compañeros no tanto.",
       "Debido a esto, me surgió la idea de crear una aplicación para practicar la rapidez con la que puedes responder a preguntas matemáticas básicas relacionadas con las operaciones de suma, resta, multiplicación y división, principalmente.",
-      "¡Las puntuaciones se van guardando por persona y quedan disponibles para ir comprobando la mejora que tienen los jugadores!",
+      "Hice que este juego tuviera un sistema de puntuación para ir observando la mejora de los jugadores y que así estos pudieran ir comparando su avance mientras juegan.",
+      "¡Las puntuaciones se van guardando por persona y quedan disponibles para cuando el jugador decida volver a entrar a jugar!",
       "Si quieres acceder al proyecto, acá está:",
       "link",
+      "El stack que utilicé para el desarrollo del juego fue: TypeScript como lenguaje de programación, Vite y Tailwind 😄",
     ],
 
     author: "Sebastian Pérez",
@@ -80,13 +114,13 @@ export const posts: Array<postInterface> = [
   {
     type: PostTypes.experience,
     title:
-      "¡Ayudé a una empresa internacional utilizando programación con VBA 🦖!",
+      "¡Trabajé para una multinacional utilizando programación con VBA 🦖!",
     mediaType: "video",
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
     description: [
       "Debido a contactos en mi universidad, una empresa se comunicó conmigo para ayudarles a optimizar sus libros de Excel utilizando programación (VBA) a través de macros.",
-      "Inicialmente, para 'Empresa A' (como la llamaré para salvaguardar su privacidad), una empresa internacional muy grande en el país, me contactó específicamente una regional para ayudar con un proceso de transición de plataformas por el que estaban pasando.",
+      "Inicialmente, para 'Empresa A' (como la llamaré para salvaguardar su privacidad), una empresa internacional muy grande en el país, me contactó específicamente una regional para ayudar con un proceso de transición de plataformas por el que estaban pasando (no lo estaban llevando muy bien).",
       "Había mucha información dispersa en muchas partes, muchos archivos y muchas plataformas.",
       "Mi función fue unificar la información de diferentes Excels y plataformas que tenían los datos de los perfiles de los empleados y crear un algoritmo que se encargara de validar los cargos (comparar el perfil del cargo contra el perfil del empleado).",
       "En el caso de que un empleado NO cumpliera con el perfil del cargo, lo que hacía era alertar al responsable de recursos humanos y lo ponía en una lista de personas que no eran válidas. De ahí se notificaba a cada jefe de sección para que se encargara de mandar al empleado a completar su perfil si el caso así lo requería.",
@@ -104,7 +138,7 @@ export const posts: Array<postInterface> = [
   {
     type: PostTypes.experience,
     title:
-      "¡Ayudé a crear un mini sistema de ventas, inventarios y nominas utilizando programación en VBA!",
+      "¡Creé un mini sistema de ventas, inventarios y nominas utilizando programación en VBA 🧮!",
     mediaType: "video",
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
@@ -195,7 +229,8 @@ export const posts: Array<postInterface> = [
       "La parte de la creación de los Tests fue la más satisfactoria...",
 
       "El algoritmo quedó a disposición de nuestro asesor de trabajo de grado para que lo utilizara con los estudiantes.",
-      "Acá puedes ver el repo con toda la información: https://github.com/Sebastian-pz/TDG-2023",
+      "Acá puedes ver el repo con toda la información:",
+      "https://github.com/Sebastian-pz/TDG-2023",
     ],
 
     author: "Sebastian Pérez",
@@ -211,12 +246,12 @@ export const posts: Array<postInterface> = [
       "Para finales del año 2022 les propuse a mis amigos programadores Matias Straface y Mesila Hellrigl hacer una red social inspirada en el entonces Twitter y los primeros días del 2023 nos pusimos manos en ello.",
       "El nombre es directamente una parodia para hacer alusión a que es una copia de Twitter (decidimos nombrarlo Ducker 🦆).",
       "Con los conocimientos que teníamos hasta ese momento realmente no se nos complicó avanzar rápidamente en el proyecto, de hecho, estaba avanzando mucho más rápido de lo que esperábamos.",
-      "En un abrir y cerrar de ojos ya habíamos terminado la mayor parte de del backend (en serio, en un par de días de pair programming estaba casi un 90% listo), eso fue la motivación que necesitábamos para meterle más determinación aún a ese proyecto.",
-      "Lo siguiente, una vez terminada la API de Ducker, nos metimos directamente con lo visual, queríamos hacerlo muy similar a Twitter; sin embargo, también queríamos experimentar por nuestra cuenta, ver qué podíamos cambiar, qué podíamos llegar a mejorar (desde nuestro punto de vista).",
-      "De igual manera que con el back, el front avanzó rápidamente, en cuestión de una semana la mayoría de las vistas estaban hechas, las conexiones con la API estaban listas y ya teníamos listas las funcionalidades principales de realizar Cuaks, dar me gustas, comentar y marcar como favorito.",
+      "En un abrir y cerrar de ojos ya habíamos terminado la mayor parte de del backend (en serio, en un par de días de pair programming estaba casi un 90% listo), eso fue la motivación que necesitábamos para meterle aun más determinación a ese proyecto.",
+      "Lo siguiente, una vez terminada la API de Ducker, fue meternos directamente con lo visual, queríamos hacerlo muy similar a Twitter; sin embargo, también queríamos experimentar por nuestra cuenta, ver qué podíamos cambiar, qué podíamos llegar a mejorar (desde nuestro punto de vista).",
+      "De igual manera que con el back, el front avanzó rápidamente, en cuestión de una semana la mayoría de las vistas estaban hechas, las conexiones con la API estaban listas y ya teníamos funcionando las principales acciones de la red social; realizar Cuaks, dar me gustas, comentar y marcar como favorito.",
       "La siguiente parte que hicimos fue la correspondiente al perfil, el poder personalizar su perfil con foto, nombre, descripción, localización, intereses y demás. Esta parte tampoco significó un mayor reto para el Team Ducker, para este momento ya nos encontrábamos muy cómodos trabajando con el proyecto.",
       "Ya de ahí en adelante fue ir realizando detalles, mejorando apartados visuales y corrigiendo bugs (que sorprendentemente no fueron muchos).",
-      "Ah, claro, el Stack es el de siempre: TypeScript, JavaScript, NodeJS, React, SASS, Express, JWT, MongoDB, Google Auth Library, Cors.",
+      "Ah, claro, el Stack es el de siempre: TypeScript, JavaScript, NodeJS, React, SASS, Express, JWT, MongoDB, Google Auth Library, Cors y otros.",
       "Quiero agradecer a mis compañeros de Team Ducker Mati y Meli, primero que todo por sumarse al proyecto, segundo porque al momento de transicionar al front, mis habilidades con el CSS no estaban tan trabajadas como sí lo están ahora, me tuvieron toda la paciencia del mundo y me fueron explicando poco a poco, y tercero, por ser tan buena onda y hacer de este proyecto un trabajo muy ameno y divertido.",
     ],
 
