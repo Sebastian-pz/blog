@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-
+import { Inter as font } from "next/font/google";
 
 import FooterComponent from "./components/footer/footer";
-import Navbar from "./components/NavBar/NavBar";
-
-
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "./components/NavBar/navbar";
 
 export const metadata: Metadata = {
   title: "Blog",
   description: "This is my blog",
 };
+
+const fontSettings = font({
+  weight: ["300", "400", "500"],
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -22,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      <body className={fontSettings.className}>
         <header>
           <Navbar />
         </header>
