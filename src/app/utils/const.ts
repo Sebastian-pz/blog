@@ -4,6 +4,7 @@ import BlogPostMedia from "../../../public/blog-post.webp";
 
 export const posts: Array<postInterface> = [
   {
+    id: 1,
     type: PostTypes.project,
     title: "¡El blog está casi listo 🚀👨🏻‍🚀!",
     mediaType: "image",
@@ -24,6 +25,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/16/2023",
   },
   {
+    id: 2,
     type: PostTypes.project,
     title:
       "¿Cómo fue trabajar con VBA por primera vez en la regional de una multinacional 😬?",
@@ -54,6 +56,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/28/2023",
   },
   {
+    id: 3,
     type: PostTypes.opinion,
     title: "The Commit Show de BettaTech y su charla con MiduDev",
     mediaType: "video",
@@ -73,6 +76,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
   {
+    id: 4,
     type: PostTypes.project,
     title: "Creé una aplicación del juego de piedra, papel o tijera",
     mediaType: "image",
@@ -92,6 +96,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
   {
+    id: 5,
     type: PostTypes.project,
     title: "¡Creé una aplicación de retos matemáticos con tiempo 👨🏻‍🔬⌛!",
     mediaType: "video",
@@ -112,6 +117,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
   {
+    id: 6,
     type: PostTypes.experience,
     title:
       "¡Trabajé para una multinacional utilizando programación con VBA 🦖!",
@@ -136,6 +142,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/26/2023",
   },
   {
+    id: 7,
     type: PostTypes.experience,
     title:
       "¡Creé un mini sistema de ventas, inventarios y nominas utilizando programación en VBA 🧮!",
@@ -156,6 +163,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/26/2023",
   },
   {
+    id: 8,
     type: PostTypes.experience,
     title:
       "Trabajé como programador fullstack en la creación de un e-commerce 🏪",
@@ -176,6 +184,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/27/2023",
   },
   {
+    id: 9,
     type: PostTypes.experience,
     title: "Trabajé como programador fullstack para la UCA 🎓",
     mediaType: "video",
@@ -203,6 +212,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/27/2023",
   },
   {
+    id: 10,
     type: PostTypes.project,
     title: "¡Hice mi trabajo de grado con programación!",
     mediaType: "video",
@@ -237,6 +247,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
   {
+    id: 11,
     type: PostTypes.project,
     title: "¡Creamos una red social inspirada en Twitter (X) 🦆!",
     mediaType: "video",
@@ -267,7 +278,7 @@ export function getPost(id: number) {
     return defaultPost;
   }
 
-  return posts[id];
+  return posts.find((post, index) => post.id === Number(id)) || defaultPost;
 }
 
 export function getPosts(limit = 5) {
