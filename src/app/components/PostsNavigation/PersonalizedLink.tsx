@@ -12,7 +12,7 @@ export default function PersonalizedLink({
   return (
     <Link
       href={href}
-      className="h-[30px] bg-lime-300 mx-3 rounded-md px-2 font-semibold hover:bg-lime-400"
+      className="bg-lime-600 mx-3 rounded-md border flex justify-center items-center p-2 py-4 font-semibold hover:bg-lime-700"
     >
       {label}
     </Link>
