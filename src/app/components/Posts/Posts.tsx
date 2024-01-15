@@ -27,7 +27,7 @@ export default function Posts() {
                 {post.title}
               </Link> */}
               <h2 className="mb-4">
-                <Link className="" href={`/post/${index + 1}`}>
+                <Link className="" href={`/post/${post.id}`}>
                   {post.title}
                 </Link>
               </h2>
