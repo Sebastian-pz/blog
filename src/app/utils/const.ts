@@ -4,7 +4,6 @@ import BlogPostMedia from "../../../public/blog-post.webp";
 
 export const posts: Array<postInterface> = [
   {
-
     id: 0,
     type: PostTypes.experience,
     title:
@@ -13,7 +12,7 @@ export const posts: Array<postInterface> = [
     media: "https://www.youtube.com/embed/fL83GTilWjw",
     image: BlogPostMedia,
     description: [
-      "Creé una aplicación web FullStack que se encarga de gestionar las ventas e inventarios de un bar, logrando de este modo facilitar los procesos de la tienda.",
+      "Creé una aplicación web FullStack que se encarga de gestionar las ventas, costos, gastos e inventarios de un bar, logrando de este modo facilitar los procesos de la tienda.",
 
       "Inicialmente, en noviembre, debido a una persona en común se me contactó para preguntarme acerca de unos determinados procesos administrativos del bar en cuestión, durante mis observaciones se me comentó el hecho de que estaban creando un software específico para el tema de manejo de ventas (como lo mencioné en un post anterior en el blog). ",
 
@@ -91,10 +90,9 @@ export const posts: Array<postInterface> = [
     media: "https://www.youtube.com/embed/fL83GTilWjw",
     image: PersonImage,
     description: [
-      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos espécimen.",
       "Como programador, llevo siguiendo el contenido de Midudev desde hace años, es uno de mis referentes tecnológicos y con la cual he aprendido mucho.",
       "Durante la charla en The Commit Show de BettaTech, Midu habla de muchos temas referentes al ámbito de la tecnología y programación en general, habla de quién es, de su experiencia y cómo es su perspectiva sobre la actualidad y futuro del mundo del desarrollo.",
-      "Uno de los temas más relevantes tratados en esta charla, es el hecho de que cuando un programador está buscando introducirse en el mercado por primera (o primeras) vez, es muy importante llegar a una empresa la cual te ofrezca mentorías, es decir, que tengas a una persona que pueda hacer de guía en tu proceso, siendo esta parte una de las que más se aprende. De hecho, él define que `Es mucho más importante que el sueldo en un inicio`.",
+      "Uno de los temas más relevantes tratados en esta charla, es el hecho de que cuando un programador está buscando introducirse en el mercado por primera (o primeras) vez, es muy importante llegar a una empresa la cual te ofrezca mentorías, es decir, que tengas a una persona que pueda hacer de guía en tu proceso, siendo esta parte una de las que más se aprende. De hecho, él define que 'Es mucho más importante que el sueldo en un inicio'.",
       "Si bien es verdad que la carencia de este mentor hace que el programador desarrolle autosuficiencia, en algunos casos esto tiende a convertirse en una carga mental que afecta la salud y que, a final de cuentas, no vale la pena.",
       "En la charla se tratan otros temas muy importantes a tener en cuenta en el mundo del desarrollo, salarios y quizá lo más importante, ser senior, ¿Qué significa realmente?",
       "Es una charla que en mi opinión está totalmente recomendada y que proporciona un panorama amplio del entorno de la programación.",
@@ -178,7 +176,7 @@ export const posts: Array<postInterface> = [
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
     description: [
-      "Intervine en un bar para mejorar su situación y su gestión, la empresa no contaba con ningún sistema de información, no tenía ni inventarios, ni nominas, ni libros contables, ni libros de proveedores, etc.",
+      "Intervine en un bar para mejorar su situación y su gestión. La empresa no contaba con ningún sistema de información, no tenía ni inventarios, ni nominas, ni libros contables, ni libros de proveedores, etc.",
       "Inicialmente mi intervención estuvo enfocada en crear un archivo temporal (un algoritmo) para el manejo de las ventas, inventarios y nominas (esto debido a que la empresa ya había pagado para la realización de un software, entonces solo utilizarían este Excel por un periodo corto de tiempo).",
       "Me encargué de crear los algoritmos necesarios para determinar las pagas de cada mesa, la automatización de los descuentos de inventarios y el registro automático del ingreso de efectivo o el incremento en cuentas por cobrar (cosas contables).",
       "Esa fue mi función, sin embargo, surgió la situación de que es muy común que estas cuentas se paguen por separado, por lo que se buscó implementar un algoritmo bajo el cual las mesas se pudiesen pagar de diferentes maneras.",
