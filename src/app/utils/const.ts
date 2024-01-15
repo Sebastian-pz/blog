@@ -4,6 +4,32 @@ import BlogPostMedia from "../../../public/blog-post.webp";
 
 export const posts: Array<postInterface> = [
   {
+    type: PostTypes.experience,
+    title:
+      "¡💥 Trabajé en la creación de una aplicación fullstack para gestionar ventas e inventarios 💥!",
+    mediaType: "video",
+    media: "https://www.youtube.com/embed/fL83GTilWjw",
+    image: BlogPostMedia,
+    description: [
+      "Creé una aplicación web FullStack que se encarga de gestionar las ventas e inventarios de un bar, logrando de este modo facilitar los procesos de la tienda.",
+
+      "Inicialmente, en noviembre, debido a una persona en común se me contactó para preguntarme acerca de unos determinados procesos administrativos del bar en cuestión, durante mis observaciones se me comentó el hecho de que estaban creando un software específico para el tema de manejo de ventas (como lo mencioné en un post anterior en el blog). ",
+
+      "Como el software ya estaba siendo construido, mi participación en el proceso se limitó únicamente en crear un Excel que sirviera para solventar el problema de gestión en ventas e inventarios momentáneamente, sin embargo, a finales de noviembre, inicios de diciembre me hicieron llegar la información restante del proyecto.",
+
+      "La idea que tenia el bar era que les crearan un software propio para la gestión única del local, sin embargo, les estaban vendiendo la licencia de un programa ya hecho, además de esto, les estaban cobrando una cuota mensual significativamente alta (no sé si mencionarlo específicamente esté bien), ya ahí las cosas venían mal, les estaban cobrando la aplicación y la licencia mensual, lo que se convertía en una suma grande de dinero.",
+
+      "Además de esto, al momento de realizar la 'entrega', la persona en cuestión les dijo que para poder ejecutar la aplicación iban a necesitar instalar Windows en su computador (Utilizan una Mac Book Pro en el negocio), todo esto llevó a que el dueño del negocio no se sintiera cómodo con esto.",
+
+      "Para no hacerlo muy largo, después de esa charla con el chico del otro software se me habló y justo al lunes siguiente me puse manos a la obra para comenzar con el proyecto.",
+
+      "Las tecnologías utilizadas para este proyecto fueron principalmente JavaScript, NodeJS, React, Vite, Tailwind, NodeJS, Express, MongoDB (Atlas), byCrypt, json web tokens JWT, Cors y ESLint con standard para mejorar el código.",
+    ],
+
+    author: "Sebastian Pérez",
+    creationDate: "01/16/2024",
+  },
+  {
     type: PostTypes.project,
     title: "¡El blog está casi listo 🚀👨🏻‍🚀!",
     mediaType: "image",
