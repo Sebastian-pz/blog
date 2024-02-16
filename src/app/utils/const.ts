@@ -317,3 +317,8 @@ export function getFilteredPosts(filter: PostTypes, limit = 5) {
   if (!filteredPosts.length) return getPosts(limit);
   return filteredPosts;
 }
+
+export function getRandomPost() {
+  const post = posts[Math.floor(Math.random() * posts.length)];
+  return post.id;
+}
