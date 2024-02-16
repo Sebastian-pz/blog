@@ -30,7 +30,7 @@ export default function FilteredPosts({ posts, title }: ComponentProps) {
             </div>
             <div className="home__post__info ml-4">
               <h2 className="mb-4">
-                <Link className="" href={`/post/${index + 1}`}>
+                <Link className="" href={`/post/${post.id}`}>
                   {post.title}
                 </Link>
               </h2>
