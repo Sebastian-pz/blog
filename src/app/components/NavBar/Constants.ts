@@ -1,6 +1,13 @@
+import { getRandomPost } from "@/app/utils/const";
+
 export default [
   {
-    label: "Home",
+    label: "Sobre mí",
+    path: "/main",
+    styles: "",
+  },
+  {
+    label: "Blog",
     path: "/",
     styles: "",
   },
@@ -10,18 +17,8 @@ export default [
     styles: "",
   },
   {
-    label: "Sign Up",
-    path: "/signup",
-    styles: "pointer-events-none text-slate-400 ",
-  },
-  {
-    label: "Login",
-    path: "login",
-    styles: " pointer-events-none text-slate-400 ",
-  },
-  {
-    label: "Post",
-    path: `/post/${Math.floor(Math.random() * 4)}`,
+    label: "Post random",
+    path: `/post/${getRandomPost()}`,
     styles: "",
   },
 ];
