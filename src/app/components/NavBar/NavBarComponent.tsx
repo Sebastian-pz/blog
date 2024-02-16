@@ -1,33 +1,6 @@
 import Link from "next/link";
 import React from "react";
-
-const LINK_LIST = [
-  {
-    label: "Home",
-    path: "/",
-    styles: "",
-  },
-  {
-    label: "About",
-    path: "/about",
-    styles: "",
-  },
-  {
-    label: "Sign Up",
-    path: "/signup",
-    styles: "pointer-events-none text-slate-400 ",
-  },
-  {
-    label: "Login",
-    path: "login",
-    styles: " pointer-events-none text-slate-400 ",
-  },
-  {
-    label: "Post",
-    path: `/post/${Math.floor(Math.random() * 4)}`,
-    styles: "",
-  },
-];
+import LINK_LIST from "./Constants";
 
 export default function Navbar() {
   return (

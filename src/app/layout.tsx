@@ -4,11 +4,12 @@ import "./globals.css";
 import { Inter as font } from "next/font/google";
 
 import FooterComponent from "./components/footer/footer";
-import Navbar from "./components/NavBar/NavBar";
+import Navbar from "./components/NavBar/NavBarComponent";
 
 export const metadata: Metadata = {
-  title: "Blog",
-  description: "This is my blog",
+  title: "Sebastian Pérez ",
+  description:
+    "Este es el portafolio y blog de Sebastian Pérez en el que se habla de opiniones sobre tecnologías, las experiencias y demás tópicos relacionados, se puede observar mi el trayecto como programador web fullstack acá.",
 };
 
 const fontSettings = font({
