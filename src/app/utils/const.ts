@@ -1,10 +1,11 @@
 import { postInterface, PostTypes } from "./interfaces";
 import PersonImage from "../../../public/person.jpg";
 import BlogPostMedia from "../../../public/blog-post.webp";
+import { uid } from "uid";
 
 export const posts: Array<postInterface> = [
   {
-    id: 0,
+    id: uid(),
     type: PostTypes.experience,
     title:
       "¡💥 Trabajé en la creación de una aplicación fullstack para gestionar ventas e inventarios 💥!",
@@ -31,7 +32,7 @@ export const posts: Array<postInterface> = [
     creationDate: "01/16/2024",
   },
   {
-    id: 1,
+    id: uid(),
     type: PostTypes.project,
     title: "¡El blog está casi listo 🚀👨🏻‍🚀!",
     mediaType: "image",
@@ -52,7 +53,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/16/2023",
   },
   {
-    id: 2,
+    id: uid(),
     type: PostTypes.project,
     title:
       "¿Cómo fue trabajar con VBA por primera vez en la regional de una multinacional 😬?",
@@ -83,7 +84,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/28/2023",
   },
   {
-    id: 3,
+    id: uid(),
     type: PostTypes.opinion,
     title: "The Commit Show de BettaTech y su charla con MiduDev",
     mediaType: "video",
@@ -102,7 +103,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
   {
-    id: 4,
+    id: uid(),
     type: PostTypes.project,
     title: "Creé una aplicación del juego de piedra, papel o tijera",
     mediaType: "image",
@@ -122,7 +123,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
   {
-    id: 5,
+    id: uid(),
     type: PostTypes.project,
     title: "¡Creé una aplicación de retos matemáticos con tiempo 👨🏻‍🔬⌛!",
     mediaType: "video",
@@ -143,7 +144,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
   {
-    id: 6,
+    id: uid(),
     type: PostTypes.experience,
     title:
       "¡Trabajé para una multinacional utilizando programación con VBA 🦖!",
@@ -168,7 +169,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/26/2023",
   },
   {
-    id: 7,
+    id: uid(),
     type: PostTypes.experience,
     title:
       "¡Creé un mini sistema de ventas, inventarios y nominas utilizando programación en VBA 🧮!",
@@ -189,7 +190,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/26/2023",
   },
   {
-    id: 8,
+    id: uid(),
     type: PostTypes.experience,
     title:
       "Trabajé como programador fullstack en la creación de un e-commerce 🏪",
@@ -210,7 +211,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/27/2023",
   },
   {
-    id: 9,
+    id: uid(),
     type: PostTypes.experience,
     title: "Trabajé como programador fullstack para la UCA 🎓",
     mediaType: "video",
@@ -238,7 +239,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/27/2023",
   },
   {
-    id: 10,
+    id: uid(),
     type: PostTypes.project,
     title: "¡Hice mi trabajo de grado con programación!",
     mediaType: "video",
@@ -273,7 +274,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
   {
-    id: 11,
+    id: uid(),
     type: PostTypes.project,
     title: "¡Creamos una red social inspirada en Twitter (X) 🦆!",
     mediaType: "video",
@@ -299,12 +300,8 @@ export const posts: Array<postInterface> = [
 
 const defaultPost = posts[0];
 
-export function getPost(id: number) {
-  if (isNaN(Number(id))) {
-    return defaultPost;
-  }
-
-  return posts.find((post, index) => post.id === Number(id)) || defaultPost;
+export function getPost(id: number | string) {
+  return posts.find((post, index) => post.id === id) || defaultPost;
 }
 
 export function getPosts(limit = 5) {

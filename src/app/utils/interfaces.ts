@@ -1,5 +1,5 @@
 export interface postInterface {
-  id: number;
+  id: number | string;
   type: PostTypes;
   title: string;
   mediaType: string;
