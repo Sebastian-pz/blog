@@ -16,31 +16,40 @@ import WorkIcon from "../../../public/svg/work.svg";
 
 export default function MainPage() {
   return (
-    <div className="m-auto border border-slate-400 w-[95%] rounded-t-xl md:w-[80%] xl:w-[60%]">
+    <div className="m-auto border border-border-color w-[95%] rounded-xl md:w-[80%] xl:w-[60%]">
       <Image
         src={bannerImage.src}
         alt="profile banner image"
         width="1280"
         height="600"
-        className="rounded-t-xl border-b-[6px]"
+        className="rounded-t-xl border-border-color border-b-[6px]"
       />
-      <Image
-        src={profileImage.src}
-        alt="profile image Sebastian Perez"
-        width="500"
-        height="500"
-        className="rounded-full absolute top-[165px] left-[20px] h-[100px] w-[100px] border-[6px]"
-      />
-      <a
-        href="mailto:spezuluaga@gmail.com"
-        className={`
-        border p-3 rounded-xl ${styles.borders} absolute left-[63%] top-[230px] font-semibold hover:bg-slate-100`}
-      >
-        ¡Contáctame!
-      </a>
-      <section className="mt-[60px] mb-4 px-2">
-        <h1 className="font-bold text-2xl mb-3">Sebastian Pérez</h1>
-        <p>Desarrollador fullstack enfocado en la web 🌎</p>
+      <div className="flex justify-center md:justify-between  items-center p-6 lg:px-12">
+        <div className="flex items-center justify-center ">
+          <Image
+            src={profileImage.src}
+            alt="profile image Sebastian Perez"
+            width="500"
+            height="500"
+            className="rounded-full  h-[110px] w-[110px] sm:h-[175px] sm:w-[175px] md:h-[200px] md:w-[200px] border shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+          />
+          <section className="ml-2 md:ml-6">
+            <h1 className="font-bold text-2xl mb-3">Sebastian Pérez</h1>
+            <p className="hidden md:inline">
+              Desarrollador fullstack enfocado en la web 🌎
+            </p>
+            <p className="md:hidden">Enfocado en la web 🌎</p>
+            <p>spezuluaga@gmail.com</p>
+          </section>
+        </div>
+        <a
+          href="mailto:spezuluaga@gmail.com"
+          className="border border-border-color text-border-color p-2 rounded-lg hidden md:inline  font-semibold  h-10 hover:bg-primary-color duration-500 hover:border-white hover:text-white"
+        >
+          ¡Contácteme!
+        </a>
+      </div>
+      <section className="px-3 mb-4 lg:px-12">
         <p>
           Programando desde 2020, con experiencia en el desarrollo frontend y
           backend.
@@ -51,8 +60,8 @@ export default function MainPage() {
         </p>
       </section>
 
-      <section className="flex justify-evenly border-b-2 border-slate-100">
-        <abbr title="Open to work" className="no-underline">
+      <section className="flex justify-evenly border-b border-border-color">
+        <abbr title="Actualmente abierto a trabajar" className="no-underline">
           <Svg
             label="Disponible"
             link="mailto:spezuluaga@gmail.com"
@@ -74,10 +83,12 @@ export default function MainPage() {
       </section>
 
       {/* @ts-ignore */}
-      <marquee className="bg-[rgba(0,0,0,0.5)] text-white h-8 text-xl mt-4">
+      <marquee className="bg-[rgba(0,0,0,0.5)] text-bg-color h-8 text-xl mt-4">
         Desarrollo aplicaciones web fullstack con TypeScript, JavaScript,
         NodeJS, Express, React, Tailwind, Bootstrap, CSS Vanila, SQL, NoSQL...
-        (actualmente utilizando NextJS)
+        (actualmente utilizando NextJS). También he utilizado en pequeños
+        proyectos Astro y Svelte. {"          "} Dispuesto a aprender nuevas
+        tecnologías siempre 💙
         {/* @ts-ignore */}
       </marquee>
 
