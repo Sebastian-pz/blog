@@ -11,9 +11,9 @@ interface CardProps {
 export default function Card({ title, link, dates, description }: CardProps) {
   return (
     <div className="max-w-sm mx-auto my-2 w-[95%]  lg:flex lg:max-w-[260px]">
-      <div className="border hover:bg-slate-100 border-gray-400 lg:border lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      <div className="border  border-gray-400 lg:border lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
         <div className="mb-8">
-          <h3 className="text-gray-900 font-bold text-xl mb-2">
+          <h3 className="text-gray-900 font-semibold text-xl mb-2 hover:text-primary-color">
             <Link href={link}>{title}</Link>
           </h3>
           <p className="text-sm text-gray-600 flex items-center">

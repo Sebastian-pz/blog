@@ -42,10 +42,10 @@ const example = [
 export default function Projects() {
   return (
     <section className="mt-8 p-2">
-      <h2 className="text-center text-2xl font-semibold">
+      <h2 className="text-center text-2xl font-bold">
         ¡Proyectos que he creado 😬!
       </h2>
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col flex-wrap lg:flex-row">
         {example.map((experience, index) => {
           return (
             <Card

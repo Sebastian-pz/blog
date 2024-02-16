@@ -4,7 +4,7 @@ import gmailSVG from "../../../../public/svg/gmail.svg";
 
 export default function FooterComponent() {
   return (
-    <footer className="flex w-auto justify-center items-center border-t-2 border-gray-200 mt-4">
+    <footer className="flex w-auto justify-center items-center border-t border-border-color mt-4">
       <section className="flex">
         <a
           href="https://www.linkedin.com/in/sebastian-perez-zuluaga/"
