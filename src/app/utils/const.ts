@@ -1,6 +1,6 @@
 import { postInterface, PostTypes } from "./interfaces";
-import PersonImage from "../../../public/person.jpg";
-import BlogPostMedia from "../../../public/blog-post.webp";
+import PersonImage from "@/public/person.jpg";
+import BlogPostMedia from "@/public/blog-post.webp";
 import { uid } from "uid";
 
 export const posts: Array<postInterface> = [

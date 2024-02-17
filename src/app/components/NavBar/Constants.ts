@@ -1,4 +1,4 @@
-import { getRandomPost } from "@/app/utils/const";
+import { getRandomPost } from "@/utilities/const";
 
 export default [
   {

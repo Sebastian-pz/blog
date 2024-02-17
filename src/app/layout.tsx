@@ -3,8 +3,8 @@ import "./globals.css";
 
 import { Inter as font } from "next/font/google";
 
-import FooterComponent from "./components/footer/footer";
-import Navbar from "./components/NavBar/NavBarComponent";
+import FooterComponent from "@/components/footer/footer";
+import Navbar from "@/components/NavBar/NavBarComponent";
 
 export const metadata: Metadata = {
   title: "Blog - Sebastian Pérez ",

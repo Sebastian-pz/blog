@@ -1,6 +1,6 @@
-import linkedinSVG from "../../../../public/svg/linkedin.svg";
-import githubSVG from "../../../../public/svg/github.svg";
-import gmailSVG from "../../../../public/svg/gmail.svg";
+import linkedinSVG from "@/public/svg/linkedin.svg";
+import githubSVG from "@/public/svg/github.svg";
+import gmailSVG from "@/public/svg/gmail.svg";
 
 export default function FooterComponent() {
   return (
