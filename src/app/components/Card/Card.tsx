@@ -1,6 +1,4 @@
 import Link from "next/link";
-import React from "react";
-
 interface CardProps {
   title: string;
   link: string;

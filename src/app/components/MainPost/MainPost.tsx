@@ -1,5 +1,5 @@
-import { getMainPost } from "@/app/utils/const";
 import Link from "next/link";
+import { getMainPost } from "@/utilities/const";
 
 export default function MainPost() {
   const mainPost = getMainPost();

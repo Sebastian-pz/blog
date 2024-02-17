@@ -4,9 +4,9 @@
 // import { postInterface } from "../../utils/interfaces";
 
 import Link from "next/link";
-import { getPost } from "../../utils/const";
+import { getPost } from "@/utilities/const";
 
-import MediaComponent from "@/app/components/Media/MediaComponent";
+import MediaComponent from "@/components/Media/MediaComponent";
 
 interface paramsInterface {
   params: {

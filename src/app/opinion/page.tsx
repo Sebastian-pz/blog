@@ -1,6 +1,6 @@
-import FilteredPosts from "../components/FilteredPosts/FilteredPosts";
-import { getFilteredPosts } from "../utils/const";
-import { PostTypes } from "../utils/interfaces";
+import FilteredPosts from "@/components/FilteredPosts/FilteredPosts";
+import { getFilteredPosts } from "@/utilities/const";
+import { PostTypes } from "@/utilities/interfaces";
 
 export default function page() {
   const posts = getFilteredPosts(PostTypes.opinion);

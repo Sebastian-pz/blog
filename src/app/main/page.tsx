@@ -1,18 +1,16 @@
-import React from "react";
 import Image from "next/image";
-import bannerImage from "../../../public/banner.webp";
-import profileImage from "../../../public/profileImage.webp";
-import styles from "../utils/styles";
 
-import Svg from "../components/svg/Svg";
-import CV from "../components/CV/CV";
-import Experiences from "../components/Experience/Experiences";
-import Projects from "../components/Project/Projects";
+import Svg from "@/components/svg/Svg";
+import CV from "@/components/CV/CV";
+import Projects from "@/components/Project/Projects";
+import Experiences from "@/components/Experience/Experiences";
 
-import GitHubIcon from "../../../public/svg/github.svg";
-import LinkedInIcon from "../../../public/svg/linkedin.svg";
-import CakeIcon from "../../../public/svg/cake.svg";
-import WorkIcon from "../../../public/svg/work.svg";
+import bannerImage from "@/public/banner.webp";
+import profileImage from "@/public/profileImage.webp";
+import GitHubIcon from "@/public/svg/github.svg";
+import LinkedInIcon from "@/public/svg/linkedin.svg";
+import CakeIcon from "@/public/svg/cake.svg";
+import WorkIcon from "@/public/svg/work.svg";
 
 export default function MainPage() {
   return (

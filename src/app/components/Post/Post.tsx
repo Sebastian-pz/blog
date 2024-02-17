@@ -1,5 +1,5 @@
-import { postInterface } from "@/app/utils/interfaces";
 import Link from "next/link";
+import { postInterface } from "@/utilities/interfaces";
 
 interface PostProps {
   post: postInterface;

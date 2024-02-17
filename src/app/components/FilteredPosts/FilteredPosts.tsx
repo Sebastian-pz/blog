@@ -1,6 +1,6 @@
-import { postInterface } from "@/app/utils/interfaces";
 import Link from "next/link";
-import GoBack from "../GoBack/GoBack";
+import { postInterface } from "@/app/utils/interfaces";
+import GoBack from "@/components/GoBack/GoBack";
 
 interface ComponentProps {
   title: string;

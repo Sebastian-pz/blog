@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import PDFIcon from "../../../../public/svg/pdf.svg";
+import PDFIcon from "@/public/svg/pdf.svg";
 
 export default function CV() {
   return (
