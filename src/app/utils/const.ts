@@ -33,6 +33,33 @@ export const posts: Array<postInterface> = [
   },
   {
     id: uid(),
+    type: PostTypes.opinion,
+    title: "¿Pasar como parámetro funciones con nombre al useEffect 🤔?",
+    mediaType: "image",
+    image: PersonImage,
+    description: [
+      "Utilizar funciones con nombres dentro del hook useEffect de react suena un poco... raro ¿no? Pues no, o al menos no lo es para Cory House.",
+      "Hace relativamente poco vi una publicación en X que hablaba de utilizar funciones con nombre dentro del hook useEffect en React (sí, como primer parámetro). Me pareció interesante la idea, así que me adentré en el hilo para ver qué tenían que decir al respecto.",
+      "Es una manera de mejorar la legibilidad del código, haciendo más simple entender qué es lo que hace un useEffect que tengamos en nuestra aplicación, y sí, viéndolo desde este lado tiene sentido, sin embargo, no terminó de convencer a algunos que argumentaban que estaban haciendo más complicado el desarrollo.",
+      "Por un lado, tenemos la parte de la legibilidad (que sí, es más legible desde mi perspectiva), sin embargo, también tenemos que tener en cuenta el tema de las convenciones, es mucho más común ver que este hook es utilizado pasando como parámetro simplemente un arrow function, así que entiendo el choque de opiniones que puede generar este tema.",
+      "Otras personas dicen que todo se soluciona con un simple comentario que explique qué hace el useEffect en cuestión, es decir, comentario VS ponerle nombre a la función, a lo que el autor del post nos comenta lo siguiente:",
+      "✅ El código tiende a mantenerse actualizado, mientras que los comentarios suelen quedar obsoletos. Por tanto, los comentarios 'mienten' con más frecuencia que el código.",
+      "✅ Las funciones nombradas mejoran el seguimiento de la pila (stack trace), lo que mejora la depuración y el registro de errores.",
+      "✅ Los comentarios no deben reemplazar el nombre de una función; deben aumentar el nombre de la función en casos excepcionales en los que el nombre por sí solo no sea suficiente.",
+      "También están las personas que se quejan de que ahora los useEffect gracias a este cambio se vuelven demasiado complejos... Eso de encontrarles un nombre correcto es más complicado de lo que parece 🤣.",
+      "Por mi parte, creo que prefiero seguir utilizando un arrow function con una función dentro que posteriormente llamaré, quizá no es la solución más óptima, pero considero que es bastante decente y legible 🤯.",
+      "Créditos a Cory House @housecor en X, de donde vi esta publicación.",
+      "¿Cuál es tu opinión al respecto? ¿Está bien utilizar funciones nombradas o es mejor utilizar las típicas funciones flecha?",
+
+      "Link a la publicación original:",
+      "https://twitter.com/housecor/status/1753777632976461954",
+    ],
+
+    author: "Sebastian Pérez",
+    creationDate: "02/17/2024",
+  },
+  {
+    id: uid(),
     type: PostTypes.project,
     title: "¡El blog está casi listo 🚀👨🏻‍🚀!",
     mediaType: "image",
@@ -322,3 +349,9 @@ export function getRandomPost() {
   const post = posts[Math.floor(Math.random() * posts.length)];
   return post.id;
 }
+
+/*
+
+Utilizar funciones con nombres dentro del hook useEffect de react suena un poco... raro ¿no? Pues no, o al menos no lo es para Cory House.
+LINK: 
+*/
