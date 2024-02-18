@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getMainPost } from "@/utilities/const";
+import { useEffect } from "react";
 
 export default function MainPost() {
   const mainPost = getMainPost();
@@ -12,7 +13,7 @@ export default function MainPost() {
       <img
         src={mainPost.image.src}
         alt=""
-        className="h-2/4 mb-3 max-h-[350px] m-auto"
+        className="h-2/4 mb-3 max-h-[350px] m-auto shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
       />
       <p>{mainPost.description[0]}</p>
     </div>

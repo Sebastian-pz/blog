@@ -2,7 +2,7 @@ import { getPosts } from "@/utilities/const";
 import Post from "@/components/Post/Post";
 
 export default function Posts() {
-  const posts = getPosts(10);
+  const posts = getPosts(30);
 
   return (
     <>
