@@ -8,21 +8,23 @@ interface PostProps {
 
 export default function Post({ post, introductionParagraph }: PostProps) {
   return (
-    <div className="home__post border-b-2 border-slate-200 pt-9 pb-9">
+    <div className="home__post border-b lg:text-xl border-border-color pt-9 pb-9">
       <div className="m-auto">
         <img
           src={post.image.src}
           alt={`post image about ${introductionParagraph}`}
-          className="home__post__image"
+          className="home__post__image shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
         />
       </div>
       <div className="home__post__info">
-        <h2 className="mb-4">
+        <h2 className="mb-4 lg:font-bold">
           <Link className="" href={`/post/${post.id}`}>
             {post.title}
           </Link>
         </h2>
-        <p className="text-slate-500 text-xs">{introductionParagraph}</p>
+        <p className="text-slate-500 text-xs lg:text-lg">
+          {introductionParagraph}
+        </p>
       </div>
     </div>
   );
