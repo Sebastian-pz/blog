@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { Inter as font } from "next/font/google";
+import { Montserrat as font } from "next/font/google";
 
 import FooterComponent from "@/components/footer/footer";
 import Navbar from "@/components/NavBar/NavBarComponent";

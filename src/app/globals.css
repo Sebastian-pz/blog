@@ -9,5 +9,11 @@
 }
 
 body {
-  background-color: #e1e7ff;
+  background-image: radial-gradient(
+    circle,
+    #e1e7ff20 10%,
+    #acbbf480 50%,
+    #e1e7ff20 90%
+  );
+  /* background-color: #e1e7ff; */
 }

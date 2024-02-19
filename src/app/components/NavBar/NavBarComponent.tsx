@@ -4,7 +4,7 @@ import LINK_LIST from "./Constants";
 
 export default function Navbar() {
   return (
-    <div className="flex w-auto h-24 border border-b border-border-color mb-4 justify-center items-center">
+    <div className="flex p-2 bg-[#e1e7ff95] border border-border-color justify-center items-center w-full">
       {LINK_LIST.map((route, index) => {
         const { label, path, styles } = route;
         return (

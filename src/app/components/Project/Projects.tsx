@@ -45,7 +45,7 @@ export default function Projects() {
       <h2 className="text-center text-2xl font-bold">
         ¡Proyectos que he creado 😬!
       </h2>
-      <div className="flex flex-col flex-wrap lg:flex-row">
+      <div className="flex flex-col w-full justify-center items-center md:px-4 lg:px-10">
         {example.map((experience, index) => {
           return (
             <Card
