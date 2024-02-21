@@ -4,6 +4,7 @@ import Svg from "@/components/svg/Svg";
 import CV from "@/components/CV/CV";
 import Projects from "@/components/Project/Projects";
 import Experiences from "@/components/Experience/Experiences";
+import ExtendedInfo from "@/components/ExtendedInfo/ExtendedInfo";
 
 import bannerImage from "@/public/banner.webp";
 import profileImage from "@/public/profileImage.webp";
@@ -14,13 +15,13 @@ import WorkIcon from "@/public/svg/work.svg";
 
 export default function MainPage() {
   return (
-    <div className="m-auto border border-border-color w-[95%] rounded-xl md:w-[80%] xl:w-[60%]">
+    <div className="m-auto border border-border-color w-[95%] mt-10 rounded-xl md:w-[80%] xl:w-[60%]">
       <Image
         src={bannerImage.src}
         alt="profile banner image"
         width="1280"
         height="600"
-        className="rounded-t-xl border-border-color border-b-[6px]"
+        className="rounded-t-xl border-border-color border-b-2 object-contain"
       />
       <div className="flex justify-center md:justify-between  items-center p-6 lg:px-12">
         <div className="flex items-center justify-center ">
@@ -42,7 +43,7 @@ export default function MainPage() {
         </div>
         <a
           href="mailto:spezuluaga@gmail.com"
-          className="border border-border-color text-border-color p-2 rounded-lg hidden md:inline  font-semibold  h-10 hover:bg-primary-color duration-500 hover:border-white hover:text-white"
+          className="border bg-secondary-color p-2 rounded-lg hidden md:inline   h-10 hover:bg-[#3a2685] text-white"
         >
           ¡Contácteme!
         </a>
@@ -66,7 +67,7 @@ export default function MainPage() {
             svg={WorkIcon}
           />
         </abbr>
-        <Svg label="29 de Julio" link="/" svg={CakeIcon} />
+        <Svg label="29 de Julio" svg={CakeIcon} />
 
         <Svg
           label="LinkedIn"
@@ -80,16 +81,7 @@ export default function MainPage() {
         />
       </section>
 
-      {/* @ts-ignore */}
-      <marquee className="bg-[rgba(0,0,0,0.5)] text-bg-color h-8 text-xl mt-4">
-        Desarrollo aplicaciones web fullstack con TypeScript, JavaScript,
-        NodeJS, Express, React, Tailwind, Bootstrap, CSS Vanila, SQL, NoSQL...
-        (actualmente utilizando NextJS). También he utilizado en pequeños
-        proyectos Astro y Svelte. {"          "} Dispuesto a aprender nuevas
-        tecnologías siempre 💙
-        {/* @ts-ignore */}
-      </marquee>
-
+      <ExtendedInfo />
       <Experiences />
       <Projects />
 
