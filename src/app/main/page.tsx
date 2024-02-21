@@ -50,8 +50,9 @@ export default function MainPage() {
       </div>
       <section className="px-3 mb-4 lg:px-12">
         <p>
-          Programando desde 2020, con experiencia en el desarrollo frontend y
-          backend.
+          Programando desde 2020, con experiencia en el desarrollo fullstack,
+          buscando generar soluciones escalables a los problemas de las
+          empresas.
         </p>
         <p>
           Me gusta programar cosas 👨🏼‍💻, los animales 🐕, los atardeceres 🌄 y
@@ -67,7 +68,6 @@ export default function MainPage() {
             svg={WorkIcon}
           />
         </abbr>
-        <Svg label="29 de Julio" svg={CakeIcon} />
 
         <Svg
           label="LinkedIn"
@@ -79,6 +79,7 @@ export default function MainPage() {
           link="https://github.com/Sebastian-pz"
           svg={GitHubIcon}
         />
+        <Svg label="29 de Julio" svg={CakeIcon} />
       </section>
 
       <ExtendedInfo />

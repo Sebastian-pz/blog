@@ -1,4 +1,4 @@
-import Card from "@/components/Card/Card";
+import ProjectCard from "@/components/ProjectCard/ProjectCard";
 
 const example = [
   {
@@ -43,12 +43,15 @@ export default function Projects() {
   return (
     <section className="mt-8 p-2">
       <h2 className="text-center text-2xl font-bold">
-        ¡Proyectos que he creado 😬!
+        ¡Proyectos que he creado!
       </h2>
-      <div className="flex flex-col w-full justify-center items-center md:px-4 lg:px-10">
+      <p className="text-sm text-slate-500 text-center text-balanced">
+        Solo aparecerán los últimos que hice o los más relevantes
+      </p>
+      <div className="flex flex-wrap w-full justify-center items-center md:px-4 lg:px-10">
         {example.map((experience, index) => {
           return (
-            <Card
+            <ProjectCard
               title={experience.title}
               description={experience.description}
               dates={experience.dates}
