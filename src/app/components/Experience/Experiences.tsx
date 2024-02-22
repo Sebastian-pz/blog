@@ -55,7 +55,7 @@ export default function Experiences() {
       <p className="text-center my-4">
         ¡Si quieres ver más info puedes hacer click en ella!
       </p>
-      <div className="flex flex-col w-full justify-center items-center md:px-4 lg:px-10">
+      <section className="flex flex-col w-full justify-center items-center md:px-4 lg:px-10">
         {example.map((experience, index) => {
           return (
             <Card
@@ -68,7 +68,7 @@ export default function Experiences() {
             />
           );
         })}
-      </div>
+      </section>
     </section>
   );
 }
