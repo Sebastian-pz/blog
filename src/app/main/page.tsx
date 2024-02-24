@@ -15,7 +15,7 @@ import WorkIcon from "@/public/svg/work.svg";
 
 export default function MainPage() {
   return (
-    <div className="m-auto border border-border-color w-[95%] mt-10 rounded-xl md:w-[80%] xl:w-[60%]">
+    <main className="m-auto border border-border-color w-[95%] mt-10 rounded-xl md:w-[80%] xl:w-[60%]">
       <Image
         src={bannerImage.src}
         alt="profile banner image"
@@ -87,6 +87,6 @@ export default function MainPage() {
       <Projects />
 
       <CV />
-    </div>
+    </main>
   );
 }

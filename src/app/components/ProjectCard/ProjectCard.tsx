@@ -24,6 +24,7 @@ export default function ProjectCard({
         src=""
         alt={`Imagen de ${title}`}
         className="w-[50px] h-[50px] sm:h-[100px] sm:w-[100px] lg:w-[200px] m-auto border mt-6 mb-2"
+        loading="lazy"
       />
       {link ? (
         <h2 className="font-medium">

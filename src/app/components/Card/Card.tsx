@@ -4,11 +4,18 @@ interface CardProps {
   link: string;
   dates: string;
   description: string;
+  responsibilities: Array<string>;
 }
 
-export default function Card({ title, link, dates, description }: CardProps) {
+export default function Card({
+  title,
+  link,
+  dates,
+  description,
+  responsibilities,
+}: CardProps) {
   return (
-    <div className="mb-5 w-full mx-auto ">
+    <article className="mb-5 w-full mx-auto ">
       <div className="shadow-[0px_100px_80px_rgba(0,_0,_0,_0.07),_0px_41.8px_33.42px_rgba(0,_0,_0,_0.05),_0px_22.3px_17.87px_rgba(0,_0,_0,_0.04),_0px_12.5px_10.02px_rgba(0,_0,_0,_0.04),_0px_6.7px_5.32px_rgba(0,_0,_0,_0.03),_0px_2.8px_2.21px_rgba(0,_0,_0,_0.02)] bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
         <div className="mb-8">
           <h3 className="text-gray-900 font-bold text-xl mb-2 hover:text-secondary-color">
@@ -25,8 +32,20 @@ export default function Card({ title, link, dates, description }: CardProps) {
             {dates}
           </p>
           <p className="text-gray-700 text-base">{description}</p>
+          <ul>
+            {responsibilities.map((responsibility, i) => {
+              return (
+                <li
+                  key={i}
+                  className="list-disc mx-4 mt-2 text-sm text-slate-500 hidden md:block"
+                >
+                  {responsibility}
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
