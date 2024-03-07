@@ -41,7 +41,7 @@ const example = [
 
 export default function Projects() {
   return (
-    <section className="mt-8 p-2">
+    <section className="my-8 p-2">
       <h2 className="text-center text-2xl font-bold">
         ¡Proyectos que he creado!
       </h2>
