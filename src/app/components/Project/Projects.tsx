@@ -12,15 +12,7 @@ export default function Projects() {
       </p>
       <div className="flex flex-wrap w-full justify-center items-center md:px-4 lg:px-10">
         {PROJECTS.map((project, index) => {
-          return (
-            <ProjectCard
-              title={project.title}
-              description={project.description}
-              dates={project.dates}
-              link={project.link}
-              key={index}
-            />
-          );
+          return <ProjectCard project={project} key={index} />;
         })}
       </div>
     </section>

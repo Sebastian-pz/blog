@@ -1,19 +1,15 @@
-import React from "react";
-
 interface propsComponent {
-  title: string;
-  description: string;
-  dates?: string;
-  link?: string;
-  tools?: string;
+  project: {
+    title: string;
+    link: string;
+    description: string;
+    src: string;
+  };
 }
 
-export default function ProjectCard({
-  title,
-  description,
-  dates,
-  link,
-}: propsComponent) {
+export default function ProjectCard({ project }: propsComponent) {
+  const { title, description, link, src } = project;
+
   return (
     <article
       className="
@@ -21,7 +17,7 @@ export default function ProjectCard({
     bg-white w-4/5 h-[200px] xl:w-[275px] xl:h-[320] m-3 hover:scale-110 duration-1000"
     >
       <img
-        src=""
+        src={src}
         alt={`Imagen de ${title}`}
         className="h-1/2 w-full border-b"
         loading="lazy"
