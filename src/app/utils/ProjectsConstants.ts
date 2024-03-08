@@ -1,40 +1,47 @@
 const PROJECTS = [
   {
     title: "Ducker",
-    description: "Trabajo como desarrollador web para un aplicativo e-commerce",
-    dates: "Enero 2023 - Julio 2023",
+    description: "Junto con mis compañeros creamos una copia de Twitter (X)",
+    dates: "Enero 2023 - Febrero 2023",
     link: "/",
+    src: "",
   },
   {
     title: "RockStar Place",
-    description: "Trabajo como desarrollador web para un aplicativo e-commerce",
+    description: "Creamos una aplicación para que los bares contrate bandas.",
     dates: "Enero 2023 - Julio 2023",
     link: "/",
+    src: "",
   },
   {
     title: "Rock Paper Scissors game",
-    description: "Trabajo como desarrollador web para un aplicativo e-commerce",
+    description: "El típico juego de piedra, papel o tijera.",
     dates: "Enero 2023 - Julio 2023",
     link: "/",
+    src: "",
   },
   {
     title: "Mi blog",
     description: "Trabajo como desarrollador web para un aplicativo e-commerce",
     dates: "Enero 2023 - Julio 2023",
     link: "/",
+    src: "",
   },
   {
     title: "Math Challenge",
-    description: "Trabajo como desarrollador web para un aplicativo e-commerce",
+    description:
+      "Un juego de retos matemáticos para poner a prueba tu rapidez mental.",
     dates: "Enero 2023 - Julio 2023",
     link: "/",
+    src: "",
   },
-  // {
-  //   title: "Tetris",
-  //   description: "Trabajo como desarrollador web para un aplicativo e-commerce",
-  //   dates: "Enero 2023 - Julio 2023",
-  //   link: "/",
-  // },
+  {
+    title: "Tetris Game",
+    description: "El juego básico de Tetris, inspirado en MiduDev.",
+    dates: "Enero 2023 - Julio 2023",
+    link: "/",
+    src: "",
+  },
 ];
 
-export default PROJECTS
+export default PROJECTS;
