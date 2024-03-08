@@ -23,15 +23,17 @@ export default function ProjectCard({
       <img
         src=""
         alt={`Imagen de ${title}`}
-        className="h-1/2 w-full border border-red-600"
+        className="h-1/2 w-full border-b"
         loading="lazy"
       />
       {link ? (
-        <h2 className="px-2 md:px-4 mt-2 font-medium">
+        <h2 className="px-2 md:px-4 mt-2 font-medium hover:text-secondary-color">
           <a href={link}>{title}</a>
         </h2>
       ) : (
-        <h2 className="px-2 md:px-4 mt-2 font-medium">{title}</h2>
+        <h2 className="px-2 md:px-4 mt-2 font-medium hover:text-secondary-color">
+          {title}
+        </h2>
       )}
       <p className="px-2 md:px-4 text-sm text-slate-600">{description}</p>
     </article>
