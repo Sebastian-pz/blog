@@ -1,13 +1,11 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import PDFIcon from "@/public/svg/pdf.svg";
 12;
 export default function CV() {
   return (
-    <section className="flex flex-col justify-center items-center text-xl font-semibold border-slate-300 border rounded-3xl m-3">
-      <h3 className="my-6">Puedes descargar mi CV a continuación</h3>
+    <section className="w-1/4 min-w-[230px] m-auto flex p-3 flex-col text-center justify-center items-center text-xl font-semibold bg-bg-color border-slate-300 border rounded-3xl my-6">
+      <h3 className="my-3">Descarga mi CV</h3>
       <a
         href="https://drive.google.com/uc?export=download&id=1qzGvyiT6o4QuRhAkFRl79q_JWNW2nvDQ"
         target="__blank"
@@ -17,7 +15,7 @@ export default function CV() {
           alt="PDF Icon"
           width="120"
           height="120"
-          className="m-auto"
+          className="m-auto bg-secondary-color hover:bg-primary-color rounded-full p-3 duration-100"
         />
       </a>
     </section>
