@@ -1,11 +1,10 @@
 import { postInterface, PostTypes } from "./interfaces";
 import PersonImage from "@/public/person.jpg";
 import BlogPostMedia from "@/public/blog-post.webp";
-import { uid } from "uid";
 
 export const posts: Array<postInterface> = [
   {
-    id: uid(),
+    id: "1d0d966b84354712b92c359cc28a06c2",
     type: PostTypes.experience,
     title:
       "¡💥 Trabajé en la creación de una aplicación fullstack para gestionar ventas e inventarios 💥!",
@@ -32,7 +31,7 @@ export const posts: Array<postInterface> = [
     creationDate: "01/16/2024",
   },
   {
-    id: uid(),
+    id: "fc2aaada30594ed9a39fa1928d267655",
     type: PostTypes.opinion,
     title: "¿Pasar como parámetro funciones con nombre al useEffect 🤔?",
     mediaType: "image",
@@ -47,7 +46,7 @@ export const posts: Array<postInterface> = [
       "✅ Las funciones nombradas mejoran el seguimiento de la pila (stack trace), lo que mejora la depuración y el registro de errores.",
       "✅ Los comentarios no deben reemplazar el nombre de una función; deben aumentar el nombre de la función en casos excepcionales en los que el nombre por sí solo no sea suficiente.",
       "También están las personas que se quejan de que ahora los useEffect gracias a este cambio se vuelven demasiado complejos... Eso de encontrarles un nombre correcto es más complicado de lo que parece 🤣.",
-      "Por mi parte, creo que prefiero seguir utilizando un arrow function con una función dentro que posteriormente llamaré, quizá no es la solución más óptima, pero considero que es bastante decente y legible 🤯.",
+      "Por mi parte, creo que prefiero seguir utilizando un arrow function con una función dentro que posteriormente llamaré. Quizá no es la solución más óptima, pero considero que es bastante decente y legible 🤯.",
       "Créditos a Cory House @housecor en X, de donde vi esta publicación.",
       "¿Cuál es tu opinión al respecto? ¿Está bien utilizar funciones nombradas o es mejor utilizar las típicas funciones flecha?",
 
@@ -59,7 +58,7 @@ export const posts: Array<postInterface> = [
     creationDate: "02/17/2024",
   },
   {
-    id: uid(),
+    id: "7a46a12b32e4461e911ef2e941303a33",
     type: PostTypes.project,
     title: "¡El blog está casi listo 🚀👨🏻‍🚀!",
     mediaType: "image",
@@ -80,7 +79,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/16/2023",
   },
   {
-    id: uid(),
+    id: "3ae67a3496d74fdfa5c16f6cbef1ed73",
     type: PostTypes.project,
     title:
       "¿Cómo fue trabajar con VBA por primera vez en la regional de una multinacional 😬?",
@@ -111,7 +110,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/28/2023",
   },
   {
-    id: uid(),
+    id: "f9cac5ffb2f5476b909abcd56e6fe641",
     type: PostTypes.opinion,
     title: "The Commit Show de BettaTech y su charla con MiduDev",
     mediaType: "video",
@@ -130,7 +129,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
   {
-    id: uid(),
+    id: "89ad3aea22014a68963c69621baf1ea2",
     type: PostTypes.project,
     title: "Creé una aplicación del juego de piedra, papel o tijera",
     mediaType: "image",
@@ -150,7 +149,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
   {
-    id: uid(),
+    id: "5e14c5bb00be4450b2376eda189a64fb",
     type: PostTypes.project,
     title: "¡Creé una aplicación de retos matemáticos con tiempo 👨🏻‍🔬⌛!",
     mediaType: "video",
@@ -171,7 +170,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
   {
-    id: uid(),
+    id: "5c9ef6fa3e12415ca8a853150643b993",
     type: PostTypes.experience,
     title:
       "¡Trabajé para una multinacional utilizando programación con VBA 🦖!",
@@ -196,7 +195,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/26/2023",
   },
   {
-    id: uid(),
+    id: "930a849815984e8a95d4f54f132aac29",
     type: PostTypes.experience,
     title:
       "¡Creé un mini sistema de ventas, inventarios y nominas utilizando programación en VBA 🧮!",
@@ -217,7 +216,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/26/2023",
   },
   {
-    id: uid(),
+    id: "6957b082e06f4ba0a18b377143ce407b",
     type: PostTypes.experience,
     title:
       "Trabajé como programador fullstack en la creación de un e-commerce 🏪",
@@ -238,7 +237,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/27/2023",
   },
   {
-    id: uid(),
+    id: "2bb2193700824b11bcc33c9dc5dd3c65",
     type: PostTypes.experience,
     title: "Trabajé como programador fullstack para la UCA 🎓",
     mediaType: "video",
@@ -266,7 +265,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/27/2023",
   },
   {
-    id: uid(),
+    id: "3036dd4b2fbb4b0496571af11af2aa6d",
     type: PostTypes.project,
     title: "¡Hice mi trabajo de grado con programación!",
     mediaType: "video",
@@ -301,7 +300,7 @@ export const posts: Array<postInterface> = [
     creationDate: "11/03/2023",
   },
   {
-    id: uid(),
+    id: "a17fbef4cb244ce3b2a107bf7fde4482",
     type: PostTypes.project,
     title: "¡Creamos una red social inspirada en Twitter (X) 🦆!",
     mediaType: "video",
