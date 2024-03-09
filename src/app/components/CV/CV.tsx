@@ -15,7 +15,7 @@ export default function CV() {
           alt="PDF Icon"
           width="120"
           height="120"
-          className="m-auto bg-secondary-color hover:bg-primary-color rounded-full p-3 duration-100"
+          className="m-auto bg-primary-color-200 hover:bg-primary-color-300 rounded-full p-3 duration-100"
         />
       </a>
     </section>

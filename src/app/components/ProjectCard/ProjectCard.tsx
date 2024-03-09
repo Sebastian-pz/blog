@@ -23,11 +23,11 @@ export default function ProjectCard({ project }: propsComponent) {
         loading="lazy"
       />
       {link ? (
-        <h2 className="px-2 md:px-4 mt-2 font-medium hover:text-secondary-color">
+        <h2 className="px-2 md:px-4 mt-2 font-medium hover:text-primary-color-500">
           <a href={link}>{title}</a>
         </h2>
       ) : (
-        <h2 className="px-2 md:px-4 mt-2 font-medium hover:text-secondary-color">
+        <h2 className="px-2 md:px-4 mt-2 font-medium hover:text-primary-color-500">
           {title}
         </h2>
       )}

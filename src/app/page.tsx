@@ -15,13 +15,13 @@ import WorkIcon from "@/public/svg/work.svg";
 
 export default function MainPage() {
   return (
-    <main className="m-auto border border-border-color w-[95%] mt-10 rounded-xl md:w-[80%] xl:w-[60%]">
+    <main className="m-auto border border-primary-color-800 w-[95%] mt-10 rounded-xl md:w-[80%] xl:w-[60%]">
       <Image
         src={bannerImage.src}
         alt="profile banner image"
         width="1280"
         height="600"
-        className="rounded-t-xl border-border-color border-b-2 object-contain"
+        className="rounded-t-xl border-primary-color-800 border-b-2 object-contain"
       />
       <div className="flex justify-center md:justify-between  items-center p-6 lg:px-12">
         <div className="flex items-center justify-center ">
@@ -43,7 +43,7 @@ export default function MainPage() {
         </div>
         <a
           href="mailto:spezuluaga@gmail.com"
-          className="border bg-secondary-color p-2 rounded-lg hidden md:inline   h-10 hover:bg-[#3a2685] text-white"
+          className="border bg-primary-color-500 p-2 rounded-lg hidden md:inline   h-10 hover:bg-primary-color-700 text-white"
         >
           ¡Contácteme!
         </a>
@@ -60,7 +60,7 @@ export default function MainPage() {
         </p>
       </section>
 
-      <section className="flex justify-evenly border-b border-border-color">
+      <section className="flex justify-evenly border-b border-primary-color-800">
         <abbr title="Actualmente abierto a trabajar" className="no-underline">
           <Svg
             label="Disponible"
