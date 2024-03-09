@@ -1,9 +1,11 @@
+import defaultProjectMini from "@/public/project/mini-defaultProject.webp";
+
 interface propsComponent {
   project: {
     title: string;
     link: string;
     description: string;
-    src: string;
+    src?: string;
   };
 }
 
@@ -17,14 +19,18 @@ export default function ProjectCard({ project }: propsComponent) {
     bg-white w-4/5 max-w-[300px] h-[200px] xl:w-[275px] xl:h-[320] m-3 hover:scale-110 duration-1000"
     >
       <img
-        src={src}
+        src={src || defaultProjectMini.src}
         alt={`Imagen de ${title}`}
         className="h-1/2 w-full border-b"
         loading="lazy"
+        width="500"
+        height="166"
       />
       {link ? (
         <h2 className="px-2 md:px-4 mt-2 font-medium hover:text-primary-color-500">
-          <a href={link}>{title}</a>
+          <a href={link} target="_blank">
+            {title}
+          </a>
         </h2>
       ) : (
         <h2 className="px-2 md:px-4 mt-2 font-medium hover:text-primary-color-500">
