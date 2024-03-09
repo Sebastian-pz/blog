@@ -8,7 +8,8 @@ export default function Experiences() {
         Experiencia profesional
       </h2>
       <p className="text-center my-4">
-        ¡Si quieres ver más info puedes hacer click en ella!
+        Actualmente se está trabajando en conectar las experiencias con los
+        posts del blog correspondientes
       </p>
       <section className="flex flex-col w-full justify-center items-center md:px-4 lg:px-10">
         {EXPERIENCES.map((experience, index) => {
