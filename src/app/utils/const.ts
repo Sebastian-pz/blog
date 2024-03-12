@@ -1,13 +1,14 @@
 import { postInterface, PostTypes } from "./interfaces";
 import PersonImage from "@/public/person.jpg";
 import BlogPostMedia from "@/public/blog-post.webp";
+import useEffectImg from "@/public/blog/useEffect.webp";
 
 export const posts: Array<postInterface> = [
   {
     id: "1d0d966b84354712b92c359cc28a06c2",
     type: PostTypes.experience,
     title:
-      "¡💥 Trabajé en la creación de una aplicación fullstack para gestionar ventas e inventarios 💥!",
+      "¡💥 Trabajé para BB- Bar en la creación de una aplicación fullstack para gestionar ventas e inventarios 💥!",
     mediaType: "video",
     media: "https://www.youtube.com/embed/fL83GTilWjw",
     image: BlogPostMedia,
@@ -35,7 +36,7 @@ export const posts: Array<postInterface> = [
     type: PostTypes.opinion,
     title: "¿Pasar como parámetro funciones con nombre al useEffect 🤔?",
     mediaType: "image",
-    image: PersonImage,
+    image: useEffectImg,
     description: [
       "Utilizar funciones con nombres dentro del hook useEffect de react suena un poco... raro ¿no? Pues no, o al menos no lo es para Cory House.",
       "Hace relativamente poco vi una publicación en X que hablaba de utilizar funciones con nombre dentro del hook useEffect en React (sí, como primer parámetro). Me pareció interesante la idea, así que me adentré en el hilo para ver qué tenían que decir al respecto.",

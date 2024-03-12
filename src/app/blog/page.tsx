@@ -8,13 +8,13 @@ import PostNavigation from "@/components/PostsNavigation/PostNavigation";
 
 export default async function Home() {
   return (
-    <main className="home">
-      <section className="">
+    <main className="home flex justify-center gap-x-4">
+      <section className="lg:w-3/4 md:w-2/3">
         <MainPost />
         <PostNavigation />
         <Posts />
       </section>
-      <section className="">
+      <section className="lg:w-1/4 hidden lg:block mt-10">
         <MainInfo />
       </section>
     </main>
