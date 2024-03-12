@@ -1,13 +1,12 @@
 import Link from "next/link";
 import { getMainPost } from "@/utilities/const";
-import { useEffect } from "react";
 
 export default function MainPost() {
   const mainPost = getMainPost();
 
   return (
     <div className="home__mainPost text-center border-b-2 border-slate-200 pb-6">
-      <h2 className="text-3xl font-bold mb-3">
+      <h2 className="text-3xl font-bold mb-3 hover:text-primary-color-600">
         <Link href="/post/0">{mainPost.title}</Link>
       </h2>
       <img
