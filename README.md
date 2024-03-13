@@ -44,9 +44,5 @@
    npm run dev
    ```
 
-5. Comienza a codear
+5. ¡Comienza a codear!
 
-!TODO
-
-1. Corregir estilos en main
-2. Insertar links en main
