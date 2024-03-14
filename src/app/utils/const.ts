@@ -241,18 +241,22 @@ export const posts: Array<postInterface> = [
     id: "6957b082e06f4ba0a18b377143ce407b",
     type: PostTypes.experience,
     title:
-      "Trabajé como programador fullstack en la creación de un e-commerce 🏪",
+      "Trabajé como programador fullstack para NutriciónVital en la creación de un e-commerce 🏪",
     mediaType: "video",
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
     description: [
-      "Trabajé como programador fullstack en la creación de una plataforma e-commerce de una empresa de suplementos alimentarios y de servicio de ventas de planes alimentarios.",
-      "Se me contactó a través de mis contactos para ingresar a ser parte de un grupo de programadores con la finalidad de desarrollar un e-commerce para la empresa argentina Nutrición Vital.",
-      "Lo que quería la empresa era expandirse al mercado digital y ofrecerle a sus clientes la opción de visualizar sus productos y comprarlos en línea, con la posibilidad de recibirlos directamente en sus domicilios, para ello, se planteó la creación de un e-commerce desde cero.",
+      "Trabajé como programador fullstack en la creación de una plataforma e-commerce de suplementos alimentarios y de servicio de ventas de planes alimentarios.",
+
+      "Se me contactó para ingresar como fullstack en la creación de una aplicación e-commerce para la empresa argentina Nutrición Vital junto con otros programadores con el mismo rol.",
+
+      "Lo que quería la empresa era expandirse al mercado digital y ofrecerle a sus clientes la opción de visualizar sus productos y comprarlos en línea, con la posibilidad de recibirlos directamente en sus domicilios. Para ello, se planteó la creación de un e-commerce desde cero que tuviera todas estás herramientas.",
+
       "Inicialmente, mis responsabilidades comprendieron la creación y optimización del código y del funcionamiento del aplicativo web.",
-      "Como fullstack intervine en todo el desarrollo de la aplicación, desde las bases de datos, la creación de la API y la creación del apartado visual de la aplicación (front).",
-      "Las tecnologías que utilicé durante el desarrollo de la aplicación fueron TypeScript, NodeJS, Express, React, Bootstrap, Redux, JWT, MercadoPago, gestor de envíos de emails, MongoDB con mongoose.",
-      "Entre otras tecnologías.",
+
+      "Como fullstack intervine en todo el desarrollo de la aplicación, desde las bases de datos, la creación de la API, seguridad y la creación del apartado visual de la aplicación (front).",
+
+      "Las tecnologías que utilicé durante el desarrollo de la aplicación fueron TypeScript, NodeJS, Express, React, Bootstrap, Redux, JWT, MercadoPago, gestor de envíos de emails, MongoDB con mongoose, entre otras.",
     ],
 
     author: "Sebastian Pérez",
