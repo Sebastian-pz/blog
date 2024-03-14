@@ -181,16 +181,26 @@ export const posts: Array<postInterface> = [
     image: PersonImage,
     description: [
       "Debido a contactos en mi universidad, una empresa se comunicó conmigo para ayudarles a optimizar sus libros de Excel utilizando programación (VBA) a través de macros.",
-      "Inicialmente, para 'Empresa A' (como la llamaré para salvaguardar su privacidad), una empresa internacional muy grande en el país, me contactó específicamente una regional para ayudar con un proceso de transición de plataformas por el que estaban pasando (no lo estaban llevando muy bien).",
-      "Había mucha información dispersa en muchas partes, muchos archivos y muchas plataformas.",
-      "Mi función fue unificar la información de diferentes Excels y plataformas que tenían los datos de los perfiles de los empleados y crear un algoritmo que se encargara de validar los cargos (comparar el perfil del cargo contra el perfil del empleado).",
+
+      "Inicialmente, para 'Empresa A' (como la llamaré para salvaguardar su privacidad), una empresa internacional muy grande en el país, me contactó específicamente una regional para ayudar con un proceso de transición de plataformas por el que estaban pasando (no lo estaban llevando muy bien y era un proceso que se tenía que llevar a cabo de manera urgente).",
+
+      "Su problema de manera general era que había mucha información dispersa en muchas partes, muchos archivos y muchas plataformas.",
+
+      "Mi función entonces fue unificar la información de diferentes Excels y plataformas de manera automática utilizando programación, tomando diferentes archivos juntando la información de los empleados y utilizando diferentes algoritmos para confirmar si ellos cumplían con los requerimientos del cargo que ocupaban.",
+
       "En el caso de que un empleado NO cumpliera con el perfil del cargo, lo que hacía era alertar al responsable de recursos humanos y lo ponía en una lista de personas que no eran válidas. De ahí se notificaba a cada jefe de sección para que se encargara de mandar al empleado a completar su perfil si el caso así lo requería.",
+
       "En el caso de que el empleado sí cumpliera con el perfil, se añadía a la lista de los que están en orden o al corriente con la empresa.",
+
       "De estas dos listas, también se sacaron estadísticas que permitían definir cuáles eran los sectores más afectados y cuáles eran los requisitos que con mayor frecuencia no eran cumplidos correctamente.",
-      "Después de haber desarrollado todo el algoritmo para la empresa en VBA, logré optimizar los tiempos de consulta de información de los empleados en más de un 99% (pues antes era buscar Excel por Excel y plataforma por plataforma). Procesos de búsqueda que podían demorar 1 hora y media pasaron a tardar lo de un par de clics.",
-      "De esto, cabe resaltar que la empresa intervenida tenía serios problemas en cuanto al cumplimiento de sus perfiles y gracias al desarrollo del programa se logró ir mejorando progresivamente este punto de la empresa para poder responder de mejor manera a sus procesos de auditorias.",
-      "Mira el post donde hablo acerca de mi experiencia trabajando para esta empresa:",
-      "link",
+
+      "Una vez esto se validaba (empleado vs perfil de cargo) se almacenaban los archivos completos en nueva plataforma y toda la información de cada empleado quedaba disponible en un solo lugar.",
+
+      "En general no era difícil, solo que eran demasiados archivos que revisar uno a uno, de ahí el por qué necesitaban automatizar ese proceso.",
+
+      "Después de haber desarrollado todo el algoritmo para la empresa en VBA, logré optimizar los tiempos de consulta de información de los empleados en más de un 99% (pues antes era buscar Excel por Excel y plataforma por plataforma). Pasando de demorar más de 1 hora por empleado a tardar lo de un par de clics.",
+
+      "De esto, cabe resaltar que la empresa intervenida tenía serios problemas en cuanto al cumplimiento de sus perfiles y gracias al desarrollo del programa se logró ir mejorando progresivamente este punto y así poder responder de mejor manera a sus procesos de auditorias.",
     ],
 
     author: "Sebastian Pérez",
