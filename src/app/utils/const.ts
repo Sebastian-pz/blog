@@ -137,9 +137,9 @@ export const posts: Array<postInterface> = [
     image: PersonImage,
     description: [
       "Creé una aplicación web inspirada en el popular juego de piedra, papel o tijera para poner a prueba mis conocimientos en mis tiempos libres de la universidad y de mis trabajos freelance.",
-      "Inicialmente, quería practicar mis habilidades de frontend y me topé con este reto en *frontend mentor*, únicamente estaba enfocado en desarrollar el apartado visual, sin embargo, en mi caso lo que hice fue llevarlo un paso más allá y darle la lógica necesaria para poder jugar realmente.",
-      "Como tal, lo primero fue desarrollar el apartado visual para probar mis habilidades frontend. Como lo dije anteriormente, me metí en este reto para mejorar mi entendimiento del front, lo que quería era poner a prueba mis conocimientos de vanilla CSS y mejorar en lo que tuviese que hacerlo.",
-      "Una vez estuvo terminado el apartado visual, lo que hice fue meterme con el manejo de la lógica. En otras palabras, le metí JS al HTML y CSS, o sea, se le añadió la interactividad.",
+      "Inicialmente, quería practicar mis habilidades de frontend y me topé con este reto en *frontend mentor*, únicamente estaba enfocado en desarrollar el apartado visual, sin embargo, en mi caso lo que hice fue llevarlo un paso más allá y darle la lógica necesaria para poder jugar.",
+      "Como tal, lo primero fue desarrollar el apartado visual para probar mis habilidades de CSS. Como lo dije anteriormente, me metí en este reto para mejorar mi entendimiento del front, lo que quería era poner a prueba mis conocimientos de vanilla CSS y mejorar en lo que tuviese que hacerlo.",
+      "Una vez estuvo terminado el apartado visual, sentí que lo podía podía hacer funcional sin mucho esfuerzo, así que lo que hice fue meterme con el manejo de la lógica. En otras palabras, le metí JS al HTML y CSS.",
       "Realmente fue un proyecto divertido de realizar que me ayudó a mejorar mi código, mis estilos y buenas prácticas.",
       "Para desarrollar el proyecto utilicé las tecnologías: TypeScript como lenguaje de programación, Vite como herramienta de compilación, React como librería principal de desarrollo y CSS vanilla para estilizar la aplicación.",
       "Si quieres ver el juego, acá está: ",
