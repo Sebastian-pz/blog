@@ -157,10 +157,11 @@ export const posts: Array<postInterface> = [
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
     description: [
-      "¡Creé un juego de retos de rapidez matemática! Con la finalidad de mejorar el tiempo de respuesta y la asertividad de los estudiantes de mi universidad frente a problemas matemáticos básicos, creé una aplicación para que entrenaran.",
+      "¡Creé un juego de retos de rapidez matemática! Con la finalidad de mejorar el tiempo de respuesta y la asertividad de los estudiantes de mi universidad frente a problemas matemáticos básicos.",
       "La idea surgió de un momento en mis clases de universidad donde querían poner a prueba la fluidez con la que diferentes estudiantes respondíamos a preguntas matemáticas, en lo personal me fue bien (#humildad), pero a mis compañeros no tanto.",
-      "Debido a esto, me surgió la idea de crear una aplicación para practicar la rapidez con la que puedes responder a preguntas matemáticas básicas relacionadas con las operaciones de suma, resta, multiplicación y división, principalmente.",
+      "Debido a esto, me surgió la idea de crear una aplicación para practicar la rapidez con la que puedes responder a preguntas matemáticas básicas (Relacionadas con las operaciones de suma, resta, multiplicación y división).",
       "Hice que este juego tuviera un sistema de puntuación para ir observando la mejora de los jugadores y que así estos pudieran ir comparando su avance mientras juegan.",
+      "Sinceramente es un proyecto que quiero retomar a día de hoy, es algo que me parece interesante y puedo escalarlo un poco más simplemente por entretenimiento.",
       "¡Las puntuaciones se van guardando por persona y quedan disponibles para cuando el jugador decida volver a entrar a jugar!",
       "Si quieres acceder al proyecto, acá está:",
       "link",
