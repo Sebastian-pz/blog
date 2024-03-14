@@ -206,12 +206,22 @@ export const posts: Array<postInterface> = [
     image: PersonImage,
     description: [
       "Intervine en un bar para mejorar su situación y su gestión. La empresa no contaba con ningún sistema de información, no tenía ni inventarios, ni nominas, ni libros contables, ni libros de proveedores, etc.",
+
       "Inicialmente mi intervención estuvo enfocada en crear un archivo temporal (un algoritmo) para el manejo de las ventas, inventarios y nominas (esto debido a que la empresa ya había pagado para la realización de un software, entonces solo utilizarían este Excel por un periodo corto de tiempo).",
+
       "Me encargué de crear los algoritmos necesarios para determinar las pagas de cada mesa, la automatización de los descuentos de inventarios y el registro automático del ingreso de efectivo o el incremento en cuentas por cobrar (cosas contables).",
-      "Esa fue mi función, sin embargo, surgió la situación de que es muy común que estas cuentas se paguen por separado, por lo que se buscó implementar un algoritmo bajo el cual las mesas se pudiesen pagar de diferentes maneras.",
-      "Por poner un ejemplo, en una mesa pidieron 10 botellas de agua, y una persona viene a pagar solo 3 de ellas (es decir, por separado), el siguiente reto, estuvo enfocado en hacer todo eso posible utilizando solo Excel y sus macros, esto debería ser posible y generar un registro de ventas, que se descuente de inventarios y que la cuenta de la mesa ya no sean 10 botellas, sino 7.",
-      "Spoiler: suena muy fácil utilizando lenguajes de programación convencionales, pero utilizando Excel y sus macros... Jajaja, al inicio me comió un poco la cabeza.",
-      "Realmente el desarrollo de este algoritmo no tuvo una mayor complejidad, fue adaptarse a las necesidades del local y escribir código para cumplir con ello.",
+
+      "Sí, además de utilizar mis conocimientos como programador, también utilicé mis conocimientos como administrador - contador financiero para ayudarles con sus problemas (que eran bastantes como mencioné anteriormente).",
+
+      "Una vez desarrollé el Excel con las macros para que se encargaran de estas funciones logré observar que es muy común que las cuentas en este tipo de negocios se paguen por separado, por lo que sí bien mi trabajo era funcional y era lo que me habían pedido, decidí personalizarlo aún más para hacerles la vida más fácil.",
+
+      "Así que sí, intervine de muchas maneras en este bar, y el logro más importante que conseguí es que ahora tienen las herramientas necesarias para poder crear lo básico de los registros contables necesarios y responder así ante la DIAN e IyC.",
+
+      "Disfruté mucho realizando este trabajo, tanto como programador como financiero, y sentí que realmente hice un aporte relevante para una empresa.",
+
+      "En cuanto al desarrollo, principalmente se utilizó Excel y sus macros programadas en VBA (después me enteré que también se puede programar en Excel con python 🤦🏻‍♂️, será para la proxima entonces), realmente el desarrollo de este algoritmo no tuvo una mayor complejidad, fue adaptarse a las necesidades del local y escribir código para cumplir con ello.",
+
+      "Les deseo muchos éxitos, y gracias por la oportunidad brindada.",
     ],
 
     author: "Sebastian Pérez",
