@@ -91,13 +91,13 @@ export const posts: Array<postInterface> = [
 
       "Inicialmente, si no has leído el artículo de mi experiencia como desarrollador para la empresa, acá te dejo el link para que lo veas antes:",
 
-      "LINK",
+      "Acá irá el link cuando esté actualizado el blog 😬",
 
       "Como mencioné en ese artículo, mi experiencia trabajando para esta empresa fue curiosa, inicialmente se me contacto evitando en la medida de lo posible brindarme mayores informaciones, sabía que mi trabajo consistía en unificar información, pero nada en detalle.",
 
-      "Fue bastante curioso trabajar con una empresa no desde su sector de TI, sino más bien desde el sector legal - recursos humanos, es muy diferente a lo que había trabajado con anterioridad, hay mucho en juego y los procesos se llevan de maneras muy diversas.",
+      "Fue bastante curioso trabajar con una empresa ayudando directamente al sector de RR.HH en el entorno legal, es muy diferente a lo que había hecho con anterioridad, había mucho en juego y los procesos se llevaban de maneras muy diversas. También fue la vez con la que más datos he trabajado y donde todos debían estar bien manejados y optimizados.",
 
-      "También el resultado de este trabajo me hizo sentir realizado, lograr que a través de programación un proceso que es realmente tedioso y tardío se convierta en cosa de un par de clics, es algo que realmente me parece reconfortante, comparar el hecho de que antes para obtener la información de un empleado de la regional se demoraban horas literalmente y ahora se pueda conseguir digitando su nombre y dando un clic es algo que me emociona.",
+      "El resultado de este trabajo me hizo sentir realizado, lograr que a través de programación un proceso que es realmente tedioso y tardío se convierta en cosa de un par de clics, es algo que realmente me parece reconfortante, comparar el hecho de que antes para obtener la información de un empleado de la regional se demoraban horas (literalmente) y ahora se pueda conseguir en un par de segundos, digitando su nombre y dando un clic es algo que me emociona.",
 
       "Sinceramente, consideraba que iba a ser un proceso más difícil; sin embargo, por mis conocimientos previos en programación no me tomó tanto tiempo adecuarme a utilizar VBA.",
 
