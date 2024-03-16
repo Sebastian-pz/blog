@@ -91,13 +91,13 @@ export const posts: Array<postInterface> = [
 
       "Inicialmente, si no has leído el artículo de mi experiencia como desarrollador para la empresa, acá te dejo el link para que lo veas antes:",
 
-      "LINK",
+      "Acá irá el link cuando esté actualizado el blog 😬",
 
       "Como mencioné en ese artículo, mi experiencia trabajando para esta empresa fue curiosa, inicialmente se me contacto evitando en la medida de lo posible brindarme mayores informaciones, sabía que mi trabajo consistía en unificar información, pero nada en detalle.",
 
-      "Fue bastante curioso trabajar con una empresa no desde su sector de TI, sino más bien desde el sector legal - recursos humanos, es muy diferente a lo que había trabajado con anterioridad, hay mucho en juego y los procesos se llevan de maneras muy diversas.",
+      "Fue bastante curioso trabajar con una empresa ayudando directamente al sector de RR.HH en el entorno legal, es muy diferente a lo que había hecho con anterioridad, había mucho en juego y los procesos se llevaban de maneras muy diversas. También fue la vez con la que más datos he trabajado y donde todos debían estar bien manejados y optimizados.",
 
-      "También el resultado de este trabajo me hizo sentir realizado, lograr que a través de programación un proceso que es realmente tedioso y tardío se convierta en cosa de un par de clics, es algo que realmente me parece reconfortante, comparar el hecho de que antes para obtener la información de un empleado de la regional se demoraban horas literalmente y ahora se pueda conseguir digitando su nombre y dando un clic es algo que me emociona.",
+      "El resultado de este trabajo me hizo sentir realizado, lograr que a través de programación un proceso que es realmente tedioso y tardío se convierta en cosa de un par de clics, es algo que realmente me parece reconfortante, comparar el hecho de que antes para obtener la información de un empleado de la regional se demoraban horas (literalmente) y ahora se pueda conseguir en un par de segundos, digitando su nombre y dando un clic es algo que me emociona.",
 
       "Sinceramente, consideraba que iba a ser un proceso más difícil; sin embargo, por mis conocimientos previos en programación no me tomó tanto tiempo adecuarme a utilizar VBA.",
 
@@ -137,9 +137,9 @@ export const posts: Array<postInterface> = [
     image: PersonImage,
     description: [
       "Creé una aplicación web inspirada en el popular juego de piedra, papel o tijera para poner a prueba mis conocimientos en mis tiempos libres de la universidad y de mis trabajos freelance.",
-      "Inicialmente, quería practicar mis habilidades de frontend y me topé con este reto en *frontend mentor*, únicamente estaba enfocado en desarrollar el apartado visual, sin embargo, en mi caso lo que hice fue llevarlo un paso más allá y darle la lógica necesaria para poder jugar realmente.",
-      "Como tal, lo primero fue desarrollar el apartado visual para probar mis habilidades frontend. Como lo dije anteriormente, me metí en este reto para mejorar mi entendimiento del front, lo que quería era poner a prueba mis conocimientos de vanilla CSS y mejorar en lo que tuviese que hacerlo.",
-      "Una vez estuvo terminado el apartado visual, lo que hice fue meterme con el manejo de la lógica. En otras palabras, le metí JS al HTML y CSS, o sea, se le añadió la interactividad.",
+      "Inicialmente, quería practicar mis habilidades de frontend y me topé con este reto en *frontend mentor*, únicamente estaba enfocado en desarrollar el apartado visual, sin embargo, en mi caso lo que hice fue llevarlo un paso más allá y darle la lógica necesaria para poder jugar.",
+      "Como tal, lo primero fue desarrollar el apartado visual para probar mis habilidades de CSS. Como lo dije anteriormente, me metí en este reto para mejorar mi entendimiento del front, lo que quería era poner a prueba mis conocimientos de vanilla CSS y mejorar en lo que tuviese que hacerlo.",
+      "Una vez estuvo terminado el apartado visual, sentí que lo podía podía hacer funcional sin mucho esfuerzo, así que lo que hice fue meterme con el manejo de la lógica. En otras palabras, le metí JS al HTML y CSS.",
       "Realmente fue un proyecto divertido de realizar que me ayudó a mejorar mi código, mis estilos y buenas prácticas.",
       "Para desarrollar el proyecto utilicé las tecnologías: TypeScript como lenguaje de programación, Vite como herramienta de compilación, React como librería principal de desarrollo y CSS vanilla para estilizar la aplicación.",
       "Si quieres ver el juego, acá está: ",
@@ -157,10 +157,11 @@ export const posts: Array<postInterface> = [
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
     description: [
-      "¡Creé un juego de retos de rapidez matemática! Con la finalidad de mejorar el tiempo de respuesta y la asertividad de los estudiantes de mi universidad frente a problemas matemáticos básicos, creé una aplicación para que entrenaran.",
+      "¡Creé un juego de retos de rapidez matemática! Con la finalidad de mejorar el tiempo de respuesta y la asertividad de los estudiantes de mi universidad frente a problemas matemáticos básicos.",
       "La idea surgió de un momento en mis clases de universidad donde querían poner a prueba la fluidez con la que diferentes estudiantes respondíamos a preguntas matemáticas, en lo personal me fue bien (#humildad), pero a mis compañeros no tanto.",
-      "Debido a esto, me surgió la idea de crear una aplicación para practicar la rapidez con la que puedes responder a preguntas matemáticas básicas relacionadas con las operaciones de suma, resta, multiplicación y división, principalmente.",
+      "Debido a esto, me surgió la idea de crear una aplicación para practicar la rapidez con la que puedes responder a preguntas matemáticas básicas (Relacionadas con las operaciones de suma, resta, multiplicación y división).",
       "Hice que este juego tuviera un sistema de puntuación para ir observando la mejora de los jugadores y que así estos pudieran ir comparando su avance mientras juegan.",
+      "Sinceramente es un proyecto que quiero retomar a día de hoy, es algo que me parece interesante y puedo escalarlo un poco más simplemente por entretenimiento.",
       "¡Las puntuaciones se van guardando por persona y quedan disponibles para cuando el jugador decida volver a entrar a jugar!",
       "Si quieres acceder al proyecto, acá está:",
       "link",
@@ -180,16 +181,26 @@ export const posts: Array<postInterface> = [
     image: PersonImage,
     description: [
       "Debido a contactos en mi universidad, una empresa se comunicó conmigo para ayudarles a optimizar sus libros de Excel utilizando programación (VBA) a través de macros.",
-      "Inicialmente, para 'Empresa A' (como la llamaré para salvaguardar su privacidad), una empresa internacional muy grande en el país, me contactó específicamente una regional para ayudar con un proceso de transición de plataformas por el que estaban pasando (no lo estaban llevando muy bien).",
-      "Había mucha información dispersa en muchas partes, muchos archivos y muchas plataformas.",
-      "Mi función fue unificar la información de diferentes Excels y plataformas que tenían los datos de los perfiles de los empleados y crear un algoritmo que se encargara de validar los cargos (comparar el perfil del cargo contra el perfil del empleado).",
+
+      "Inicialmente, para 'Empresa A' (como la llamaré para salvaguardar su privacidad), una empresa internacional muy grande en el país, me contactó específicamente una regional para ayudar con un proceso de transición de plataformas por el que estaban pasando (no lo estaban llevando muy bien y era un proceso que se tenía que llevar a cabo de manera urgente).",
+
+      "Su problema de manera general era que había mucha información dispersa en muchas partes, muchos archivos y muchas plataformas.",
+
+      "Mi función entonces fue unificar la información de diferentes Excels y plataformas de manera automática utilizando programación, tomando diferentes archivos juntando la información de los empleados y utilizando diferentes algoritmos para confirmar si ellos cumplían con los requerimientos del cargo que ocupaban.",
+
       "En el caso de que un empleado NO cumpliera con el perfil del cargo, lo que hacía era alertar al responsable de recursos humanos y lo ponía en una lista de personas que no eran válidas. De ahí se notificaba a cada jefe de sección para que se encargara de mandar al empleado a completar su perfil si el caso así lo requería.",
+
       "En el caso de que el empleado sí cumpliera con el perfil, se añadía a la lista de los que están en orden o al corriente con la empresa.",
+
       "De estas dos listas, también se sacaron estadísticas que permitían definir cuáles eran los sectores más afectados y cuáles eran los requisitos que con mayor frecuencia no eran cumplidos correctamente.",
-      "Después de haber desarrollado todo el algoritmo para la empresa en VBA, logré optimizar los tiempos de consulta de información de los empleados en más de un 99% (pues antes era buscar Excel por Excel y plataforma por plataforma). Procesos de búsqueda que podían demorar 1 hora y media pasaron a tardar lo de un par de clics.",
-      "De esto, cabe resaltar que la empresa intervenida tenía serios problemas en cuanto al cumplimiento de sus perfiles y gracias al desarrollo del programa se logró ir mejorando progresivamente este punto de la empresa para poder responder de mejor manera a sus procesos de auditorias.",
-      "Mira el post donde hablo acerca de mi experiencia trabajando para esta empresa:",
-      "link",
+
+      "Una vez esto se validaba (empleado vs perfil de cargo) se almacenaban los archivos completos en nueva plataforma y toda la información de cada empleado quedaba disponible en un solo lugar.",
+
+      "En general no era difícil, solo que eran demasiados archivos que revisar uno a uno, de ahí el por qué necesitaban automatizar ese proceso.",
+
+      "Después de haber desarrollado todo el algoritmo para la empresa en VBA, logré optimizar los tiempos de consulta de información de los empleados en más de un 99% (pues antes era buscar Excel por Excel y plataforma por plataforma). Pasando de demorar más de 1 hora por empleado a tardar lo de un par de clics.",
+
+      "De esto, cabe resaltar que la empresa intervenida tenía serios problemas en cuanto al cumplimiento de sus perfiles y gracias al desarrollo del programa se logró ir mejorando progresivamente este punto y así poder responder de mejor manera a sus procesos de auditorias.",
     ],
 
     author: "Sebastian Pérez",
@@ -205,12 +216,22 @@ export const posts: Array<postInterface> = [
     image: PersonImage,
     description: [
       "Intervine en un bar para mejorar su situación y su gestión. La empresa no contaba con ningún sistema de información, no tenía ni inventarios, ni nominas, ni libros contables, ni libros de proveedores, etc.",
+
       "Inicialmente mi intervención estuvo enfocada en crear un archivo temporal (un algoritmo) para el manejo de las ventas, inventarios y nominas (esto debido a que la empresa ya había pagado para la realización de un software, entonces solo utilizarían este Excel por un periodo corto de tiempo).",
+
       "Me encargué de crear los algoritmos necesarios para determinar las pagas de cada mesa, la automatización de los descuentos de inventarios y el registro automático del ingreso de efectivo o el incremento en cuentas por cobrar (cosas contables).",
-      "Esa fue mi función, sin embargo, surgió la situación de que es muy común que estas cuentas se paguen por separado, por lo que se buscó implementar un algoritmo bajo el cual las mesas se pudiesen pagar de diferentes maneras.",
-      "Por poner un ejemplo, en una mesa pidieron 10 botellas de agua, y una persona viene a pagar solo 3 de ellas (es decir, por separado), el siguiente reto, estuvo enfocado en hacer todo eso posible utilizando solo Excel y sus macros, esto debería ser posible y generar un registro de ventas, que se descuente de inventarios y que la cuenta de la mesa ya no sean 10 botellas, sino 7.",
-      "Spoiler: suena muy fácil utilizando lenguajes de programación convencionales, pero utilizando Excel y sus macros... Jajaja, al inicio me comió un poco la cabeza.",
-      "Realmente el desarrollo de este algoritmo no tuvo una mayor complejidad, fue adaptarse a las necesidades del local y escribir código para cumplir con ello.",
+
+      "Sí, además de utilizar mis conocimientos como programador, también utilicé mis conocimientos como administrador - contador financiero para ayudarles con sus problemas (que eran bastantes como mencioné anteriormente).",
+
+      "Una vez desarrollé el Excel con las macros para que se encargaran de estas funciones logré observar que es muy común que las cuentas en este tipo de negocios se paguen por separado, por lo que sí bien mi trabajo era funcional y era lo que me habían pedido, decidí personalizarlo aún más para hacerles la vida más fácil.",
+
+      "Así que sí, intervine de muchas maneras en este bar, y el logro más importante que conseguí es que ahora tienen las herramientas necesarias para poder crear lo básico de los registros contables necesarios y responder así ante la DIAN e IyC.",
+
+      "Disfruté mucho realizando este trabajo, tanto como programador como financiero, y sentí que realmente hice un aporte relevante para una empresa.",
+
+      "En cuanto al desarrollo, principalmente se utilizó Excel y sus macros programadas en VBA (después me enteré que también se puede programar en Excel con python 🤦🏻‍♂️, será para la proxima entonces), realmente el desarrollo de este algoritmo no tuvo una mayor complejidad, fue adaptarse a las necesidades del local y escribir código para cumplir con ello.",
+
+      "Les deseo muchos éxitos, y gracias por la oportunidad brindada.",
     ],
 
     author: "Sebastian Pérez",
@@ -220,18 +241,22 @@ export const posts: Array<postInterface> = [
     id: "6957b082e06f4ba0a18b377143ce407b",
     type: PostTypes.experience,
     title:
-      "Trabajé como programador fullstack en la creación de un e-commerce 🏪",
+      "Trabajé como programador fullstack para NutriciónVital en la creación de un e-commerce 🏪",
     mediaType: "video",
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
     description: [
-      "Trabajé como programador fullstack en la creación de una plataforma e-commerce de una empresa de suplementos alimentarios y de servicio de ventas de planes alimentarios.",
-      "Se me contactó a través de mis contactos para ingresar a ser parte de un grupo de programadores con la finalidad de desarrollar un e-commerce para la empresa argentina Nutrición Vital.",
-      "Lo que quería la empresa era expandirse al mercado digital y ofrecerle a sus clientes la opción de visualizar sus productos y comprarlos en línea, con la posibilidad de recibirlos directamente en sus domicilios, para ello, se planteó la creación de un e-commerce desde cero.",
+      "Trabajé como programador fullstack en la creación de una plataforma e-commerce de suplementos alimentarios y de servicio de ventas de planes alimentarios.",
+
+      "Se me contactó para ingresar como fullstack en la creación de una aplicación e-commerce para la empresa argentina Nutrición Vital junto con otros programadores con el mismo rol.",
+
+      "Lo que quería la empresa era expandirse al mercado digital y ofrecerle a sus clientes la opción de visualizar sus productos y comprarlos en línea, con la posibilidad de recibirlos directamente en sus domicilios. Para ello, se planteó la creación de un e-commerce desde cero que tuviera todas estás herramientas.",
+
       "Inicialmente, mis responsabilidades comprendieron la creación y optimización del código y del funcionamiento del aplicativo web.",
-      "Como fullstack intervine en todo el desarrollo de la aplicación, desde las bases de datos, la creación de la API y la creación del apartado visual de la aplicación (front).",
-      "Las tecnologías que utilicé durante el desarrollo de la aplicación fueron TypeScript, NodeJS, Express, React, Bootstrap, Redux, JWT, MercadoPago, gestor de envíos de emails, MongoDB con mongoose.",
-      "Entre otras tecnologías.",
+
+      "Como fullstack intervine en todo el desarrollo de la aplicación, desde las bases de datos, la creación de la API, seguridad y la creación del apartado visual de la aplicación (front).",
+
+      "Las tecnologías que utilicé durante el desarrollo de la aplicación fueron TypeScript, NodeJS, Express, React, Bootstrap, Redux, JWT, MercadoPago, gestor de envíos de emails, MongoDB con mongoose, entre otras.",
     ],
 
     author: "Sebastian Pérez",
