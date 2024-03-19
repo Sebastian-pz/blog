@@ -270,20 +270,27 @@ export const posts: Array<postInterface> = [
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
     description: [
-      "En enero de 2023 se me contactó para ser parte de un grupo de programadores para la UCA, de inmediato me sumé y comenzó una nueva etapa en mi carrera como desarrollador web.",
-      "Se me contrató como desarrollador fullstack, empleo que tuve hasta julio de 2023 cuando se terminó y se entregó el proyecto.",
-      "Trabajé bajo la modalidad Agile, también con mucho pair programming, aprendí y continué mejorando como programador.",
-      "El desarrollo del proyecto solicitado duró al rededor de 5 meses, los 2 meses siguientes se enfocaron en personalizar el proyecto y corregir errores que iban surgiendo.",
+      "En enero de 2023 entré a ser parte de un grupo de programadores que se estaban juntando para desarrollar una aplicación web para la UCA, una aplicación que les serviría para educar a sus estudiantes.",
+
+      "Se me contrató como desarrollador fullstack, encargado de interactuar con frontend y backend, la aplicación en sí era realizar un simulador de unos procesos que los estudiantes de derecho se enfrentarían comúnmente cuando salieran al mundo laboral. En pocas palabras nuestro rol fue recrear unos procesos que llevan a cabo los profesionales de derecho en su día a día.",
+
+      "De este modo, los estudiantes se podían ir mentalizando y adecuando de mejor manera a las herramientas y situaciones con los que iban a tener que lidiar en un futuro.",
+
+      "Durante este trabajo, utilicé la modalidad Agile, pair programming, y el stack de Python, NodeJS, TypeScript, express, React, Redux, MaterialUI y demás.",
+
+
       "Finalmente, el proyecto se expuso a la universidad y el resultado fue la aprobación unánime. En el semestre 2 (SII-2023) la aplicación entró en producción y empezó a ser utilizada por los estudiantes.",
+
       "Mis responsabilidades en el proyecto fueron:",
+
       "✅ Desarrollar las principales funciones de la lógica en el frontend, encargándome de que el código escrito fuese sencillo y escalable.",
       "✅ Conectar el front con la API, creando funciones específicas que se pudieran reutilizar en cada componente de la aplicación para así tener unas mejores prácticas y garantizar que una futura refactorización se pudiese llevar a cabo de manera más sencilla.",
       "✅ Manejar las sesiones de usuario con sus respectivas validaciones, encargarme de que los usuarios tengan las funciones y los renderizados correspondientes a sus roles, además de también implementar un sistema para un desloggeo automático cuando el token expire.",
       "✅ Desarrollar interfaces de usuario limpias, acordes a la naturaleza de la aplicación, que sean intuitivas y que a los usuarios se les haga cómodas de ver y utilizar.",
       "✅ Entre otras funciones como lo eran el manejo de solicitudes, el desarrollo de la API, las conexiones con la base de datos, el sistema de inicio de sesión, etc.",
 
-      "📃 El main Stack que utilicé durante este trabajo fue: TypeScript, NodeJS, React, Express, JWT, sequelize, Redux, Bootstrap.",
       "Sin duda alguna, una de las experiencias en las que más he aprendido como programador.",
+      
       "Solo queda decir gracias a la UCA por brindarme esa oportunidad 💚.",
     ],
 
