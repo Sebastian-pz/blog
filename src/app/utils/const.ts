@@ -305,11 +305,20 @@ export const posts: Array<postInterface> = [
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
     description: [
-      "Mi trabajo de grado fue una de las cosas que más inversión de tiempo me significó este año, quería hacer algo significativo y que no fuera tan común de ver.",
-      "Para ello, creé un algoritmo basado en 'clases' utilizando TypeScript que permitiera analizar el contenido publicado por marcas en las diferentes redes sociales.",
-      "En pocas palabras, este algoritmo busca identificar los patrones de comportamiento, patrones de colores, patrones de periodicidad y en general todo lo relacionado a cómo interactúan los usuarios con las marcas de ropa en las redes sociales.",
-      "Gracias a este algoritmo, se identificó que determinadas empresas, según su sector, utilizan una gama de colores principales para sus productos, que la forma en como se publicitan es bastante similar.",
-      "Se toman las últimas 150 publicaciones de la empresa que se quiera analizar, a partir de ahí, se divide las publicaciones en categorías (productos, memes o frases) y se extraen los principales colores.",
+      "Mi trabajo de grado fue una de las cosas que más inversión de tiempo me significó este año, quería hacer algo significativo y que no fuera tan común de ver, además de que de alguna manera quería utilizar las herramientas de programación.",
+
+      "Para ello, creé un algoritmo basado en 'clases' utilizando TypeScript que me permitiera analizar el contenido publicado por marcas en las diferentes redes sociales.",
+
+      "En pocas palabras, lo que busqué con este algoritmo era identificar los patrones de comportamiento, patrones de colores, patrones de periodicidad y en general todo lo relacionado a cómo interactúan los usuarios con las marcas de ropa populares en las redes sociales.",
+
+      "Si bien en un inicio el algoritmo estaba ligado a una dependencia que le permitía examinar diferentes cuentas de redes sociales de manera dinámica, esta idea tuvo que ser desechada debido a que no cumplía con las políticas para presentar el trabajo de grado.",
+
+      "Una vez terminado el programa este arroja el resultado de cuál es la gama de colores principales para sus productos, horarios de publicación frecuente, periodicidad de contenido determinado, patrones que pueden significar el 'éxito' o 'fracaso' de una publicación, categorías de posts que generan más interacciones, contenido que utilizan para mejorar la visibilidad de sus redes y demás.",
+
+      "Se convirtió en una herramienta muy completa que ayuda a entender las practicas de las empresas exitosas en las redes sociales.",
+
+      "Para el ejercicio original se tomaron las últimas 150 publicaciones de la empresa que se quiera analizar, a partir de ahí, se divide las publicaciones en categorías (productos, memes o frases) y se le añaden otros datos con la finalidad de categorizar: fecha, hora y colores principales.",
+
       "Unos ejemplos de las funciones que tiene el algoritmo son:",
       "✅  Sacar las categorías con el mayor número de interacciones.",
       "✅  Sacar los colores con el mayor número de interacciones.",
