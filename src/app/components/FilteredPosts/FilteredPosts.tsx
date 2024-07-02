@@ -1,19 +1,29 @@
 import Link from "next/link";
 import { postInterface } from "@/app/utils/interfaces";
 import GoBack from "@/components/GoBack/GoBack";
+import PostNavigation from "@/components/PostsNavigation/PostNavigation";
 
 interface ComponentProps {
   title: string;
   posts: Array<postInterface>;
+  description: string;
 }
 
-export default function FilteredPosts({ posts, title }: ComponentProps) {
+export default function FilteredPosts({
+  posts,
+  title,
+  description,
+}: ComponentProps) {
   return (
     <>
       <GoBack />
       <h1 className="text-center mt-2 mb-3 pl-2 pr-2 font-bold text-lg">
         {title}
       </h1>
+      <p className="text-center mb-2 md:px-2">{description}</p>
+
+      <PostNavigation />
+
       {posts.map((post, index) => {
         const [introductionParagraph] = post.description;
         return (
@@ -29,7 +39,7 @@ export default function FilteredPosts({ posts, title }: ComponentProps) {
               />
             </div>
             <div className="home__post__info ml-4 ">
-              <h2 className="mb-4 lg:font-bold">
+              <h2 className="mb-4 lg:font-bold hover:text-primary-color-600">
                 <Link className="" href={`/post/${post.id}`}>
                   {post.title}
                 </Link>
