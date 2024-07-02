@@ -1,6 +1,6 @@
 import { getRandomPost } from "@/utilities/const";
 
-export default [
+const Routes: Array<IRoute> = [
   {
     label: "Sobre mí",
     path: "/",
@@ -21,4 +21,17 @@ export default [
     path: `/post/${getRandomPost()}`,
     styles: "",
   },
+  {
+    label: "Social",
+    path: "/social",
+    styles: "",
+  },
 ];
+
+interface IRoute {
+  label: string;
+  path: string;
+  styles: string;
+}
+
+export default Routes;
