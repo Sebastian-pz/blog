@@ -31,7 +31,16 @@ export default function Page({ params }: paramsInterface) {
       <div className="m-auto w-3/4 sm:w-3/5 lg:w-2/5">
         <h1 className="text-3xl font-bold mb-3 mt-6">{post.title}</h1>
         <p className="text-sm text-gray-500">{post.author}</p>
-        <p className="text-sm text-gray-500">{`Created at: ${post.creationDate}`}</p>
+        <p className="text-sm text-gray-500">
+          Created at:{" "}
+          <time
+            itemProp="datePublished"
+            dateTime={post.creationDate}
+            className="text-sm text-gray-500"
+          >
+            {post.creationDate}
+          </time>
+        </p>
 
         <MediaComponent
           mediaType={post.mediaType}
