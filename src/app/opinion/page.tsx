@@ -9,6 +9,7 @@ export default function page() {
     <FilteredPosts
       posts={posts}
       title="Estos son mis opiniones sobre cosas de tecnología en general 🤔"
+      description="Acá hablo sobre temas más randoms del mundo de la programación, quizá artículos que me resultan útiles o simplemente interesantes"
     />
   );
 }
