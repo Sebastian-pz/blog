@@ -14,7 +14,7 @@ export default async function Home() {
         <PostNavigation />
         <Posts />
       </section>
-      <section className="lg:w-1/4 hidden lg:block mt-10">
+      <section className="lg:w-1/4 hidden lg:block mt-10 ml-4">
         <MainInfo />
       </section>
     </main>

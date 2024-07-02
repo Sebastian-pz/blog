@@ -1,6 +1,6 @@
 export default function MainInfo() {
   return (
-    <section className="bg-primary-color-100 rounded-lg p-2">
+    <section className="bg-primary-color-100 rounded-lg p-4">
       <h2 className="text-x text-primary-color-500 font-semibold">
         Información sobre el blog
       </h2>
