@@ -9,7 +9,7 @@ export default function page() {
     <FilteredPosts
       posts={posts}
       title="Mi experiencia trabajando como programador 🧪"
-      description="Posts sobre mi experiencia laboral en los que cuento cómo se ha ido desarrollando mi carrera profesional desde el inicio. "
+      description="En esta sección de Experiencia relato mi trayectoria profesional en el campo del desarrollo de software. A través de estos posts, comparto mis vivencias en diferentes proyectos, equipos y organizaciones, hablo de las tecnologías y metodologías que he utilizado, y, aunque hago mención de temas un poco técnicos, mi enfoque es más narrativo para ofrecer una visión general de mi recorrido y aprendizajes."
     />
   );
 }
