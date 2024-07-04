@@ -55,7 +55,7 @@ export default function MainPage() {
           empresas.
         </p>
         <p>
-          Me gusta programar cosas 👨🏼‍💻, los animales 🐕, los atardeceres 🌄 y
+          Me gusta crear cosas 👨🏼‍💻, los animales 🐕, los atardeceres 🌄 y
           demás...
         </p>
       </section>
