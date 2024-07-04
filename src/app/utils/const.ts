@@ -180,27 +180,27 @@ export const posts: Array<postInterface> = [
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
     description: [
-      "Debido a contactos en mi universidad, una empresa se comunicó conmigo para ayudarles a optimizar sus libros de Excel utilizando programación (VBA) a través de macros.",
+      "Debido a contactos en mi universidad, una empresa se comunicó conmigo para ayudarles con un problema que tenían sobre la validación de unos perfiles en Excel.",
 
       "Inicialmente, para 'Empresa A' (como la llamaré para salvaguardar su privacidad), una empresa internacional muy grande en el país, me contactó específicamente una regional para ayudar con un proceso de transición de plataformas por el que estaban pasando (no lo estaban llevando muy bien y era un proceso que se tenía que llevar a cabo de manera urgente).",
 
       "Su problema de manera general era que había mucha información dispersa en muchas partes, muchos archivos y muchas plataformas.",
 
-      "Mi función entonces fue unificar la información de diferentes Excels y plataformas de manera automática utilizando programación, tomando diferentes archivos juntando la información de los empleados y utilizando diferentes algoritmos para confirmar si ellos cumplían con los requerimientos del cargo que ocupaban.",
+      "Mi función entonces fue unificar la información de diferentes Excels y plataformas de manera automática, juntando la información de los empleados y utilizando diferentes algoritmos con VBA (Visual Basic for Applications) para confirmar si ellos cumplían con los requerimientos del cargo que ocupaban.",
 
-      "En el caso de que un empleado NO cumpliera con el perfil del cargo, lo que hacía era alertar al responsable de recursos humanos y lo ponía en una lista de personas que no eran válidas. De ahí se notificaba a cada jefe de sección para que se encargara de mandar al empleado a completar su perfil si el caso así lo requería.",
+      "En el caso de que un empleado NO cumpliera con el perfil del cargo, lo que hacía era alertar al responsable de recursos humanos y lo ponía en una lista de personas que no eran 'válidas'. De ahí se notificaba a cada jefe de sección para que se encargara de mandar al empleado a completar su perfil si el caso así lo requería.",
 
-      "En el caso de que el empleado sí cumpliera con el perfil, se añadía a la lista de los que están en orden o al corriente con la empresa.",
+      "En el mejor de los casos, cuando el empleado sí cumpliera con el perfil, se añadía a la lista de los que están en orden o al corriente con la empresa y no era necesario realizar ninguna intervención.",
 
-      "De estas dos listas, también se sacaron estadísticas que permitían definir cuáles eran los sectores más afectados y cuáles eran los requisitos que con mayor frecuencia no eran cumplidos correctamente.",
+      "De estas dos listas, también se sacaban estadísticas que permitían definir diversos temas de interés, por ejemplo cuáles eran los sectores más afectados, cuáles eran los requisitos más críticos, qué roles estaban en mayor riesgo, y demás.",
 
-      "Una vez esto se validaba (empleado vs perfil de cargo) se almacenaban los archivos completos en nueva plataforma y toda la información de cada empleado quedaba disponible en un solo lugar.",
+      "Una vez esto se validaba (empleado vs perfil de cargo) se juntaba la información y se almacenaban los archivos completos en una carpeta de OneDrive y en la nueva plataforma, de modo que toda la información de cada empleado quedaba disponible en un solo lugar.",
 
       "En general no era difícil, solo que eran demasiados archivos que revisar uno a uno, de ahí el por qué necesitaban automatizar ese proceso.",
 
-      "Después de haber desarrollado todo el algoritmo para la empresa en VBA, logré optimizar los tiempos de consulta de información de los empleados en más de un 99% (pues antes era buscar Excel por Excel y plataforma por plataforma). Pasando de demorar más de 1 hora por empleado a tardar lo de un par de clics.",
+      "Después de haber desarrollado todo el algoritmo para la empresa, se logró una optimización de los tiempos de consulta de información en más de un 99%. Pasando de demorar más de 1 hora por empleado a tardar lo de un par de clics (pues antes era buscar Excel por Excel y plataforma por plataforma).",
 
-      "De esto, cabe resaltar que la empresa intervenida tenía serios problemas en cuanto al cumplimiento de sus perfiles y gracias al desarrollo del programa se logró ir mejorando progresivamente este punto y así poder responder de mejor manera a sus procesos de auditorias.",
+      "De esto, cabe resaltar que la empresa intervenida tenía problemas en cuanto al cumplimiento de sus perfiles y gracias al desarrollo del programa se logró ir mejorando progresivamente este punto y así poder responder de mejor manera a sus procesos de auditorias.",
     ],
 
     author: "Sebastian Pérez",
@@ -278,7 +278,6 @@ export const posts: Array<postInterface> = [
 
       "Durante este trabajo, utilicé la modalidad Agile, pair programming, y el stack de Python, NodeJS, TypeScript, express, React, Redux, MaterialUI y demás.",
 
-
       "Finalmente, el proyecto se expuso a la universidad y el resultado fue la aprobación unánime. En el semestre 2 (SII-2023) la aplicación entró en producción y empezó a ser utilizada por los estudiantes.",
 
       "Mis responsabilidades en el proyecto fueron:",
@@ -290,7 +289,7 @@ export const posts: Array<postInterface> = [
       "✅ Entre otras funciones como lo eran el manejo de solicitudes, el desarrollo de la API, las conexiones con la base de datos, el sistema de inicio de sesión, etc.",
 
       "Sin duda alguna, una de las experiencias en las que más he aprendido como programador.",
-      
+
       "Solo queda decir gracias a la UCA por brindarme esa oportunidad 💚.",
     ],
 
