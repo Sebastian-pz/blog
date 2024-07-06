@@ -34,7 +34,7 @@ export const posts: Array<postInterface> = [
   {
     id: "fc2aaada30594ed9a39fa1928d267655",
     type: PostTypes.opinion,
-    title: "¿Pasar como parámetro funciones con nombre al useEffect 🤔?",
+    title: "Buenas prácticas en los useEffect de React por un experto",
     mediaType: "image",
     image: useEffectImg,
     description: [
