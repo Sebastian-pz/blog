@@ -34,7 +34,7 @@ export const posts: Array<postInterface> = [
   {
     id: "fc2aaada30594ed9a39fa1928d267655",
     type: PostTypes.opinion,
-    title: "¿Pasar como parámetro funciones con nombre al useEffect 🤔?",
+    title: "Buenas prácticas en los useEffect de React por un experto",
     mediaType: "image",
     image: useEffectImg,
     description: [
@@ -278,7 +278,6 @@ export const posts: Array<postInterface> = [
 
       "Durante este trabajo, utilicé la modalidad Agile, pair programming, y el stack de Python, NodeJS, TypeScript, express, React, Redux, MaterialUI y demás.",
 
-
       "Finalmente, el proyecto se expuso a la universidad y el resultado fue la aprobación unánime. En el semestre 2 (SII-2023) la aplicación entró en producción y empezó a ser utilizada por los estudiantes.",
 
       "Mis responsabilidades en el proyecto fueron:",
@@ -290,7 +289,7 @@ export const posts: Array<postInterface> = [
       "✅ Entre otras funciones como lo eran el manejo de solicitudes, el desarrollo de la API, las conexiones con la base de datos, el sistema de inicio de sesión, etc.",
 
       "Sin duda alguna, una de las experiencias en las que más he aprendido como programador.",
-      
+
       "Solo queda decir gracias a la UCA por brindarme esa oportunidad 💚.",
     ],
 
