@@ -2,6 +2,9 @@ import { postInterface, PostTypes } from "./interfaces";
 import PersonImage from "@/public/person.jpg";
 import BlogPostMedia from "@/public/blog-post.webp";
 import useEffectImg from "@/public/blog/useEffect.webp";
+import tddImg from "@/public/blog/tdd-post.webp";
+
+const author = "Sebastian Pérez";
 
 export const posts: Array<postInterface> = [
   {
@@ -30,6 +33,34 @@ export const posts: Array<postInterface> = [
 
     author: "Sebastian Pérez",
     creationDate: "01/16/2024",
+  },
+  {
+    author,
+    creationDate: "07/08/2024",
+    id: "bcaa1e968b6a43daaea2f4638025fac8",
+    image: tddImg,
+    mediaType: "image",
+    type: PostTypes.opinion,
+    title: "El desarrollo de software utilizando TDD",
+    description: [
+      "Este es un mini post de mi apreciación personal sobre trabajar siguiendo la TDD, pero antes de hablar sobre ello hay que hablar acerca de qué es eso:",
+      "|subtitle| ¿Qué es TDD?",
+      "Test-Driven Development es una práctica de programación que consiste en escribir primero los Tests (generalmente unitarios), después escribir el código que haga que las pruebas pasen satisfactoriamente y, por último, refactorizar el código escrito. (Herranz, J. 2023)",
+      "|image|https://images.spiceworks.com/wp-content/uploads/2022/09/29095630/How-TDD-Works.png",
+      "Imagen obtenida de: SpiceWorks.com",
+
+      "|subtitle| Mi opinión sobre trabajar con Test Driven Development",
+      "Hace relativamente poco estuve trabajando en un proyecto utilizando la metodología TDD y se me hizo una idea del porqué esta metodología es tan amada-odiada entre la comunidad.",
+      "Conozco de primera mano la opinión de 'que pereza hacer tests, si cuando hago mi código sé que funciona'. Y lo entiendo, pero, al menos desde mi perspectiva, los tests no están hechos para uno mismo, están hechos para ayudar a tu compañero (o a ti) que en un futuro tenga que 'tocar' el código y saber que lo está haciendo bien, que no está rompiendo nada.",
+      "La principal labor del Test-Driven Development no es ayudarte al desarrollar el código (que sí lo hace), si no, más bien, garantizar que las futuras modificaciones que se realicen no afecten al funcionamiento general de la aplicación, es un seguro de que un cambio no va a romper todo.",
+      "Por poner un ejemplo, digamos que tú trabajaste sobre una funcionalidad para agendar usuarios en un calendario y sí, funciona perfecto, pero el día de mañana te mandan a realizar un cambio sobre el esquema de usuario y ambas funcionalidades funcionan perfectamente por separado, pero al momento de subirlo te das cuenta de que no está compilando, quizá ese cambio en usuario afecto al proceso de agendamiento, quizá una propiedad, quizá un estado, no sé cualquier cosa, TDD te ayuda a prever esto.",
+      "Trabajar a través de TDD significa más tiempo de desarrollo, cuestionar 'el código funciona de todas formas' y lidiar con la presión de entregar, pero ayuda a desarrollar código más sólido, escalable, y logra facilitar el trabajo a tus compañeros (o a ti mismo en el futuro) evitando bugs de por medio.",
+      "Sí, es más código, pero vale la pena.",
+      "|note|Nota: Cabe aclarar que utilizar o no TDD es un concepto propio de cada proyecto, hay proyectos en los que les será útil y habrá proyectos en los que no. No es una regla de oro tener que utilizarlo siempre.",
+      "",
+
+      "Herranz, Jose Ignacio. (Abril 13 de 2023). TDD como metodología de diseño de software, recuperado de: https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/",
+    ],
   },
   {
     id: "fc2aaada30594ed9a39fa1928d267655",
