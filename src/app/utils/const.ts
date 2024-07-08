@@ -52,7 +52,7 @@ export const posts: Array<postInterface> = [
       "¿Cuál es tu opinión al respecto? ¿Está bien utilizar funciones nombradas o es mejor utilizar las típicas funciones flecha?",
 
       "Link a la publicación original:",
-      "https://twitter.com/housecor/status/1753777632976461954",
+      "|link|https://twitter.com/housecor/status/1753777632976461954",
     ],
 
     author: "Sebastian Pérez",
