@@ -7,6 +7,7 @@ import Link from "next/link";
 import { getPost } from "@/utilities/const";
 
 import MediaComponent from "@/components/Media/MediaComponent";
+import DescriptionLoader from "./DescriptionLoader";
 
 interface paramsInterface {
   params: {
@@ -48,25 +49,28 @@ export default function Page({ params }: paramsInterface) {
           introductionParagraph={post.description[0]}
         />
 
-        <section className="">
+        <section className="leading-9">
           {post.description.map((text, index) => {
             // Me sorprende lo bien optimizado que está el método includes
-            if (text.includes("https://")) {
-              return (
-                <Link
-                  href={encodeURI(text.toString())}
-                  target="_blank"
-                  className="text-lime-700 hover:text-lime-600"
-                >
-                  {text}
-                </Link>
-              );
-            }
+            // if (text.includes("https://")) {
+            //   return (
+            //     <Link
+            //       href={encodeURI(text.toString())}
+            //       target="_blank"
+            //       className="text-lime-700 hover:text-lime-600"
+            //     >
+            //       {text}
+            //     </Link>
+            //   );
+            // }
 
+            // return (
+            //   <p key={index} className="mb-7">
+            //     {text}
+            //   </p>
+            // );
             return (
-              <p key={index} className="leading-9 mb-7">
-                {text}
-              </p>
+              <DescriptionLoader paragraph={text.toString()} key={index} />
             );
           })}
         </section>
