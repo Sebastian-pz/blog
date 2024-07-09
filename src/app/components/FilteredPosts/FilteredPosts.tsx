@@ -17,10 +17,12 @@ export default function FilteredPosts({
   return (
     <>
       <GoBack />
-      <h1 className="text-center mt-2 mb-3 pl-2 pr-2 font-bold text-lg">
-        {title}
-      </h1>
-      <p className="text-center mb-2 md:px-2">{description}</p>
+      <section className="w-[90%] sm:w-[70%] lg:w-[50%] m-auto">
+        <h1 className="text-center mt-2 mb-3 pl-2 pr-2 font-bold text-lg">
+          {title}
+        </h1>
+        <p className="text-center mb-2 md:px-2">{description}</p>
+      </section>
 
       <PostNavigation />
 
