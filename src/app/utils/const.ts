@@ -11,7 +11,7 @@ export const posts: Array<postInterface> = [
     id: "1d0d966b84354712b92c359cc28a06c2",
     type: PostTypes.experience,
     title:
-      "¡💥 Trabajé para BB- Bar en la creación de una aplicación fullstack para gestionar ventas e inventarios 💥!",
+      "Trabajé como desarrollador fullstack en la creación de una aplicación completa para la gestión de inventarios, costos, ventas, gastos, estadísticas y más en BB-Bar.",
     mediaType: "video",
     media: "https://www.youtube.com/embed/fL83GTilWjw",
     image: BlogPostMedia,
@@ -31,7 +31,7 @@ export const posts: Array<postInterface> = [
       "Las tecnologías utilizadas para este proyecto fueron principalmente JavaScript, NodeJS, React, Vite, Tailwind, NodeJS, Express, MongoDB (Atlas), byCrypt, json web tokens JWT, Cors y ESLint con standard para mejorar el código.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "01/16/2024",
   },
   {
@@ -86,7 +86,7 @@ export const posts: Array<postInterface> = [
       "|link|https://twitter.com/housecor/status/1753777632976461954",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "02/17/2024",
   },
   {
@@ -107,18 +107,18 @@ export const posts: Array<postInterface> = [
       "Las tecnologías utilizadas para este proyecto fueron principalmente TypeScript, NextJS - React, Tailwind para los estilos y ESLint con standard para mejorar el código.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/16/2023",
   },
   {
     id: "3ae67a3496d74fdfa5c16f6cbef1ed73",
-    type: PostTypes.project,
+    type: PostTypes.opinion,
     title:
-      "¿Cómo fue trabajar con VBA por primera vez en la regional de una multinacional 😬?",
+      "¿Cómo fue trabajar con Visual Basic por primera vez en la regional de una multinacional?",
     mediaType: "image",
     image: BlogPostMedia,
     description: [
-      "Cómo fue mi experiencia trabajando para una empresa multinacional en un proyecto regional.",
+      "¿Cómo crees que fue mi experiencia trabajando para una empresa multinacional, en un proyecto regional con un lenguaje de programación que jamas había utilizado y con mucha privacidad de por medio?",
 
       "Inicialmente, si no has leído el artículo de mi experiencia como desarrollador para la empresa, acá te dejo el link para que lo veas antes:",
 
@@ -126,19 +126,23 @@ export const posts: Array<postInterface> = [
 
       "Como mencioné en ese artículo, mi experiencia trabajando para esta empresa fue curiosa, inicialmente se me contacto evitando en la medida de lo posible brindarme mayores informaciones, sabía que mi trabajo consistía en unificar información, pero nada en detalle.",
 
-      "Fue bastante curioso trabajar con una empresa ayudando directamente al sector de RR.HH en el entorno legal, es muy diferente a lo que había hecho con anterioridad, había mucho en juego y los procesos se llevaban de maneras muy diversas. También fue la vez con la que más datos he trabajado y donde todos debían estar bien manejados y optimizados.",
+      "Fue bastante curioso trabajar con una empresa ayudando directamente al sector de RR.HH (en el entorno legal), es muy diferente a lo que había hecho con anterioridad. Había mucho en juego y los procesos se llevaban de maneras muy diversas. También fue la vez con la que más datos he trabajado y donde todos debían estar manejados al detalle y optimizados.",
 
-      "El resultado de este trabajo me hizo sentir realizado, lograr que a través de programación un proceso que es realmente tedioso y tardío se convierta en cosa de un par de clics, es algo que realmente me parece reconfortante, comparar el hecho de que antes para obtener la información de un empleado de la regional se demoraban horas (literalmente) y ahora se pueda conseguir en un par de segundos, digitando su nombre y dando un clic es algo que me emociona.",
+      "El resultado de este trabajo me hizo sentir realizado, lograr que a través de programación un proceso que es realmente tedioso y tardío se convierta en cosa de un par de clics, es algo que realmente me parece reconfortante, comparar el hecho de que antes para obtener la información de un empleado de la regional se demoraban horas (literalmente) y ahora se puede conseguir en un par de segundos, digitando su nombre, cédula o correo y dando un clic es algo que me emociona.",
 
       "Sinceramente, consideraba que iba a ser un proceso más difícil; sin embargo, por mis conocimientos previos en programación no me tomó tanto tiempo adecuarme a utilizar VBA.",
 
       "Hice la herramienta relativamente de manera sencilla, quizá hecho en falta utilizar un poco de mejores prácticas, pero fue un trabajo que me pareció reconfortante y que cuando lo terminé me sentí orgulloso de él.",
 
+      "|subtitle|Mini reflexión personal",
+
+      "Lo ultimo que quiero decir es que a veces asumir nuevos retos puede dar un poco de miedo, pero al menos en el mundo de la programación vale totalmente la pena. Como comenté anteriormente entré a este proyecto sin saber nada acerca de Visual Basic y al final se logró sacar adelante con mucho aprendizaje de por medio. Estoy muy contento de lo que logré ahí.",
+
       "¡Gracias a la empresa en cuestión!",
       "Ojalá que se preparen con más cuidado para sus próximas auditorias 🤣",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/28/2023",
   },
   {
@@ -157,7 +161,7 @@ export const posts: Array<postInterface> = [
       "Es una charla que en mi opinión está totalmente recomendada y que proporciona un panorama amplio del entorno de la programación.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/03/2023",
   },
   {
@@ -177,7 +181,7 @@ export const posts: Array<postInterface> = [
       "https://rps-game-navy.vercel.app/",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/03/2023",
   },
   {
@@ -199,14 +203,14 @@ export const posts: Array<postInterface> = [
       "El stack que utilicé para el desarrollo del juego fue: TypeScript como lenguaje de programación, Vite y Tailwind 😄",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/03/2023",
   },
   {
     id: "5c9ef6fa3e12415ca8a853150643b993",
     type: PostTypes.experience,
     title:
-      "¡Trabajé para una multinacional utilizando programación con VBA 🦖!",
+      "¡Trabajé para una multinacional utilizando programación (Visual Basic for Apps) 🦖!",
     mediaType: "video",
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
@@ -234,14 +238,14 @@ export const posts: Array<postInterface> = [
       "De esto, cabe resaltar que la empresa intervenida tenía problemas en cuanto al cumplimiento de sus perfiles y gracias al desarrollo del programa se logró ir mejorando progresivamente este punto y así poder responder de mejor manera a sus procesos de auditorias.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/26/2023",
   },
   {
     id: "930a849815984e8a95d4f54f132aac29",
     type: PostTypes.experience,
     title:
-      "¡Creé un mini sistema de ventas, inventarios y nominas utilizando programación en VBA 🧮!",
+      "Creé un sistema de ventas, inventarios y nominas utilizando programación en Visual Basic for Apps 🧮",
     mediaType: "video",
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
@@ -265,51 +269,52 @@ export const posts: Array<postInterface> = [
       "Les deseo muchos éxitos, y gracias por la oportunidad brindada.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/26/2023",
   },
   {
     id: "6957b082e06f4ba0a18b377143ce407b",
     type: PostTypes.experience,
-    title:
-      "Trabajé como programador fullstack para NutriciónVital en la creación de un e-commerce 🏪",
+    title: "Trabajé como desarrollador fullstack para NutriciónVital 🏪",
     mediaType: "video",
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
     description: [
-      "Trabajé como programador fullstack en la creación de una plataforma e-commerce de suplementos alimentarios y de servicio de ventas de planes alimentarios.",
+      "Trabajé como desarrollador fullstack en la creación de una plataforma e-commerce de suplementos alimentarios y de servicio de ventas de planes alimentarios.",
 
       "Se me contactó para ingresar como fullstack en la creación de una aplicación e-commerce para la empresa argentina Nutrición Vital junto con otros programadores con el mismo rol.",
 
-      "Lo que quería la empresa era expandirse al mercado digital y ofrecerle a sus clientes la opción de visualizar sus productos y comprarlos en línea, con la posibilidad de recibirlos directamente en sus domicilios. Para ello, se planteó la creación de un e-commerce desde cero que tuviera todas estás herramientas.",
+      "La empresa quería aprovechar su relación con unos gimnasios para vender productos a sus clientes online. Querían ofrecerles la posibilidad de comprar artículos y recibirlos directamente en sus casas. Para lograrlo, decidieron crear una tienda online desde cero con todas las funcionalidades necesarias para este tipo de venta.",
 
       "Inicialmente, mis responsabilidades comprendieron la creación y optimización del código y del funcionamiento del aplicativo web.",
 
-      "Como fullstack intervine en todo el desarrollo de la aplicación, desde las bases de datos, la creación de la API, seguridad y la creación del apartado visual de la aplicación (front).",
+      "También, durante el desarrollo de la aplicación tuve que 'meter mano' muy por encima en la arquitectura del proyecto y en las buenas prácticas para hacerlo más prolijo.",
 
-      "Las tecnologías que utilicé durante el desarrollo de la aplicación fueron TypeScript, NodeJS, Express, React, Bootstrap, Redux, JWT, MercadoPago, gestor de envíos de emails, MongoDB con mongoose, entre otras.",
+      "Como fullstack intervine en todo el desarrollo de la aplicación, desde las bases de datos, la creación de la API, autenticación, autorización, seguridad y la creación del apartado visual de la aplicación (front).",
+
+      "Durante el desarrollo de este proyecto seguí mejorando mis habilidades con TypeScript, NodeJS, Express, React, Bootstrap, Redux, JWT, MercadoPago, gestor de envíos de emails, MongoDB con mongoose, lógica algorítmica, entre otras.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/27/2023",
   },
   {
     id: "2bb2193700824b11bcc33c9dc5dd3c65",
     type: PostTypes.experience,
-    title: "Trabajé como programador fullstack para la UCA 🎓",
+    title: "Trabajé como desarrollador fullstack para la UCA 🎓",
     mediaType: "video",
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: PersonImage,
     description: [
-      "En enero de 2023 entré a ser parte de un grupo de programadores que se estaban juntando para desarrollar una aplicación web para la UCA, una aplicación que les serviría para educar a sus estudiantes.",
+      "En enero de 2023 entré a ser parte de un grupo de programadores que se iban a encargar de desarrollar una aplicación web para la Universidad Católica Argentina (UCA), una aplicación que les serviría para educar a sus estudiantes.",
 
-      "Se me contrató como desarrollador fullstack, encargado de interactuar con frontend y backend, la aplicación en sí era realizar un simulador de unos procesos que los estudiantes de derecho se enfrentarían comúnmente cuando salieran al mundo laboral. En pocas palabras nuestro rol fue recrear unos procesos que llevan a cabo los profesionales de derecho en su día a día.",
+      "Se me contrató como desarrollador fullstack, encargado de interactuar con frontend y backend, la aplicación en sí era realizar un simulador de unos procesos a los que los estudiantes de derecho se enfrentarían comúnmente cuando salieran al mundo laboral. En pocas palabras nuestro rol fue recrear unos procesos que llevan a cabo los profesionales de derecho en su día a día.",
 
       "De este modo, los estudiantes se podían ir mentalizando y adecuando de mejor manera a las herramientas y situaciones con los que iban a tener que lidiar en un futuro.",
 
       "Durante este trabajo, utilicé la modalidad Agile, pair programming, y el stack de Python, NodeJS, TypeScript, express, React, Redux, MaterialUI y demás.",
 
-      "Finalmente, el proyecto se expuso a la universidad y el resultado fue la aprobación unánime. En el semestre 2 (SII-2023) la aplicación entró en producción y empezó a ser utilizada por los estudiantes.",
+      "Finalmente, el proyecto se expuso a la universidad y el resultado fue la aprobación. En el semestre 2 (SII-2023) la aplicación entró en producción y empezó a ser utilizada por los estudiantes.",
 
       "Mis responsabilidades en el proyecto fueron:",
 
@@ -324,7 +329,7 @@ export const posts: Array<postInterface> = [
       "Solo queda decir gracias a la UCA por brindarme esa oportunidad 💚.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/27/2023",
   },
   {
@@ -368,7 +373,7 @@ export const posts: Array<postInterface> = [
       "https://github.com/Sebastian-pz/TDG-2023",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/03/2023",
   },
   {
@@ -391,7 +396,7 @@ export const posts: Array<postInterface> = [
       "Quiero agradecer a mis compañeros de Team Ducker Mati y Meli, primero que todo por sumarse al proyecto, segundo porque al momento de transicionar al front, mis habilidades con el CSS no estaban tan trabajadas como sí lo están ahora, me tuvieron toda la paciencia del mundo y me fueron explicando poco a poco, y tercero, por ser tan buena onda y hacer de este proyecto un trabajo muy ameno y divertido.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/27/2023",
   },
 ];
