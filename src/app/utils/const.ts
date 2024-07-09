@@ -31,7 +31,7 @@ export const posts: Array<postInterface> = [
       "Las tecnologías utilizadas para este proyecto fueron principalmente JavaScript, NodeJS, React, Vite, Tailwind, NodeJS, Express, MongoDB (Atlas), byCrypt, json web tokens JWT, Cors y ESLint con standard para mejorar el código.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "01/16/2024",
   },
   {
@@ -86,7 +86,7 @@ export const posts: Array<postInterface> = [
       "|link|https://twitter.com/housecor/status/1753777632976461954",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "02/17/2024",
   },
   {
@@ -107,7 +107,7 @@ export const posts: Array<postInterface> = [
       "Las tecnologías utilizadas para este proyecto fueron principalmente TypeScript, NextJS - React, Tailwind para los estilos y ESLint con standard para mejorar el código.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/16/2023",
   },
   {
@@ -138,7 +138,7 @@ export const posts: Array<postInterface> = [
       "Ojalá que se preparen con más cuidado para sus próximas auditorias 🤣",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/28/2023",
   },
   {
@@ -157,7 +157,7 @@ export const posts: Array<postInterface> = [
       "Es una charla que en mi opinión está totalmente recomendada y que proporciona un panorama amplio del entorno de la programación.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/03/2023",
   },
   {
@@ -177,7 +177,7 @@ export const posts: Array<postInterface> = [
       "https://rps-game-navy.vercel.app/",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/03/2023",
   },
   {
@@ -199,7 +199,7 @@ export const posts: Array<postInterface> = [
       "El stack que utilicé para el desarrollo del juego fue: TypeScript como lenguaje de programación, Vite y Tailwind 😄",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/03/2023",
   },
   {
@@ -234,7 +234,7 @@ export const posts: Array<postInterface> = [
       "De esto, cabe resaltar que la empresa intervenida tenía problemas en cuanto al cumplimiento de sus perfiles y gracias al desarrollo del programa se logró ir mejorando progresivamente este punto y así poder responder de mejor manera a sus procesos de auditorias.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/26/2023",
   },
   {
@@ -265,7 +265,7 @@ export const posts: Array<postInterface> = [
       "Les deseo muchos éxitos, y gracias por la oportunidad brindada.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/26/2023",
   },
   {
@@ -290,7 +290,7 @@ export const posts: Array<postInterface> = [
       "Las tecnologías que utilicé durante el desarrollo de la aplicación fueron TypeScript, NodeJS, Express, React, Bootstrap, Redux, JWT, MercadoPago, gestor de envíos de emails, MongoDB con mongoose, entre otras.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/27/2023",
   },
   {
@@ -324,7 +324,7 @@ export const posts: Array<postInterface> = [
       "Solo queda decir gracias a la UCA por brindarme esa oportunidad 💚.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/27/2023",
   },
   {
@@ -368,7 +368,7 @@ export const posts: Array<postInterface> = [
       "https://github.com/Sebastian-pz/TDG-2023",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/03/2023",
   },
   {
@@ -391,7 +391,7 @@ export const posts: Array<postInterface> = [
       "Quiero agradecer a mis compañeros de Team Ducker Mati y Meli, primero que todo por sumarse al proyecto, segundo porque al momento de transicionar al front, mis habilidades con el CSS no estaban tan trabajadas como sí lo están ahora, me tuvieron toda la paciencia del mundo y me fueron explicando poco a poco, y tercero, por ser tan buena onda y hacer de este proyecto un trabajo muy ameno y divertido.",
     ],
 
-    author: "Sebastian Pérez",
+    author,
     creationDate: "11/27/2023",
   },
 ];
