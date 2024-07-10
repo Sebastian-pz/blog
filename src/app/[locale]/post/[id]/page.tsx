@@ -8,16 +8,18 @@ import { getPost } from "@/utilities/const";
 
 import MediaComponent from "@/components/Media/MediaComponent";
 import DescriptionLoader from "./DescriptionLoader";
+import { useLocale } from "next-intl";
 
 interface paramsInterface {
   params: {
-    id: number;
+    id: string;
   };
 }
 
 export default function Page({ params }: paramsInterface) {
+  const activeLocale = useLocale();
   // Método con NextJS (server rendering)
-  const post = getPost(params.id);
+  const post = getPost(activeLocale, params.id);
 
   // Método tradicional con React ->
   /*

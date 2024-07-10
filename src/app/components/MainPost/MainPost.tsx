@@ -1,13 +1,17 @@
 import Link from "next/link";
 import { getMainPost } from "@/utilities/const";
+import { useLocale } from "next-intl";
 
 export default function MainPost() {
-  const mainPost = getMainPost();
+  const localeActive = useLocale();
+  const mainPost = getMainPost(localeActive);
 
   return (
     <div className="home__mainPost text-center border-b-2 border-primary-color-900 pb-6">
       <h2 className="text-3xl font-bold mb-3 hover:text-primary-color-600">
-        <Link href={`/post/${mainPost.id}`}>{mainPost.title}</Link>
+        <Link href={`/${localeActive}/post/${mainPost.id}`}>
+          {mainPost.title}
+        </Link>
       </h2>
       <img
         src={mainPost.image.src}

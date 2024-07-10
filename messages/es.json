@@ -1,0 +1,34 @@
+{
+  "index": {
+    "title": "Hola mundo"
+  },
+  "navBar": {
+    "home": "Inicio",
+    "Social": "Social",
+    "AboutMe": "Acerca de mí",
+    "search": "Buscar"
+  },
+  "about": {
+    "role": "Desarrollador fullstack 🌎",
+    "focused": "Enfocado en el desarrollo web",
+    "callToAction": "¡Contácteme!",
+    "introduction": "Programando desde 2020, con experiencia en el desarrollo fullstack, buscando generar soluciones escalables a los problemas de las empresas.",
+    "likeTo": "Me gusta llevar cosas del día a día a código 👨🏼‍💻, los animales 🐕, los atardeceres 🌄 y demás...",
+    "workAvailability": "Escuchando ofertas",
+    "workAvailabilityLabel": "Disponible",
+    "birthDate": "29 de Julio"
+  },
+  "aboutExtendedInfo": {
+    "experienceInYears": "Más de un año y medio de experiencia profesional",
+    "englishLevel": "Inglés B2 - C1",
+    "englishStatus": "(Certificado), y actualmente sigo estudiando para mejorar."
+  },
+  "aboutExperience": {
+    "title": "Experiencia profesional",
+    "note": "Actualmente se está trabajando en conectar las experiencias con los posts del blog correspondientes"
+  },
+  "aboutProjects": {
+    "title": "Proyectos que he creado",
+    "label": "Solo aparecen algunos de los que he creado, puedes ver más en GitHub"
+  }
+}

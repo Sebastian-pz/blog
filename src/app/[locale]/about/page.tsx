@@ -12,8 +12,10 @@ import GitHubIcon from "@/public/svg/github.svg";
 import LinkedInIcon from "@/public/svg/linkedin.svg";
 import CakeIcon from "@/public/svg/cake.svg";
 import WorkIcon from "@/public/svg/work.svg";
+import { useTranslations } from "next-intl";
 
 export default function MainPage() {
+  const t = useTranslations("about");
   return (
     <main className="m-auto border border-primary-color-800 w-[95%] mt-10 rounded-xl md:w-[80%] xl:w-[60%]">
       <Image
@@ -34,9 +36,7 @@ export default function MainPage() {
           />
           <section className="ml-2 md:ml-6">
             <h1 className="font-bold text-2xl mb-3">Sebastian Pérez</h1>
-            <p className="hidden md:inline">
-              Desarrollador fullstack enfocado en la web 🌎
-            </p>
+            <p className="hidden md:inline">Desarrollador fullstack 🌎</p>
             <p className="md:hidden">Enfocado en la web 🌎</p>
             <p>spezuluaga@gmail.com</p>
           </section>
