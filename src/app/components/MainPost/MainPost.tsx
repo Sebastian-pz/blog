@@ -5,7 +5,7 @@ export default function MainPost() {
   const mainPost = getMainPost();
 
   return (
-    <div className="home__mainPost text-center border-b-2 border-slate-200 pb-6">
+    <div className="home__mainPost text-center border-b-2 border-primary-color-900 pb-6">
       <h2 className="text-3xl font-bold mb-3 hover:text-primary-color-600">
         <Link href={`/post/${mainPost.id}`}>{mainPost.title}</Link>
       </h2>
