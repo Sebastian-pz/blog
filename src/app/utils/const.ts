@@ -316,13 +316,15 @@ export const posts: Array<postInterface> = [
 
       "Finalmente, el proyecto se expuso a la universidad y el resultado fue la aprobación. En el semestre 2 (SII-2023) la aplicación entró en producción y empezó a ser utilizada por los estudiantes.",
 
-      "Mis responsabilidades en el proyecto fueron:",
+      "|subtitle|Mis responsabilidades en el proyecto fueron:",
 
-      "✅ Desarrollar las principales funciones de la lógica en el frontend, encargándome de que el código escrito fuese sencillo y escalable.",
-      "✅ Conectar el front con la API, creando funciones específicas que se pudieran reutilizar en cada componente de la aplicación para así tener unas mejores prácticas y garantizar que una futura refactorización se pudiese llevar a cabo de manera más sencilla.",
-      "✅ Manejar las sesiones de usuario con sus respectivas validaciones, encargarme de que los usuarios tengan las funciones y los renderizados correspondientes a sus roles, además de también implementar un sistema para un desloggeo automático cuando el token expire.",
-      "✅ Desarrollar interfaces de usuario limpias, acordes a la naturaleza de la aplicación, que sean intuitivas y que a los usuarios se les haga cómodas de ver y utilizar.",
-      "✅ Entre otras funciones como lo eran el manejo de solicitudes, el desarrollo de la API, las conexiones con la base de datos, el sistema de inicio de sesión, etc.",
+      "✅ Desarrollo de lógica Frontend: Implementé las principales funciones de la lógica en el frontend, asegurando que el código fuera sencillo, escalable y mantenible.",
+      "✅ Integración Frontend y API: Conecté el frontend con la API, creando funciones reutilizables y los correspondientes servicios de la aplicación para promover mejores prácticas y facilitar futuras refactorizaciones.",
+      "✅ Gestión de sesiones de usuario: Administré las sesiones de usuario con validaciones correspondientes, tanto en el backend como en el frontend, asegurando que cada usuario tuviera acceso a funciones y renderizados específicos según su rol. Implementé un sistema de retokenización y cierre de sesión automático basado en la expiración del token.",
+      "✅ Desarrollo de interfaces de usuario: Con ayuda de mis compañeros diseñé interfaces de usuario limpias y acordes a la naturaleza de la aplicación, priorizando la intuición y comodidad de uso para los usuarios.",
+      "✅ Manejo de solicitudes y desarrollo backend: Apoyé y desarrollé en conjunto con el equipo de trabajo las responsabilidades de manejar las solicitudes, desarrollar la API, establecer conexiones con la base de datos, manejo de archivos y crear el sistema de inicio de sesión, entre otras tareas.",
+      "✅ Optimización del código: Procuré que el código desarrollado fuera óptimo, siguiendo buenas prácticas de programación y manteniéndolo sencillo de entender para facilitar el trabajo en equipo y el mantenimiento futuro.",
+      "✅ Colaboración y pair programming: Durante el desarrollo del proyecto participé activamente en pair programming, colaborando con mis compañeros para resolver problemas, compartir conocimientos y mejorar la calidad del código de manera conjunta.",
 
       "Sin duda alguna, una de las experiencias en las que más he aprendido como programador.",
 

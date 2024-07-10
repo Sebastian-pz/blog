@@ -8,7 +8,7 @@ interface PostProps {
 
 export default function Post({ post, introductionParagraph }: PostProps) {
   return (
-    <div className="home__post border-b lg:text-xl border-primary-color-200 pt-9 pb-9">
+    <div className="home__post border-b-2 lg:text-xl border-primary-color-900 pt-9 pb-9">
       <div className="m-auto">
         <img
           src={post.image.src}
