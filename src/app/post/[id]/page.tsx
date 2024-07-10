@@ -31,14 +31,10 @@ export default function Page({ params }: paramsInterface) {
     return (
       <div className="m-auto w-3/4 sm:w-3/5 lg:w-2/5">
         <h1 className="text-3xl font-bold mb-3 mt-6">{post.title}</h1>
-        <p className="text-sm text-gray-500">{post.author}</p>
-        <p className="text-sm text-gray-500">
-          Created at:{" "}
-          <time
-            itemProp="datePublished"
-            dateTime={post.creationDate}
-            className="text-sm text-gray-500"
-          >
+        <p className="text text-gray-900">{post.author}</p>
+        <p className="text-sm text-gray-900">
+          Created on:{" "}
+          <time itemProp="datePublished" dateTime={post.creationDate}>
             {post.creationDate}
           </time>
         </p>
@@ -51,24 +47,6 @@ export default function Page({ params }: paramsInterface) {
 
         <section className="leading-9">
           {post.description.map((text, index) => {
-            // Me sorprende lo bien optimizado que está el método includes
-            // if (text.includes("https://")) {
-            //   return (
-            //     <Link
-            //       href={encodeURI(text.toString())}
-            //       target="_blank"
-            //       className="text-lime-700 hover:text-lime-600"
-            //     >
-            //       {text}
-            //     </Link>
-            //   );
-            // }
-
-            // return (
-            //   <p key={index} className="mb-7">
-            //     {text}
-            //   </p>
-            // );
             return (
               <DescriptionLoader paragraph={text.toString()} key={index} />
             );
