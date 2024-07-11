@@ -41,5 +41,9 @@
     "experience": "Experience",
     "opinion": "Opinion",
     "projects": "Projects"
+  },
+  "filteredPostsExperience": {
+    "title": "My experiences working as a software developer 🧪",
+    "description": "In this experience section I tell about my professional career in world of software development.Through these posts, I share my experiences in different projects, teams and organizations, I talk about the technologies and methodologies that I have used, and, although I mention somewhat technical terms, my approach is more narrative to offer an overview of my path and learning.."
   }
 }
