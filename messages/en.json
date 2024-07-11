@@ -44,6 +44,10 @@
   },
   "filteredPostsExperience": {
     "title": "My experiences working as a software developer 🧪",
-    "description": "In this experience section I tell about my professional career in world of software development.Through these posts, I share my experiences in different projects, teams and organizations, I talk about the technologies and methodologies that I have used, and, although I mention somewhat technical terms, my approach is more narrative to offer an overview of my path and learning.."
+    "description": "In this experience section I tell about my professional career in world of software development.Through these posts, I share my experiences in different projects, teams and organizations, I talk about the technologies and methodologies that I have used, and, although I mention somewhat technical terms, my approach is more narrative to offer an overview of my path and learning..."
+  },
+  "filteredPostsOpinion": {
+    "title": "These are my opinions on things in the world of software development in general 🤔",
+    "description": "The Opinion section is more focused on expressing my 'thoughts' about the world of software development. I talk about a few news, trends, clean code, good practices, architectures and so on. Some of these topics are still beyond my control, so it is very likely that I will rely on experts (always leaving the credits to the person who shares their knowledge)."
   }
 }

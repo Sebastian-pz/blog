@@ -45,5 +45,9 @@
   "filteredPostsExperience": {
     "title": "Mis experiencias trabajando como desarrollador de software 🧪",
     "description": "En esta sección de Experiencia relato mi trayectoria profesional en el campo del desarrollo de software. A través de estos posts, comparto mis vivencias en diferentes proyectos, equipos y organizaciones, hablo de las tecnologías y metodologías que he utilizado, y, aunque hago mención de temas un poco técnicos, mi enfoque es más narrativo para ofrecer una visión general de mi recorrido y aprendizajes."
+  },
+  "filteredPostsOpinion": {
+    "title": "Estos son mis opiniones sobre cosas de tecnología en general 🤔",
+    "description": "La sección de Opinión está más enfocada en exponer mis 'pensamientos' sobre el mundo del desarrollo de software. Hablo sobre unas pocas noticias, tendencias, clean code, buenas prácticas, arquitecturas y demás. Algunos de estos temas aún se escapan a mi dominio, por lo que es muy probable que me apoye de expertos (siempre dejando los créditos a la persona que comparte su conocimiento)."
   }
 }
