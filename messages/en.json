@@ -4,8 +4,8 @@
   },
   "navBar": {
     "home": "Home",
-    "Social": "Social",
-    "AboutMe": "About",
+    "social": "Social",
+    "about": "About",
     "search": "Search"
   },
   "about": {

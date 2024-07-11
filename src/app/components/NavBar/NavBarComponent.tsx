@@ -3,14 +3,23 @@ import React from "react";
 import LINK_LIST from "./Constants";
 
 import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Navbar() {
   const localeActive = useLocale();
 
+  const t = useTranslations("navBar");
+
+  const tRoutes = LINK_LIST.map((route) => {
+    return {
+      ...route,
+      label: t(route.label),
+    };
+  });
+
   return (
     <header className="flex p-2 bg-primary-color-100 border border-primary-color-800 mb-4 justify-center items-center w-full">
-      {LINK_LIST.map((route, index) => {
+      {tRoutes.map((route, index) => {
         const { label, path, styles } = route;
         return (
           <Link
