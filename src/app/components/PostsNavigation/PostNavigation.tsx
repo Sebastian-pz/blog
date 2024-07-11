@@ -15,11 +15,11 @@ export default function PostNavigation() {
         />
         <PersonalizedLink
           href={`/${activeLocale}/project`}
-          label={t("opinion")}
+          label={t("projects")}
         />
         <PersonalizedLink
           href={`/${activeLocale}/opinion`}
-          label={t("projects")}
+          label={t("opinion")}
         />
       </div>
     </>
