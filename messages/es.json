@@ -35,5 +35,11 @@
   },
   "aboutCV": {
     "title": "Descarga mi CV"
+  },
+  "postNavigation": {
+    "title": "¿Quieres ver post sobre algo en específico?",
+    "experience": "Experiencia",
+    "opinion": "Opinión",
+    "projects": "Proyectos"
   }
 }
