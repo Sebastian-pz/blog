@@ -1,10 +1,13 @@
 import Link from "next/link";
-import { getMainPost } from "@/utilities/const";
 import { useLocale } from "next-intl";
+import { postInterface } from "@/app/utils/interfaces";
 
-export default function MainPost() {
+interface propsComponent {
+  post: postInterface;
+}
+
+export default function MainPost({ post: mainPost }: propsComponent) {
   const localeActive = useLocale();
-  const mainPost = getMainPost(localeActive);
 
   return (
     <div className="home__mainPost text-center border-b-2 border-primary-color-900 pb-6">

@@ -1,10 +1,11 @@
-import { getFilteredPosts } from "@/utilities/const";
+import { getPostsByType } from "@/utilities/const";
 import { PostTypes } from "@/utilities/interfaces";
 import FilteredPosts from "@/components/FilteredPosts/FilteredPosts";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function page() {
-  const posts = getFilteredPosts(PostTypes.experience);
+  const localeActive = useLocale();
+  const posts = getPostsByType(localeActive, PostTypes.experience);
 
   const t = useTranslations("filteredPostsExperience");
 

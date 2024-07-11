@@ -17,19 +17,19 @@ export default function LocaleSwitcher() {
   }
 
   return (
-    <label className="border-2 rounded-lg" htmlFor="">
+    <div className="border-2 rounded-lg">
       <p className="sr-only">Change Language</p>
       <select
         defaultValue={localeActive}
         name=""
         id=""
-        className="py-2 rounded-lg"
+        className="p-2 rounded-lg"
         onChange={onSelectChange}
         disabled={isPending}
       >
         <option value="es">Español</option>
         <option value="en">English</option>
       </select>
-    </label>
+    </div>
   );
 }

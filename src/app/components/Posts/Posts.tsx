@@ -1,11 +1,11 @@
-import { getPosts } from "@/utilities/const";
+import { postInterface } from "@/app/utils/interfaces";
 import Post from "@/components/Post/Post";
-import { useLocale } from "next-intl";
 
-export default function Posts() {
-  const localeActive = useLocale();
-  const posts = getPosts(localeActive, 10);
+interface propsComponent {
+  posts: Array<postInterface>;
+}
 
+export default function Posts({ posts }: propsComponent) {
   return (
     <>
       {posts.map((post, index) => {

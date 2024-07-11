@@ -1,54 +1,24 @@
-import { postInterface, PostTypes } from "./interfaces";
+import { PostTypes } from "./interfaces";
 
 import { posts as PostsInSpanish } from "./locale/es/posts";
 import { posts as PostsInEnglish } from "./locale/en/posts";
 
-let posts: Array<postInterface> = PostsInSpanish;
-let defaultPost = posts[0];
-
-function loadPosts(locale: string) {
-  switch (locale) {
+export function getPosts(lang: string) {
+  switch (lang) {
     case "es":
-      posts = PostsInSpanish;
-      defaultPost = posts[0];
-      return posts;
+      return PostsInSpanish;
     case "en":
-      posts = PostsInEnglish;
-      defaultPost = posts[0];
-      return posts;
+      return PostsInEnglish;
     default:
-      defaultPost = posts[0];
-      return posts;
+      return PostsInEnglish;
   }
 }
 
-export function getPosts(locale: string, limit = 5) {
-  loadPosts(locale);
-  return posts.slice(1, limit);
-}
-export function getPost(locale: string, id: string) {
-  loadPosts(locale);
-  return posts.find((post, index) => post.id === id) || defaultPost;
+export function getPostById(lang: string, id: string) {
+  const posts = getPosts(lang);
+  return posts.find((post) => post.id === id) || posts[0];
 }
 
-export function getMainPost(locale: string) {
-  loadPosts(locale);
-  return posts[0];
+export function getPostsByType(lang: string, type: PostTypes) {
+  return getPosts(lang).filter((post) => post.type === type);
 }
-
-export function getFilteredPosts(filter: PostTypes, limit = 5) {
-  const filteredPosts = posts.filter((post) => post.type === filter);
-  if (!filteredPosts.length) return getPosts("default", limit);
-  return filteredPosts;
-}
-
-export function getRandomPost() {
-  const post = posts[Math.floor(Math.random() * posts.length)];
-  return post.id;
-}
-
-/*
-
-Utilizar funciones con nombres dentro del hook useEffect de react suena un poco... raro ¿no? Pues no, o al menos no lo es para Cory House.
-LINK: 
-*/

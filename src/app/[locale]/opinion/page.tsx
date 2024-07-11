@@ -1,9 +1,11 @@
 import FilteredPosts from "@/components/FilteredPosts/FilteredPosts";
-import { getFilteredPosts } from "@/utilities/const";
+import { getPostsByType } from "@/utilities/const";
 import { PostTypes } from "@/utilities/interfaces";
+import { useLocale } from "next-intl";
 
 export default function page() {
-  const posts = getFilteredPosts(PostTypes.opinion);
+  const localeActive = useLocale();
+  const posts = getPostsByType(localeActive, PostTypes.opinion);
 
   return (
     <FilteredPosts
