@@ -49,5 +49,9 @@
   "filteredPostsOpinion": {
     "title": "These are my opinions on things in the world of software development in general 🤔",
     "description": "The Opinion section is more focused on expressing my 'thoughts' about the world of software development. I talk about a few news, trends, clean code, good practices, architectures and so on. Some of these topics are still beyond my control, so it is very likely that I will rely on experts (always leaving the credits to the person who shares their knowledge)."
+  },
+  "filteredPostsProjects": {
+    "title": "These are the projects I have been working on 👷🏻‍♂️",
+    "description": "In this section I present my personal projects in software development. They are projects that I have developed out of passion and curiosity, with the aim of learning and mastering new tools (or simply as a hobby). For example, creating administrative managers in Excel with VBA and then creating Bots using Python."
   }
 }

@@ -1,17 +1,19 @@
 import FilteredPosts from "@/components/FilteredPosts/FilteredPosts";
 import { getPostsByType } from "@/utilities/const";
 import { PostTypes } from "@/utilities/interfaces";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function page() {
   const localeActive = useLocale();
   const posts = getPostsByType(localeActive, PostTypes.project);
 
+  const t = useTranslations("filteredPostsProjects");
+
   return (
     <FilteredPosts
       posts={posts}
-      title="Estos son los proyectos en los que he trabajado 👷🏻‍♂️"
-      description="En esta sección expongo mis proyectos personales en el desarrollo de aplicaciones de todo tipo. Estos son proyectos que he desarrollado por pasión y curiosidad, con el objetivo de aprender y dominar nuevas herramientas (o simplemente por hobby). Aquí se muestra cómo puedo estar creado gestores en Excel con VBA y luego estar creando Bots utilizando Python."
+      title={t("title")}
+      description={t("description")}
     />
   );
 }
