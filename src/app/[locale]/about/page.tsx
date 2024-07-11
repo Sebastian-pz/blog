@@ -36,8 +36,8 @@ export default function MainPage() {
           />
           <section className="ml-2 md:ml-6">
             <h1 className="font-bold text-2xl mb-3">Sebastian Pérez</h1>
-            <p className="hidden md:inline">Desarrollador fullstack 🌎</p>
-            <p className="md:hidden">Enfocado en la web 🌎</p>
+            <p className="hidden md:inline">{t("role")}</p>
+            <p className="md:hidden">{t("focused")}</p>
             <p>spezuluaga@gmail.com</p>
           </section>
         </div>
@@ -45,25 +45,18 @@ export default function MainPage() {
           href="mailto:spezuluaga@gmail.com"
           className="border bg-primary-color-500 p-2 rounded-lg hidden md:inline   h-10 hover:bg-primary-color-700 text-white"
         >
-          ¡Contácteme!
+          {t("callToAction")}
         </a>
       </div>
       <section className="px-3 mb-4 lg:px-12">
-        <p>
-          Programando desde 2020, con experiencia en el desarrollo fullstack,
-          buscando generar soluciones escalables a los problemas de las
-          empresas.
-        </p>
-        <p>
-          Me gusta crear cosas 👨🏼‍💻, los animales 🐕, los atardeceres 🌄 y
-          demás...
-        </p>
+        <p>{t("introduction")}</p>
+        <p>{t("likeTo")}</p>
       </section>
 
       <section className="flex justify-evenly border-b border-primary-color-800">
-        <abbr title="Actualmente abierto a trabajar" className="no-underline">
+        <abbr title={t("workAvailability")} className="no-underline">
           <Svg
-            label="Disponible"
+            label={t("workAvailability")}
             link="mailto:spezuluaga@gmail.com"
             svg={WorkIcon}
           />
@@ -79,7 +72,7 @@ export default function MainPage() {
           link="https://github.com/Sebastian-pz"
           svg={GitHubIcon}
         />
-        <Svg label="29 de Julio" svg={CakeIcon} />
+        <Svg label={t("birthDate")} svg={CakeIcon} />
       </section>
 
       <ExtendedInfo />

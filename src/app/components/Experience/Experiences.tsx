@@ -1,16 +1,16 @@
 import Card from "@/components/Card/Card";
 import EXPERIENCES from "@/utilities/ExperiencesConst";
+import { useTranslations } from "next-intl";
 
 export default function Experiences() {
+  const t = useTranslations("aboutExperience");
+
   return (
     <section className="mt-8 p-2">
       <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold ">
-        Experiencia profesional
+        {t("title")}
       </h2>
-      <p className="text-center my-4">
-        Actualmente se está trabajando en conectar las experiencias con los
-        posts del blog correspondientes
-      </p>
+      <p className="text-center my-4">{t("note")}</p>
       <section className="flex flex-col w-full justify-center items-center md:px-4 lg:px-10">
         {EXPERIENCES.map((experience, index) => {
           return (

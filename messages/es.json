@@ -20,6 +20,7 @@
   },
   "aboutExtendedInfo": {
     "experienceInYears": "Más de un año y medio de experiencia profesional",
+    "experienceComplement": "creando soluciones web a problemas reales, trabajando en equipo con metodologías AGILE, pair programming y demás.",
     "englishLevel": "Inglés B2 - C1",
     "englishStatus": "(Certificado), y actualmente sigo estudiando para mejorar."
   },
@@ -29,6 +30,10 @@
   },
   "aboutProjects": {
     "title": "Proyectos que he creado",
-    "label": "Solo aparecen algunos de los que he creado, puedes ver más en GitHub"
+    "label": "Solo aparecen algunos de los que he creado, puedes ver más en GitHub",
+    "callToAction": "Click aquí"
+  },
+  "aboutCV": {
+    "title": "Descarga mi CV"
   }
 }

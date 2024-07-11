@@ -13,13 +13,14 @@
     "focused": "Focused on web development",
     "callToAction": "Contact me!",
     "introduction": "Programming since 2020, with experience in fullstack development, aiming to create scalable solutions to business problems.",
-    "likeTo": "I like bringing everyday things to code 👨🏼‍💻, animals 🐕, sunsets 🌄, and more...",
+    "likeTo": "I like to bring things to code 👨🏼‍💻, animals 🐕, sunsets 🌄, and more...",
     "workAvailability": "Open to offers",
     "workAvailabilityLabel": "Available",
     "birthDate": "July 29"
   },
   "aboutExtendedInfo": {
-    "experienceInYears": "Over a year and a half of professional experience",
+    "experienceInYears": "1.5+ years of full-stack development experience",
+    "experienceComplement": " creating web solutions to real problems, working as a team with agile SCRUM methodologies, pair programming and others.",
     "englishLevel": "English B2 - C1",
     "englishStatus": "(Certified), and currently continuing to study to improve."
   },
@@ -29,6 +30,10 @@
   },
   "aboutProjects": {
     "title": "Projects I've Created",
-    "label": "Only a few of the projects I've created are shown here, you can see more on GitHub"
+    "label": "Only a few of the projects I've created are shown here, you can see more on GitHub",
+    "callToAction": "Click here"
+  },
+  "aboutCV": {
+    "title": "Download my CV"
   }
 }
