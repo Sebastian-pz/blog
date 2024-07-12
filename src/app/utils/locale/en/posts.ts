@@ -188,4 +188,24 @@ export const posts: Array<postInterface> = [
     author,
     creationDate: "11/03/2023",
   },
+  {
+    id: "5e14c5bb00be4450b2376eda189a64fb",
+    type: PostTypes.project,
+    title: "I Created a Timed Math Challenge App 👨🏻‍🔬⌛!",
+    mediaType: "video",
+    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: PersonImage,
+    description: [
+      "I created a quick math challenge game! The goal is to improve the response time and accuracy of my classmates at university  when faced with basic math problems.",
+      "The idea came from a moment in my university classes where we were tested on how fluently we could respond to math questions. Personally, I did well (#humility), but my classmates struggled.",
+      "Because of this, I came up with the idea to create an app to practice the speed at which you can answer basic math questions (related to addition, subtraction, multiplication, and division).",
+      "I made this game with a scoring system to track the players' improvement, allowing them to compare their progress as they play.",
+      "Honestly, this is a project I want to revisit today. It's interesting and I can scale it up a bit more just for fun.",
+      "The scores are saved per person and are available whenever the player decides to return and play again!",
+      "The stack I used for developing the game was: TypeScript as the programming language, Vite, and Tailwind 😄",
+    ],
+
+    author,
+    creationDate: "11/03/2023",
+  },
 ];
