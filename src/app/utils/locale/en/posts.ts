@@ -298,4 +298,39 @@ export const posts: Array<postInterface> = [
     author,
     creationDate: "11/27/2023",
   },
+  {
+    id: "2bb2193700824b11bcc33c9dc5dd3c65",
+    type: PostTypes.experience,
+    title: "I Worked as a Fullstack Developer for UCA 🎓",
+    mediaType: "video",
+    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: PersonImage,
+    description: [
+      "In January 2023, I joined a group of developers tasked with creating a web application for the Universidad Católica Argentina (UCA), an application designed to educate their students.",
+
+      "I was hired as a fullstack developer, responsible for both frontend and backend development. The application aimed to simulate processes that law students would commonly face when entering the professional world. In short, our role was to recreate processes that legal professionals handle in their daily work.",
+
+      "This way, students could better mentally prepare and adapt to the tools and situations they would encounter in the future.",
+
+      "During this job, I used Agile methodology, pair programming, and the stack of Python, NodeJS, TypeScript, Express, React, Redux, MaterialUI, and more.",
+
+      "Finally, the project was presented to the university and the result was its approval. In semester 2 (SII-2023), the application went into production and began being used by students.",
+
+      "|subtitle|My responsibilities in the project were:",
+
+      "✅ Frontend Logic Development: Implemented the main logic functions in the frontend, ensuring that the code was simple, scalable, and maintainable.",
+      "✅ Frontend and API Integration: Connected the frontend with the API, creating reusable functions and corresponding application services to promote best practices and facilitate future refactorings.",
+      "✅ User Session Management: Managed user sessions with appropriate validations, both in the backend and frontend, ensuring that each user had access to specific functions and renderings according to their role. Implemented a token re-authentication and automatic logout system based on token expiration.",
+      "✅ User Interface Development: With the help of my colleagues, designed clean user interfaces aligned with the nature of the application, prioritizing user intuition and ease of use.",
+      "✅ Request Handling and Backend Development: Supported and developed with the team the responsibilities of handling requests, developing the API, establishing database connections, file management, and creating the login system, among other tasks.",
+      "✅ Code Optimization: Ensured that the developed code was optimal, following good programming practices and keeping it easy to understand to facilitate teamwork and future maintenance.",
+      "✅ Collaboration and Pair Programming: Actively participated in pair programming during the project development, collaborating with my colleagues to solve problems, share knowledge, and improve code quality together.",
+
+      "Undoubtedly, one of the experiences where I have learned the most as a programmer.",
+
+      "Just want to say thank you to UCA for giving me this opportunity 💚.",
+    ],
+    author,
+    creationDate: "11/27/2023",
+  },
 ];
