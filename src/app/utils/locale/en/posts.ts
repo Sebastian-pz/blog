@@ -273,4 +273,29 @@ export const posts: Array<postInterface> = [
     author,
     creationDate: "11/26/2023",
   },
+  {
+    id: "6957b082e06f4ba0a18b377143ce407b",
+    type: PostTypes.experience,
+    title: "I Worked as a Fullstack Developer for NutriciónVital 🏪",
+    mediaType: "video",
+    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: PersonImage,
+    description: [
+      "I worked as a fullstack developer in creating an e-commerce platform for dietary supplements and nutritional plan sales services.",
+
+      "I was contacted to join as a fullstack developer in the creation of an e-commerce application for the Argentine company Nutrición Vital, along with other developers in the same role.",
+
+      "The company wanted to leverage its relationship with some gyms to sell products to their clients online. They wanted to offer the possibility to purchase items and have them delivered directly to their homes. To achieve this, they decided to create an online store from scratch with all the necessary functionalities for this type of sale.",
+
+      "Initially, my responsibilities included creating and optimizing the code and functionality of the web application.",
+
+      "Additionally, during the development of the application, I had to 'get involved' at a high level in the project architecture and best practices to make it more efficient.",
+
+      "As a fullstack developer, I was involved in the entire development of the application, from databases, API creation, authentication, authorization, security, to creating the visual part of the application (front end).",
+
+      "During the development of this project, I continued improving my skills with TypeScript, NodeJS, Express, React, Bootstrap, Redux, JWT, MercadoPago, email sending manager, MongoDB with mongoose, algorithmic logic, among others.",
+    ],
+    author,
+    creationDate: "11/27/2023",
+  },
 ];
