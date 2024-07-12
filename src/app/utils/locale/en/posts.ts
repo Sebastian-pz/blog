@@ -91,4 +91,27 @@ export const posts: Array<postInterface> = [
     author,
     creationDate: "02/17/2024",
   },
+  {
+    id: "7a46a12b32e4461e911ef2e941303a33",
+    type: PostTypes.project,
+    title: "The Blog is Almost Ready 🚀👨🏻‍🚀!",
+    mediaType: "image",
+    image: BlogPostMedia,
+    description: [
+      "Primarily focused on tech posts and updates about my projects, the blog is almost complete. There are just a few final touches left, but the overall functionality and details of the application are already finished.",
+
+      "The creation of the application started in the first week of November 2023 and progressed gradually. After finishing my academic term at university, the project was almost entirely complete; in fact, only the styling details were left to finalize.",
+
+      "Initially, there was no estimate of the development time required for this blog. Being so close to the final exam periods made budgeting somewhat uncertain.",
+
+      "Finally, as of today, November 16, 2023, the project is practically finished.",
+
+      "The technologies used for this project were primarily TypeScript, NextJS - React, Tailwind for styling, and ESLint with standard to improve the code quality.",
+
+      "|note|(Update) 07/12/2024 Blog development is still in process xD",
+      "|note| There were many changes so far",
+    ],
+    author,
+    creationDate: "11/16/2023",
+  },
 ];
