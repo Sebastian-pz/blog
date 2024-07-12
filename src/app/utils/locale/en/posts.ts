@@ -333,4 +333,47 @@ export const posts: Array<postInterface> = [
     author,
     creationDate: "11/27/2023",
   },
+  {
+    id: "3036dd4b2fbb4b0496571af11af2aa6d",
+    type: PostTypes.project,
+    title: "I Did My Graduation Project with Programming!",
+    mediaType: "video",
+    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: PersonImage,
+    description: [
+      "My graduation project was one of the most time-consuming tasks for me this year. I wanted to create something meaningful and not so commonly seen, and in some way, I wanted to use programming tools.",
+
+      "To achieve this, I created an algorithm based on 'classes' using TypeScript that allowed me to analyze the content published by brands on various social media platforms.",
+
+      "In short, the goal of this algorithm was to identify behavioral patterns, color patterns, posting frequency patterns, and overall how users interact with popular clothing brands on social media.",
+
+      "Although initially the algorithm was tied to a dependency that allowed dynamic examination of different social media accounts, this idea had to be discarded because it did not comply with the policies for presenting the graduation project.",
+
+      "Once the program was completed, it provides results on the primary color range for products, frequent posting times, determined content frequency, patterns that may indicate 'success' or 'failure' of a post, post categories that generate more interactions, content used to improve social media visibility, and more.",
+
+      "It became a very comprehensive tool that helps understand the practices of successful companies on social media.",
+
+      "For the original exercise, the last 150 posts of the company being analyzed were taken. From there, posts were divided into categories (products, memes, or quotes) and other data was added for categorization: date, time, and primary colors.",
+
+      "Some examples of the functions of the algorithm include:",
+      "✅ Identifying categories with the highest number of interactions.",
+      "✅ Identifying colors with the highest number of interactions.",
+      "✅ Identifying posts with the highest number of interactions.",
+      "✅ Determining the frequency in days with which each type of content is posted.",
+      "✅ Deviations and Xi².",
+      "✅ Assessing potential loss from using colors not aligned with the category.",
+      "✅ Identifying categories used in advertising strategies.",
+
+      "Thanks to this tool, one can observe how the strategies of established companies work and try to replicate them in smaller companies or those just entering the market.",
+
+      "Overall, it provides an overview of the content strategies that work for large companies with an established audience.",
+      "Creating the tests was the most satisfying part...",
+
+      "The algorithm is now available for our graduation project advisor to use with students.",
+      "You can see the repo with all the information here:",
+      "|link|https://github.com/Sebastian-pz/TDG-2023",
+    ],
+    author,
+    creationDate: "11/03/2023",
+  },
 ];
