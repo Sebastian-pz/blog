@@ -168,4 +168,24 @@ export const posts: Array<postInterface> = [
     author,
     creationDate: "11/03/2023",
   },
+  {
+    id: "89ad3aea22014a68963c69621baf1ea2",
+    type: PostTypes.project,
+    title: "I Created a Rock, Paper, Scissors Game App",
+    mediaType: "image",
+    image: PersonImage,
+    description: [
+      "I created a web application inspired by the popular game of rock, paper, scissors to test my knowledge during my free time at university and my work.",
+      "Initially, I wanted to practice my frontend skills and came across this challenge on *Frontend Mentor*. It was only focused on developing the visual aspect, but I decided to take it a step further and implement the necessary logic to make it playable.",
+      "First, I developed the visual part to test my CSS skills. As I mentioned earlier, I took on this challenge to improve my understanding of the front end. I wanted to test my vanilla CSS knowledge and improve wherever necessary.",
+      "Once the visual part was completed, I felt I could make it functional without much effort. So, I added the logic. In other words, I added JS to the HTML and CSS.",
+      "It was a really fun project that helped me improve my code, styles, and best practices.",
+      "To develop the project, I used the following technologies: TypeScript as the programming language, Vite as the build tool, React as the main development library, and vanilla CSS for styling the application.",
+      "If you want to see the game, here it is: ",
+      "|link|https://rps-game-navy.vercel.app/",
+    ],
+
+    author,
+    creationDate: "11/03/2023",
+  },
 ];
