@@ -243,4 +243,34 @@ export const posts: Array<postInterface> = [
     author,
     creationDate: "11/26/2023",
   },
+  {
+    id: "930a849815984e8a95d4f54f132aac29",
+    type: PostTypes.experience,
+    title:
+      "I Created a Sales, Inventory, and Payroll System Using Visual Basic for Apps 🧮",
+    mediaType: "video",
+    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: PersonImage,
+    description: [
+      "I intervened in a bar to improve their situation and management. The business had no information system in place, no inventories, payroll, accounting books, or supplier records, etc.",
+
+      "Initially, my intervention was focused on creating a temporary file (an algorithm) to manage sales, inventory, and payroll (because the company had already paid for the development of a software, so they would only use this Excel file for a short period of time).",
+
+      "I was responsible for creating the necessary algorithms to determine each table's payments, automate inventory deductions, and automatically record cash income or increases in accounts receivable (accounting tasks).",
+
+      "Yes, besides using my programming knowledge, I also used my skills as an administrator and financial accountant to help them with their issues (which were many, as mentioned earlier).",
+
+      "Once I developed the Excel file with macros to handle these functions, I noticed it was common for bills in such businesses to be paid separately. So, while my work was functional and what they had asked for, I decided to personalize it further to make their lives easier.",
+
+      "So yes, I intervened in many ways in this bar, and the most important achievement was that they now have the necessary tools to create the basic accounting records required to comply with DIAN and IyC.",
+
+      "I really enjoyed doing this work, both as a programmer and a financial 'expert', and felt that I made a significant contribution to the business.",
+
+      "Regarding the development, primarily Excel and its macros programmed in VBA were used (later I found out that you can also program in Excel with Python 🤦🏻‍♂️, maybe next time). The development of this algorithm was not very complex; it was about adapting to the local needs and writing code to meet them.",
+
+      "I wish them much success, and thank you for the opportunity given.",
+    ],
+    author,
+    creationDate: "11/26/2023",
+  },
 ];
