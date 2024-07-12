@@ -1,13 +1,20 @@
 import Link from "next/link";
-import { getMainPost } from "@/utilities/const";
+import { useLocale } from "next-intl";
+import { postInterface } from "@/app/utils/interfaces";
 
-export default function MainPost() {
-  const mainPost = getMainPost();
+interface propsComponent {
+  post: postInterface;
+}
+
+export default function MainPost({ post: mainPost }: propsComponent) {
+  const localeActive = useLocale();
 
   return (
     <div className="home__mainPost text-center border-b-2 border-primary-color-900 pb-6">
       <h2 className="text-3xl font-bold mb-3 hover:text-primary-color-600">
-        <Link href={`/post/${mainPost.id}`}>{mainPost.title}</Link>
+        <Link href={`/${localeActive}/post/${mainPost.id}`}>
+          {mainPost.title}
+        </Link>
       </h2>
       <img
         src={mainPost.image.src}

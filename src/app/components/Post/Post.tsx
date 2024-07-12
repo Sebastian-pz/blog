@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { postInterface } from "@/utilities/interfaces";
+import { useLocale } from "next-intl";
 
 interface PostProps {
   post: postInterface;
@@ -7,8 +8,10 @@ interface PostProps {
 }
 
 export default function Post({ post, introductionParagraph }: PostProps) {
+  const activeLocale = useLocale();
+
   return (
-    <div className="home__post border-b-2 lg:text-xl border-primary-color-900 pt-9 pb-9">
+    <article className="home__post border-b-2 lg:text-xl border-primary-color-900 pt-9 pb-9">
       <div className="m-auto">
         <img
           src={post.image.src}
@@ -18,7 +21,7 @@ export default function Post({ post, introductionParagraph }: PostProps) {
       </div>
       <div className="home__post__info">
         <h2 className="mb-4 font-bold hover:text-primary-color-600">
-          <Link className="" href={`/post/${post.id}`}>
+          <Link className="" href={`/${activeLocale}/post/${post.id}`}>
             {post.title}
           </Link>
         </h2>
@@ -26,6 +29,6 @@ export default function Post({ post, introductionParagraph }: PostProps) {
           {introductionParagraph}
         </p>
       </div>
-    </div>
+    </article>
   );
 }

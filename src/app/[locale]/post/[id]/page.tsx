@@ -1,31 +1,18 @@
-// En el caso de utilizar el método de client rendering
-// "use client"
-// import { useEffect, useState } from "react";
-// import { postInterface } from "../../utils/interfaces";
-
-import Link from "next/link";
-import { getPost } from "@/utilities/const";
+import { getPostById } from "@/utilities/const";
 
 import MediaComponent from "@/components/Media/MediaComponent";
 import DescriptionLoader from "./DescriptionLoader";
+import { useLocale } from "next-intl";
 
 interface paramsInterface {
   params: {
-    id: number;
+    id: string;
   };
 }
 
 export default function Page({ params }: paramsInterface) {
-  // Método con NextJS (server rendering)
-  const post = getPost(params.id);
-
-  // Método tradicional con React ->
-  /*
-    const [post, setPost] = useState<postInterface | undefined>(undefined);
-    useEffect(() => {
-      if (!post) setPost(getPost(id || 0));
-    }, [post]);
-    */
+  const activeLocale = useLocale();
+  const post = getPostById(activeLocale, params.id);
 
   if (post) {
     return (
@@ -44,7 +31,6 @@ export default function Page({ params }: paramsInterface) {
           media={post.media ? post.media : post.image}
           introductionParagraph={post.description[0]}
         />
-
         <section className="leading-9">
           {post.description.map((text, index) => {
             return (

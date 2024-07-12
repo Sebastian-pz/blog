@@ -1,9 +1,11 @@
-import { getPosts } from "@/utilities/const";
+import { postInterface } from "@/app/utils/interfaces";
 import Post from "@/components/Post/Post";
 
-export default function Posts() {
-  const posts = getPosts(30);
+interface propsComponent {
+  posts: Array<postInterface>;
+}
 
+export default function Posts({ posts }: propsComponent) {
   return (
     <>
       {posts.map((post, index) => {

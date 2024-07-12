@@ -2,6 +2,7 @@ import Link from "next/link";
 import { postInterface } from "@/app/utils/interfaces";
 import GoBack from "@/components/GoBack/GoBack";
 import PostNavigation from "@/components/PostsNavigation/PostNavigation";
+import { useLocale } from "next-intl";
 
 interface ComponentProps {
   title: string;
@@ -14,6 +15,7 @@ export default function FilteredPosts({
   title,
   description,
 }: ComponentProps) {
+  const localeActive = useLocale();
   return (
     <>
       <GoBack />
@@ -29,7 +31,7 @@ export default function FilteredPosts({
       {posts.map((post, index) => {
         const [introductionParagraph] = post.description;
         return (
-          <div
+          <article
             key={index}
             className="home__post m-auto  pt-9 pb-9 flex w-[90%] sm:w-[70%] lg:w-[50%] border-b lg:text-xl border-border-color"
           >
@@ -42,7 +44,7 @@ export default function FilteredPosts({
             </div>
             <div className="home__post__info ml-4 ">
               <h2 className="mb-4 lg:font-bold hover:text-primary-color-600">
-                <Link className="" href={`/post/${post.id}`}>
+                <Link className="" href={`/${localeActive}/post/${post.id}`}>
                   {post.title}
                 </Link>
               </h2>
@@ -50,7 +52,7 @@ export default function FilteredPosts({
                 {introductionParagraph}
               </p>
             </div>
-          </div>
+          </article>
         );
       })}
     </>

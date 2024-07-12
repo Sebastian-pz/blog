@@ -1,16 +1,16 @@
 const Routes: Array<IRoute> = [
   {
-    label: "Inicio",
+    label: "home",
     path: "/",
     styles: "",
   },
   {
-    label: "Sobre mí",
+    label: "about",
     path: "/about",
     styles: "",
   },
   {
-    label: "Social",
+    label: "social",
     path: "/social",
     styles: "",
   },

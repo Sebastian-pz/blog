@@ -1,0 +1,62 @@
+{
+  "index": {
+    "title": "Hello World"
+  },
+  "navBar": {
+    "home": "Home",
+    "social": "Social",
+    "about": "About",
+    "search": "Search"
+  },
+  "about": {
+    "role": "Fullstack Developer 🌎",
+    "focused": "Focused on web development",
+    "callToAction": "Contact me!",
+    "introduction": "Programming since 2020, with experience in fullstack development, aiming to create scalable solutions to business problems.",
+    "likeTo": "I like to bring things to code 👨🏼‍💻, animals 🐕, sunsets 🌄, and more...",
+    "workAvailability": "Open to offers",
+    "workAvailabilityLabel": "Available",
+    "birthDate": "July 29"
+  },
+  "aboutExtendedInfo": {
+    "experienceInYears": "1.5+ years of full-stack development experience",
+    "experienceComplement": " creating web solutions to real problems, working as a team with agile SCRUM methodologies, pair programming and others.",
+    "englishLevel": "English B2 - C1",
+    "englishStatus": "(Certified), and currently continuing to study to improve."
+  },
+  "aboutExperience": {
+    "title": "Professional Experience",
+    "note": "Currently working on connecting the experiences with the corresponding blog posts"
+  },
+  "aboutProjects": {
+    "title": "Projects I've Created",
+    "label": "Only a few of the projects I've created are shown here, you can see more on GitHub",
+    "callToAction": "Click here"
+  },
+  "aboutCV": {
+    "title": "Download my CV"
+  },
+  "postNavigation": {
+    "title": "Do you want to see more specific posts?",
+    "experience": "Experience",
+    "opinion": "Opinion",
+    "projects": "Projects"
+  },
+  "filteredPostsExperience": {
+    "title": "My experiences working as a software developer 🧪",
+    "description": "In this experience section I tell about my professional career in world of software development.Through these posts, I share my experiences in different projects, teams and organizations, I talk about the technologies and methodologies that I have used, and, although I mention somewhat technical terms, my approach is more narrative to offer an overview of my path and learning..."
+  },
+  "filteredPostsOpinion": {
+    "title": "These are my opinions on things in the world of software development in general 🤔",
+    "description": "The Opinion section is more focused on expressing my 'thoughts' about the world of software development. I talk about a few news, trends, clean code, good practices, architectures and so on. Some of these topics are still beyond my control, so it is very likely that I will rely on experts (always leaving the credits to the person who shares their knowledge)."
+  },
+  "filteredPostsProjects": {
+    "title": "These are the projects I have been working on 👷🏻‍♂️",
+    "description": "In this section I present my personal projects in software development. They are projects that I have developed out of passion and curiosity, with the aim of learning and mastering new tools (or simply as a hobby). For example, creating administrative managers in Excel with VBA and then creating Bots using Python."
+  },
+  "mainInfo": {
+    "title": "Information about the blog",
+    "description": "In this blog, I focus on sharing the latest updates about my projects, programming tips, and relevant industry information. Let's code, learn, and grow together! 💡👨‍💻",
+    "callToAction": "If you have any suggestions, don't hesitate to contact me!"
+  }
+}
