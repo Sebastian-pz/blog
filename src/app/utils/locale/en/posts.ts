@@ -114,4 +114,58 @@ export const posts: Array<postInterface> = [
     author,
     creationDate: "11/16/2023",
   },
+  {
+    id: "3ae67a3496d74fdfa5c16f6cbef1ed73",
+    type: PostTypes.opinion,
+    title:
+      "What Was It Like Working with Visual Basic for the First Time at the Regional Office of a Multinational?",
+    mediaType: "image",
+    image: BlogPostMedia,
+    description: [
+      "What do you think my experience was like working for a multinational company, on a regional project, with a programming language I had never used before, and with a high level of confidentiality?",
+
+      "Initially, if you haven't read the article about my experience as a developer for the company, here's the link for you to check it out first:",
+
+      "The link will be added when the blog is updated 😬",
+
+      "As I mentioned in that article, my experience working for this company was curious. Initially, they contacted me while avoiding giving too much information. I knew my job was to unify information, but nothing in detail.",
+
+      "It was quite interesting working with a company directly helping the HR sector (in the legal environment). It was very different from what I had done before. There was a lot at stake, and the processes were carried out in very different ways. It was also the time I worked with the most data, and everything had to be handled in detail and optimized.",
+
+      "The result of this work made me feel accomplished. Achieving, through programming, that a really tedious and time-consuming process became a matter of a few clicks is something I find truly rewarding. Comparing the fact that previously, obtaining information about a regional employee took hours (literally) and now it can be done in a few seconds by typing their name, ID, or email and clicking a button, is something that excites me.",
+
+      "Honestly, I thought it would be a more difficult process; however, due to my previous programming knowledge, it didn't take me long to adapt to using VBA.",
+
+      "I made the tool relatively simply. Perhaps I missed using some best practices, but it was a job that I found rewarding, and when I finished it, I felt proud of it.",
+
+      "|subtitle| Personal Mini Reflection",
+
+      "The last thing I want to say is that sometimes taking on new challenges can be a bit scary, but at least in the programming world, it is totally worth it. As I mentioned earlier, I entered this project without knowing anything about Visual Basic, and in the end, it was completed with a lot of learning along the way. I am very happy with what I achieved there.",
+
+      "Thanks to the company in question!",
+      "I hope they are better prepared for their next audits 🤣",
+    ],
+
+    author,
+    creationDate: "11/28/2023",
+  },
+  {
+    id: "f9cac5ffb2f5476b909abcd56e6fe641",
+    type: PostTypes.opinion,
+    title: "The Commit Show by BettaTech and the Talk with MiduDev",
+    mediaType: "video",
+    media: "https://www.youtube.com/embed/fL83GTilWjw",
+    image: PersonImage,
+    description: [
+      "As a programmer, I have been following Midudev's content for years. He is one of my tech references (Spanish) and I have learned a lot from him.",
+      "During the talk at BettaTech's The Commit Show, Midu talks about many topics related to technology and programming in general. He discusses who he is, his experience, and his perspective on the current and future state of the development world.",
+      "One of the most relevant topics discussed in this talk is that when a programmer is looking to enter the market for the first time (or the first few times), it is very important to join a company that offers mentorship. This means having someone who can guide you through the process, which is one of the most educational aspects. In fact, he defines that 'It's much more important than the salary at the beginning.'",
+      "While it is true that the lack of a mentor can lead a programmer to develop self-sufficiency, in some cases, this tends to become a mental burden that affects health and, in the end, is not worth it.",
+      "The talk covers other important topics to consider in the development world, such as salaries and perhaps most importantly, what it means to be a senior developer.",
+      "In my opinion, it is a highly recommended talk that provides a broad view of the programming environment.",
+    ],
+
+    author,
+    creationDate: "11/03/2023",
+  },
 ];
