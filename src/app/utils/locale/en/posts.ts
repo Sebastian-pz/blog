@@ -64,4 +64,31 @@ export const posts: Array<postInterface> = [
       "Herranz, Jose Ignacio. (April 13, 2023). TDD as a Software Design Methodology, retrieved from: https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/",
     ],
   },
+  {
+    id: "fc2aaada30594ed9a39fa1928d267655",
+    type: PostTypes.opinion,
+    title: "Best Practices for React's useEffect by an Expert",
+    mediaType: "image",
+    image: useEffectImg,
+    description: [
+      "Using named functions within the useEffect hook in React sounds a bit... odd, doesn't it? Well, not for Cory House.",
+      "Not long ago, I saw a post on X discussing the use of named functions within the useEffect hook in React (yes, as the first parameter). The idea intrigued me, so I delved into the thread to see what people had to say about it.",
+      "It's a way to improve code readability, making it easier to understand what a useEffect is doing in our application. And yes, from this perspective, it makes sense. However, it didn't convince everyone, with some arguing that it complicates development.",
+      "On one hand, we have the readability aspect (which, yes, is more readable from my point of view). On the other hand, we have to consider conventions—it's much more common to see this hook used with a simple arrow function as a parameter. So, I understand the clash of opinions on this topic.",
+      "Some people say that a simple comment explaining what the useEffect does solves everything. In other words, comment VS naming the function, to which the author of the post responds with the following:",
+      "✅ Code tends to stay up to date, whereas comments often become outdated. Therefore, comments 'lie' more frequently than code.",
+      "✅ Named functions improve stack tracking, enhancing debugging and error logging.",
+      "✅ Comments should not replace a function name; they should complement the function name in exceptional cases where the name alone is not sufficient.",
+      "There are also those who complain that now, thanks to this change, useEffects become too complex... Finding the right name for a function is harder than it seems 🤣.",
+      "As for me, I think I prefer to continue using an arrow function with an inner function that I'll call later. It may not be the most optimal solution, but I find it quite decent and readable 🤯.",
+      "Credits to Cory House @housecor on X, where I saw this post.",
+      "What is your opinion on this? Is it better to use named functions or stick with typical arrow functions?",
+
+      "Link to the original post:",
+      "|link|https://twitter.com/housecor/status/1753777632976461954",
+    ],
+
+    author,
+    creationDate: "02/17/2024",
+  },
 ];
