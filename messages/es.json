@@ -53,5 +53,10 @@
   "filteredPostsProjects": {
     "title": "Estos son los proyectos en los que he trabajado 👷🏻‍♂️",
     "description": "En esta sección expongo mis proyectos personales en el desarrollo de aplicaciones de todo tipo. Estos son proyectos que he desarrollado por pasión y curiosidad, con el objetivo de aprender y dominar nuevas herramientas (o simplemente por hobby). Aquí se muestra cómo puedo estar creado gestores en Excel con VBA y luego estar creando Bots utilizando Python."
+  },
+  "mainInfo": {
+    "title": "Información sobre el blog",
+    "description": "En este blog me enfoco en compartir las últimas actualizaciones sobre mis proyectos, consejos de programación e información relevante de la industria. ¡Vamos a codificar, aprender y crecer juntos! 💡👨‍💻",
+    "callToAction": "Si tienes alguna sugerencia ¡No dudes en contactarme!"
   }
 }
