@@ -208,4 +208,39 @@ export const posts: Array<postInterface> = [
     author,
     creationDate: "11/03/2023",
   },
+  {
+    id: "5c9ef6fa3e12415ca8a853150643b993",
+    type: PostTypes.experience,
+    title:
+      "I Worked for a Multinational Using Programming (Visual Basic for Apps) 🦖!",
+    mediaType: "video",
+    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: PersonImage,
+    description: [
+      "Due to contacts at my university, a company reached out to me for help with a problem they had regarding the validation of some profiles in Excel.",
+
+      "Initially, for 'Company A' (as I will call it to protect their privacy), a very large international company in the country, a regional office specifically contacted me to help with a platform transition process they were going through (it wasn't going well and needed to be done urgently).",
+
+      "Their general problem was that there was a lot of scattered information in many places, many files, and many platforms.",
+
+      "My role was to unify information from different Excel files and platforms automatically, gathering employee information and using various algorithms with VBA (Visual Basic for Applications) to verify if they met the job requirements.",
+
+      "If an employee did NOT meet the job profile, it would alert the HR responsible and add them to a list of 'invalid' people. Then, each section head would be notified to ensure the employee completed their profile if needed.",
+
+      "In the best case, when the employee met the profile, they would be added to the list of those in compliance with the company, and no intervention was necessary.",
+
+      "From these two lists, statistics were also generated to address various points of interest, such as the most affected sectors, the most critical requirements, the roles at greatest risk, and so on.",
+
+      "Once this validation (employee vs. job profile) was done, the information was consolidated and stored in a OneDrive folder and the new platform, so all employee information was available in one place.",
+
+      "In general, it wasn't difficult; it was just too many files to review one by one, hence the need to automate this process.",
+
+      "After developing the entire algorithm for the company, the information query times were optimized by more than 99%. It went from taking more than an hour per employee to just a few clicks (previously, it involved searching through multiple Excel files and platforms).",
+
+      "It's worth noting that the company had issues with profile compliance, and thanks to the development of the program, this point was progressively improved, allowing them to better respond to their audit processes.",
+    ],
+
+    author,
+    creationDate: "11/26/2023",
+  },
 ];
