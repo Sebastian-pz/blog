@@ -18,7 +18,7 @@ export default function MainPost({ post: mainPost }: propsComponent) {
       </h2>
       <img
         src={mainPost.image.src}
-        alt=""
+        alt={`image about ${mainPost.title}`}
         className="h-2/4 mb-3 max-h-[350px] m-auto shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
       />
       <p>{mainPost.description[0]}</p>
