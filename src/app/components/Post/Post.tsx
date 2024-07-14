@@ -15,7 +15,7 @@ export default function Post({ post, introductionParagraph }: PostProps) {
       <div className="m-auto">
         <img
           src={post.image.src}
-          alt={`post image about ${introductionParagraph}`}
+          alt={`image about ${post.title}`}
           className="home__post__image shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
         />
       </div>
