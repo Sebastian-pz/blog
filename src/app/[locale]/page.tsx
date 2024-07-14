@@ -15,12 +15,12 @@ export default function Home() {
 
   return (
     <main className="home flex justify-center gap-x-4">
-      <section className="lg:w-3/4 md:w-2/3">
+      <section className="md:w-4/5 lg:w-3/5 xl:w-2/3">
         <MainPost post={mainPost} />
         <PostNavigation />
         <Posts posts={posts} />
       </section>
-      <section className="lg:w-1/4 hidden lg:block mt-10 ml-4">
+      <section className="lg:w-2/5 xl:1/3 hidden lg:block mt-10 ml-4">
         <MainInfo />
       </section>
     </main>
