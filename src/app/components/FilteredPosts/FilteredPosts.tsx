@@ -43,12 +43,12 @@ export default function FilteredPosts({
               />
             </div>
             <div className="home__post__info ml-4 ">
-              <h2 className="mb-4 lg:font-bold hover:text-primary-color-600">
+              <h2 className="mb-4 md:text-lg font-bold hover:text-primary-color-600">
                 <Link className="" href={`/${localeActive}/post/${post.id}`}>
                   {post.title}
                 </Link>
               </h2>
-              <p className="text-slate-500 text-xs lg:text-lg">
+              <p className="text-slate-500 text-xs md:text-lg lg:text-lg">
                 {introductionParagraph}
               </p>
             </div>

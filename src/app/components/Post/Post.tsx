@@ -11,7 +11,7 @@ export default function Post({ post, introductionParagraph }: PostProps) {
   const activeLocale = useLocale();
 
   return (
-    <article className="home__post border-b-2 lg:text-xl border-primary-color-900 pt-9 pb-9">
+    <article className="home__post border-b lg:text-xl border-border-color py-9">
       <div className="m-auto">
         <img
           src={post.image.src}
@@ -20,12 +20,12 @@ export default function Post({ post, introductionParagraph }: PostProps) {
         />
       </div>
       <div className="home__post__info">
-        <h2 className="mb-4 font-bold hover:text-primary-color-600">
+        <h2 className="mb-4 md:text-lg font-bold hover:text-primary-color-600">
           <Link className="" href={`/${activeLocale}/post/${post.id}`}>
             {post.title}
           </Link>
         </h2>
-        <p className="text-slate-500 text-xs lg:text-lg">
+        <p className="text-slate-500 text-xs md:text-lg lg:text-lg">
           {introductionParagraph}
         </p>
       </div>
