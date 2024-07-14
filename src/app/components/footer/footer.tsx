@@ -11,17 +11,17 @@ export default function FooterComponent() {
           target="_blank"
           className="m-4 hover:bg-purple-100 rounded-lg p-2"
         >
-          <img src={linkedinSVG.src} alt="LinkedIn Icon" />
+          <img src={linkedinSVG.src} alt="Sebastian Perez LinkedIn" />
         </a>
         <a
           href="https://github.com/Sebastian-pz"
           target="_blank"
           className="m-4 hover:bg-purple-100 rounded-lg p-2"
         >
-          <img src={githubSVG.src} alt="GitHub Icon" />
+          <img src={githubSVG.src} alt="Sebastian Perez GitHub" />
         </a>
         <a href="/" className="m-4 hover:bg-purple-100 rounded-lg p-2">
-          <img src={gmailSVG.src} alt="Gmail icon" />
+          <img src={gmailSVG.src} alt="Sebastian Perez contacto por correo" />
         </a>
       </section>
     </footer>
