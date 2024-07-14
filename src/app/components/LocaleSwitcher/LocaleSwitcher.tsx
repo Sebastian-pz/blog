@@ -18,11 +18,13 @@ export default function LocaleSwitcher() {
 
   return (
     <div className=" rounded-lg border border-border-color">
-      <label className="sr-only">Change Language</label>
+      <label htmlFor="Language-selector" className="sr-only">
+        Change Language
+      </label>
       <select
         defaultValue={localeActive}
-        name=""
-        id=""
+        name="Language-selector"
+        id="Language-selector"
         className="p-2 rounded-lg"
         onChange={onSelectChange}
         disabled={isPending}
