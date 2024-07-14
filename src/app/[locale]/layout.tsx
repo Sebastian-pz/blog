@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={fontSettings.className}>
-        <header>
+        <header className="mb-20">
           <Navbar />
         </header>
         {children}

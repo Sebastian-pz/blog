@@ -17,7 +17,7 @@ export default function LocaleSwitcher() {
   }
 
   return (
-    <div className="border-2 rounded-lg">
+    <div className=" rounded-lg border border-border-color">
       <p className="sr-only">Change Language</p>
       <select
         defaultValue={localeActive}
