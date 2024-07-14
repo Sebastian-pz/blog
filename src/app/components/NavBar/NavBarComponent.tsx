@@ -18,20 +18,20 @@ export default function Navbar() {
   });
 
   return (
-    <header className="flex p-2 bg-primary-color-100 border border-primary-color-800 mb-4 justify-center items-center w-full">
+    <section className="fixed top-0 right-0 flex p-2 bg-primary-color-100 border border-primary-color-800 mb-4 justify-center items-center w-full md:text-xl">
       {tRoutes.map((route, index) => {
         const { label, path, styles } = route;
         return (
           <Link
             href={`/${localeActive}${path}`}
             key={index}
-            className={`${styles} m-2 hover:text-primary-color-500 hover:font-semibold  md:text-lg md:mx-6 `}
+            className={`${styles} m-2 hover:text-primary-color-500 hover:font-semibold md:mx-6`}
           >
             {label}
           </Link>
         );
       })}
       <LocaleSwitcher />
-    </header>
+    </section>
   );
 }
