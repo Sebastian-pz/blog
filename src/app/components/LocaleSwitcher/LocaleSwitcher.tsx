@@ -17,7 +17,7 @@ export default function LocaleSwitcher() {
   }
 
   return (
-    <div className=" rounded-lg border border-border-color">
+    <div className=" rounded-lg border border-border-color bg-white">
       <label htmlFor="Language-selector" className="sr-only">
         Change Language
       </label>
@@ -25,7 +25,7 @@ export default function LocaleSwitcher() {
         defaultValue={localeActive}
         name="Language-selector"
         id="Language-selector"
-        className="p-2 rounded-lg"
+        className="p-2 rounded-lg bg-white"
         onChange={onSelectChange}
         disabled={isPending}
       >

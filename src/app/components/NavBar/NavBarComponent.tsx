@@ -1,13 +1,12 @@
 import Link from "next/link";
-import React from "react";
+import { useLocale, useTranslations } from "next-intl";
 import LINK_LIST from "./Constants";
 
 import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
-import { useLocale, useTranslations } from "next-intl";
+import Search from "@/components/Search/Search";
 
 export default function Navbar() {
   const localeActive = useLocale();
-
   const t = useTranslations("navBar");
 
   const tRoutes = LINK_LIST.map((route) => {
@@ -18,7 +17,7 @@ export default function Navbar() {
   });
 
   return (
-    <section className="fixed top-0 right-0 flex p-2 bg-primary-color-100 border border-primary-color-800 mb-4 justify-center items-center w-full md:text-xl">
+    <section className="font-bold fixed top-0 right-0 flex p-2 bg-primary-color-100 border border-primary-color-800 mb-4 justify-center items-center w-full md:text-xl">
       {tRoutes.map((route, index) => {
         const { label, path, styles } = route;
         return (
@@ -31,6 +30,7 @@ export default function Navbar() {
           </Link>
         );
       })}
+      <Search />
       <LocaleSwitcher />
     </section>
   );

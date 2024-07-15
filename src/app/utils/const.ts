@@ -22,3 +22,9 @@ export function getPostById(lang: string, id: string) {
 export function getPostsByType(lang: string, type: PostTypes) {
   return getPosts(lang).filter((post) => post.type === type);
 }
+
+export function searchPosts(lang: string, search: string) {
+  return getPosts(lang).filter((post) =>
+    post.title.toLowerCase().includes(search.toLowerCase())
+  );
+}
