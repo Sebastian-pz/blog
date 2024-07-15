@@ -58,5 +58,8 @@
     "title": "Information about the blog",
     "description": "In this blog, I focus on sharing the latest updates about my projects, programming tips, and relevant industry information. Let's code, learn, and grow together! 💡👨‍💻",
     "callToAction": "If you have any suggestions, don't hesitate to contact me!"
+  },
+  "search": {
+    "title": "Buscar"
   }
 }

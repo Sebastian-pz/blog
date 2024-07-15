@@ -58,5 +58,8 @@
     "title": "Información sobre el blog",
     "description": "En este blog me enfoco en compartir las últimas actualizaciones sobre mis proyectos, consejos de programación e información relevante de la industria. ¡Vamos a codificar, aprender y crecer juntos! 💡👨‍💻",
     "callToAction": "Si tienes alguna sugerencia ¡No dudes en contactarme!"
+  },
+  "search": {
+    "title": "Search"
   }
 }
