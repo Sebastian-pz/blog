@@ -5,13 +5,13 @@ const Routes: Array<IRoute> = [
     styles: "",
   },
   {
-    label: "about",
-    path: "/about",
+    label: "social",
+    path: "/social",
     styles: "",
   },
   {
-    label: "social",
-    path: "/social",
+    label: "about",
+    path: "/about",
     styles: "",
   },
 ];
