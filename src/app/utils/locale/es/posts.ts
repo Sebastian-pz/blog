@@ -7,6 +7,7 @@ import useEffectImg from "@/public/blog/useEffect.webp";
 import tddImg from "@/public/blog/tdd-post.webp";
 import theCommitShowImg from "@/public/blog/thecommitshow.webp";
 import firstTimeVisualBasic from "@/public/blog/firstTimeVisualBasic.webp";
+import rockPaperScissorsGame from "@/public/blog/rock-paper-scissors.webp";
 
 const author = "Sebastian Pérez";
 
@@ -173,7 +174,7 @@ export const posts: Array<postInterface> = [
     type: PostTypes.project,
     title: "Creé una aplicación del juego de piedra, papel o tijera",
     mediaType: "image",
-    image: PersonImage,
+    image: rockPaperScissorsGame,
     description: [
       "Creé una aplicación web inspirada en el popular juego de piedra, papel o tijera para poner a prueba mis conocimientos en mis tiempos libres de la universidad y de mis trabajos freelance.",
       "Inicialmente, quería practicar mis habilidades de frontend y me topé con este reto en *frontend mentor*, únicamente estaba enfocado en desarrollar el apartado visual, sin embargo, en mi caso lo que hice fue llevarlo un paso más allá y darle la lógica necesaria para poder jugar.",

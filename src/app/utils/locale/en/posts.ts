@@ -7,6 +7,7 @@ import useEffectImg from "@/public/blog/useEffect.webp";
 import tddImg from "@/public/blog/tdd-post.webp";
 import theCommitShowImg from "@/public/blog/thecommitshow.webp";
 import firstTimeVisualBasic from "@/public/blog/firstTimeVisualBasic.webp";
+import rockPaperScissorsGame from "@/public/blog/rock-paper-scissors.webp";
 
 const author = "Sebastian Pérez";
 
@@ -175,7 +176,7 @@ export const posts: Array<postInterface> = [
     type: PostTypes.project,
     title: "I Created a Rock, Paper, Scissors Game App",
     mediaType: "image",
-    image: PersonImage,
+    image: rockPaperScissorsGame,
     description: [
       "I created a web application inspired by the popular game of rock, paper, scissors to test my knowledge during my free time at university and my work.",
       "Initially, I wanted to practice my frontend skills and came across this challenge on *Frontend Mentor*. It was only focused on developing the visual aspect, but I decided to take it a step further and implement the necessary logic to make it playable.",
