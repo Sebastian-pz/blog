@@ -9,6 +9,7 @@ import theCommitShowImg from "@/public/blog/thecommitshow.webp";
 import firstTimeVisualBasic from "@/public/blog/firstTimeVisualBasic.webp";
 import rockPaperScissorsGame from "@/public/blog/rock-paper-scissors.webp";
 import fastMaths from "@/public/blog/fastMaths.webp";
+import barVB from "@/public/blog/bar-vb.webp";
 
 const author = "Sebastian Pérez";
 
@@ -251,9 +252,9 @@ export const posts: Array<postInterface> = [
     type: PostTypes.experience,
     title:
       "Creé un sistema de ventas, inventarios y nominas utilizando programación en Visual Basic for Apps 🧮",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: barVB,
     description: [
       "Intervine en un bar para mejorar su situación y su gestión. La empresa no contaba con ningún sistema de información, no tenía ni inventarios, ni nominas, ni libros contables, ni libros de proveedores, etc.",
 

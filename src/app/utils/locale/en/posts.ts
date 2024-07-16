@@ -9,6 +9,7 @@ import theCommitShowImg from "@/public/blog/thecommitshow.webp";
 import firstTimeVisualBasic from "@/public/blog/firstTimeVisualBasic.webp";
 import rockPaperScissorsGame from "@/public/blog/rock-paper-scissors.webp";
 import fastMaths from "@/public/blog/fastMaths.webp";
+import barVB from "@/public/blog/bar-vb.webp";
 
 const author = "Sebastian Pérez";
 
@@ -251,9 +252,9 @@ export const posts: Array<postInterface> = [
     type: PostTypes.experience,
     title:
       "I Created a Sales, Inventory, and Payroll System Using Visual Basic for Apps 🧮",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: barVB,
     description: [
       "I intervened in a bar to improve their situation and management. The business had no information system in place, no inventories, payroll, accounting books, or supplier records, etc.",
 
