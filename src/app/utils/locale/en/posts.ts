@@ -5,6 +5,7 @@ import PersonImage from "@/public/person.jpg";
 import BlogPostMedia from "@/public/blog-post.webp";
 import useEffectImg from "@/public/blog/useEffect.webp";
 import tddImg from "@/public/blog/tdd-post.webp";
+import theCommitShowImg from "@/public/blog/thecommitshow.webp";
 
 const author = "Sebastian Pérez";
 
@@ -155,7 +156,7 @@ export const posts: Array<postInterface> = [
     title: "The Commit Show by BettaTech and the Talk with MiduDev",
     mediaType: "video",
     media: "https://www.youtube.com/embed/fL83GTilWjw",
-    image: PersonImage,
+    image: theCommitShowImg,
     description: [
       "As a programmer, I have been following Midudev's content for years. He is one of my tech references (Spanish) and I have learned a lot from him.",
       "During the talk at BettaTech's The Commit Show, Midu talks about many topics related to technology and programming in general. He discusses who he is, his experience, and his perspective on the current and future state of the development world.",
