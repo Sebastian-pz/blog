@@ -8,6 +8,7 @@ import tddImg from "@/public/blog/tdd-post.webp";
 import theCommitShowImg from "@/public/blog/thecommitshow.webp";
 import firstTimeVisualBasic from "@/public/blog/firstTimeVisualBasic.webp";
 import rockPaperScissorsGame from "@/public/blog/rock-paper-scissors.webp";
+import fastMaths from "@/public/blog/fastMaths.webp";
 
 const author = "Sebastian Pérez";
 
@@ -195,9 +196,9 @@ export const posts: Array<postInterface> = [
     id: "5e14c5bb00be4450b2376eda189a64fb",
     type: PostTypes.project,
     title: "I Created a Timed Math Challenge App 👨🏻‍🔬⌛!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: fastMaths,
     description: [
       "I created a quick math challenge game! The goal is to improve the response time and accuracy of my classmates at university  when faced with basic math problems.",
       "The idea came from a moment in my university classes where we were tested on how fluently we could respond to math questions. Personally, I did well (#humility), but my classmates struggled.",

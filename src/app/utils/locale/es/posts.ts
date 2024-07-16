@@ -8,6 +8,7 @@ import tddImg from "@/public/blog/tdd-post.webp";
 import theCommitShowImg from "@/public/blog/thecommitshow.webp";
 import firstTimeVisualBasic from "@/public/blog/firstTimeVisualBasic.webp";
 import rockPaperScissorsGame from "@/public/blog/rock-paper-scissors.webp";
+import fastMaths from "@/public/blog/fastMaths.webp";
 
 const author = "Sebastian Pérez";
 
@@ -193,9 +194,9 @@ export const posts: Array<postInterface> = [
     id: "5e14c5bb00be4450b2376eda189a64fb",
     type: PostTypes.project,
     title: "¡Creé una aplicación de retos matemáticos con tiempo 👨🏻‍🔬⌛!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: fastMaths,
     description: [
       "¡Creé un juego de retos de rapidez matemática! Con la finalidad de mejorar el tiempo de respuesta y la asertividad de los estudiantes de mi universidad frente a problemas matemáticos básicos.",
       "La idea surgió de un momento en mis clases de universidad donde querían poner a prueba la fluidez con la que diferentes estudiantes respondíamos a preguntas matemáticas, en lo personal me fue bien (#humildad), pero a mis compañeros no tanto.",
