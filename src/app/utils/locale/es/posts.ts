@@ -5,6 +5,7 @@ import PersonImage from "@/public/person.jpg";
 import BlogPostMedia from "@/public/blog-post.webp";
 import useEffectImg from "@/public/blog/useEffect.webp";
 import tddImg from "@/public/blog/tdd-post.webp";
+import theCommitShowImg from "@/public/blog/thecommitshow.webp";
 
 const author = "Sebastian Pérez";
 
@@ -153,7 +154,7 @@ export const posts: Array<postInterface> = [
     title: "The Commit Show de BettaTech y su charla con MiduDev",
     mediaType: "video",
     media: "https://www.youtube.com/embed/fL83GTilWjw",
-    image: PersonImage,
+    image: theCommitShowImg,
     description: [
       "Como programador, llevo siguiendo el contenido de Midudev desde hace años, es uno de mis referentes tecnológicos y con la cual he aprendido mucho.",
       "Durante la charla en The Commit Show de BettaTech, Midu habla de muchos temas referentes al ámbito de la tecnología y programación en general, habla de quién es, de su experiencia y cómo es su perspectiva sobre la actualidad y futuro del mundo del desarrollo.",
