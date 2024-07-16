@@ -6,6 +6,7 @@ import BlogPostMedia from "@/public/blog-post.webp";
 import useEffectImg from "@/public/blog/useEffect.webp";
 import tddImg from "@/public/blog/tdd-post.webp";
 import theCommitShowImg from "@/public/blog/thecommitshow.webp";
+import firstTimeVisualBasic from "@/public/blog/firstTimeVisualBasic.webp";
 
 const author = "Sebastian Pérez";
 
@@ -214,9 +215,8 @@ export const posts: Array<postInterface> = [
     type: PostTypes.experience,
     title:
       "¡Trabajé para una multinacional utilizando programación (Visual Basic for Apps) 🦖!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    image: firstTimeVisualBasic,
     description: [
       "Debido a contactos en mi universidad, una empresa se comunicó conmigo para ayudarles con un problema que tenían sobre la validación de unos perfiles en Excel.",
 
