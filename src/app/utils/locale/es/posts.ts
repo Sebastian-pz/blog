@@ -5,6 +5,13 @@ import PersonImage from "@/public/person.jpg";
 import BlogPostMedia from "@/public/blog-post.webp";
 import useEffectImg from "@/public/blog/useEffect.webp";
 import tddImg from "@/public/blog/tdd-post.webp";
+import theCommitShowImg from "@/public/blog/thecommitshow.webp";
+import firstTimeVisualBasic from "@/public/blog/firstTimeVisualBasic.webp";
+import rockPaperScissorsGame from "@/public/blog/rock-paper-scissors.webp";
+import fastMaths from "@/public/blog/fastMaths.webp";
+import barVB from "@/public/blog/bar-vb.webp";
+import degreeImg from "@/public/blog/degree.webp";
+import duckerImg from "@/public/blog/ducker.webp";
 
 const author = "Sebastian Pérez";
 
@@ -153,7 +160,7 @@ export const posts: Array<postInterface> = [
     title: "The Commit Show de BettaTech y su charla con MiduDev",
     mediaType: "video",
     media: "https://www.youtube.com/embed/fL83GTilWjw",
-    image: PersonImage,
+    image: theCommitShowImg,
     description: [
       "Como programador, llevo siguiendo el contenido de Midudev desde hace años, es uno de mis referentes tecnológicos y con la cual he aprendido mucho.",
       "Durante la charla en The Commit Show de BettaTech, Midu habla de muchos temas referentes al ámbito de la tecnología y programación en general, habla de quién es, de su experiencia y cómo es su perspectiva sobre la actualidad y futuro del mundo del desarrollo.",
@@ -171,7 +178,7 @@ export const posts: Array<postInterface> = [
     type: PostTypes.project,
     title: "Creé una aplicación del juego de piedra, papel o tijera",
     mediaType: "image",
-    image: PersonImage,
+    image: rockPaperScissorsGame,
     description: [
       "Creé una aplicación web inspirada en el popular juego de piedra, papel o tijera para poner a prueba mis conocimientos en mis tiempos libres de la universidad y de mis trabajos freelance.",
       "Inicialmente, quería practicar mis habilidades de frontend y me topé con este reto en *frontend mentor*, únicamente estaba enfocado en desarrollar el apartado visual, sin embargo, en mi caso lo que hice fue llevarlo un paso más allá y darle la lógica necesaria para poder jugar.",
@@ -190,9 +197,9 @@ export const posts: Array<postInterface> = [
     id: "5e14c5bb00be4450b2376eda189a64fb",
     type: PostTypes.project,
     title: "¡Creé una aplicación de retos matemáticos con tiempo 👨🏻‍🔬⌛!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: fastMaths,
     description: [
       "¡Creé un juego de retos de rapidez matemática! Con la finalidad de mejorar el tiempo de respuesta y la asertividad de los estudiantes de mi universidad frente a problemas matemáticos básicos.",
       "La idea surgió de un momento en mis clases de universidad donde querían poner a prueba la fluidez con la que diferentes estudiantes respondíamos a preguntas matemáticas, en lo personal me fue bien (#humildad), pero a mis compañeros no tanto.",
@@ -213,9 +220,8 @@ export const posts: Array<postInterface> = [
     type: PostTypes.experience,
     title:
       "¡Trabajé para una multinacional utilizando programación (Visual Basic for Apps) 🦖!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    image: firstTimeVisualBasic,
     description: [
       "Debido a contactos en mi universidad, una empresa se comunicó conmigo para ayudarles con un problema que tenían sobre la validación de unos perfiles en Excel.",
 
@@ -248,9 +254,9 @@ export const posts: Array<postInterface> = [
     type: PostTypes.experience,
     title:
       "Creé un sistema de ventas, inventarios y nominas utilizando programación en Visual Basic for Apps 🧮",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: barVB,
     description: [
       "Intervine en un bar para mejorar su situación y su gestión. La empresa no contaba con ningún sistema de información, no tenía ni inventarios, ni nominas, ni libros contables, ni libros de proveedores, etc.",
 
@@ -340,9 +346,9 @@ export const posts: Array<postInterface> = [
     id: "3036dd4b2fbb4b0496571af11af2aa6d",
     type: PostTypes.project,
     title: "¡Hice mi trabajo de grado con programación!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: degreeImg,
     description: [
       "Mi trabajo de grado fue una de las cosas que más inversión de tiempo me significó este año, quería hacer algo significativo y que no fuera tan común de ver, además de que de alguna manera quería utilizar las herramientas de programación.",
 
@@ -384,9 +390,9 @@ export const posts: Array<postInterface> = [
     id: "a17fbef4cb244ce3b2a107bf7fde4482",
     type: PostTypes.project,
     title: "¡Creamos una red social inspirada en Twitter (X) 🦆!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: duckerImg,
     description: [
       "Para finales del año 2022 les propuse a mis amigos programadores Matias Straface y Mesila Hellrigl hacer una red social inspirada en el entonces Twitter y los primeros días del 2023 nos pusimos manos en ello.",
       "El nombre es directamente una parodia para hacer alusión a que es una copia de Twitter (decidimos nombrarlo Ducker 🦆).",

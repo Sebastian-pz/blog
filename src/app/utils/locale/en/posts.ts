@@ -5,6 +5,13 @@ import PersonImage from "@/public/person.jpg";
 import BlogPostMedia from "@/public/blog-post.webp";
 import useEffectImg from "@/public/blog/useEffect.webp";
 import tddImg from "@/public/blog/tdd-post.webp";
+import theCommitShowImg from "@/public/blog/thecommitshow.webp";
+import firstTimeVisualBasic from "@/public/blog/firstTimeVisualBasic.webp";
+import rockPaperScissorsGame from "@/public/blog/rock-paper-scissors.webp";
+import fastMaths from "@/public/blog/fastMaths.webp";
+import barVB from "@/public/blog/bar-vb.webp";
+import degreeImg from "@/public/blog/degree.webp";
+import duckerImg from "@/public/blog/ducker.webp";
 
 const author = "Sebastian Pérez";
 
@@ -155,7 +162,7 @@ export const posts: Array<postInterface> = [
     title: "The Commit Show by BettaTech and the Talk with MiduDev",
     mediaType: "video",
     media: "https://www.youtube.com/embed/fL83GTilWjw",
-    image: PersonImage,
+    image: theCommitShowImg,
     description: [
       "As a programmer, I have been following Midudev's content for years. He is one of my tech references (Spanish) and I have learned a lot from him.",
       "During the talk at BettaTech's The Commit Show, Midu talks about many topics related to technology and programming in general. He discusses who he is, his experience, and his perspective on the current and future state of the development world.",
@@ -173,7 +180,7 @@ export const posts: Array<postInterface> = [
     type: PostTypes.project,
     title: "I Created a Rock, Paper, Scissors Game App",
     mediaType: "image",
-    image: PersonImage,
+    image: rockPaperScissorsGame,
     description: [
       "I created a web application inspired by the popular game of rock, paper, scissors to test my knowledge during my free time at university and my work.",
       "Initially, I wanted to practice my frontend skills and came across this challenge on *Frontend Mentor*. It was only focused on developing the visual aspect, but I decided to take it a step further and implement the necessary logic to make it playable.",
@@ -192,9 +199,9 @@ export const posts: Array<postInterface> = [
     id: "5e14c5bb00be4450b2376eda189a64fb",
     type: PostTypes.project,
     title: "I Created a Timed Math Challenge App 👨🏻‍🔬⌛!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: fastMaths,
     description: [
       "I created a quick math challenge game! The goal is to improve the response time and accuracy of my classmates at university  when faced with basic math problems.",
       "The idea came from a moment in my university classes where we were tested on how fluently we could respond to math questions. Personally, I did well (#humility), but my classmates struggled.",
@@ -213,9 +220,8 @@ export const posts: Array<postInterface> = [
     type: PostTypes.experience,
     title:
       "I Worked for a Multinational Using Programming (Visual Basic for Apps) 🦖!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    image: firstTimeVisualBasic,
     description: [
       "Due to contacts at my university, a company reached out to me for help with a problem they had regarding the validation of some profiles in Excel.",
 
@@ -248,9 +254,9 @@ export const posts: Array<postInterface> = [
     type: PostTypes.experience,
     title:
       "I Created a Sales, Inventory, and Payroll System Using Visual Basic for Apps 🧮",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: barVB,
     description: [
       "I intervened in a bar to improve their situation and management. The business had no information system in place, no inventories, payroll, accounting books, or supplier records, etc.",
 
@@ -337,9 +343,9 @@ export const posts: Array<postInterface> = [
     id: "3036dd4b2fbb4b0496571af11af2aa6d",
     type: PostTypes.project,
     title: "I Did My Graduation Project with Programming!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: degreeImg,
     description: [
       "My graduation project was one of the most time-consuming tasks for me this year. I wanted to create something meaningful and not so commonly seen, and in some way, I wanted to use programming tools.",
 
@@ -380,9 +386,9 @@ export const posts: Array<postInterface> = [
     id: "a17fbef4cb244ce3b2a107bf7fde4482",
     type: PostTypes.project,
     title: "We Created a Social Network Inspired by Twitter (X) 🦆!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: duckerImg,
     description: [
       "At the end of 2022, I proposed to my programmer friends Matias Straface and Mesila Hellrigl to create a social network inspired by the then Twitter, and in the first days of 2023, we got started on it.",
       "The name is directly a parody to allude to it being a copy of Twitter (we decided to name it Ducker 🦆).",
