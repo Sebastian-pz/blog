@@ -10,6 +10,7 @@ import firstTimeVisualBasic from "@/public/blog/firstTimeVisualBasic.webp";
 import rockPaperScissorsGame from "@/public/blog/rock-paper-scissors.webp";
 import fastMaths from "@/public/blog/fastMaths.webp";
 import barVB from "@/public/blog/bar-vb.webp";
+import degreeImg from "@/public/blog/degree.webp";
 
 const author = "Sebastian Pérez";
 
@@ -341,9 +342,9 @@ export const posts: Array<postInterface> = [
     id: "3036dd4b2fbb4b0496571af11af2aa6d",
     type: PostTypes.project,
     title: "I Did My Graduation Project with Programming!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: degreeImg,
     description: [
       "My graduation project was one of the most time-consuming tasks for me this year. I wanted to create something meaningful and not so commonly seen, and in some way, I wanted to use programming tools.",
 

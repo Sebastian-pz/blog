@@ -10,6 +10,7 @@ import firstTimeVisualBasic from "@/public/blog/firstTimeVisualBasic.webp";
 import rockPaperScissorsGame from "@/public/blog/rock-paper-scissors.webp";
 import fastMaths from "@/public/blog/fastMaths.webp";
 import barVB from "@/public/blog/bar-vb.webp";
+import degreeImg from "@/public/blog/degree.webp";
 
 const author = "Sebastian Pérez";
 
@@ -344,9 +345,9 @@ export const posts: Array<postInterface> = [
     id: "3036dd4b2fbb4b0496571af11af2aa6d",
     type: PostTypes.project,
     title: "¡Hice mi trabajo de grado con programación!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: degreeImg,
     description: [
       "Mi trabajo de grado fue una de las cosas que más inversión de tiempo me significó este año, quería hacer algo significativo y que no fuera tan común de ver, además de que de alguna manera quería utilizar las herramientas de programación.",
 
