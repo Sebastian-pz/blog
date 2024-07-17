@@ -187,7 +187,7 @@ export const posts: Array<postInterface> = [
       "Realmente fue un proyecto divertido de realizar que me ayudó a mejorar mi código, mis estilos y buenas prácticas.",
       "Para desarrollar el proyecto utilicé las tecnologías: TypeScript como lenguaje de programación, Vite como herramienta de compilación, React como librería principal de desarrollo y CSS vanilla para estilizar la aplicación.",
       "Si quieres ver el juego, acá está: ",
-      "https://rps-game-navy.vercel.app/",
+      "|link|https://rps-game-navy.vercel.app/",
     ],
 
     author,
