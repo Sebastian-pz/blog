@@ -11,6 +11,7 @@ import rockPaperScissorsGame from "@/public/blog/rock-paper-scissors.webp";
 import fastMaths from "@/public/blog/fastMaths.webp";
 import barVB from "@/public/blog/bar-vb.webp";
 import degreeImg from "@/public/blog/degree.webp";
+import duckerImg from "@/public/blog/ducker.webp";
 
 const author = "Sebastian Pérez";
 
@@ -385,9 +386,9 @@ export const posts: Array<postInterface> = [
     id: "a17fbef4cb244ce3b2a107bf7fde4482",
     type: PostTypes.project,
     title: "We Created a Social Network Inspired by Twitter (X) 🦆!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: duckerImg,
     description: [
       "At the end of 2022, I proposed to my programmer friends Matias Straface and Mesila Hellrigl to create a social network inspired by the then Twitter, and in the first days of 2023, we got started on it.",
       "The name is directly a parody to allude to it being a copy of Twitter (we decided to name it Ducker 🦆).",

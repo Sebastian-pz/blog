@@ -11,6 +11,7 @@ import rockPaperScissorsGame from "@/public/blog/rock-paper-scissors.webp";
 import fastMaths from "@/public/blog/fastMaths.webp";
 import barVB from "@/public/blog/bar-vb.webp";
 import degreeImg from "@/public/blog/degree.webp";
+import duckerImg from "@/public/blog/ducker.webp";
 
 const author = "Sebastian Pérez";
 
@@ -389,9 +390,9 @@ export const posts: Array<postInterface> = [
     id: "a17fbef4cb244ce3b2a107bf7fde4482",
     type: PostTypes.project,
     title: "¡Creamos una red social inspirada en Twitter (X) 🦆!",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    image: duckerImg,
     description: [
       "Para finales del año 2022 les propuse a mis amigos programadores Matias Straface y Mesila Hellrigl hacer una red social inspirada en el entonces Twitter y los primeros días del 2023 nos pusimos manos en ello.",
       "El nombre es directamente una parodia para hacer alusión a que es una copia de Twitter (decidimos nombrarlo Ducker 🦆).",
