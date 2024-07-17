@@ -61,5 +61,8 @@
   },
   "search": {
     "title": "Search"
+  },
+  "downloadCV": {
+    "link": "/CV-es-SebastianPerez.pdf"
   }
 }
