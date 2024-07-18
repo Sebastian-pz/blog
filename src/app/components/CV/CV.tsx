@@ -9,7 +9,7 @@ export default function CV() {
 
   return (
     <section className="w-1/4 min-w-[230px] m-auto flex p-3 flex-col text-center justify-center items-center text-xl font-semibold bg-bg-color border-slate-300 border rounded-3xl my-6">
-      <h3 className="my-3">Descarga mi CV</h3>
+      <h3 className="my-3">{t("tag")}</h3>
       <a
         // href="https://drive.google.com/uc?export=download&id=156QEbOE3iUdsADTBpRGtzYTFcAFgUTL268uJt1MS4L4"
         // target="__blank"
