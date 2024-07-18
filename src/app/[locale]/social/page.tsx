@@ -1,31 +1,25 @@
 import Link from "next/link";
 import URLS from "./Constants";
+import { useTranslations } from "next-intl";
 
 export default function page() {
+  const t = useTranslations("social");
+
   return (
     <section
       id="social"
       className="mx-auto w-full md:w-3/4 lg:w-1/2  p-4 text-center"
     >
-      <h1 className="text-center text-2xl font-bold my-4">
-        Redes sociales Sebastian Pérez
-      </h1>
-      <p className="my-4">
-        Si bien no suelo publicar muy a menudo puede que encuentres reposts de
-        publicaciones útiles o información de interés en mis redes sociales.
-      </p>
-      <p>
-        De vez en cuando estoy mirando publicaciones de los referentes en cuanto
-        a muchas tecnologías, mayoritariamente angloparlantes, así que
-        probablemente vayas a ver muchas publicaciones en inglés.
-      </p>
+      <h1 className="text-center text-2xl font-bold my-4">{t("title")}</h1>
+      <p className="my-4">{t("paragraphOne")}</p>
+      <p>{t("paragraphTwo")}</p>
 
       <h2 className="mt-12 text-xl font-bold text-center">
-        Links a mis principales redes
+        {t("linksIntroduction")}
       </h2>
 
       <p className="text-center">
-        Mi linkedin{" "}
+        LinkedIn{" "}
         <Link
           className="font-bold text-primary-color-500 hover:text-primary-color-700"
           href={URLS.GITHUB}
@@ -36,18 +30,18 @@ export default function page() {
       </p>
 
       <p className="text-center">
-        Puedes encontrar mi twitter (X){" "}
+        Twitter (X){" "}
         <Link
           className="font-bold text-primary-color-500 hover:text-primary-color-700"
           href={URLS.GITHUB}
           target="_blank"
         >
-          Sebastiantfa
+          @Sebastiantfa
         </Link>
       </p>
 
       <p className="text-center">
-        Puedes ver mi perfil de GitHub{" "}
+        GitHub{" "}
         <Link
           className="font-bold text-primary-color-500 hover:text-primary-color-700"
           href={URLS.GITHUB}
@@ -57,17 +51,12 @@ export default function page() {
         </Link>
       </p>
 
-      <h2 className="mt-12 text-xl font-bold text-center">Reconocimientos</h2>
-      <p className="text-center">
-        Respeto mucho a los creadores de contenido que a través de sus redes
-        sociales comparten su conocimiento y ayudan a que la comunidad mejore.
-        También a los compañeros que comentan para ayudar a los demás desde el
-        respeto 💙💜.
-      </p>
+      <h2 className="mt-12 text-xl font-bold text-center">
+        {t("acknowledgementTitle")}
+      </h2>
+      <p className="text-center">{t("acknowledgement")}</p>
 
-      <p className="font-bold my-12 text-center">
-        Gracias por llegar hasta acá.
-      </p>
+      <p className="font-bold my-12 text-center">{t("thanks")}</p>
     </section>
   );
 }

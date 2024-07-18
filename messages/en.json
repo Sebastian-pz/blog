@@ -56,7 +56,7 @@
   },
   "mainInfo": {
     "title": "Information about the blog",
-    "description": "In this blog, I focus on sharing the latest updates about my projects, programming tips, and relevant industry information. Let's code, learn, and grow together! 💡👨‍💻",
+    "description": "In this blog, I f on sharing the latest updates about my projects, programming tips, and relevant industry information. Let's code, learn, and grow together! 💡👨‍💻",
     "callToAction": "If you have any suggestions, don't hesitate to contact me!"
   },
   "search": {
@@ -64,5 +64,14 @@
   },
   "downloadCV": {
     "link": "/CV-en-SebastianPerez.pdf"
+  },
+  "social": {
+    "title": "Sebastian Pérez's Social Media",
+    "paragraphOne": "Although I don't post very often, you might find useful reposts or interesting information on my social media.",
+    "paragraphTwo": "I often follow posts from leading figures in various technologies, mostly English-speaking, so you'll likely see a lot of posts in English.",
+    "linksIntroduction": "Links to my social media",
+    "acknowledgementTitle": "Acknowledgement",
+    "acknowledgement": "I have great respect for content creators who share their knowledge on social media and help the community improve. Also, thanks to those who comment to help others respectfully 💙.",
+    "thanks": "Thank you for reaching the end of these recognitions"
   }
 }
