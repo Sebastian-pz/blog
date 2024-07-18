@@ -1,9 +1,12 @@
 import Card from "@/components/Card/Card";
-import EXPERIENCES from "@/utilities/ExperiencesConst";
-import { useTranslations } from "next-intl";
+import getExperience from "@/app/utils/locale/getExperiences";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Experiences() {
+  const localeActive = useLocale();
   const t = useTranslations("aboutExperience");
+
+  const experiences = getExperience(localeActive);
 
   return (
     <section className="mt-8 p-2">
@@ -12,7 +15,7 @@ export default function Experiences() {
       </h2>
       <p className="text-center my-4">{t("note")}</p>
       <section className="flex flex-col w-full justify-center items-center md:px-4 lg:px-10">
-        {EXPERIENCES.map((experience, index) => {
+        {experiences.map((experience, index) => {
           return (
             <Card
               responsibilities={experience.responsibilities}
