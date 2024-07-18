@@ -1,8 +1,6 @@
 import { postInterface, PostTypes } from "@/utilities/interfaces";
 
 // ----| Images | ---
-import PersonImage from "@/public/person.jpg";
-import BlogPostMedia from "@/public/blog-post.webp";
 import useEffectImg from "@/public/blog/useEffect.webp";
 import tddImg from "@/public/blog/tdd-post.webp";
 import theCommitShowImg from "@/public/blog/thecommitshow.webp";
@@ -12,6 +10,7 @@ import fastMaths from "@/public/blog/fastMaths.webp";
 import barVB from "@/public/blog/bar-vb.webp";
 import degreeImg from "@/public/blog/degree.webp";
 import duckerImg from "@/public/blog/ducker.webp";
+import UnderConstruction from "@/public/blog/UnderConstruction.webp";
 
 const author = "Sebastian Pérez";
 
@@ -23,7 +22,7 @@ export const posts: Array<postInterface> = [
       "Como fullstack developer trabajé en la creación de un Management System completo.",
     mediaType: "video",
     media: "https://www.youtube.com/embed/fL83GTilWjw",
-    image: BlogPostMedia,
+    image: UnderConstruction,
     description: [
       "Creé una aplicación web FullStack que se encarga de gestionar las ventas, costos, gastos e inventarios de un bar, logrando de este modo facilitar los procesos de la tienda.",
 
@@ -103,7 +102,7 @@ export const posts: Array<postInterface> = [
     type: PostTypes.project,
     title: "¡El blog está casi listo 🚀👨🏻‍🚀!",
     mediaType: "image",
-    image: BlogPostMedia,
+    image: UnderConstruction,
     description: [
       "Enfocado principalmente en las publicaciones tecnológicas y actualizaciones sobre mis proyectos ya está casi completa, quedan pocas cosas que ultimar, pero los detalles y el funcionamiento general de la aplicación ya está completo. ",
 
@@ -125,7 +124,7 @@ export const posts: Array<postInterface> = [
     title:
       "¿Cómo fue trabajar con Visual Basic por primera vez en la regional de una multinacional?",
     mediaType: "image",
-    image: BlogPostMedia,
+    image: UnderConstruction,
     description: [
       "¿Cómo crees que fue mi experiencia trabajando para una empresa multinacional, en un proyecto regional con un lenguaje de programación que jamas había utilizado y con mucha privacidad de por medio?",
 
@@ -286,7 +285,7 @@ export const posts: Array<postInterface> = [
     title: "Trabajé como desarrollador fullstack para NutriciónVital 🏪",
     mediaType: "video",
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    image: UnderConstruction,
     description: [
       "Trabajé como desarrollador fullstack en la creación de una plataforma e-commerce de suplementos alimentarios y de servicio de ventas de planes alimentarios.",
 
@@ -312,7 +311,7 @@ export const posts: Array<postInterface> = [
     title: "Trabajé como desarrollador fullstack para la UCA 🎓",
     mediaType: "video",
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    image: UnderConstruction,
     description: [
       "En enero de 2023 entré a ser parte de un grupo de programadores que se iban a encargar de desarrollar una aplicación web para la Universidad Católica Argentina (UCA), una aplicación que les serviría para educar a sus estudiantes.",
 

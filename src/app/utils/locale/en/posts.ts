@@ -1,8 +1,6 @@
 import { postInterface, PostTypes } from "@/utilities/interfaces";
 
 // ----| Images | ---
-import PersonImage from "@/public/person.jpg";
-import BlogPostMedia from "@/public/blog-post.webp";
 import useEffectImg from "@/public/blog/useEffect.webp";
 import tddImg from "@/public/blog/tdd-post.webp";
 import theCommitShowImg from "@/public/blog/thecommitshow.webp";
@@ -12,6 +10,7 @@ import fastMaths from "@/public/blog/fastMaths.webp";
 import barVB from "@/public/blog/bar-vb.webp";
 import degreeImg from "@/public/blog/degree.webp";
 import duckerImg from "@/public/blog/ducker.webp";
+import UnderConstruction from "@/public/blog/UnderConstruction.webp";
 
 const author = "Sebastian Pérez";
 
@@ -23,7 +22,7 @@ export const posts: Array<postInterface> = [
       "As a full stack developer I worked on the creation of a complete Management System.",
     mediaType: "video",
     media: "https://www.youtube.com/embed/fL83GTilWjw",
-    image: BlogPostMedia,
+    image: UnderConstruction,
     description: [
       "I created a FullStack web application that manages the sales, costs, expenses, and inventories of a bar, thus facilitating the store's processes.",
 
@@ -103,7 +102,7 @@ export const posts: Array<postInterface> = [
     type: PostTypes.project,
     title: "The Blog is Almost Ready 🚀👨🏻‍🚀!",
     mediaType: "image",
-    image: BlogPostMedia,
+    image: UnderConstruction,
     description: [
       "Primarily focused on tech posts and updates about my projects, the blog is almost complete. There are just a few final touches left, but the overall functionality and details of the application are already finished.",
 
@@ -127,7 +126,7 @@ export const posts: Array<postInterface> = [
     title:
       "What Was It Like Working with Visual Basic for the First Time at the Regional Office of a Multinational?",
     mediaType: "image",
-    image: BlogPostMedia,
+    image: UnderConstruction,
     description: [
       "What do you think my experience was like working for a multinational company, on a regional project, with a programming language I had never used before, and with a high level of confidentiality?",
 
@@ -285,7 +284,7 @@ export const posts: Array<postInterface> = [
     title: "I Worked as a Fullstack Developer for NutriciónVital 🏪",
     mediaType: "video",
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    image: UnderConstruction,
     description: [
       "I worked as a fullstack developer in creating an e-commerce platform for dietary supplements and nutritional plan sales services.",
 
@@ -310,7 +309,7 @@ export const posts: Array<postInterface> = [
     title: "I Worked as a Fullstack Developer for UCA 🎓",
     mediaType: "video",
     media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: PersonImage,
+    image: UnderConstruction,
     description: [
       "In January 2023, I joined a group of developers tasked with creating a web application for the Universidad Católica Argentina (UCA), an application designed to educate their students.",
 
