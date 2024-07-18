@@ -64,5 +64,14 @@
   },
   "downloadCV": {
     "link": "/CV-es-SebastianPerez.pdf"
+  },
+  "social": {
+    "title": "Redes sociales Sebastian Pérez",
+    "paragraphOne": "Si bien no suelo publicar muy a menudo puede que encuentres reposts de publicaciones útiles o información de interés en mis redes sociales.",
+    "paragraphTwo": "De vez en cuando estoy mirando publicaciones de los referentes en cuanto a muchas tecnologías, mayoritariamente angloparlantes, así que probablemente vayas a ver muchas publicaciones en inglés.",
+    "linksIntroduction": "Links a mis redes sociales",
+    "acknowledgementTitle": "Acknowledgement",
+    "acknowledgement": "Respeto mucho a los creadores de contenido que a través de sus redes sociales comparten su conocimiento y ayudan a que la comunidad mejore. También a los compañeros que comentan para ayudar a los demás desde el respeto 💙.",
+    "thanks": "Muchas gracias por llegar hasta acá."
   }
 }
