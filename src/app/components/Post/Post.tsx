@@ -16,7 +16,7 @@ export default function Post({ post, introductionParagraph }: PostProps) {
         <img
           src={post.image.src}
           alt={`image about ${post.title}`}
-          className="home__post__image shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+          className="home__post__image shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] object-contain"
         />
       </div>
       <div className="home__post__info">
