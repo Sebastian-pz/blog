@@ -11,6 +11,7 @@ import barVB from "@/public/blog/bar-vb.webp";
 import degreeImg from "@/public/blog/degree.webp";
 import duckerImg from "@/public/blog/ducker.webp";
 import UnderConstruction from "@/public/blog/UnderConstruction.webp";
+import nutricionVitalImg from "@/public/blog/NutricionVital.webp";
 
 const author = "Sebastian Pérez";
 
@@ -285,13 +286,17 @@ export const posts: Array<postInterface> = [
     title: "Trabajé como desarrollador fullstack para NutriciónVital 🏪",
     mediaType: "image",
     // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: UnderConstruction,
+    image: nutricionVitalImg,
     description: [
       "Trabajé como desarrollador fullstack en la creación de una plataforma e-commerce de suplementos alimentarios y de servicio de ventas de planes alimentarios.",
 
       "Se me contactó para ingresar como fullstack en la creación de una aplicación e-commerce para la empresa argentina Nutrición Vital junto con otros programadores con el mismo rol.",
 
       "La empresa quería aprovechar su relación con unos gimnasios para vender productos a sus clientes online. Querían ofrecerles la posibilidad de comprar artículos y recibirlos directamente en sus casas. Para lograrlo, decidieron crear una tienda online desde cero con todas las funcionalidades necesarias para este tipo de venta.",
+
+      "|image|/blog/webVitalExample.gif",
+
+      "|note|Gif comprimido y optimizado para mejorar el rendimiento aunque pierde un poco de calidad ",
 
       "Inicialmente, mis responsabilidades comprendieron la creación y optimización del código y del funcionamiento del aplicativo web.",
 
@@ -300,6 +305,10 @@ export const posts: Array<postInterface> = [
       "Como fullstack intervine en todo el desarrollo de la aplicación, desde las bases de datos, la creación de la API, autenticación, autorización, seguridad y la creación del apartado visual de la aplicación (front).",
 
       "Durante el desarrollo de este proyecto seguí mejorando mis habilidades con TypeScript, NodeJS, Express, React, Bootstrap, Redux, JWT, MercadoPago, gestor de envíos de emails, MongoDB con mongoose, lógica algorítmica, entre otras.",
+
+      "|image|/blog/webVitalPayExample.gif",
+
+      "Muchas gracias por leer!",
     ],
 
     author,

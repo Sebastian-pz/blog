@@ -27,11 +27,14 @@ export default function SpecialTag({ tagType, text }: PropsComponent) {
 
     case POSIBLE_TAGS.image:
       return (
-        <img
-          className="border border-[#75756d]"
-          src={text}
-          alt="Image inside post"
-        />
+        <div className="flex items-center justify-center max-w-2/3">
+          <img
+            className="border border-[#75756d]"
+            src={text}
+            alt="Image inside post"
+            loading="lazy"
+          />
+        </div>
       );
 
     default:
