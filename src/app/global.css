@@ -1,0 +1,37 @@
+.notFound {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.notFound__content {
+  margin: auto;
+  width: 50%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.notFound__content h1 {
+  font-size: 3rem;
+  margin: 10px;
+}
+
+/* .notFound__content p {
+  font-size: 1.5rem;
+} */
+
+.notFound__content a {
+  background-color: black;
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+}
