@@ -20,8 +20,8 @@ export const posts: Array<postInterface> = [
     type: PostTypes.experience,
     title:
       "Como fullstack developer trabajé en la creación de un Management System completo.",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/fL83GTilWjw",
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/fL83GTilWjw",
     image: UnderConstruction,
     description: [
       "Creé una aplicación web FullStack que se encarga de gestionar las ventas, costos, gastos e inventarios de un bar, logrando de este modo facilitar los procesos de la tienda.",
