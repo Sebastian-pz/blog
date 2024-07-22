@@ -76,6 +76,15 @@ export default function MainPage() {
       </section>
 
       <ExtendedInfo />
+      <section className="mt-4">
+        <h1 className="text-2xl text-center text-primary-color-500 font-bold">
+          Main skills
+        </h1>
+        <p className="text-center">
+          TypeScript - NodeJS - React - NestJS - NextJS - .Net - express - SQL -
+          NoSQL and more
+        </p>
+      </section>
       <Experiences />
       <Projects />
 
