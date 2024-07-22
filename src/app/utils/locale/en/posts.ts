@@ -11,6 +11,7 @@ import barVB from "@/public/blog/bar-vb.webp";
 import degreeImg from "@/public/blog/degree.webp";
 import duckerImg from "@/public/blog/ducker.webp";
 import UnderConstruction from "@/public/blog/UnderConstruction.webp";
+import nutricionVitalImg from "@/public/blog/NutricionVital.webp";
 
 const author = "Sebastian Pérez";
 
@@ -284,13 +285,17 @@ export const posts: Array<postInterface> = [
     title: "I Worked as a Fullstack Developer for NutriciónVital 🏪",
     mediaType: "image",
     // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
-    image: UnderConstruction,
+    image: nutricionVitalImg,
     description: [
       "I worked as a fullstack developer in creating an e-commerce platform for dietary supplements and nutritional plan sales services.",
 
       "I was contacted to join as a fullstack developer in the creation of an e-commerce application for the Argentine company Nutrición Vital, along with other developers in the same role.",
 
       "The company wanted to leverage its relationship with some gyms to sell products to their clients online. They wanted to offer the possibility to purchase items and have them delivered directly to their homes. To achieve this, they decided to create an online store from scratch with all the necessary functionalities for this type of sale.",
+
+      "|image|/blog/webVitalExample.gif",
+
+      "|note|Compressed and optimized GIF to improve performance although it loses a little quality.",
 
       "Initially, my responsibilities included creating and optimizing the code and functionality of the web application.",
 
@@ -299,6 +304,10 @@ export const posts: Array<postInterface> = [
       "As a fullstack developer, I was involved in the entire development of the application, from databases, API creation, authentication, authorization, security, to creating the visual part of the application (front end).",
 
       "During the development of this project, I continued improving my skills with TypeScript, NodeJS, Express, React, Bootstrap, Redux, JWT, MercadoPago, email sending manager, MongoDB with mongoose, algorithmic logic, among others.",
+
+      "|image|/blog/webVitalPayExample.gif",
+
+      "Thanks for read!",
     ],
     author,
     creationDate: "11/27/2023",
