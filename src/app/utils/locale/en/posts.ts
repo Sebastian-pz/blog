@@ -282,8 +282,8 @@ export const posts: Array<postInterface> = [
     id: "6957b082e06f4ba0a18b377143ce407b",
     type: PostTypes.experience,
     title: "I Worked as a Fullstack Developer for NutriciónVital 🏪",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: UnderConstruction,
     description: [
       "I worked as a fullstack developer in creating an e-commerce platform for dietary supplements and nutritional plan sales services.",
@@ -307,8 +307,8 @@ export const posts: Array<postInterface> = [
     id: "2bb2193700824b11bcc33c9dc5dd3c65",
     type: PostTypes.experience,
     title: "I Worked as a Fullstack Developer for UCA 🎓",
-    mediaType: "video",
-    media: "https://www.youtube.com/embed/LZVsATLj4Tw",
+    mediaType: "image",
+    // media: "https://www.youtube.com/embed/LZVsATLj4Tw",
     image: UnderConstruction,
     description: [
       "In January 2023, I joined a group of developers tasked with creating a web application for the Universidad Católica Argentina (UCA), an application designed to educate their students.",
