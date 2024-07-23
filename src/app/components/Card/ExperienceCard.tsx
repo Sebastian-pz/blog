@@ -1,3 +1,4 @@
+import { useLocale } from "next-intl";
 import Link from "next/link";
 interface CardProps {
   title: string;
@@ -7,19 +8,21 @@ interface CardProps {
   responsibilities: Array<string>;
 }
 
-export default function Card({
+export default function ExperienceCard({
   title,
   link,
   dates,
   description,
   responsibilities,
 }: CardProps) {
+  const localeActive = useLocale();
+
   return (
     <article className="mb-8 w-full mx-auto ">
       <div className="shadow-[0px_100px_80px_rgba(0,_0,_0,_0.07),_0px_41.8px_33.42px_rgba(0,_0,_0,_0.05),_0px_22.3px_17.87px_rgba(0,_0,_0,_0.04),_0px_12.5px_10.02px_rgba(0,_0,_0,_0.04),_0px_6.7px_5.32px_rgba(0,_0,_0,_0.03),_0px_2.8px_2.21px_rgba(0,_0,_0,_0.02)] bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
         <div className="mb-2">
           <h3 className="text-gray-900 font-bold text-xl mb-2 hover:text-primary-color-500">
-            <Link href={link}>{title}</Link>
+            <Link href={`/${localeActive}${link}`}>{title}</Link>
           </h3>
           <p className="text-sm text-gray-600 flex items-center">
             <svg

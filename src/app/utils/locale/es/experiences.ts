@@ -1,4 +1,6 @@
-const EXPERIENCES = [
+import { ExperienceI } from "../common";
+
+const EXPERIENCES: Array<ExperienceI> = [
   {
     title: "Fullstack web developer",
     description:
@@ -11,7 +13,7 @@ const EXPERIENCES = [
       "Desplegar la aplicación para su posterior acceso al cliente.",
     ],
     dates: "Noviembre 2023 - Junio 2024",
-    link: "/",
+    link: "/post/1d0d966b84354712b92c359cc28a06c2",
   },
   {
     title: "Fullstack web developer en Nutrición Vital",
@@ -25,7 +27,7 @@ const EXPERIENCES = [
       "Participé en el desarrollo de la UX/UI en conjunto con el cliente y el equipo de trabajo.",
     ],
     dates: "Junio 2023 - Agosto 2023",
-    link: "/",
+    link: "/post/6957b082e06f4ba0a18b377143ce407b",
   },
   {
     title: "Fullstack web developer en la UCA",
@@ -38,7 +40,7 @@ const EXPERIENCES = [
       "Colaboré estrechamente con compañeros de equipo a través de prácticas como la programación en pareja (pair programming) para mejorar la calidad del código y ayudar en la resolución de problemas.",
     ],
     dates: "Enero 2023 - Junio 2023",
-    link: "/",
+    link: "/post/2bb2193700824b11bcc33c9dc5dd3c65",
   },
 ];
 
