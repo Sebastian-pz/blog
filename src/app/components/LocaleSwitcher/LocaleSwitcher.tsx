@@ -1,23 +1,31 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { ChangeEvent, useTransition } from "react";
 
 export default function LocaleSwitcher() {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const localeActive = useLocale();
+  const actualLocation = usePathname();
 
   function onSelectChange(e: ChangeEvent<HTMLSelectElement>) {
     const nextLocale = e.target.value;
+
+    let newRoute = "";
+    actualLocation[2] == "n"
+      ? (newRoute = actualLocation.replace("en", "es"))
+      : (newRoute = actualLocation.replace("es", "en"));
+
     startTransition(() => {
-      router.replace(`/${nextLocale}`);
+      router.replace(newRoute);
+      // router.replace(`/${nextLocale}`);
     });
   }
 
   return (
-    <div className=" rounded-lg border border-border-color bg-white">
+    <div className="  border-2 border-black shadow-[4.0px_4.0px_rgba(0,0,0)] bg-[#c1e6f5]">
       <label htmlFor="Language-selector" className="sr-only">
         Change Language
       </label>
@@ -25,7 +33,7 @@ export default function LocaleSwitcher() {
         defaultValue={localeActive}
         name="Language-selector"
         id="Language-selector"
-        className="p-2 rounded-lg bg-white"
+        className="p-2 bg-transparent"
         onChange={onSelectChange}
         disabled={isPending}
       >

@@ -16,13 +16,14 @@
     "likeTo": "I like to bring things to code 👨🏼‍💻, animals 🐕, sunsets 🌄, and more...",
     "workAvailability": "Open to offers",
     "workAvailabilityLabel": "Available",
-    "birthDate": "July 29"
+    "cv": "Resume",
+    "cvRoute": "/CV-en-SebastianPerez.pdf"
   },
   "aboutExtendedInfo": {
     "experienceInYears": "1.5+ years of full-stack development experience",
     "experienceComplement": " creating web solutions to real problems, working as a team with agile SCRUM methodologies, pair programming and others.",
-    "englishLevel": "English B2 - C1",
-    "englishStatus": "(Certified), and currently continuing to study to improve."
+    "englishLevel": "English B2+",
+    "englishStatus": ", and currently continuing to study to improve."
   },
   "aboutExperience": {
     "title": "Professional Experience",

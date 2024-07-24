@@ -6,89 +6,78 @@ import Projects from "@/components/Project/Projects";
 import Experiences from "@/components/Experience/Experiences";
 import ExtendedInfo from "@/components/ExtendedInfo/ExtendedInfo";
 
-import bannerImage from "@/public/banner.webp";
 import profileImage from "@/public/profileImage.webp";
 import GitHubIcon from "@/public/svg/github.svg";
 import LinkedInIcon from "@/public/svg/linkedin.svg";
-import CakeIcon from "@/public/svg/cake.svg";
-import WorkIcon from "@/public/svg/work.svg";
+import DownloadIcon from "@/public/svg/download.svg";
 import { useTranslations } from "next-intl";
 
 export default function MainPage() {
   const t = useTranslations("about");
+
+  const CV_ROUTE = t("cvRoute");
+
   return (
-    <main className="m-auto border border-primary-color-800 w-[95%] mt-10 rounded-xl md:w-[80%] xl:w-[60%]">
-      <Image
-        src={bannerImage.src}
-        alt="profile banner image"
-        width="1280"
-        height="600"
-        className="rounded-t-xl border-primary-color-800 border-b-2 object-contain"
-      />
-      <div className="flex justify-center md:justify-between  items-center p-6 lg:px-12">
-        <div className="flex items-center justify-center ">
-          <Image
-            src={profileImage.src}
-            alt="profile image Sebastian Perez"
-            width="500"
-            height="500"
-            className="rounded-full  h-[110px] w-[110px] sm:h-[175px] sm:w-[175px] md:h-[200px] md:w-[200px] border shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
-          />
-          <section className="ml-2 md:ml-6">
-            <h1 className="font-bold text-2xl mb-3">Sebastian Pérez</h1>
-            <p className="hidden md:inline">{t("role")}</p>
-            <p className="md:hidden">{t("focused")}</p>
-            <p>spezuluaga@gmail.com</p>
+    <main className="m-auto  w-[95%] mt-10 rounded-xl md:w-[80%] xl:w-[65%]">
+      <div className="flex flex-col gap-10 lg:flex-row justify-between items-center p-6 lg:px-12">
+        <div className="flex ">
+          <section className="flex items-center">
+            <Image
+              src={profileImage.src}
+              alt="profile image Sebastian Perez"
+              width="500"
+              height="500"
+              className="rounded-full  h-[110px] w-[110px] sm:h-[175px] sm:w-[175px] md:h-[200px] md:w-[200px] border-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)] border-black"
+            />
+            <section className="ml-2 md:ml-6">
+              <h1 className="font-bold text-2xl mb-6 shadow-[4.0px_4.0px_rgba(0,0,0)] border-2 border-black bg-[#a8fca1] -rotate-6 px-2 p-2 md:px-4">
+                Sebastian Pérez
+              </h1>
+              <p className="hidden md:inline">{t("role")}</p>
+              <p>spezuluaga@gmail.com</p>
+            </section>
           </section>
         </div>
-        <a
-          href="mailto:spezuluaga@gmail.com"
-          className="border bg-primary-color-500 p-2 rounded-lg hidden md:inline   h-10 hover:bg-primary-color-700 text-white"
-        >
-          {t("callToAction")}
-        </a>
-      </div>
-      <section className="px-3 mb-4 lg:px-12">
-        <p>{t("introduction")}</p>
-        <p>{t("likeTo")}</p>
-      </section>
-
-      <section className="flex justify-evenly border-b border-primary-color-800">
-        <abbr title={t("workAvailability")} className="no-underline">
+        <section className="flex justify-center items-center">
           <Svg
-            label={t("workAvailability")}
-            link="mailto:spezuluaga@gmail.com"
-            svg={WorkIcon}
+            label="LinkedIn"
+            link="https://www.linkedin.com/in/sebastian-perez-zuluaga/"
+            svg={LinkedInIcon}
           />
-        </abbr>
+          <Svg
+            label="GitHub"
+            link="https://github.com/Sebastian-pz"
+            svg={GitHubIcon}
+          />
+          <a
+            download={"CV-es-SebastianPerez.pdf"}
+            href={CV_ROUTE}
+            className="flex flex-col border-2 hover:font-bold border-black hover:bg-[#fbfd84] p-3 duration-500 mb-2 mx-3 bg-[#fcfdb9] hover:scale-110"
+          >
+            <Image
+              src={DownloadIcon.src}
+              alt={`Icon for download CV`}
+              width="24"
+              height="24"
+              className="mx-auto"
+            />
+            {t("cv")}
+          </a>
+        </section>
+      </div>
 
-        <Svg
-          label="LinkedIn"
-          link="https://www.linkedin.com/in/sebastian-perez-zuluaga/"
-          svg={LinkedInIcon}
-        />
-        <Svg
-          label="GitHub"
-          link="https://github.com/Sebastian-pz"
-          svg={GitHubIcon}
-        />
-        <Svg label={t("birthDate")} svg={CakeIcon} />
-      </section>
+      <div className="border-b border-primary-color-800 mb-9"></div>
 
       <ExtendedInfo />
-      <section className="mt-4">
-        <h1 className="text-2xl text-center text-primary-color-500 font-bold">
-          Main skills
-        </h1>
-        <p className="text-center">
-          TypeScript - NodeJS - React - NestJS - NextJS - .Net - express - SQL -
-          NoSQL and more
-        </p>
-      </section>
+
+      {/* <section className="px-3 mb-4 lg:px-12">
+        <p>{t("introduction")}</p>
+        <p>{t("likeTo")}</p>
+      </section> */}
       <Experiences />
       <Projects />
 
-      <CV />
+      {/* <CV /> */}
     </main>
   );
 }

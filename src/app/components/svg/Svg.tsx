@@ -11,7 +11,7 @@ interface PropsComponent {
 export default function Svg({ svg, label, link }: PropsComponent) {
   if (!link)
     return (
-      <div className="flex flex-col ">
+      <div className="flex flex-col">
         <Image
           src={svg.src}
           alt={`Icon for ${label}`}
@@ -27,7 +27,7 @@ export default function Svg({ svg, label, link }: PropsComponent) {
     <Link
       href={link}
       target="_blank"
-      className="flex flex-col hover:bg-[#3c57c240] rounded-lg duration-500 mb-2 p-1"
+      className="flex flex-col hover:font-bold border-2 border-black hover:bg-[#fbfd84] p-3 duration-500 mb-2 mx-3 bg-[#fcfdb9] hover:scale-110"
     >
       <Image
         src={svg.src}

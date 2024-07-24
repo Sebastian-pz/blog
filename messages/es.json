@@ -16,13 +16,14 @@
     "likeTo": "Me gusta llevar cosas del día a día a código 👨🏼‍💻, los animales 🐕, los atardeceres 🌄 y demás...",
     "workAvailability": "Escuchando ofertas",
     "workAvailabilityLabel": "Disponible",
-    "birthDate": "29 de Julio"
+    "cv": "Curriculum",
+    "cvRoute": "/CV-en-SebastianPerez.pdf"
   },
   "aboutExtendedInfo": {
     "experienceInYears": "Más de un año y medio de experiencia profesional",
     "experienceComplement": "creando soluciones web a problemas reales, trabajando en equipo con metodologías AGILE, pair programming y demás.",
-    "englishLevel": "Inglés B2 - C1",
-    "englishStatus": "(Certificado), y actualmente sigo estudiando para mejorar."
+    "englishLevel": "Inglés B2+",
+    "englishStatus": ", y actualmente sigo estudiando para mejorar."
   },
   "aboutExperience": {
     "title": "Experiencia profesional",
