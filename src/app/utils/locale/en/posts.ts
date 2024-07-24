@@ -44,6 +44,22 @@ export const posts: Array<postInterface> = [
     creationDate: "01/16/2024",
   },
   {
+    author,
+    creationDate: "07/23/2024",
+    description: [
+      "Recently, a friend reached out to me for a small project at a startup. They needed a chatbot, and although I had never created one before, curiosity got the better of me (thankfully, my bosses gave me the freedom to explore!).",
+      "So, I dived into the world of AI with Python as my travel companion. Two libraries became my allies: one for the 'mind' of the chatbot, processing language and responding, and the other to give it 'life', launching it and connecting it.",
+      "What blew my mind was the AI's ability to learn. I simply trained an algorithm with company information, and it was able to answer customer questions! 🤯",
+      "Of course, the bot is still basic. The information was limited, and connecting it to databases is the next challenge. But seeing how with just a few lines of code, the AI brought a chatbot to life, interpreting and responding, left me speechless.",
+      "How far can we go using AIs? I don't know, just wow.",
+    ],
+    id: "f66d239b17b14cdda4889da32608cad4",
+    image: UnderConstruction,
+    mediaType: "image",
+    title: "AI Left Me Speechless: My First Experience with Chatbots 🤖",
+    type: PostTypes.opinion,
+  },
+  {
     author: author,
     creationDate: "07/08/2024",
     id: "bcaa1e968b6a43daaea2f4638025fac8",

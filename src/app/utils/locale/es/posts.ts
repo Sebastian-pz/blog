@@ -45,6 +45,22 @@ export const posts: Array<postInterface> = [
   },
   {
     author,
+    creationDate: "07/23/2024",
+    description: [
+      "Hace poco, un amigo me contactó para un pequeño trabajo en una startup. Necesitaban un chatbot, y aunque nunca había creado uno, la curiosidad pudo más que el miedo (¡menos mal que mis jefes me dieron libertad!).",
+      "Así que me sumergí en el mundo de la IA con Python como compañero de viaje. Dos bibliotecas fueron mis aliadas: una para la 'mente' del chatbot, procesando el lenguaje y respondiendo, y la otra para darle 'vida', levantarlo y conectarlo.",
+      "Lo que me dejó alucinado fue la capacidad de la IA para aprender. ¡Simplemente entrené un algoritmo con información de la empresa y este fue capaz de responder preguntas de clientes! 🤯",
+      "Claro, el bot aún es básico. La información era limitada y la conexión con bases de datos es el siguiente desafío. Pero ver cómo con tan pocas líneas de código la IA daba vida a un chatbot, interpretando y respondiendo, me dejó con la boca abierta.",
+      "¿Qué tan lejos se puede llegar utilizando IAs? No sé, simplemente wow.",
+    ],
+    id: "f66d239b17b14cdda4889da32608cad4",
+    image: UnderConstruction,
+    mediaType: "image",
+    title: "La IA me dejó boquiabierto: Mi primera experiencia con Chatbots 🤖",
+    type: PostTypes.opinion,
+  },
+  {
+    author,
     creationDate: "07/08/2024",
     id: "bcaa1e968b6a43daaea2f4638025fac8",
     image: tddImg,
