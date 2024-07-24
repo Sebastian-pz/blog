@@ -6,11 +6,11 @@ export default function ExtendedInfo() {
   return (
     <section className="p-3 md:px-5 lg:px-10">
       <p className="text-balance text-center">
-        <strong className="text-primary-color-500">
+        <strong className="text-primary-color-300">
           {t("experienceInYears") + " "}
         </strong>
         {t("experienceComplement")}
-        <strong className="text-primary-color-500">
+        <strong className="text-primary-color-300">
           {" "}
           {t("englishLevel")}
         </strong>{" "}

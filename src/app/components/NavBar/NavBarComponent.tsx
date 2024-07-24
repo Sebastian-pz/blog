@@ -17,7 +17,7 @@ export default function Navbar() {
   });
 
   return (
-    <section className="font-bold fixed top-0 right-0 flex p-2 bg-primary-color-100 border border-primary-color-800 mb-4 justify-center items-center w-full md:text-xl">
+    <section className="font-bold z-50 fixed top-0 right-0 flex p-2 bg-primary-color-100 border border-primary-color-800 mb-4 justify-center items-center w-full md:text-xl">
       {tRoutes.map((route, index) => {
         const { label, path, styles } = route;
         return (
@@ -30,7 +30,7 @@ export default function Navbar() {
           </Link>
         );
       })}
-      <Search />
+      {/* <Search /> */}
       <LocaleSwitcher />
     </section>
   );

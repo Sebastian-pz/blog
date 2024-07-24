@@ -10,10 +10,10 @@ export default function Experiences() {
 
   return (
     <section className="mt-8 p-2">
-      <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold ">
+      <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-12">
         {t("title")}
       </h2>
-      <p className="text-center my-4">{t("note")}</p>
+
       <section className="flex flex-col w-full justify-center items-center md:px-4 lg:px-10">
         {experiences.map((experience, index) => {
           return (
