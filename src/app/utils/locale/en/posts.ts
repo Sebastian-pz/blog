@@ -12,7 +12,8 @@ import degreeImg from "@/public/blog/degree.webp";
 import duckerImg from "@/public/blog/ducker.webp";
 import UnderConstruction from "@/public/blog/UnderConstruction.webp";
 import nutricionVitalImg from "@/public/blog/NutricionVital.webp";
-import chatBot from "@/public/blog/ChatBot.webp";
+import chatBotImg from "@/public/blog/ChatBot.webp";
+import blogImg from "@/public/blog/Blog.webp";
 
 const author = "Sebastian Pérez";
 
@@ -55,7 +56,7 @@ export const posts: Array<postInterface> = [
       "How far can we go using AIs? I don't know, just wow.",
     ],
     id: "f66d239b17b14cdda4889da32608cad4",
-    image: chatBot,
+    image: chatBotImg,
     mediaType: "image",
     title: "AI Left Me Speechless: My First Experience with Chatbots 🤖",
     type: PostTypes.opinion,
@@ -118,9 +119,9 @@ export const posts: Array<postInterface> = [
   {
     id: "7a46a12b32e4461e911ef2e941303a33",
     type: PostTypes.project,
-    title: "The Blog is Almost Ready 🚀👨🏻‍🚀!",
+    title: "Blog is Almost Ready 🚀👨🏻‍🚀!",
     mediaType: "image",
-    image: UnderConstruction,
+    image: blogImg,
     description: [
       "Primarily focused on tech posts and updates about my projects, the blog is almost complete. There are just a few final touches left, but the overall functionality and details of the application are already finished.",
 
