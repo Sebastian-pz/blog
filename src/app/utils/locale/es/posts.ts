@@ -12,6 +12,7 @@ import degreeImg from "@/public/blog/degree.webp";
 import duckerImg from "@/public/blog/ducker.webp";
 import UnderConstruction from "@/public/blog/UnderConstruction.webp";
 import nutricionVitalImg from "@/public/blog/NutricionVital.webp";
+import chatBot from "@/public/blog/ChatBot.webp";
 
 const author = "Sebastian Pérez";
 
@@ -54,7 +55,7 @@ export const posts: Array<postInterface> = [
       "¿Qué tan lejos se puede llegar utilizando IAs? No sé, simplemente wow.",
     ],
     id: "f66d239b17b14cdda4889da32608cad4",
-    image: UnderConstruction,
+    image: chatBot,
     mediaType: "image",
     title: "La IA me dejó boquiabierto: Mi primera experiencia con Chatbots 🤖",
     type: PostTypes.opinion,
