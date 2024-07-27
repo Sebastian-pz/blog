@@ -1,33 +1,45 @@
-import Link from "next/link";
-import { postInterface } from "@/utilities/interfaces";
+import { postInterface } from "@/app/utils/interfaces";
 import { useLocale } from "next-intl";
+import Link from "next/link";
+import Image from "next/image";
 
-interface PostProps {
+interface propsComponent {
   post: postInterface;
-  introductionParagraph: string | String;
 }
 
-export default function Post({ post, introductionParagraph }: PostProps) {
-  const activeLocale = useLocale();
+export default function Post({ post }: propsComponent) {
+  const localeActive = useLocale();
 
+  const { creationDate, title, description, id, image } = post;
   return (
-    <article className="home__post border-b lg:text-xl border-border-color py-9">
-      <div className="m-auto">
-        <img
-          src={post.image.src}
-          alt={`image about ${post.title}`}
-          className="home__post__image shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] object-contain"
+    <article className="group">
+      <Link
+        href={`/${localeActive}/post/${id}`}
+        className="block h-48 overflow-hidden rounded-lg"
+        prefetch={false}
+      >
+        <Image
+          src={image}
+          alt={`Post about ${title}`}
+          width={400}
+          height={300}
+          className="h-full w-full object-cover transition-all duration-300 group-hover:scale-105"
         />
-      </div>
-      <div className="home__post__info">
-        <h2 className="mb-4 md:text-lg font-bold hover:text-primary-color-600">
-          <Link className="" href={`/${activeLocale}/post/${post.id}`}>
-            {post.title}
+      </Link>
+      <div className="mt-4 space-y-2">
+        <div className="text-sm font-medium text-muted-foreground">
+          {creationDate}
+        </div>
+        <h2 className="text-2xl font-bold">
+          <Link
+            href={`/${localeActive}/post/${id}`}
+            className="hover:underline"
+            prefetch={false}
+          >
+            {title}
           </Link>
         </h2>
-        <p className="text-slate-500 text-xs md:text-lg lg:text-lg">
-          {introductionParagraph}
-        </p>
+        <p className="text-muted-foreground">{description[0]}</p>
       </div>
     </article>
   );
