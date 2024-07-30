@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ChangeEvent, useTransition } from "react";
 
 export default function LocaleSwitcher() {
@@ -9,18 +9,22 @@ export default function LocaleSwitcher() {
   const router = useRouter();
   const localeActive = useLocale();
   const actualLocation = usePathname();
+  const params = useSearchParams();
+
+  const page = params.get("page");
+  const tag = params.get("tag");
 
   function onSelectChange(e: ChangeEvent<HTMLSelectElement>) {
-    const nextLocale = e.target.value;
-
     let newRoute = "";
     actualLocation[2] == "n"
       ? (newRoute = actualLocation.replace("en", "es"))
       : (newRoute = actualLocation.replace("es", "en"));
 
     startTransition(() => {
+      if (page && tag) {
+        return router.replace(`${newRoute}?page=${page}&tag=${tag}`);
+      }
       router.replace(newRoute);
-      // router.replace(`/${nextLocale}`);
     });
   }
 
