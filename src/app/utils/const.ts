@@ -29,7 +29,9 @@ export function getFilteredPosts(lang: string, query: queryFilterI) {
   let { tag, page = 1 } = query;
 
   if (isNaN(page)) page = 1;
-  if (tag) posts = posts.filter((post) => post.tags.includes(tag));
+  // Vercel error wtf
+  if (typeof tag === "string")
+    posts = posts.filter((post) => post.tags.includes(tag));
 
   const totalPostsByTag = posts.length;
 
