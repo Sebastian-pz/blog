@@ -1,4 +1,3 @@
-import Link from "next/link";
 import AsideComponent from "@/components/AsideComponent/AsideComponent";
 import Posts from "@/components/Posts/Posts";
 
