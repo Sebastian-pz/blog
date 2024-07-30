@@ -9,8 +9,13 @@ interface propsComponent {
 
 export default function Post({ post }: propsComponent) {
   const localeActive = useLocale();
-
   const { creationDate, title, description, id, image } = post;
+
+  function summary(text: string, limit: number) {
+    if (text.length > limit) return text.slice(0, limit) + "...";
+    return text;
+  }
+
   return (
     <article className="group">
       <Link
@@ -27,9 +32,6 @@ export default function Post({ post }: propsComponent) {
         />
       </Link>
       <div className="mt-4 space-y-2">
-        <div className="text-sm font-medium text-muted-foreground">
-          {creationDate}
-        </div>
         <h2 className="text-2xl font-bold">
           <Link
             href={`/${localeActive}/post/${id}`}
@@ -39,7 +41,9 @@ export default function Post({ post }: propsComponent) {
             {title}
           </Link>
         </h2>
-        <p className="text-muted-foreground">{description[0]}</p>
+        <p className="text-muted-foreground">
+          {summary(description[0] as string, 120)}
+        </p>
       </div>
     </article>
   );
