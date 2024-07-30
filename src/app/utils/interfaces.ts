@@ -8,6 +8,7 @@ export interface postInterface {
   description: Array<String>;
   author: string;
   creationDate: string;
+  tags: Array<string>;
 }
 
 export enum PostTypes {

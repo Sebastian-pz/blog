@@ -14,6 +14,7 @@ import UnderConstruction from "@/public/blog/UnderConstruction.webp";
 import nutricionVitalImg from "@/public/blog/NutricionVital.webp";
 import chatBotImg from "@/public/blog/ChatBot.webp";
 import blogImg from "@/public/blog/Blog.webp";
+import TAGS from "../../Tags/Tags";
 
 const author = "Sebastian Pérez";
 
@@ -44,6 +45,13 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "01/16/2024",
+    tags: [
+      TAGS.experience,
+      TAGS.fullstack,
+      TAGS.nestjs,
+      TAGS.nextjs,
+      TAGS.CI_CD,
+    ],
   },
   {
     author,
@@ -60,6 +68,7 @@ export const posts: Array<postInterface> = [
     mediaType: "image",
     title: "La IA me dejó boquiabierto: Mi primera experiencia con Chatbots 🤖",
     type: PostTypes.opinion,
+    tags: [TAGS.opinion, TAGS.experience, TAGS.backend],
   },
   {
     author,
@@ -88,6 +97,7 @@ export const posts: Array<postInterface> = [
 
       "Herranz, Jose Ignacio. (Abril 13 de 2023). TDD como metodología de diseño de software, recuperado de: https://www.paradigmadigital.com/dev/tdd-como-metodologia-de-diseno-de-software/",
     ],
+    tags: [TAGS.testing, TAGS.CI_CD, TAGS.cleanCode, TAGS.opinion],
   },
   {
     id: "fc2aaada30594ed9a39fa1928d267655",
@@ -115,6 +125,7 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "02/17/2024",
+    tags: [TAGS.cleanCode, TAGS.opinion],
   },
   {
     id: "7a46a12b32e4461e911ef2e941303a33",
@@ -136,6 +147,7 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "11/16/2023",
+    tags: [TAGS.project, TAGS.fullstack, TAGS.nextjs, TAGS.CI_CD],
   },
   {
     id: "3ae67a3496d74fdfa5c16f6cbef1ed73",
@@ -171,6 +183,7 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "11/28/2023",
+    tags: [TAGS.opinion, TAGS.experience, TAGS.tools, TAGS.cleanCode],
   },
   {
     id: "f9cac5ffb2f5476b909abcd56e6fe641",
@@ -190,6 +203,7 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "11/03/2023",
+    tags: [TAGS.opinion],
   },
   {
     id: "89ad3aea22014a68963c69621baf1ea2",
@@ -210,6 +224,7 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "11/03/2023",
+    tags: [TAGS.project, TAGS.frontend, TAGS.react],
   },
   {
     id: "5e14c5bb00be4450b2376eda189a64fb",
@@ -232,6 +247,7 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "11/03/2023",
+    tags: [TAGS.project, TAGS.frontend, TAGS.react],
   },
   {
     id: "5c9ef6fa3e12415ca8a853150643b993",
@@ -266,6 +282,7 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "11/26/2023",
+    tags: [TAGS.experience, TAGS.cleanCode, TAGS.tools],
   },
   {
     id: "930a849815984e8a95d4f54f132aac29",
@@ -297,6 +314,7 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "11/26/2023",
+    tags: [TAGS.experience, TAGS.opinion, TAGS.tools],
   },
   {
     id: "6957b082e06f4ba0a18b377143ce407b",
@@ -331,6 +349,13 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "11/27/2023",
+    tags: [
+      TAGS.experience,
+      TAGS.fullstack,
+      TAGS.CI_CD,
+      TAGS.react,
+      TAGS.express,
+    ],
   },
   {
     id: "2bb2193700824b11bcc33c9dc5dd3c65",
@@ -367,6 +392,7 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "11/27/2023",
+    tags: [TAGS.experience, TAGS.fullstack, TAGS.react, TAGS.CI_CD],
   },
   {
     id: "3036dd4b2fbb4b0496571af11af2aa6d",
@@ -411,6 +437,7 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "11/03/2023",
+    tags: [TAGS.project, TAGS.opinion, TAGS.tools],
   },
   {
     id: "a17fbef4cb244ce3b2a107bf7fde4482",
@@ -434,5 +461,6 @@ export const posts: Array<postInterface> = [
 
     author,
     creationDate: "11/27/2023",
+    tags: [TAGS.project, TAGS.fullstack, TAGS.webSockets, TAGS.CI_CD],
   },
 ];
