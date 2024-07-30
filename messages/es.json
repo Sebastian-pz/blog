@@ -75,5 +75,12 @@
     "acknowledgementTitle": "Acknowledgement",
     "acknowledgement": "Respeto mucho a los creadores de contenido que a través de sus redes sociales comparten su conocimiento y ayudan a que la comunidad mejore. También a los compañeros que comentan para ayudar a los demás desde el respeto 💙.",
     "thanks": "Muchas gracias por llegar hasta acá."
+  },
+  "headerSection": {
+    "title": "El blog",
+    "description": "Explore mi colección de artículos e ideas sobre el mundo del desarrollo de software."
+  },
+  "featurePosts": {
+    "title": "Posts destacados"
   }
 }

@@ -1,6 +1,12 @@
 import Link from "next/link";
 
-export default function FeaturePost() {
+interface propsComponent {
+  image: any;
+  title: string;
+  date: string;
+}
+
+export default function FeaturePost({ date, image, title }: propsComponent) {
   return (
     <Link
       href="#"
@@ -8,17 +14,15 @@ export default function FeaturePost() {
       prefetch={false}
     >
       <img
-        src="/placeholder.svg"
+        src={image.src}
         alt="Blog post cover image"
         width={80}
-        height={60}
+        height={80}
         className="h-20 w-20 rounded-lg object-cover"
       />
       <div>
-        <h3 className="text-lg font-bold">
-          Mastering the Art of Minimalist Design
-        </h3>
-        <p className="text-muted-foreground">August 24, 2023</p>
+        <h3 className="text- font-bold">{title}</h3>
+        <p className="text-muted-foreground">{date}</p>
       </div>
     </Link>
   );

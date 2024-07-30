@@ -75,5 +75,12 @@
     "acknowledgementTitle": "Acknowledgement",
     "acknowledgement": "I have great respect for content creators who share their knowledge on social media and help the community improve. Also, thanks to those who comment to help others respectfully 💙.",
     "thanks": "Thank you for reaching the end of these recognitions"
+  },
+  "headerSection": {
+    "title": "The blog",
+    "description": "Explore my collection of articles and insights on the world of software development."
+  },
+  "featurePosts": {
+    "title": "Featured posts"
   }
 }
