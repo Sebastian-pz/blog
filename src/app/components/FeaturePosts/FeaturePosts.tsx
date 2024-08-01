@@ -12,9 +12,10 @@ export default function FeaturePosts() {
     <div className="rounded-lg border bg-muted p-6">
       <h2 className="text-2xl font-bold">{t("title")}</h2>
       <div className="mt-4 space-y-4">
-        {posts.map(({ creationDate, title, image }, i) => {
+        {posts.map(({ creationDate, title, image, id }, i) => {
           return (
             <FeaturePost
+              id={id as string}
               date={creationDate}
               image={image}
               title={title}

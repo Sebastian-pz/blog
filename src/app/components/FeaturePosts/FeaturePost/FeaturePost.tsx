@@ -1,15 +1,23 @@
+import { useLocale } from "next-intl";
 import Link from "next/link";
 
 interface propsComponent {
   image: any;
   title: string;
   date: string;
+  id: string;
 }
 
-export default function FeaturePost({ date, image, title }: propsComponent) {
+export default function FeaturePost({
+  date,
+  image,
+  title,
+  id,
+}: propsComponent) {
+  const localeActive = useLocale();
   return (
     <Link
-      href="#"
+      href={`/${localeActive}/post/${id}`}
       className="flex items-start gap-4 hover:underline"
       prefetch={false}
     >
