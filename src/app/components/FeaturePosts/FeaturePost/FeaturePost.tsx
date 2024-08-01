@@ -18,7 +18,7 @@ export default function FeaturePost({
   return (
     <Link
       href={`/${localeActive}/post/${id}`}
-      className="flex items-start gap-4 hover:underline"
+      className="flex md:flex-col lg:flex-row items-start gap-4 hover:underline"
       prefetch={false}
     >
       <img
