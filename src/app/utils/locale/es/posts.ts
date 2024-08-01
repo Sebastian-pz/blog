@@ -40,7 +40,7 @@ export const posts: Array<postInterface> = [
 
       "Para no hacerlo muy largo, después de esa charla con el chico del otro software se me habló y justo al lunes siguiente me puse manos a la obra para comenzar con el proyecto.",
 
-      "Las tecnologías utilizadas para este proyecto fueron principalmente JavaScript, NodeJS, React, Vite, Tailwind, NodeJS, Express, MongoDB (Atlas), byCrypt, json web tokens JWT, Cors y ESLint con standard para mejorar el código.",
+      "Las tecnologías utilizadas para este proyecto fueron principalmente TypeScript, NodeJS, React, Vite, Tailwind, Express, MongoDB, PostgreSQL, NestJS y NextJS.",
     ],
 
     author,

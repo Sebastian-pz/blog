@@ -40,7 +40,7 @@ export const posts: Array<postInterface> = [
 
       "To keep it short, after that conversation with the other software provider, I was approached, and by the following Monday, I started working on the project.",
 
-      "Stack used for this project were mainly TypeScript, NodeJS, React, Vite, Tailwind, NodeJS, Express, MongoDB (Atlas), byCrypt, JSON web tokens (JWT), Cors, and ESLint with standard to improve the code.",
+      "Stack used for this project were mainly TypeScript, NodeJS, React, Vite, Tailwind, Express, MongoDB, PostgreSQL, NestJS and NextJS.",
     ],
 
     author,
