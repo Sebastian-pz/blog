@@ -83,5 +83,9 @@
   },
   "featurePosts": {
     "title": "Posts destacados"
+  },
+  "emptyPosts": {
+    "title": "No hay posts que mostrar...",
+    "description": "Parece que no hay posts que mostrar con los filtros actuales. Puedes mirar estas otras etiquetas para encontrar más contenido"
   }
 }

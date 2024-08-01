@@ -3,7 +3,7 @@
 import Post from "@/app/components/Post/Post";
 import { getFilteredPosts, queryFilterI } from "@/app/utils/const";
 import { useLocale } from "next-intl";
-import { useSearchParams } from "next/navigation";
+import { redirect, useSearchParams } from "next/navigation";
 
 const searchParamsOptions = {
   tag: "tag",
@@ -19,9 +19,10 @@ export default function page() {
     tag: searchParams.get(searchParamsOptions.tag),
   };
 
+  // [totalPosts] is going to be used for pagination when I have enough posts
   const { posts, totalPosts } = getFilteredPosts(activeLocale, queryConfig);
 
-  console.log(posts);
+  if (totalPosts === 0) redirect(`/${activeLocale}/empty-list`);
 
   return (
     <main className="w-4/5 md:w-3/5 m-auto mt-40 min-h-screen">
