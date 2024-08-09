@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Metadata, ResolvingMetadata } from "next";
 
 import Svg from "@/components/svg/Svg";
 import Projects from "@/components/Project/Projects";
@@ -10,6 +11,18 @@ import GitHubIcon from "@/public/svg/github.svg";
 import LinkedInIcon from "@/public/svg/linkedin.svg";
 import DownloadIcon from "@/public/svg/download.svg";
 import { useTranslations } from "next-intl";
+
+export async function generateMetadata(parent: ResolvingMetadata) {
+  // const previousImages = (await parent).openGraph?.images || [];
+  return {
+    title: "About Sebastian Perez Dev",
+    description:
+      "In this section I talk a little about myself Sebastian Perez Fullstack dev, who I am, where I studied, what I worked on and many other things.",
+    // openGraph: {
+    //   previousImages: [profileImage.src, ...previousImages],
+    // },
+  };
+}
 
 export default function MainPage() {
   const t = useTranslations("about");
