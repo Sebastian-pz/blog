@@ -1,19 +1,19 @@
-import { postInterface } from "@/app/utils/interfaces";
-import { useLocale } from "next-intl";
-import Link from "next/link";
-import Image from "next/image";
+import { postInterface } from '@/app/utils/interfaces'
+import { useLocale } from 'next-intl'
+import Link from 'next/link'
+import Image from 'next/image'
 
 interface propsComponent {
-  post: postInterface;
+  post: postInterface
 }
 
 export default function Post({ post }: propsComponent) {
-  const localeActive = useLocale();
-  const { creationDate, title, description, id, image } = post;
+  const localeActive = useLocale()
+  const { title, description, id, image } = post
 
   function summary(text: string, limit: number) {
-    if (text.length > limit) return text.slice(0, limit) + "...";
-    return text;
+    if (text.length > limit) return text.slice(0, limit) + '...'
+    return text
   }
 
   return (
@@ -46,5 +46,5 @@ export default function Post({ post }: propsComponent) {
         </p>
       </div>
     </article>
-  );
+  )
 }

@@ -1,31 +1,31 @@
-"use client";
+'use client'
 
-import { useLocale } from "next-intl";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { ChangeEvent, useTransition } from "react";
+import { useLocale } from 'next-intl'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { ChangeEvent, useTransition } from 'react'
 
 export default function LocaleSwitcher() {
-  const [isPending, startTransition] = useTransition();
-  const router = useRouter();
-  const localeActive = useLocale();
-  const actualLocation = usePathname();
-  const params = useSearchParams();
+  const [isPending, startTransition] = useTransition()
+  const router = useRouter()
+  const localeActive = useLocale()
+  const actualLocation = usePathname()
+  const params = useSearchParams()
 
-  const page = params.get("page");
-  const tag = params.get("tag");
+  const page = params.get('page')
+  const tag = params.get('tag')
 
   function onSelectChange(e: ChangeEvent<HTMLSelectElement>) {
-    let newRoute = "";
-    actualLocation[2] == "n"
-      ? (newRoute = actualLocation.replace("en", "es"))
-      : (newRoute = actualLocation.replace("es", "en"));
+    let newRoute = ''
+    actualLocation[2] === 'n'
+      ? (newRoute = actualLocation.replace('en', 'es'))
+      : (newRoute = actualLocation.replace('es', 'en'))
 
     startTransition(() => {
       if (page && tag) {
-        return router.replace(`${newRoute}?page=${page}&tag=${tag}`);
+        return router.replace(`${newRoute}?page=${page}&tag=${tag}`)
       }
-      router.replace(newRoute);
-    });
+      router.replace(newRoute)
+    })
   }
 
   return (
@@ -45,5 +45,5 @@ export default function LocaleSwitcher() {
         <option value="en">English</option>
       </select>
     </div>
-  );
+  )
 }

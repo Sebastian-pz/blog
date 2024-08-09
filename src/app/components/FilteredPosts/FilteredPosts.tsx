@@ -1,13 +1,15 @@
-import Link from "next/link";
-import { postInterface } from "@/app/utils/interfaces";
-import GoBack from "@/components/GoBack/GoBack";
-import PostNavigation from "@/components/PostsNavigation/PostNavigation";
-import { useLocale } from "next-intl";
+import Link from 'next/link'
+import { useLocale } from 'next-intl'
+import Image from 'next/image'
+
+import { postInterface } from '@/app/utils/interfaces'
+import GoBack from '@/components/GoBack/GoBack'
+import PostNavigation from '@/components/PostsNavigation/PostNavigation'
 
 interface ComponentProps {
-  title: string;
-  posts: Array<postInterface>;
-  description: string;
+  title: string
+  posts: Array<postInterface>
+  description: string
 }
 
 export default function FilteredPosts({
@@ -15,7 +17,7 @@ export default function FilteredPosts({
   title,
   description,
 }: ComponentProps) {
-  const localeActive = useLocale();
+  const localeActive = useLocale()
   return (
     <>
       <GoBack />
@@ -29,14 +31,14 @@ export default function FilteredPosts({
       <PostNavigation />
 
       {posts.map((post, index) => {
-        const [introductionParagraph] = post.description;
+        const [introductionParagraph] = post.description
         return (
           <article
             key={index}
             className="home__post m-auto  pt-9 pb-9 flex w-[90%] sm:w-[70%] lg:w-[50%] border-b lg:text-xl border-border-color"
           >
             <div className="m-auto">
-              <img
+              <Image
                 src={post.image.src}
                 alt={`post image about ${introductionParagraph}`}
                 className="home__post__image max-h-[200px] max-w-[200px] w-[30vw] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
@@ -53,8 +55,8 @@ export default function FilteredPosts({
               </p>
             </div>
           </article>
-        );
+        )
       })}
     </>
-  );
+  )
 }

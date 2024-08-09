@@ -1,28 +1,28 @@
-import Image from "next/image";
+import Image from 'next/image'
 
-import Svg from "@/components/svg/Svg";
-import Projects from "@/components/Project/Projects";
-import Experiences from "@/components/Experience/Experiences";
-import ExtendedInfo from "@/components/ExtendedInfo/ExtendedInfo";
+import Svg from '@/components/svg/Svg'
+import Projects from '@/components/Project/Projects'
+import Experiences from '@/components/Experience/Experiences'
+import ExtendedInfo from '@/components/ExtendedInfo/ExtendedInfo'
 
-import profileImage from "@/public/profileImage.webp";
-import GitHubIcon from "@/public/svg/github.svg";
-import LinkedInIcon from "@/public/svg/linkedin.svg";
-import DownloadIcon from "@/public/svg/download.svg";
-import { useTranslations } from "next-intl";
+import profileImage from '@/public/profileImage.webp'
+import GitHubIcon from '@/public/svg/github.svg'
+import LinkedInIcon from '@/public/svg/linkedin.svg'
+import DownloadIcon from '@/public/svg/download.svg'
+import { useTranslations } from 'next-intl'
 
 export function generateMetadata() {
   return {
-    title: "About Sebastian Perez Dev",
+    title: 'About Sebastian Perez Dev',
     description:
-      "In this section I talk a little about myself Sebastian Perez Fullstack dev, who I am, where I studied, what I worked on and many other things.",
-  };
+      'In this section I talk a little about myself Sebastian Perez Fullstack dev, who I am, where I studied, what I worked on and many other things.',
+  }
 }
 
 export default function MainPage() {
-  const t = useTranslations("about");
+  const t = useTranslations('about')
 
-  const CV_ROUTE = t("cvRoute");
+  const CV_ROUTE = t('cvRoute')
 
   return (
     <main className="m-auto  w-[95%] mt-10 rounded-xl md:w-[80%] xl:w-[65%]">
@@ -40,7 +40,7 @@ export default function MainPage() {
               <h1 className="font-bold text-2xl mb-6 shadow-[4.0px_4.0px_rgba(0,0,0)] border-2 border-black bg-[#a8fca1] -rotate-6 px-2 p-2 md:px-4">
                 Sebastian Pérez
               </h1>
-              <p className="hidden md:inline">{t("role")}</p>
+              <p className="hidden md:inline">{t('role')}</p>
               <p>spezuluaga@gmail.com</p>
             </section>
           </section>
@@ -57,26 +57,26 @@ export default function MainPage() {
             svg={GitHubIcon}
           />
           <a
-            download={"CV-SebastianPerez.pdf"}
+            download="CV-SebastianPerez.pdf"
             href={CV_ROUTE}
             className="flex flex-col border-2 hover:font-bold border-black hover:bg-[#fbfd84] p-3 duration-500 mb-2 mx-3 bg-[#fcfdb9] hover:scale-110"
           >
             <Image
               src={DownloadIcon.src}
-              alt={`Icon for download CV`}
+              alt="Icon for download CV"
               width="24"
               height="24"
               className="mx-auto"
             />
-            {t("cv")}
+            {t('cv')}
           </a>
         </section>
       </div>
 
-      <div className="border-b border-primary-color-800 mb-9"></div>
+      <div className="border-b border-primary-color-800 mb-9" />
       <ExtendedInfo />
       <Experiences />
       <Projects />
     </main>
-  );
+  )
 }

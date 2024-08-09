@@ -1,6 +1,7 @@
-import linkedinSVG from "@/public/svg/linkedin.svg";
-import githubSVG from "@/public/svg/github.svg";
-import gmailSVG from "@/public/svg/gmail.svg";
+import Image from 'next/image'
+import linkedinSVG from '@/public/svg/linkedin.svg'
+import githubSVG from '@/public/svg/github.svg'
+import gmailSVG from '@/public/svg/gmail.svg'
 
 export default function FooterComponent() {
   return (
@@ -11,7 +12,7 @@ export default function FooterComponent() {
           target="_blank"
           className="m-4 hover:bg-purple-100 rounded-lg p-2"
         >
-          <img
+          <Image
             width={24}
             height={24}
             src={linkedinSVG.src}
@@ -23,7 +24,7 @@ export default function FooterComponent() {
           target="_blank"
           className="m-4 hover:bg-purple-100 rounded-lg p-2"
         >
-          <img
+          <Image
             width={24}
             height={24}
             src={githubSVG.src}
@@ -31,7 +32,7 @@ export default function FooterComponent() {
           />
         </a>
         <a href="/" className="m-4 hover:bg-purple-100 rounded-lg p-2">
-          <img
+          <Image
             width={24}
             height={24}
             src={gmailSVG.src}
@@ -40,5 +41,5 @@ export default function FooterComponent() {
         </a>
       </section>
     </footer>
-  );
+  )
 }

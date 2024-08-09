@@ -1,8 +1,8 @@
-import "./page.css";
+import './page.css'
 
 // Componentes
-import PostsSection from "@/components/PostsSection/PostsSection";
-import HeaderSection from "@/components/HeaderSection/HeaderSection";
+import PostsSection from '@/components/PostsSection/PostsSection'
+import HeaderSection from '@/components/HeaderSection/HeaderSection'
 
 export default function Home() {
   return (
@@ -10,5 +10,5 @@ export default function Home() {
       <HeaderSection />
       <PostsSection />
     </div>
-  );
+  )
 }

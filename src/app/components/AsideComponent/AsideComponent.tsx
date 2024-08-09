@@ -1,5 +1,5 @@
-import Tags from "@/components/Tags/Tags";
-import FeaturePosts from "@/components/FeaturePosts/FeaturePosts";
+import Tags from '@/components/Tags/Tags'
+import FeaturePosts from '@/components/FeaturePosts/FeaturePosts'
 
 export default function AsideComponent() {
   return (
@@ -7,5 +7,5 @@ export default function AsideComponent() {
       <Tags />
       <FeaturePosts />
     </aside>
-  );
+  )
 }

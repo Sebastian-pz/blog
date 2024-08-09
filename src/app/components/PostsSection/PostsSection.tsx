@@ -1,5 +1,5 @@
-import AsideComponent from "@/components/AsideComponent/AsideComponent";
-import Posts from "@/components/Posts/Posts";
+import AsideComponent from '@/components/AsideComponent/AsideComponent'
+import Posts from '@/components/Posts/Posts'
 
 export default function PostsSection() {
   return (
@@ -7,5 +7,5 @@ export default function PostsSection() {
       <Posts />
       <AsideComponent />
     </div>
-  );
+  )
 }

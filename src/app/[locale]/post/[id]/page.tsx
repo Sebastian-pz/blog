@@ -1,40 +1,40 @@
-import { useLocale } from "next-intl";
+import { useLocale } from 'next-intl'
 
-import { getPostById } from "@/utilities/const";
-import MediaComponent from "@/components/Media/MediaComponent";
-import DescriptionLoader from "./DescriptionLoader";
+import { getPostById } from '@/utilities/const'
+import MediaComponent from '@/components/Media/MediaComponent'
+import DescriptionLoader from './DescriptionLoader'
 
 interface paramsInterface {
   params: {
-    id: string;
-  };
+    id: string
+  }
 }
 
-const defaultLanguage = "en";
+const defaultLanguage = 'en'
 export function generateMetadata({ params }: paramsInterface) {
-  const id = params.id;
-  const titleMaxLength = 60;
-  const descriptionMaxLength = 150;
-  const post = getPostById(defaultLanguage, id);
+  const id = params.id
+  const titleMaxLength = 60
+  const descriptionMaxLength = 150
+  const post = getPostById(defaultLanguage, id)
   // You can have access to previous images using parent:
   // const previousImages = (await parent).openGraph?.images || [];
 
   return {
     title:
       post.title.length > 60
-        ? post.title.slice(0, titleMaxLength) + "..."
+        ? post.title.slice(0, titleMaxLength) + '...'
         : post.title,
     // And use it here
     // openGraph: {
     //   images: [post.image, ...previousImages],
     // },
     description: post.description[0].slice(0, descriptionMaxLength),
-  };
+  }
 }
 
 export default function Page({ params }: paramsInterface) {
-  const activeLocale = useLocale();
-  const post = getPostById(activeLocale, params.id);
+  const activeLocale = useLocale()
+  const post = getPostById(activeLocale, params.id)
 
   if (post) {
     return (
@@ -42,7 +42,7 @@ export default function Page({ params }: paramsInterface) {
         <h1 className="text-3xl font-bold mb-3 mt-6">{post.title}</h1>
         <p className="text text-gray-900">{post.author}</p>
         <p className="text-sm text-gray-900">
-          Created on:{" "}
+          Created on:{' '}
           <time itemProp="datePublished" dateTime={post.creationDate}>
             {post.creationDate}
           </time>
@@ -55,14 +55,12 @@ export default function Page({ params }: paramsInterface) {
         />
         <section className="leading-9">
           {post.description.map((text, index) => {
-            return (
-              <DescriptionLoader paragraph={text.toString()} key={index} />
-            );
+            return <DescriptionLoader paragraph={text.toString()} key={index} />
           })}
         </section>
       </div>
-    );
+    )
   }
 
-  return <div>Loading post</div>;
+  return <div>Loading post</div>
 }
