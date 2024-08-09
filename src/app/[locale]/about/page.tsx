@@ -67,17 +67,9 @@ export default function MainPage() {
       </div>
 
       <div className="border-b border-primary-color-800 mb-9"></div>
-
       <ExtendedInfo />
-
-      {/* <section className="px-3 mb-4 lg:px-12">
-        <p>{t("introduction")}</p>
-        <p>{t("likeTo")}</p>
-      </section> */}
       <Experiences />
       <Projects />
-
-      {/* <CV /> */}
     </main>
   );
 }
