@@ -14,6 +14,7 @@ import UnderConstruction from "@/public/blog/UnderConstruction.webp";
 import nutricionVitalImg from "@/public/blog/NutricionVital.webp";
 import chatBotImg from "@/public/blog/ChatBot.webp";
 import blogImg from "@/public/blog/Blog.webp";
+import opinionAboutVB from "@/public/blog/opinionAboutVB.webp";
 import TAGS from "../../Tags/Tags";
 
 const author = "Sebastian Pérez";
@@ -157,7 +158,7 @@ export const posts: Array<postInterface> = [
     title:
       "What Was It Like Working with Visual Basic for the First Time at the Regional Office of a Multinational?",
     mediaType: "image",
-    image: UnderConstruction,
+    image: opinionAboutVB,
     description: [
       "What do you think my experience was like working for a multinational company, on a regional project, with a programming language I had never used before, and with a high level of confidentiality?",
 
