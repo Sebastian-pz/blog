@@ -11,6 +11,14 @@ import LinkedInIcon from "@/public/svg/linkedin.svg";
 import DownloadIcon from "@/public/svg/download.svg";
 import { useTranslations } from "next-intl";
 
+export function generateMetadata() {
+  return {
+    title: "About Sebastian Perez Dev",
+    description:
+      "In this section I talk a little about myself Sebastian Perez Fullstack dev, who I am, where I studied, what I worked on and many other things.",
+  };
+}
+
 export default function MainPage() {
   const t = useTranslations("about");
 
