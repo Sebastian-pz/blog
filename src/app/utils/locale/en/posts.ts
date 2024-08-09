@@ -45,7 +45,7 @@ export const posts: Array<postInterface> = [
     ],
 
     author,
-    creationDate: "01/16/2024",
+    creationDate: "07/16/2024",
     tags: [
       TAGS.experience,
       TAGS.fullstack,
