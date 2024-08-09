@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import Svg from "@/components/svg/Svg";
-import CV from "@/components/CV/CV";
 import Projects from "@/components/Project/Projects";
 import Experiences from "@/components/Experience/Experiences";
 import ExtendedInfo from "@/components/ExtendedInfo/ExtendedInfo";
@@ -50,7 +49,7 @@ export default function MainPage() {
             svg={GitHubIcon}
           />
           <a
-            download={"CV-es-SebastianPerez.pdf"}
+            download={"CV-SebastianPerez.pdf"}
             href={CV_ROUTE}
             className="flex flex-col border-2 hover:font-bold border-black hover:bg-[#fbfd84] p-3 duration-500 mb-2 mx-3 bg-[#fcfdb9] hover:scale-110"
           >
@@ -67,17 +66,9 @@ export default function MainPage() {
       </div>
 
       <div className="border-b border-primary-color-800 mb-9"></div>
-
       <ExtendedInfo />
-
-      {/* <section className="px-3 mb-4 lg:px-12">
-        <p>{t("introduction")}</p>
-        <p>{t("likeTo")}</p>
-      </section> */}
       <Experiences />
       <Projects />
-
-      {/* <CV /> */}
     </main>
   );
 }
