@@ -7,9 +7,9 @@ import FooterComponent from "@/components/footer/footer";
 import Navbar from "@/components/NavBar/NavBarComponent";
 
 export const metadata: Metadata = {
-  title: "Blog - Sebastian Pérez ",
+  title: "Blog - Sebastian Perez Dev",
   description:
-    "Este es el portafolio y blog de Sebastian Pérez en el que se habla de opiniones sobre tecnologías, las experiencias y demás tópicos relacionados, se puede observar mi el trayecto como programador web fullstack acá.",
+    "Technology blog, created by Sebastian Perez. Find articles, tips and resources about web development and software in general.",
 };
 
 const fontSettings = font({
