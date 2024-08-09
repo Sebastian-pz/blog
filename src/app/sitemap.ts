@@ -1,47 +1,47 @@
-import { MetadataRoute } from "next";
-import { posts } from "./utils/locale/es/posts";
+import { MetadataRoute } from 'next'
+import { posts } from './utils/locale/es/posts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://www.sebastian-perez-dev.com/en",
+      url: 'https://www.sebastian-perez-dev.com/en',
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: "https://www.sebastian-perez-dev.com/es",
+      url: 'https://www.sebastian-perez-dev.com/es',
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: "https://www.sebastian-perez-dev.com/en/about",
+      url: 'https://www.sebastian-perez-dev.com/en/about',
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: "https://www.sebastian-perez-dev.com/es/about",
+      url: 'https://www.sebastian-perez-dev.com/es/about',
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: "https://www.sebastian-perez-dev.com/en/social",
+      url: 'https://www.sebastian-perez-dev.com/en/social',
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: 'monthly',
       priority: 0.4,
     },
     {
-      url: "https://www.sebastian-perez-dev.com/es/social",
+      url: 'https://www.sebastian-perez-dev.com/es/social',
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: 'monthly',
       priority: 0.4,
     },
-    ...getPostsPages("es"),
-    ...getPostsPages("en"),
-  ];
+    ...getPostsPages('es'),
+    ...getPostsPages('en'),
+  ]
 }
 
 function getPostsPages(lang: string): MetadataRoute.Sitemap {
@@ -49,8 +49,8 @@ function getPostsPages(lang: string): MetadataRoute.Sitemap {
     return {
       url: `https://www.sebastian-perez-dev.com/${lang}/post/${post.id}`,
       lastModified: new Date(post.creationDate),
-      changeFrequency: "never",
+      changeFrequency: 'never',
       priority: 0.5,
-    };
-  });
+    }
+  })
 }

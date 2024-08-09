@@ -1,11 +1,11 @@
-import Link from "next/link";
-import React from "react";
-import Image from "next/image";
+import Link from 'next/link'
+import React from 'react'
+import Image from 'next/image'
 
 interface PropsComponent {
-  svg: any;
-  label: string;
-  link?: string;
+  svg: any
+  label: string
+  link?: string
 }
 
 export default function Svg({ svg, label, link }: PropsComponent) {
@@ -21,7 +21,7 @@ export default function Svg({ svg, label, link }: PropsComponent) {
         />
         {label}
       </div>
-    );
+    )
 
   return (
     <Link
@@ -38,5 +38,5 @@ export default function Svg({ svg, label, link }: PropsComponent) {
       />
       {label}
     </Link>
-  );
+  )
 }

@@ -1,13 +1,15 @@
-import Link from "next/link";
-import { useLocale } from "next-intl";
-import { postInterface } from "@/app/utils/interfaces";
+import Link from 'next/link'
+import { useLocale } from 'next-intl'
+import Image from 'next/image'
+
+import { postInterface } from '@/app/utils/interfaces'
 
 interface propsComponent {
-  post: postInterface;
+  post: postInterface
 }
 
 export default function MainPost({ post: mainPost }: propsComponent) {
-  const localeActive = useLocale();
+  const localeActive = useLocale()
 
   return (
     <div className="home__mainPost text-center border-b-2 border-primary-color-900 pb-6">
@@ -16,7 +18,7 @@ export default function MainPost({ post: mainPost }: propsComponent) {
           {mainPost.title}
         </Link>
       </h2>
-      <img
+      <Image
         src={mainPost.image.src}
         alt={`image about ${mainPost.title}`}
         className="h-2/4 mb-3 w-2/3 min-h-[350px] min-w-[350px] m-auto shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
@@ -25,5 +27,5 @@ export default function MainPost({ post: mainPost }: propsComponent) {
       />
       <p>{mainPost.description[0]}</p>
     </div>
-  );
+  )
 }

@@ -1,7 +1,7 @@
-import { useTranslations } from "next-intl";
+import { useTranslations } from 'next-intl'
 
 export default function HeaderSection() {
-  const t = useTranslations("headerSection");
+  const t = useTranslations('headerSection')
 
   return (
     <header className="bg-muted py-6 md:py-12">
@@ -9,14 +9,14 @@ export default function HeaderSection() {
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              {t("title")}
+              {t('title')}
             </h1>
             <p className="max-w-[700px] text-muted-foreground md:text-xl">
-              {t("description")}
+              {t('description')}
             </p>
           </div>
         </div>
       </div>
     </header>
-  );
+  )
 }

@@ -1,19 +1,19 @@
-import FilteredPosts from "@/components/FilteredPosts/FilteredPosts";
-import { getPostsByType } from "@/utilities/const";
-import { PostTypes } from "@/utilities/interfaces";
-import { useLocale, useTranslations } from "next-intl";
+import FilteredPosts from '@/components/FilteredPosts/FilteredPosts'
+import { getPostsByType } from '@/utilities/const'
+import { PostTypes } from '@/utilities/interfaces'
+import { useLocale, useTranslations } from 'next-intl'
 
-export default function page() {
-  const localeActive = useLocale();
-  const posts = getPostsByType(localeActive, PostTypes.opinion);
+export default function Page() {
+  const localeActive = useLocale()
+  const t = useTranslations('filteredPostsOpinion')
 
-  const t = useTranslations("filteredPostsOpinion");
+  const posts = getPostsByType(localeActive, PostTypes.opinion)
 
   return (
     <FilteredPosts
       posts={posts}
-      title={t("title")}
-      description={t("description")}
+      title={t('title')}
+      description={t('description')}
     />
-  );
+  )
 }

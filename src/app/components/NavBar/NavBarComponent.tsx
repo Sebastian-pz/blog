@@ -1,25 +1,24 @@
-import Link from "next/link";
-import { useLocale, useTranslations } from "next-intl";
-import LINK_LIST from "./Constants";
+import Link from 'next/link'
+import { useLocale, useTranslations } from 'next-intl'
+import LINK_LIST from './Constants'
 
-import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
-import Search from "@/components/Search/Search";
+import LocaleSwitcher from '@/components/LocaleSwitcher/LocaleSwitcher'
 
 export default function Navbar() {
-  const localeActive = useLocale();
-  const t = useTranslations("navBar");
+  const localeActive = useLocale()
+  const t = useTranslations('navBar')
 
   const tRoutes = LINK_LIST.map((route) => {
     return {
       ...route,
       label: t(route.label),
-    };
-  });
+    }
+  })
 
   return (
     <section className="font-bold z-50 fixed top-0 right-0 flex p-2 bg-primary-color-100 border border-primary-color-800 mb-4 justify-center items-center w-full md:text-xl">
       {tRoutes.map((route, index) => {
-        const { label, path, styles } = route;
+        const { label, path, styles } = route
         return (
           <Link
             href={`/${localeActive}${path}`}
@@ -28,10 +27,10 @@ export default function Navbar() {
           >
             {label}
           </Link>
-        );
+        )
       })}
       {/* <Search /> */}
       <LocaleSwitcher />
     </section>
-  );
+  )
 }

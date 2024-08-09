@@ -1,12 +1,12 @@
-import Tag from "@/app/components/Tags/Tag/Tag";
+import Tag from '@/app/components/Tags/Tag/Tag'
 
-import { getTagValues } from "@/app/utils/Tags/Tags";
-import { useLocale } from "next-intl";
+import { getTagValues } from '@/app/utils/Tags/Tags'
+import { useLocale } from 'next-intl'
 
 export default function Tags() {
-  const localeActive = useLocale();
+  const localeActive = useLocale()
 
-  const defaultTagsNumber = 7;
+  const defaultTagsNumber = 7
 
   return (
     <div className="rounded-lg border bg-muted p-6">
@@ -19,9 +19,9 @@ export default function Tags() {
               link={`/${localeActive}/q?page=1&tag=${tagValue}`}
               key={i}
             />
-          );
+          )
         })}
       </div>
     </div>
-  );
+  )
 }

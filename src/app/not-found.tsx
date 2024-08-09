@@ -1,5 +1,5 @@
-import Link from "next/link";
-import "./global.css";
+import Link from 'next/link'
+import './global.css'
 
 export default function NotFound() {
   return (
@@ -18,5 +18,5 @@ export default function NotFound() {
         </section>
       </body>
     </html>
-  );
+  )
 }

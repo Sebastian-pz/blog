@@ -1,11 +1,12 @@
-import { useLocale } from "next-intl";
-import Link from "next/link";
+import { useLocale } from 'next-intl'
+import Image from 'next/image'
+import Link from 'next/link'
 
 interface propsComponent {
-  image: any;
-  title: string;
-  date: string;
-  id: string;
+  image: any
+  title: string
+  date: string
+  id: string
 }
 
 export default function FeaturePost({
@@ -14,14 +15,14 @@ export default function FeaturePost({
   title,
   id,
 }: propsComponent) {
-  const localeActive = useLocale();
+  const localeActive = useLocale()
   return (
     <Link
       href={`/${localeActive}/post/${id}`}
       className="flex md:flex-col lg:flex-row items-start gap-4 hover:underline"
       prefetch={false}
     >
-      <img
+      <Image
         src={image.src}
         alt="Blog post cover image"
         width={80}
@@ -33,5 +34,5 @@ export default function FeaturePost({
         <p className="text-muted-foreground">{date}</p>
       </div>
     </Link>
-  );
+  )
 }

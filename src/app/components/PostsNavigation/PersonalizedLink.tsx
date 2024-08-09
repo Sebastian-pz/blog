@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 interface PersonalizedLinkProps {
-  href: string;
-  label: string;
+  href: string
+  label: string
 }
 
 export default function PersonalizedLink({
@@ -16,5 +16,5 @@ export default function PersonalizedLink({
     >
       {label}
     </Link>
-  );
+  )
 }

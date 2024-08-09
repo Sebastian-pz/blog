@@ -1,11 +1,11 @@
-import { useLocale } from "next-intl";
-import Link from "next/link";
+import { useLocale } from 'next-intl'
+import Link from 'next/link'
 interface CardProps {
-  title: string;
-  link: string;
-  dates: string;
-  description: string;
-  responsibilities: Array<string>;
+  title: string
+  link: string
+  dates: string
+  description: string
+  responsibilities: Array<string>
 }
 
 export default function ExperienceCard({
@@ -15,7 +15,7 @@ export default function ExperienceCard({
   description,
   responsibilities,
 }: CardProps) {
-  const localeActive = useLocale();
+  const localeActive = useLocale()
 
   return (
     <article className="mb-8 w-full mx-auto ">
@@ -39,11 +39,11 @@ export default function ExperienceCard({
                 <li key={i} className="text-sm text-gray-8000 mt-3 ml-3">
                   {responsibility}
                 </li>
-              );
+              )
             })}
           </ul>
         </div>
       </div>
     </article>
-  );
+  )
 }

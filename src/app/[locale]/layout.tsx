@@ -1,27 +1,28 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import './globals.css'
 
-import { Roboto as font } from "next/font/google";
+import React from 'react'
+import type { Metadata } from 'next'
+import { Roboto as font } from 'next/font/google'
 
-import FooterComponent from "@/components/footer/footer";
-import Navbar from "@/components/NavBar/NavBarComponent";
+import FooterComponent from '@/components/footer/footer'
+import Navbar from '@/components/NavBar/NavBarComponent'
 
 export const metadata: Metadata = {
-  title: "Blog - Sebastian Perez Dev",
+  title: 'Blog - Sebastian Perez Dev',
   description:
-    "Technology blog, created by Sebastian Perez. Find articles, tips and resources about web development and software in general.",
-};
+    'Technology blog, created by Sebastian Perez. Find articles, tips and resources about web development and software in general.',
+}
 
 const fontSettings = font({
-  weight: ["300", "400", "500"],
-  subsets: ["latin"],
-});
+  weight: ['300', '400', '500'],
+  subsets: ['latin'],
+})
 
 interface RootLayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
   params: {
-    locale: string;
-  };
+    locale: string
+  }
 }
 
 export default function RootLayout({
@@ -38,5 +39,5 @@ export default function RootLayout({
         <FooterComponent />
       </body>
     </html>
-  );
+  )
 }

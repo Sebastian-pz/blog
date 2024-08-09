@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 interface propsComponent {
-  link: string;
-  label: string;
+  link: string
+  label: string
 }
 
 export default function Tag({ label, link }: propsComponent) {
@@ -14,5 +14,5 @@ export default function Tag({ label, link }: propsComponent) {
     >
       {label}
     </Link>
-  );
+  )
 }
