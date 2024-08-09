@@ -1,5 +1,4 @@
 import { useLocale } from "next-intl";
-import { Metadata, ResolvingMetadata } from "next";
 
 import { getPostById } from "@/utilities/const";
 import MediaComponent from "@/components/Media/MediaComponent";
@@ -12,14 +11,12 @@ interface paramsInterface {
 }
 
 const defaultLanguage = "en";
-export async function generateMetadata(
-  { params }: paramsInterface,
-  parent: ResolvingMetadata
-) {
+export function generateMetadata({ params }: paramsInterface) {
   const id = params.id;
   const titleMaxLength = 60;
   const descriptionMaxLength = 150;
   const post = getPostById(defaultLanguage, id);
+  // You can have access to previous images using parent:
   // const previousImages = (await parent).openGraph?.images || [];
 
   return {
@@ -27,6 +24,7 @@ export async function generateMetadata(
       post.title.length > 60
         ? post.title.slice(0, titleMaxLength) + "..."
         : post.title,
+    // And use it here
     // openGraph: {
     //   images: [post.image, ...previousImages],
     // },
