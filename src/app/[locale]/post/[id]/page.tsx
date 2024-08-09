@@ -1,12 +1,36 @@
-import { getPostById } from "@/utilities/const";
+import { useLocale } from "next-intl";
+import { Metadata, ResolvingMetadata } from "next";
 
+import { getPostById } from "@/utilities/const";
 import MediaComponent from "@/components/Media/MediaComponent";
 import DescriptionLoader from "./DescriptionLoader";
-import { useLocale } from "next-intl";
 
 interface paramsInterface {
   params: {
     id: string;
+  };
+}
+
+const defaultLanguage = "en";
+export async function generateMetadata(
+  { params }: paramsInterface,
+  parent: ResolvingMetadata
+) {
+  const id = params.id;
+  const titleMaxLength = 60;
+  const descriptionMaxLength = 150;
+  const post = getPostById(defaultLanguage, id);
+  // const previousImages = (await parent).openGraph?.images || [];
+
+  return {
+    title:
+      post.title.length > 60
+        ? post.title.slice(0, titleMaxLength) + "..."
+        : post.title,
+    // openGraph: {
+    //   images: [post.image, ...previousImages],
+    // },
+    description: post.description[0].slice(0, descriptionMaxLength),
   };
 }
 
