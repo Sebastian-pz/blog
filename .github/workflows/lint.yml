@@ -1,0 +1,23 @@
+name: Lint on Pull Request in Main branch
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Linter
+        run: npm run lint
+
+      - name: Fail on Lint Errors (opcional)
+        if: ${{ failure() }}
+        run: exit 1
