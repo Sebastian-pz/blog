@@ -4,13 +4,15 @@ const EXPERIENCES: Array<ExperienceI> = [
   {
     title: 'Fullstack Web Developer',
     description:
-      'Worked as a fullstack web developer on the creation of a web application for managing sales, costs, expenses, statistics, and inventory in a bar.',
+      'Worked as a fullstack web developer creating an administrative and accounting manager for a bar.',
     responsibilities: [
-      'Responsible for the complete development of the application, ensuring code quality and scalability.',
-      "In charge of the application design and meeting the client's requirements.",
-      'Created the backend using MongoDB and Express, implementing relevant authentication and authorization methods.',
-      'Designed and optimized application components to ensure functionality and reusability.',
-      'Deployed the application for client access.',
+      'Full-stack development of the application, from conception to deployment, ensuring security, code quality, and scalability.',
+      " Designing the application's UI based on specific client requirements, drawing inspiration from Spotify's design language.",
+      'Developing backend systems adhering to RESTful API principles, utilizing technologies such as Node.js, Express, NestJS, PostgreSQL, MongoDB, and others, while prioritizing consistency, scalability, and clean code.',
+      'Building front-end interfaces using technologies like React, Next.js, Shadcn, and Tailwind CSS, ensuring accessibility, usability, simplicity, high performance, scalability, and best practices.',
+      'Implementing a component-based architecture following React and Next.js principles, maintaining high code standards and best practices for both technologies.',
+      ' Optimizing application performance on both the backend and frontend using tools like Redis, React.memo, useMemo, and Tanstack Query.',
+      ' Establishing processes for continuous deployment with the latest releases, leveraging SaaS platforms like "Hostinger", Render, and Vercel.',
     ],
     dates: 'November 2023 - June 2024',
     link: '/post/1d0d966b84354712b92c359cc28a06c2',
