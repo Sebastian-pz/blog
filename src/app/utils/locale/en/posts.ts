@@ -15,6 +15,8 @@ import nutricionVitalImg from '@/public/blog/NutricionVital.webp'
 import chatBotImg from '@/public/blog/ChatBot.webp'
 import blogImg from '@/public/blog/Blog.webp'
 import opinionAboutVB from '@/public/blog/opinionAboutVB.webp'
+import CallStack from '@/public/blog/CallStack.webp'
+
 import TAGS from '../../Tags/Tags'
 
 const author = 'Sebastian Pérez'
@@ -53,6 +55,31 @@ export const posts: Array<postInterface> = [
       TAGS.nextjs,
       TAGS.CI_CD,
     ],
+  },
+  {
+    author,
+    creationDate: '08/10/2024',
+    description: [
+      "The other day, I was browsing YouTube when I stumbled upon a video explaining how JavaScript works under the hood. Truth be told, it's a topic I've studied and understood before, but I wanted to refresh my knowledge. To my surprise, this video explained it so clearly and simply that I was hooked!",
+      '|subtitle|Why is understanding the Call Stack important? (The Single Thread Problem)',
+      'Now, why is understanding the call stack so crucial? Mainly because JavaScript operates on a single thread, unlike languages like C# or Java, which can utilize multiple threads for executing their algorithms.',
+      "Imagine JavaScript as a chef with only one hand 👨‍🍳. They can create many delicious dishes, but they can only work on one thing at a time. If they're busy chopping onions for an omelet, they can't simultaneously whisk eggs for dessert.",
+      "Because JavaScript is single-threaded, any process that takes a long time effectively freezes the entire application. It's like the chef endlessly chopping onions while the rest of the kitchen comes to a standstill.",
+
+      '|subtitle|Additional resources to better understand the Call Stack',
+      "Lydia Hallie's explanation is excellent, and the visuals make everything much easier to grasp. However, if you want to delve deeper or still have some lingering questions, here are some other resources you can explore:",
+      '|linkIntroduction|Another great explanation, but in Spanish',
+      '|link|https://www.youtube.com/watch?v=ygA5U7Wgsg8',
+      '|linkIntroduction|Understanding JavaScript in depth, 33 essential concepts (concept 1 covers the call stack):',
+      '|link|https://github.com/leonardomso/33-js-concepts ',
+    ],
+    id: '3806f8aa09ae45fb978096e651733e47',
+    image: CallStack,
+    mediaType: 'video',
+    tags: [TAGS.opinion, TAGS.tools],
+    title: 'How does the Call Stack work in JavaScript?',
+    type: PostTypes.opinion,
+    media: 'https://www.youtube.com/embed/eiC58R16hb8?si=yLZCFhwKV5ZWu1ZO',
   },
   {
     author,
@@ -120,7 +147,7 @@ export const posts: Array<postInterface> = [
       'Credits to Cory House @housecor on X, where I saw this post.',
       'What is your opinion on this? Is it better to use named functions or stick with typical arrow functions?',
 
-      'Link to the original post:',
+      '|linkIntroduction|Link to the original post:',
       '|link|https://twitter.com/housecor/status/1753777632976461954',
     ],
 
