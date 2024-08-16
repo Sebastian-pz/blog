@@ -20,9 +20,9 @@
     "cvRoute": "/CV-es-SebastianPerez.pdf"
   },
   "aboutExtendedInfo": {
-    "introduction": "Casi 4 años desarrollando aplicaciones y ",
-    "experienceInYears": "más de un año y medio de experiencia profesional",
-    "experienceComplement": "creando soluciones web a problemas reales, trabajando en equipo con metodologías AGILE, pair programming y demás.",
+    "introduction": "Casi 4 años desarrollando aplicaciones web y ",
+    "experienceInYears": "+2 años experiencia profesional. ",
+    "experienceComplement": "Creando soluciones web a problemas reales, trabajando en equipo con metodologías AGILE, pair programming y demás.",
     "englishLevel": "Inglés B2+",
     "englishStatus": ", y actualmente sigo estudiando para mejorar."
   },
@@ -79,7 +79,7 @@
   },
   "headerSection": {
     "title": "Sebastian Pérez blog",
-    "description": "Explore mi colección de artículos e ideas sobre el mundo del desarrollo de software."
+    "description": "Explora mi colección de artículos e ideas sobre el mundo del desarrollo de software."
   },
   "featurePosts": {
     "title": "Posts destacados"

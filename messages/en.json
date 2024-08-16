@@ -20,9 +20,9 @@
     "cvRoute": "/CV-en-SebastianPerez.pdf"
   },
   "aboutExtendedInfo": {
-    "introduction": "4 years developing software applications and ",
-    "experienceInYears": "1.5+ years professional experience as a fullstack",
-    "experienceComplement": " creating web solutions to real problems, working as a team with agile SCRUM methodologies, pair programming and others.",
+    "introduction": "4 years developing software applications focused on web and ",
+    "experienceInYears": "+2 years professional experience.",
+    "experienceComplement": " Creating web solutions to real problems, working as a team with agile SCRUM methodologies, pair programming and others.",
     "englishLevel": "English B2+",
     "englishStatus": ", and currently continuing to study to improve."
   },
@@ -79,7 +79,7 @@
   },
   "headerSection": {
     "title": "Sebastian Perez blog",
-    "description": "Explore my collection of articles and insights on the world of software development."
+    "description": "This is my collection of articles and insights on the world of software development."
   },
   "featurePosts": {
     "title": "Featured posts"

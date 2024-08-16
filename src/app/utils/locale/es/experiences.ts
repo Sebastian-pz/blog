@@ -4,13 +4,15 @@ const EXPERIENCES: Array<ExperienceI> = [
   {
     title: 'Fullstack web developer',
     description:
-      'Trabajé como desarrollo web fullstack en la creación de una aplicación web para la gestión de ventas, costos, gastos, estadísticas e inventarios en un bar.',
+      'Trabajé como desarrollo web fullstack en la creación de un gestor administrativo y contable para un bar.',
     responsibilities: [
-      'Responsable del desarrollo completo de la aplicación, garantizando calidad de código y facilidad para la escalabilidad.',
-      'Responsable del diseño de la aplicación y adecuación a los requerimientos del cliente.',
-      'Crear el backend de la aplicación utilizando mongoDB y express, creando métodos de autenticación y autorización pertinentes.',
-      'Diseñar y optimizar los componentes de la aplicación garantizando su funcionalidad y su reutilización.',
-      'Desplegar la aplicación para su posterior acceso al cliente.',
+      'Responsable del desarrollo completo de la aplicación, desde la formulación hasta el despliegue de la aplicación, garantizando seguridad, calidad de código y escalabilidad.',
+      'Responsable de la formulación del UI de la aplicación siguiendo los requerimientos específicos del cliente, basándose en el popular estilo de Spotify.',
+      'Creación de BackEnds siguiendo el patrón  API RESTful, utilizando tecnologías como NodeJS, express, NestJS, PostgreSQL, MongoDB, entre otros. Garantizando coherencia, escalabilidad y buen código',
+      'Creación de FrontEnds utilizando tecnologías como React, NextJS, Shadcn y Tailwind garantizando accesibilidad, usabilidad, simpleza, buen rendimiento, escalabilidad y demás.',
+      'Componentizar la aplicación siguiendo los principios propios de React y NextJS, de modo que se sigan los estándares de buen código y buenas prácticas de ambas tecnologías.',
+      'Optimizar el rendimiento de la aplicación, tanto en el backend como en el frontend con la utilización de herramientas como redis, react.Memo, useMemo y tanstack query.',
+      'Crear los procesos correspondientes para poder realizar continuous deployment con el último release, utilizando herramientas SaaS como  "Hostinger", Render y Vercel.',
     ],
     dates: 'Noviembre 2023 - Junio 2024',
     link: '/post/1d0d966b84354712b92c359cc28a06c2',
@@ -18,7 +20,7 @@ const EXPERIENCES: Array<ExperienceI> = [
   {
     title: 'Fullstack web developer en Nutrición Vital',
     description:
-      'Trabajé como desarrollo web fullstack para la empresa Nutrición Vital con sede en Argentina.',
+      'Trabajé como desarrollo web fullstack para la empresa Nutrición Vital en la creación de un E-commerce completo basado en un sistema de puntos.',
     responsibilities: [
       'Participé en el desarrollo de una plataforma de comercio electrónico (E-commerce) para la empresa Nutrición vital utilizando las tecnologías React, Redux, Bootstrap, Express, MongoDB, JWT, MercadoPago, nodemailer y demás.',
       'Procuré por la seguridad de la aplicación, utilizando diferentes middlewares para no comprometer la estructura de la base de datos de la empresa.',
