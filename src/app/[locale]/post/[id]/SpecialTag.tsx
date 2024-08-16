@@ -10,14 +10,17 @@ interface PropsComponent {
 export default function SpecialTag({ tagType, text }: PropsComponent) {
   switch (tagType) {
     case POSIBLE_TAGS.subtitle:
-      return <h2 className="font-semibold text-xl">{text}</h2>
+      return <h2 className="font-semibold text-xl mb-7">{text}</h2>
+
+    case POSIBLE_TAGS.linkIntroduction:
+      return <p className="">{text}</p>
 
     case POSIBLE_TAGS.link:
       return (
         <Link
           href={encodeURI(text.toString())}
           target="_blank"
-          className="text-lime-700 hover:text-lime-600"
+          className="text-primary-color-500 hover:text-primary-color-700 font-semibold"
         >
           {text}
         </Link>
