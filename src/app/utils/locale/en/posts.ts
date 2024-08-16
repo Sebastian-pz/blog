@@ -120,7 +120,7 @@ export const posts: Array<postInterface> = [
       'Credits to Cory House @housecor on X, where I saw this post.',
       'What is your opinion on this? Is it better to use named functions or stick with typical arrow functions?',
 
-      'Link to the original post:',
+      '|linkIntroduction|Link to the original post:',
       '|link|https://twitter.com/housecor/status/1753777632976461954',
     ],
 

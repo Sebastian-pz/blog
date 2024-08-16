@@ -147,7 +147,7 @@ export const posts: Array<postInterface> = [
       'Créditos a Cory House @housecor en X, de donde vi esta publicación.',
       '¿Cuál es tu opinión al respecto? ¿Está bien utilizar funciones nombradas o es mejor utilizar las típicas funciones flecha?',
 
-      'Link a la publicación original:',
+      '|linkIntroduction|Link a la publicación original:',
       '|link|https://twitter.com/housecor/status/1753777632976461954',
     ],
 
