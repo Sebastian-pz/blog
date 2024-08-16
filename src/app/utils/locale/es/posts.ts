@@ -15,6 +15,8 @@ import nutricionVitalImg from '@/public/blog/NutricionVital.webp'
 import chatBotImg from '@/public/blog/ChatBot.webp'
 import blogImg from '@/public/blog/Blog.webp'
 import opinionAboutVB from '@/public/blog/opinionAboutVB.webp'
+import CallStack from '@/public/blog/CallStack.webp'
+
 import TAGS from '../../Tags/Tags'
 
 const author = 'Sebastian Pérez'
@@ -53,6 +55,31 @@ export const posts: Array<postInterface> = [
       TAGS.nextjs,
       TAGS.CI_CD,
     ],
+  },
+  {
+    author,
+    creationDate: '08/10/2024',
+    description: [
+      'El otro día, mientras navegaba por YouTube, me topé con un video que hablaba de cómo funciona JavaScript por debajo de la mesa. La verdad es un tema que ya había estudiado y entendido con anterioridad, pero por reforzar conocimientos quise entrar a ver el contenido, y me llevé con la sorpresa de que este video lo explicaba de forma tan clara y sencilla que me encantó.',
+      '|subtitle|¿Por qué entender el CallStack es importante? (el problema de el hilo único).',
+      'Ahora, ¿por qué es importante entender el call stack? Principalmente porque JS funciona con un solo hilo, a diferencia de otros lenguajes como C# o Java que pueden hacer uso de multi hilos para la ejecución de sus algoritmos.',
+      'Imagina que JavaScript es un chef con una sola mano 👨‍🍳. Puede hacer muchas cosas deliciosas, pero solo puede hacer una a la vez. Si se pone a cortar cebolla para una tortilla, mientras tanto no puede estar batiendo huevos para el postre.',
+      'Entender que como JS es single threaded, cuando un proceso toma mucho tiempo se está congelando la aplicación, es tiempo muerto que todo se queda parado.',
+      'Entonces, si un proceso se vuelve muy pesado y tarda mucho en ejecutarse, ¡todo se paraliza! Es como si el chef se quedara picando cebolla eternamente y el resto de la cocina se detuviera por completo.',
+      '|subtitle|Recursos adicionales para entender un poco mejor qué es el callstack',
+      'La explicación de Lydia Hallie es bastante buena y la ayuda gráfica hace que todo sea mucho más fácil de entender, pero si quieres aprender un poco más o aún no te quedó del todo claro, aquí hay otros recursos que puedes explorar.',
+      'Otra muy buena explicación, pero en español: ',
+      '|link|https://www.youtube.com/watch?v=ygA5U7Wgsg8',
+      'Entender más en profundidad JavaScript, 33 conceptos muy importantes (el concepto 1 habla del callstack):',
+      '|link|https://github.com/leonardomso/33-js-concepts ',
+    ],
+    id: '3806f8aa09ae45fb978096e651733e47',
+    image: CallStack,
+    mediaType: 'video',
+    tags: [TAGS.opinion, TAGS.tools],
+    title: '¿Cómo funciona el CallStack en JavaScript?',
+    type: PostTypes.opinion,
+    media: 'https://www.youtube.com/embed/eiC58R16hb8?si=yLZCFhwKV5ZWu1ZO',
   },
   {
     author,
