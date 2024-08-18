@@ -1,9 +1,14 @@
 'use client'
 
 import Post from '@/app/components/Post/Post'
-import { getFilteredPosts, queryFilterI } from '@/app/utils/const'
+import {
+  getFilteredPosts,
+  queryFilterI,
+  DEFAULT_POST_LIMIT,
+} from '@/app/utils/const'
 import { useLocale } from 'next-intl'
 import { redirect, useSearchParams } from 'next/navigation'
+import Pagination from '@/app/components/Pagination/Pagination'
 
 const searchParamsOptions = {
   tag: 'tag',
@@ -13,14 +18,16 @@ const searchParamsOptions = {
 export default function Page() {
   const searchParams = useSearchParams()
   const activeLocale = useLocale()
+  const page = Number(searchParams.get(searchParamsOptions.page))
+  const tag = searchParams.get(searchParamsOptions.tag)
 
   const queryConfig: queryFilterI = {
-    page: Number(searchParams.get(searchParamsOptions.page)),
-    tag: searchParams.get(searchParamsOptions.tag),
+    page,
+    tag,
   }
 
-  // [totalPosts] is going to be used for pagination when I have enough posts
   const { posts, totalPosts } = getFilteredPosts(activeLocale, queryConfig)
+  const shouldRenderPagination = totalPosts > DEFAULT_POST_LIMIT
 
   if (totalPosts === 0) redirect(`/${activeLocale}/empty-list`)
 
@@ -31,6 +38,13 @@ export default function Page() {
           return <Post post={post} key={i} />
         })}
       </div>
+      {shouldRenderPagination && (
+        <Pagination
+          pages={Math.ceil(totalPosts / DEFAULT_POST_LIMIT)}
+          actualPage={page}
+          tag={tag}
+        />
+      )}
     </main>
   )
 }

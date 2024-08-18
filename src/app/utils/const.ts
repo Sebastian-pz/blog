@@ -3,6 +3,8 @@ import { PostTypes } from './interfaces'
 import { posts as PostsInSpanish } from './locale/es/posts'
 import { posts as PostsInEnglish } from './locale/en/posts'
 
+export const DEFAULT_POST_LIMIT = 9
+
 export function getPosts(lang: string) {
   switch (lang) {
     case 'es':
@@ -20,20 +22,20 @@ export interface queryFilterI {
 }
 
 export function getFilteredPosts(lang: string, query: queryFilterI) {
-  const filterLimit = 9
   let posts = getPosts(lang)
   let { tag, page = 1 } = query
 
   if (isNaN(page)) page = 1
   if (tag) posts = posts.filter((post) => tag && post.tags.includes(tag))
-
-  const totalPostsByTag = posts.length
-
-  posts = posts.slice((page - 1) * filterLimit, page * filterLimit)
+  const totalPosts = posts.length
+  const postsThisPage = posts.slice(
+    (page - 1) * DEFAULT_POST_LIMIT,
+    page * DEFAULT_POST_LIMIT
+  )
 
   return {
-    totalPosts: totalPostsByTag,
-    posts,
+    totalPosts,
+    posts: postsThisPage,
   }
 }
 
