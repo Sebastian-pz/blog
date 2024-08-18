@@ -6,6 +6,8 @@ const TAGS = {
   project: 'Project',
   cleanCode: 'CleanCode',
   tools: 'Tools',
+  nodeJS: 'NodeJS',
+  javaScript: 'JavaScript',
   frontend: 'Frontend',
   backend: 'Backend',
   nestjs: 'NestJS',

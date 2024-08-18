@@ -54,6 +54,8 @@ export const posts: Array<postInterface> = [
       TAGS.nestjs,
       TAGS.nextjs,
       TAGS.CI_CD,
+      TAGS.nodeJS,
+      TAGS.javaScript,
     ],
   },
   {
@@ -76,7 +78,7 @@ export const posts: Array<postInterface> = [
     id: '3806f8aa09ae45fb978096e651733e47',
     image: CallStack,
     mediaType: 'video',
-    tags: [TAGS.opinion, TAGS.tools],
+    tags: [TAGS.opinion, TAGS.tools, TAGS.nodeJS, TAGS.javaScript],
     title: '¿Cómo funciona el CallStack en JavaScript?',
     type: PostTypes.opinion,
     media: 'https://www.youtube.com/embed/eiC58R16hb8?si=yLZCFhwKV5ZWu1ZO',
