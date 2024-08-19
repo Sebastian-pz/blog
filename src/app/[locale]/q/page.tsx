@@ -29,7 +29,7 @@ export default function Page() {
   const { posts, totalPosts } = getFilteredPosts(activeLocale, queryConfig)
   const shouldRenderPagination = totalPosts > DEFAULT_POST_LIMIT
 
-  if (totalPosts === 0) redirect(`/${activeLocale}/empty-list`)
+  if (totalPosts === 0 || !posts.length) redirect(`/${activeLocale}/empty-list`)
 
   return (
     <main className="w-4/5 md:w-3/5 m-auto mt-40 min-h-screen">
