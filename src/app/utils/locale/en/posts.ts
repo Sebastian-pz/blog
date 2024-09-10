@@ -16,12 +16,48 @@ import chatBotImg from '@/public/blog/ChatBot.webp'
 import blogImg from '@/public/blog/Blog.webp'
 import opinionAboutVB from '@/public/blog/opinionAboutVB.webp'
 import CallStack from '@/public/blog/CallStack.webp'
+import npmPackages from '@/public/blog/npmPackages.webp'
 
 import TAGS from '../../Tags/Tags'
 
 const author = 'Sebastian Pérez'
 
 export const posts: Array<postInterface> = [
+  {
+    id: '8ce398224bbc4120b17745f4db481cf9',
+    type: PostTypes.opinion,
+    title: 'Create and use your own npm packages in multiple projects',
+    mediaType: 'image',
+    // media: "https://www.youtube.com/embed/fL83GTilWjw",
+    image: npmPackages,
+    description: [
+      'In the world of software development, efficiency and scalability are not just desirable, they are a must. As developers, we are constantly looking for tools and strategies to optimize our workflow and create robust and maintainable applications.',
+
+      'In the web development ecosystem, one of these strategies, often underestimated, is the creation and use of own NPM packages.',
+
+      'My path as a full-stack developer has exposed me to a wide range of projects. Throughout this journey, I have learned that code reuse is not simply a "good practice", but a strategic necessity. On countless occasions, I found myself repeating the same logic and functions in different projects, which led me to the idea: the need to centralize and reuse my own code.',
+
+      'A paradigmatic case was my experience with the "xlsx" package. While it is a powerful tool for handling Excel files, its sometimes complex syntax and the need for additional code to adapt it to my needs made me rethink my approach. I then decided to encapsulate the specific logic I needed in an NPM package of my own, thus extending the functionality of "xlsx" and creating a tailor-made tool for my projects.',
+
+      '|subtitle|Some of the benefits of creating your own NPM packages are:',
+
+      '• Cleaner and more readable code: Abstracting complex logic into a standalone package made my code more concise and easier to understand.',
+
+      '• Accelerated development: Reusing my own code through an NPM package significantly accelerated the development of new features.',
+
+      '• Simplified maintenance: Updates or fixes were centralized in the package, making it easier to update all projects that used it.',
+
+      'Creating and publishing my own NPM package not only streamlined my workflow, but also empowered me as a developer. It allowed me to take control of my development ecosystem and create custom solutions for recurring challenges.',
+
+      "I used a tutorial that I can't find at the moment, but I saw this one and I think it's pretty accurate (it's in Spanish):",
+
+      '|link|https://www.youtube.com/watch?v=SgmkNLFFCjM',
+    ],
+
+    author,
+    creationDate: '09/10/2024',
+    tags: [TAGS.project, TAGS.CI_CD, TAGS.nodeJS, TAGS.javaScript, TAGS.nodeJS],
+  },
   {
     id: '1d0d966b84354712b92c359cc28a06c2',
     type: PostTypes.experience,
