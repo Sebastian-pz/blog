@@ -2,47 +2,46 @@ import { ExperienceI } from '../common'
 
 const EXPERIENCES: Array<ExperienceI> = [
   {
-    title: 'Fullstack Web Developer',
+    title: 'Fullstack Web Developer at BB-Bar. Colombia',
     description:
-      'Worked as a fullstack web developer creating an administrative and accounting manager for a bar.',
+      'As a Fullstack web developer, I worked on creating a management system, focused on creating solutions in accounting, logistics, sales and more. Responsible for the entire lifecycle of the application.',
     responsibilities: [
-      'Full-stack development of the application, from conception to deployment, ensuring security, code quality, and scalability.',
-      " Designing the application's UI based on specific client requirements, drawing inspiration from Spotify's design language.",
-      'Developing backend systems adhering to RESTful API principles, utilizing technologies such as Node.js, Express, NestJS, PostgreSQL, MongoDB, and others, while prioritizing consistency, scalability, and clean code.',
-      'Building front-end interfaces using technologies like React, Next.js, Shadcn, and Tailwind CSS, ensuring accessibility, usability, simplicity, high performance, scalability, and best practices.',
-      'Implementing a component-based architecture following React and Next.js principles, maintaining high code standards and best practices for both technologies.',
-      ' Optimizing application performance on both the backend and frontend using tools like Redis, React.memo, useMemo, and Tanstack Query.',
-      ' Establishing processes for continuous deployment with the latest releases, leveraging SaaS platforms like "Hostinger", Render, and Vercel.',
+      'Developed a management system automating inventory checks, expense tracking, accounting stats and sales monitoring, reducing manual operations by over 80% and minimizing human errors.',
+      'Optimized inventory management by providing real-time insights on stock levels, daily performance, and sales trends, allowing employees to perform actions in a few clicks, improving decision-making efficiency.',
+      'Streamlined daily operations by automating bill calculations and split payments, reducing processing time by 70% and improving customer satisfaction during high-traffic events.',
+      'Developed a management system automatically linked to the balance sheet and income statement to facilitate accounting processes, optimizing costs and legal processes.',
     ],
-    dates: 'November 2023 - June 2024',
+    dates: 'November 2023 - July 2024',
     link: '/post/1d0d966b84354712b92c359cc28a06c2',
+    stack:
+      'TypeScript, React, NodeJS, NextJS, NestJS, PostgreSQL, Docker, Tailwind, TanStackQuery',
   },
   {
     title: 'Fullstack Web Developer at Nutrición Vital',
     description:
-      'Worked as a fullstack web developer for Nutrición Vital, based in Argentina.',
+      'As a full stack web developer, I worked on building an end-to-end points-based e-commerce system with a multidisciplinary team.',
     responsibilities: [
-      'Participated in developing an e-commerce platform for Nutrición Vital using technologies such as React, Redux, Bootstrap, Express, MongoDB, JWT, MercadoPago, nodemailer, and more.',
-      "Ensured application security by using various middlewares to protect the company's database structure.",
-      "Responsible for implementing the platform's payment methods.",
-      'Designed various pages and components, aiming to write clean code using React, Redux, Axios, Bootstrap, and other technologies.',
-      'Collaborated on UX/UI development with the client and the team.',
+      'Built an e-commerce platform for a point-based system, growing user adoption from 18 to 120+ in four months, with online sales contributing to 40% of the total revenue.',
+      'Implemented a payment solution integrating MercadoPago with a custom web-scraping algorithm (O(log n) complexity) to ensure seamless transactions.',
+      'Automated customer communications using NodeMailer and SMS verification, enhancing customer engagement and reducing cart abandonment rates.',
+      'Integrated a secure user authentication system to manage customer data and transactions, ensuring compliance with industry standards and improving user trust.',
     ],
-    dates: 'June 2023 - August 2023',
+    dates: 'June 2023 - September 2023',
     link: '/post/6957b082e06f4ba0a18b377143ce407b',
+    stack: 'TypeScript, React, NodeJS, Express, PostgreSQL, MongoDB, Bootstrap',
   },
   {
-    title: 'Fullstack Web Developer at UCA',
+    title: 'Fullstack Web Developer at Universidad Católica Argentina',
     description:
-      'Worked as a fullstack web developer for the Argentine Catholic University on a project for their students.',
+      'As a fullstack developer, I worked on the development of academic applications for the UCA, mainly for the law school.',
     responsibilities: [
-      'Used modern technologies like React, TypeScript, Redux, Material-UI, and Bootstrap to develop frontends, always ensuring the best user experience.',
-      'Implemented backends using best practices with Express, TypeScript, JWT, and SQL databases.',
-      'Actively participated in adopting Agile methodologies to manage the project efficiently and ensure successful deliveries.',
-      'Closely collaborated with team members through practices like pair programming to improve code quality and assist in problem-solving.',
+      'Led the development of academic applications supporting 1500+ students per semester, with up to 250 simultaneous users, using frontend caching to reduce server load and improve response times.',
+      'Pioneered good practices in testing, documentation, and caching, enhancing application performance and reducing backend requests.',
+      'Collaborated closely with faculty and students to gather feedback and iteratively improve the application, aligning development with the university’s academic goals.',
     ],
     dates: 'January 2023 - June 2023',
     link: '/post/2bb2193700824b11bcc33c9dc5dd3c65',
+    stack: 'TypeScript, React, NodeJS, Express, PostgreSQL, TanStackQuery',
   },
 ]
 
