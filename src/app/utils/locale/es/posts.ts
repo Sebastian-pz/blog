@@ -16,12 +16,48 @@ import chatBotImg from '@/public/blog/ChatBot.webp'
 import blogImg from '@/public/blog/Blog.webp'
 import opinionAboutVB from '@/public/blog/opinionAboutVB.webp'
 import CallStack from '@/public/blog/CallStack.webp'
+import npmPackages from '@/public/blog/npmPackages.webp'
 
 import TAGS from '../../Tags/Tags'
 
 const author = 'Sebastian Pérez'
 
 export const posts: Array<postInterface> = [
+  {
+    id: '8ce398224bbc4120b17745f4db481cf9',
+    type: PostTypes.opinion,
+    title: 'Crear y utilizar tus propios paquetes de NPM',
+    mediaType: 'image',
+    // media: "https://www.youtube.com/embed/fL83GTilWjw",
+    image: npmPackages,
+    description: [
+      'En el mundo del desarrollo de software, la eficiencia y la escalabilidad no son solo deseables, son imprescindibles. Como desarrolladores, buscamos constantemente herramientas y estrategias para optimizar nuestro flujo de trabajo y crear aplicaciones robustas y mantenibles.',
+
+      'En el ecosistema de desarrollo web, una de estas estrategias, a menudo subestimada, es la creación y utilización de paquetes NPM propios.',
+
+      'Mi trayectoria como desarrollador full-stack me ha expuesto a una amplia gama de proyectos. A lo largo de este viaje, he aprendido que la reutilización de código no es simplemente una "buena práctica", sino una necesidad estratégica. En innumerables ocasiones, me encontré repitiendo la misma lógica y funciones en diferentes proyectos, lo que me llevó a la idea: la necesidad de centralizar y reutilizar mi propio código.',
+
+      'Un caso paradigmático fue mi experiencia con el paquete "xlsx". Si bien es una herramienta poderosa para manejar archivos Excel, su sintaxis a veces compleja y la necesidad de código adicional para adaptarlo a mis necesidades me hicieron replantearme mi enfoque. Decidí entonces encapsular la lógica específica que necesitaba en un paquete NPM propio, extendiendo así la funcionalidad de "xlsx" y creando una herramienta a medida para mis proyectos.',
+
+      '|subtitle|Algunos de los beneficios de crear tus propios paquetes NPM son:',
+
+      '• Código más limpio y legible: La abstracción de la lógica compleja en un paquete independiente hizo que mi código fuera más conciso y fácil de entender.',
+
+      '• Desarrollo acelerado: La reutilización de mi propio código a través de un paquete NPM aceleró significativamente el desarrollo de nuevas funcionalidades.',
+
+      '• Mantenimiento simplificado: Las actualizaciones o correcciones se centralizaron en el paquete, facilitando la actualización de todos los proyectos que lo utilizaban.',
+
+      'Crear y publicar mi propio paquete NPM no solo optimizó mi flujo de trabajo, sino que también me empoderó como desarrollador. Me permitió tomar el control de mi ecosistema de desarrollo y crear soluciones personalizadas para los desafíos recurrentes.',
+
+      'Utilicé un tutorial que en este momento no encuentro, pero vi este y me parece que está bastante acertado (está en español):',
+
+      '|link|https://www.youtube.com/watch?v=SgmkNLFFCjM',
+    ],
+
+    author,
+    creationDate: '09/10/2024',
+    tags: [TAGS.project, TAGS.CI_CD, TAGS.nodeJS, TAGS.javaScript, TAGS.nodeJS],
+  },
   {
     id: '1d0d966b84354712b92c359cc28a06c2',
     type: PostTypes.experience,
