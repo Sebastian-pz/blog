@@ -405,7 +405,7 @@ export const posts: Array<postInterface> = [
 
       'Finalmente, el proyecto se expuso a la universidad y el resultado fue la aprobación. En el semestre 2 (SII-2023) la aplicación entró en producción y empezó a ser utilizada por los estudiantes.',
 
-      '|subtitle|Mis responsabilidades en el proyecto fueron:',
+      '|subtitle|Algunas de mis responsabilidades en el proyecto fueron:',
 
       '✅ Desarrollo de lógica Frontend: Implementé las principales funciones de la lógica en el frontend, asegurando que el código fuera sencillo, escalable y mantenible.',
       '✅ Integración Frontend y API: Conecté el frontend con la API, creando funciones reutilizables y los correspondientes servicios de la aplicación para promover mejores prácticas y facilitar futuras refactorizaciones.',

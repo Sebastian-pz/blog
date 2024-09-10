@@ -403,7 +403,7 @@ export const posts: Array<postInterface> = [
 
       'Finally, the project was presented to the university and the result was its approval. In semester 2 (SII-2023), the application went into production and began being used by students.',
 
-      '|subtitle|My responsibilities in the project were:',
+      '|subtitle|Some of my responsibilities in this job were:',
 
       '✅ Frontend Logic Development: Implemented the main logic functions in the frontend, ensuring that the code was simple, scalable, and maintainable.',
       '✅ Frontend and API Integration: Connected the frontend with the API, creating reusable functions and corresponding application services to promote best practices and facilitate future refactorings.',

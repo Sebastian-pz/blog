@@ -1,21 +1,16 @@
+import { ExperienceI } from '@/app/utils/locale/common'
 import { useLocale } from 'next-intl'
 import Link from 'next/link'
-interface CardProps {
-  title: string
-  link: string
-  dates: string
-  description: string
-  responsibilities: Array<string>
+
+interface propsComponent {
+  experience: ExperienceI
 }
 
-export default function ExperienceCard({
-  title,
-  link,
-  dates,
-  description,
-  responsibilities,
-}: CardProps) {
+export default function ExperienceCard({ experience }: propsComponent) {
   const localeActive = useLocale()
+
+  const { title, link, dates, description, responsibilities, stack } =
+    experience
 
   return (
     <article className="mb-8 w-full mx-auto ">
@@ -42,6 +37,9 @@ export default function ExperienceCard({
               )
             })}
           </ul>
+          <p className="text-center text-primary-color-400 font-semibold">
+            {stack}
+          </p>
         </div>
       </div>
     </article>

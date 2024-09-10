@@ -4,4 +4,5 @@ export interface ExperienceI {
   responsibilities: Array<string>
   dates: string
   link: string
+  stack: string
 }
