@@ -69,13 +69,16 @@
     "link": "/CV-en-SebastianPerez.pdf"
   },
   "social": {
-    "title": "Sebastian Pérez's Social Media",
-    "paragraphOne": "Although I don't post very often, you might find useful reposts or interesting information on my social media.",
-    "paragraphTwo": "I often follow posts from leading figures in various technologies, mostly English-speaking, so you'll likely see a lot of posts in English.",
-    "linksIntroduction": "Links to my social media",
-    "acknowledgementTitle": "Acknowledgement",
-    "acknowledgement": "I have great respect for content creators who share their knowledge on social media and help the community improve. Also, thanks to those who comment to help others respectfully 💙.",
-    "thanks": "Thank you for reaching the end of these recognitions"
+    "mainTitle": "Sebastian Perez's social media and more",
+    "title": "To all developers who share their knowledge with the community: Thank you.",
+    "introduction": "We know that learning to program can be a challenging path, sometimes frustrating, with a lot of obstacles along the way. But you, sharing what you know, make this trip much more bearable for everyone. Each line of code that explain, each solution they share, each tutorial they create, however small it seems, has a huge impact.You need a lot of generosity to spend time and effort to help others to:",
+    "benefits": {
+      "one": "Learning faster: finding the solution to a problem that someone has already solved is invaluable.It saves time, frustration and allows us to advance faster in our projects.",
+      "two": "Discover new ideas: see how others have addressed similar problems opens our minds to new possibilities and approaches that we might not have considered.",
+      "three": "Feeling part of a community: knowing that there are people willing to help and share their experience makes this world feel less lonely and more cozy, especially for those who are starting.",
+      "four": "Accessing new opportunities: Sharing information freely helps democratize knowledge and allows more people to access the world of technology, regardless of their origin or resources."
+    },
+    "end": "You are making the development community a better, more collaborative and accessible place.Do not understand the positive impact they have on the lives of other developers.Keep like this!"
   },
   "headerSection": {
     "title": "Sebastian Perez blog",
