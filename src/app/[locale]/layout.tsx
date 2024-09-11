@@ -31,7 +31,7 @@ export default function RootLayout({
 }: Readonly<RootLayoutProps>) {
   return (
     <html lang={locale}>
-      <body className={fontSettings.className}>
+      <body className={`${fontSettings.className} bg-bg-color`}>
         <header className="mb-20">
           <Navbar />
         </header>

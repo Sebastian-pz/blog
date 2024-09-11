@@ -13,8 +13,8 @@ export default function ExperienceCard({ experience }: propsComponent) {
     experience
 
   return (
-    <article className="mb-8 w-full mx-auto ">
-      <div className="border border-black bg-transparent rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+    <article className="mb-8 w-full mx-auto bg-white ">
+      <div className="border border-black rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
         <div className="mb-2">
           <h3 className="text-gray-900 font-bold text-xl mb-2">
             <Link

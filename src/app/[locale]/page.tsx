@@ -6,7 +6,7 @@ import HeaderSection from '@/components/HeaderSection/HeaderSection'
 
 export default function Home() {
   return (
-    <div className="bg-background text-foreground">
+    <div className="bg-bg-color text-foreground">
       <HeaderSection />
       <PostsSection />
     </div>

@@ -27,11 +27,11 @@ export default function Pagination({ actualPage, pages, tag }: propsComponent) {
                 // href={`/${localeActive}/q?page=${i + 1}`}
                 className={`
                   border  p-2
-                  hover:bg-primary-color-500 hover:shadow-[4.0px_4.0px_rgba(0,0,0)]
+                  hover:bg-primary-color-300 hover:shadow-[4.0px_4.0px_rgba(0,0,0)]
                   hover:border-black
                   hover:font-bold
                   hover:scale-110
-                  ${actualPage === i + 1 && 'font-bold pointer-events-none shadow-[4.0px_4.0px_rgba(0,0,0)] border border-black bg-primary-color-500 '}`}
+                  ${actualPage === i + 1 && 'font-bold pointer-events-none shadow-[4.0px_4.0px_rgba(0,0,0)] border border-black bg-primary-color-300 '}`}
                 aria-disabled={i + 1 === actualPage}
               >
                 {i + 1}
