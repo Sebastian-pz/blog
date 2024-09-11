@@ -29,7 +29,7 @@ export default function LocaleSwitcher() {
   }
 
   return (
-    <div className="  border-2 border-black shadow-[4.0px_4.0px_rgba(0,0,0)] bg-[#c1e6f5]">
+    <div className="  border-2 border-black shadow-[4.0px_4.0px_rgba(0,0,0)] bg-[#92caf5]">
       <label htmlFor="Language-selector" className="sr-only">
         Change Language
       </label>
