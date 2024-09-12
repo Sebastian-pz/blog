@@ -4,7 +4,7 @@ export default function HeaderSection() {
   const t = useTranslations('headerSection')
 
   return (
-    <header className="bg-muted md:pt-12">
+    <header className=" md:pt-12">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
