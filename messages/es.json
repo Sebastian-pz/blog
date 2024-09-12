@@ -69,13 +69,16 @@
     "link": "/CV-es-SebastianPerez.pdf"
   },
   "social": {
-    "title": "Redes sociales Sebastian Pérez",
-    "paragraphOne": "Si bien no suelo publicar muy a menudo puede que encuentres reposts de publicaciones útiles o información de interés en mis redes sociales.",
-    "paragraphTwo": "De vez en cuando estoy mirando publicaciones de los referentes en cuanto a muchas tecnologías, mayoritariamente angloparlantes, así que probablemente vayas a ver muchas publicaciones en inglés.",
-    "linksIntroduction": "Links a mis redes sociales",
-    "acknowledgementTitle": "Acknowledgement",
-    "acknowledgement": "Respeto mucho a los creadores de contenido que a través de sus redes sociales comparten su conocimiento y ayudan a que la comunidad mejore. También a los compañeros que comentan para ayudar a los demás desde el respeto 💙.",
-    "thanks": "Muchas gracias por llegar hasta acá."
+    "mainTitle": "Redes sociales de Sebastian Pérez y más",
+    "title": "Agradecimiento a todos los desarrolladores que se toman la molestia de ayudar a la comunidad.",
+    "introduction": "Sabemos que aprender a programar puede ser un camino desafiante, a veces frustrante, con muchos obstáculos en el camino. Pero ustedes, compartiendo lo que saben, hacen este viaje mucho más llevadero para todos. Cada línea de código que explican, cada solución que comparten, cada tutorial que crean, por pequeño que parezca, tiene un impacto enorme. Se necesita mucha generosidad para dedicar tiempo y esfuerzo a ayudar a los demás a:",
+    "benefits": {
+      "one": "Aprender más rápido: Encontrar la solución a un problema que alguien ya ha resuelto es invaluable. Nos ahorra tiempo, frustración y nos permite avanzar más rápido en nuestros proyectos.",
+      "two": "Descubrir nuevas ideas: Ver cómo otros han abordado problemas similares nos abre la mente a nuevas posibilidades y enfoques que quizás no habíamos considerado.",
+      "three": "Sentirse parte de una comunidad: Saber que hay gente dispuesta a ayudar y compartir su experiencia hace que este mundo se sienta menos solitario y más acogedor, especialmente para los que están empezando.",
+      "four": "Acceder a nuevas oportunidades: Compartir información libremente ayuda a democratizar el conocimiento y permite que más personas puedan acceder al mundo de la tecnología, sin importar su origen o recursos."
+    },
+    "end": "Ustedes están haciendo que la comunidad de desarrollo sea un lugar mejor, más colaborativo y accesible. No subestimen el impacto positivo que tienen en la vida de otros desarrolladores."
   },
   "headerSection": {
     "title": "Sebastian Pérez blog",
