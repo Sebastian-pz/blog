@@ -26,7 +26,7 @@ const EXPERIENCES: Array<ExperienceI> = [
       'Automated customer communications using NodeMailer and SMS verification, enhancing customer engagement and reducing cart abandonment rates.',
       'Integrated a secure user authentication system to manage customer data and transactions, ensuring compliance with industry standards and improving user trust.',
     ],
-    dates: 'June 2023 - September 2023',
+    dates: 'June 2023 - November 2023',
     link: '/post/6957b082e06f4ba0a18b377143ce407b',
     stack: 'TypeScript, React, NodeJS, Express, PostgreSQL, MongoDB, Bootstrap',
   },
