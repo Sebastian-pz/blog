@@ -17,12 +17,56 @@ import blogImg from '@/public/blog/Blog.webp'
 import opinionAboutVB from '@/public/blog/opinionAboutVB.webp'
 import CallStack from '@/public/blog/CallStack.webp'
 import npmPackages from '@/public/blog/npmPackages.webp'
+import generativeAI from '@/public/blog/generativeAI.webp'
 
 import TAGS from '../../Tags/Tags'
 
 const author = 'Sebastian Pérez'
 
 export const posts: Array<postInterface> = [
+  {
+    id: 'e143b6e16309449086f2b86d4a5d8fb8',
+    type: PostTypes.opinion,
+    title:
+      'The Road to Generative AI Implementation: More Than Just Connecting a Model',
+    mediaType: 'image',
+    image: generativeAI,
+    author,
+    creationDate: '10/07/2024',
+    tags: [TAGS.opinion, TAGS.fullstack, TAGS.tools],
+    description: [
+      "Artificial Intelligence (AI), especially generative AI, is revolutionizing how we create and consume content. In my quest to stay current with these emerging technologies, I enrolled in Microsoft's Professional Foundations of Generative AI course. While many think that implementing AI is just a matter of 'connecting' a pre-trained model, the reality is much more complex. Understanding what's behind these tools is crucial to effectively harnessing their full potential.",
+
+      '|subtitle|More Than Just Connecting Models',
+      "When we talk about implementing a generative AI model, such as a Generative Adversarial Network (GAN) or a Variational Autoencoder (VAE), it's easy to fall into the trap of thinking that it's enough to download and use them as they are. However, this approach overlooks many technical and ethical aspects that cannot be ignored.",
+
+      "First, there's the issue of data quality. AI models, like GANs or VAEs, need large, well-prepared datasets to train properly. These datasets must be curated and balanced to avoid biases that affect the model's output. For example, if you're training a model to generate images of people, but your dataset is unbalanced (containing more images of a single demographic group), the generated results will reflect that bias.",
+
+      '|subtitle|Prompts: The New Cornerstone of Generative AI',
+      "The use of prompts is at the heart of generative models. A prompt is simply the input we provide to the model so that it can generate a response. In generative AI, learning to structure prompts accurately is key. It's not just about giving a vague instruction like 'generate an image', but detailing the characteristics you want to see in the result. Small variations in prompts can lead to very different outcomes.",
+
+      'With tools like GPT and DALL-E, creating efficient prompts is a skill that not only impacts the quality of the generated content but also the efficiency of the models. By refining the prompts, we are optimizing the inference process, making it more effective and less computationally expensive.',
+
+      '|subtitle|Infrastructure and Optimization: A Complex World',
+      'One aspect that cannot be overlooked is the infrastructure needed to run these models. Notebooks like Google Colab or Jupyter Notebooks have facilitated access to AI development environments, but it is important to understand that these only offer a starting point. When implementing AI in production, hardware requirements increase considerably.',
+
+      'Generative models, especially those with complex architectures like GANs or Transformers, are demanding in terms of processing. It is essential to optimize not only the model itself but also the infrastructure on which it will run. Factors such as memory consumption, computing power, and scalability must be carefully planned.',
+
+      "In addition, the challenge of 'fine-tuning' arises. Many pre-trained models need to be fine-tuned to the specific needs of each use case. This involves more than just running the model; it requires an iterative process of testing and adjustment, where hyperparameters, datasets, and optimization techniques are adjusted.",
+
+      '|subtitle|Bias in AI: A Necessary Debate',
+      "During the course, I came across the phrase 'The biggest bias in AI is the human inferiority complex.' Personally, I do not share this statement. While it is true that there is some resistance to AI for fear of replacing human skills, I believe that the real challenge lies in how we reduce the intrinsic bias in the models themselves.",
+
+      "The bias of an AI model can arise from the data it has been trained on or even from decisions developers make during its creation. For example, in GANs, where a generator model tries to fool a discriminator, bias can manifest in how the discriminator 'learns' to evaluate the generated content. If the discriminator has been trained on biased data, the generator will produce content reflecting those same biases.",
+
+      '|subtitle|Where Are We Going?',
+      'The distinction between human-generated and AI-generated content will become increasingly blurred. Models like Transformers have shown that it is possible to generate text, images, and even videos that mimic human creations with remarkable accuracy. Implementing AI in real-world projects requires not only connecting a model but also addressing all these complexities that lie beneath the surface.',
+
+      'Generative AI is not a passing fad, but a technology that is shaping the present and future of content creation and software development. For those of us in this field, it is essential to not only learn how to use these tools but also understand the implications they have on the quality of what we develop.',
+
+      'What do you think about the challenges presented by generative AI? How prepared are we to integrate it ethically and efficiently into our solutions?',
+    ],
+  },
   {
     id: '8ce398224bbc4120b17745f4db481cf9',
     type: PostTypes.opinion,
