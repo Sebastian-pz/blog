@@ -17,17 +17,13 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ) {
   const id = params.id
-  const titleMaxLength = 60
   const descriptionMaxLength = 150
   const post = getPostById(defaultLanguage, id)
   // You can have access to previous images using parent:
   const previousImages = (await parent).openGraph?.images || []
 
   return {
-    title:
-      post.title.length > 60
-        ? post.title.slice(0, titleMaxLength) + '...'
-        : post.title,
+    title: post.title.length,
     description: post.description[0].slice(0, descriptionMaxLength),
     openGraph: {
       images: [post.image, ...previousImages],
