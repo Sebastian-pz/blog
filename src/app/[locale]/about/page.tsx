@@ -1,4 +1,6 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 import Svg from '@/components/svg/Svg'
 import Projects from '@/components/Project/Projects'
@@ -9,14 +11,27 @@ import profileImage from '@/public/profileImage.webp'
 import GitHubIcon from '@/public/svg/github.svg'
 import LinkedInIcon from '@/public/svg/linkedin.svg'
 import DownloadIcon from '@/public/svg/download.svg'
-import { useTranslations } from 'next-intl'
 
-export function generateMetadata() {
-  return {
-    title: 'About Sebastian Perez Dev',
-    description:
-      'In this section I talk a little about myself Sebastian Perez Fullstack dev, who I am, where I studied, what I worked on and many other things.',
-  }
+export const metadata: Metadata = {
+  title: 'About',
+  description:
+    'In this section I talk a little about myself Sebastian Perez Software developer, who I am, where I studied, what I worked on and many other things.',
+  keywords: [
+    'Sebastian Perez',
+    'Software developer',
+    'About me',
+    'Portfolio',
+    'Python',
+    'TypeScript',
+    'Docker',
+    'Unit Testing',
+    'Git',
+    'programming',
+    'professional',
+    'freelance',
+    'open source',
+    'blog',
+  ],
 }
 
 export default function MainPage() {
