@@ -3,6 +3,22 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Github, Linkedin, Twitter } from 'lucide-react'
 import Link from 'next/link'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Social Sebastian Perez',
+  description:
+    'Follow Sebastian Perez on social media (LinkedIn, X, GitHub) and discover other amazing creators. Find inspiration, software development tips, and connect with our community.',
+  keywords: [
+    'Sebastian Perez',
+    'Software developer',
+    'GitHub',
+    'LinkedIn',
+    'Twitter',
+    'X',
+    'connect',
+  ],
+}
 
 export default function Page() {
   const t = useTranslations('social')
