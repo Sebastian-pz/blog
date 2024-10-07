@@ -17,12 +17,56 @@ import blogImg from '@/public/blog/Blog.webp'
 import opinionAboutVB from '@/public/blog/opinionAboutVB.webp'
 import CallStack from '@/public/blog/CallStack.webp'
 import npmPackages from '@/public/blog/npmPackages.webp'
+import generativeAI from '@/public/blog/generativeAI.webp'
 
 import TAGS from '../../Tags/Tags'
 
 const author = 'Sebastian Pérez'
 
 export const posts: Array<postInterface> = [
+  {
+    id: 'e143b6e16309449086f2b86d4a5d8fb8',
+    type: PostTypes.opinion,
+    title:
+      'El camino hacia la Implementación de IA Generativa: Mucho más que conectar un modelo',
+    mediaType: 'image',
+    image: generativeAI,
+    author,
+    creationDate: '10/07/2024',
+    tags: [TAGS.opinion, TAGS.fullstack, TAGS.tools],
+    description: [
+      "La Inteligencia Artificial (IA), especialmente la IA generativa, está revolucionando la forma en que creamos y consumimos contenido. En mi búsqueda por mantenerme al día con estas tecnologías emergentes, me inscribí en el curso Fundamentos Profesionales de IA Generativa, de Microsoft. Aunque muchos piensan que implementar IA es solo cuestión de 'conectar' un modelo preentrenado, la realidad es mucho más compleja. Entender lo que hay detrás de estas herramientas es crucial para aprovechar todo su potencial de manera efectiva.",
+
+      '|subtitle|Más que Solo Conectar Modelos',
+      'Cuando hablamos de implementar un modelo de IA generativa, como puede ser un Generative Adversarial Network (GAN) o un Variational Autoencoder (VAE), es fácil caer en la tentación de pensar que basta con descargarlos y usarlos tal cual. Sin embargo, este enfoque omite muchos aspectos técnicos y éticos que no pueden ignorarse.',
+
+      'Primero, está el tema de la calidad de los datos. Los modelos de IA, como los GANs o VAEs, necesitan datasets grandes y bien preparados para poder entrenarse adecuadamente. Estos conjuntos de datos deben estar curados y balanceados para evitar sesgos que afecten la salida del modelo. Por ejemplo, si estás entrenando un modelo para generar imágenes de personas, pero tu dataset está desbalanceado (contiene más imágenes de un solo grupo demográfico), los resultados generados reflejarán ese sesgo.',
+
+      '|subtitle|Prompts: La Nueva Piedra Angular de la IA Generativa',
+      "El uso de prompts está en el centro de los modelos generativos. Un prompt no es más que el input que proporcionamos al modelo para que genere una respuesta. En IA generativa, aprender a estructurar los prompts de manera precisa es clave. No se trata solo de dar una instrucción vaga como 'genera una imagen', sino de detallar las características que deseas ver en el resultado. Pequeñas variaciones en los prompts pueden dar lugar a resultados muy diferentes.",
+
+      'Con herramientas como GPT y DALL-E, la creación de prompts eficientes es una habilidad que no solo impacta la calidad del contenido generado, sino también la eficiencia de los modelos. Al afinar los prompts, estamos optimizando el proceso de inferencia, haciéndolo más efectivo y menos costoso computacionalmente.',
+
+      '|subtitle|Infraestructura y Optimización: Un mundo complejo',
+      'Un aspecto que no se puede pasar por alto es la infraestructura que necesitas para correr estos modelos. Los notebooks como Google Colab o Jupyter Notebooks han facilitado el acceso a entornos de desarrollo para IA, pero es importante entender que estos solo ofrecen un punto de partida. Cuando implementas IA en producción, los requerimientos de hardware aumentan considerablemente.',
+
+      'Los modelos generativos, especialmente aquellos con arquitecturas complejas como los GANs o Transformers, son demandantes en términos de procesamiento. Es esencial optimizar no solo el modelo en sí, sino también la infraestructura donde se ejecutará. Factores como el consumo de memoria, el poder de cómputo, y la escalabilidad deben ser cuidadosamente planificados.',
+
+      "Además, surge el reto del 'fine-tuning'. Muchos modelos preentrenados necesitan ser ajustados (fine-tuned) a las necesidades específicas de cada caso de uso. Esto implica más que solo ejecutar el modelo; es necesario contar con un proceso iterativo de prueba y ajuste, en el que ajustes hiperparámetros, datasets y técnicas de optimización.",
+
+      '|subtitle|Los Sesgos en la IA: Un Debate Necesario',
+      'Durante el curso, me topé con la frase “El mayor sesgo en cuanto a la IA es el complejo de inferioridad del humano”. Personalmente, no comparto esta afirmación. Si bien es cierto que existe cierta resistencia hacia las IA por temor a que reemplacen habilidades humanas, creo que el desafío real radica en cómo reducimos el sesgo intrínseco en los modelos mismos.',
+
+      "El sesgo de un modelo de IA puede surgir de los datos con los que ha sido entrenado o incluso de las decisiones que los desarrolladores toman durante su creación. Por ejemplo, en los GANs, donde un modelo generador intenta engañar a un discriminador, el sesgo puede manifestarse en cómo el discriminador 'aprende' a evaluar el contenido generado. Si el discriminador ha sido entrenado con datos sesgados, el generador producirá contenido reflejando esos mismos sesgos.",
+
+      '|subtitle|¿Hacia dónde vamos?',
+      'La distinción entre el contenido generado por humanos y el generado por IA será cada vez más difusa. Modelos como los Transformers han demostrado que es posible generar textos, imágenes e incluso videos que imitan con notable precisión las creaciones humanas. La implementación de IA en proyectos del mundo real no solo requiere conectar un modelo, sino también abordar todas estas complejidades que se esconden bajo la superficie.',
+
+      'La IA Generativa no es una moda pasajera, sino una tecnología que está moldeando el presente y el futuro de la creación de contenido y desarrollo de software. Para los que estamos en este campo, es esencial no solo aprender a usar estas herramientas, sino también comprender las implicaciones que tienen en la calidad de lo que desarrollamos.',
+
+      '¿Qué opinas sobre los retos que presenta la IA generativa? ¿Qué tan preparados estamos para integrarla de manera ética y eficiente en nuestras soluciones?',
+    ],
+  },
   {
     id: '8ce398224bbc4120b17745f4db481cf9',
     type: PostTypes.opinion,
