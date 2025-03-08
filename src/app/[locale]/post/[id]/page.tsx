@@ -1,39 +1,45 @@
-import { useLocale } from 'next-intl'
-
 import { getPostById } from '@/utilities/const'
 import MediaComponent from '@/components/Media/MediaComponent'
 import DescriptionLoader from './DescriptionLoader'
-import { ResolvingMetadata } from 'next'
 
-interface paramsInterface {
-  params: {
-    id: string
-  }
-}
+type Params = Promise<{slug: string,
+  locale: string,
+  id: string
+}>
+type SearchParams = Promise<{[key: string]: string | string[] | undefined}>
 
 const defaultLanguage = 'en'
-export async function generateMetadata(
-  { params }: paramsInterface,
-  parent: ResolvingMetadata
-) {
-  const id = params.id
+export async function generateMetadata(props: {
+  params: Params,
+  searchParams: SearchParams
+}) {
+
+  const params = await props.params
+  const searchParams = await props.searchParams
+  const slug = params.slug
+  const query = searchParams.query
+  
   const descriptionMaxLength = 150
-  const post = getPostById(defaultLanguage, id)
-  // You can have access to previous images using parent:
-  const previousImages = (await parent).openGraph?.images || []
+  const post = getPostById(defaultLanguage, '8ce398224bbc4120b17745f4db481cf9')
+
 
   return {
-    title: post.title.length,
+    title: post.title,
     description: post.description[0].slice(0, descriptionMaxLength),
-    openGraph: {
-      images: [post.image, ...previousImages],
-    },
+    slug,
+    query
   }
 }
 
-export default function Page({ params }: paramsInterface) {
-  const activeLocale = useLocale()
-  const post = getPostById(activeLocale, params.id)
+export default async function Page(props: {
+  params: Params,
+  searchParams: SearchParams
+}) {
+  const params = await props.params
+  const { locale, id } = params
+  
+
+  const post = getPostById(locale, id)
 
   if (post) {
     return (

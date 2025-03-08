@@ -33,13 +33,18 @@ export default function SpecialTag({ tagType, text }: PropsComponent) {
       return (
         <div className="flex items-center justify-center max-w-2/3">
           <Image
-            className="border border-[#75756d] w-full"
+            className="border border-[#75756d] w-full h-auto"
             src={text}
-            sizes="100vw"
-            height={0}
-            width={0}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+            width={1200}
+            height={800}
             alt="Image inside post"
             loading="lazy"
+            style={{
+              width: '100%',
+              height: 'auto',
+              maxWidth: '100%'
+            }}
           />
         </div>
       )
