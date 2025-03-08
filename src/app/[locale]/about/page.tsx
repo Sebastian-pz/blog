@@ -71,6 +71,7 @@ export default function MainPage() {
             link="https://github.com/Sebastian-pz"
             svg={GitHubIcon}
           />
+          {/* 
           <a
             download="CV-SebastianPerez.pdf"
             href={CV_ROUTE}
@@ -85,6 +86,7 @@ export default function MainPage() {
             />
             {t('cv')}
           </a>
+           */}
         </section>
       </div>
 
