@@ -30,8 +30,8 @@ export default function FeaturePost({
         className="h-20 w-20 rounded-lg object-cover"
       />
       <div>
-        <h3 className="text- font-bold">{title}</h3>
-        <p className="text-muted-foreground">{date}</p>
+        <h3 className="text-sm font-bold">{title}</h3>
+        <p className="text-muted-foreground text-xs">{date}</p>
       </div>
     </Link>
   )

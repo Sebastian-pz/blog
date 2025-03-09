@@ -32,7 +32,7 @@ export default function Post({ post }: propsComponent) {
         />
       </Link>
       <div className="space-y-2 mt-2">
-        <h2 className="text-2xl font-bold px-2">
+        <h2 className="text-xl font-bold px-2">
           <Link
             href={`/${localeActive}/post/${id}`}
             className="hover:underline"
@@ -41,7 +41,7 @@ export default function Post({ post }: propsComponent) {
             {summary(title, 60)}
           </Link>
         </h2>
-        <p className="text-muted-foreground p-2">
+        <p className="text-muted-foreground p-2 text-base">
           {summary(description[0] as string, 100)}
         </p>
       </div>
