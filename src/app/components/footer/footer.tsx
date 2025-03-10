@@ -1,12 +1,16 @@
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+
 import linkedinSVG from '@/public/svg/linkedin.svg'
 import githubSVG from '@/public/svg/github.svg'
 import gmailSVG from '@/public/svg/gmail.svg'
 
 export default function FooterComponent() {
+  const t = useTranslations('footer');
   return (
-    <footer className="flex w-auto justify-center items-center border-t border-primary-color-800 mt-4">
-      <section className="flex">
+    <footer className="p-2 flex flex-col w-auto justify-center items-center border-t border-primary-color-800 mt-4">
+      <section className="flex justify-center items-center">
+        <p>{t('copyright')}</p>
         <a
           href="https://www.linkedin.com/in/sebastian-perez-zuluaga/"
           target="_blank"

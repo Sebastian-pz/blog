@@ -90,5 +90,8 @@
   "emptyPosts": {
     "title": "There are no posts to show...",
     "description": "It seems that there are no posts to display with the current filters. You can check this others tags to discover more content"
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 Sebastian Perez"
   }
 }
