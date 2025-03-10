@@ -93,5 +93,10 @@
   },
   "footer": {
     "copyright": "Copyright © 2025 Sebastian Pérez"
+  },
+  "not-found": {
+    "title": "Página no encontrada",
+    "description": "Oops, parece que la página que estás buscando no existe. No te preocupes, puedes volver al inicio y seguir navegando.",
+    "callToAction": "Volver al inicio"
   }
 }

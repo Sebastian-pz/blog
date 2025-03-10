@@ -93,5 +93,10 @@
   },
   "footer": {
     "copyright": "Copyright © 2025 Sebastian Perez"
+  },
+  "not-found": {
+    "title": "Page not found",
+    "description": "Oops, it looks like the page you were looking for doesn't exist. Don't worry, you can head back to the blog's homepage and continue exploring.",
+    "callToAction": "Back to the homepage"
   }
 }

@@ -23,15 +23,17 @@
   margin: 10px;
 }
 
-/* .notFound__content p {
-  font-size: 1.5rem;
-} */
-
 .notFound__content a {
-  background-color: black;
-  border-radius: 5px;
-  padding: 4px 8px;
+  background-color: #623fdf;
+  padding: 8px;
+  border: 1px solid #391ca1;
   margin-top: 20px;
   text-decoration: none;
   color: white;
+  box-shadow: 1px 1px 2px #391ca1;
+}
+
+.notFound__content a:hover {
+  background-color: #391ca1;
+  transition: 0.3s;
 }
