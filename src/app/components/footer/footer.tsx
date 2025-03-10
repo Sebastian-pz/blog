@@ -14,7 +14,7 @@ export default function FooterComponent() {
         <a
           href="https://www.linkedin.com/in/sebastian-perez-zuluaga/"
           target="_blank"
-          className="m-4 hover:bg-purple-100 rounded-lg p-2"
+          className="m-4 hover:bg-primary-color-400  p-2"
         >
           <Image
             width={24}
@@ -26,7 +26,7 @@ export default function FooterComponent() {
         <a
           href="https://github.com/Sebastian-pz"
           target="_blank"
-          className="m-4 hover:bg-purple-100 rounded-lg p-2"
+          className="m-4 hover:bg-primary-color-400  p-2"
         >
           <Image
             width={24}
@@ -35,12 +35,12 @@ export default function FooterComponent() {
             alt="Sebastian Perez GitHub"
           />
         </a>
-        <a href="/" className="m-4 hover:bg-purple-100 rounded-lg p-2">
+        <a href="mailto:spezuluaga@gmail.com" className="m-4 hover:bg-primary-color-400  p-2">
           <Image
             width={24}
             height={24}
             src={gmailSVG.src}
-            alt="Sebastian Perez contacto por correo"
+            alt="Sebastian Perez email icon"
           />
         </a>
       </section>
