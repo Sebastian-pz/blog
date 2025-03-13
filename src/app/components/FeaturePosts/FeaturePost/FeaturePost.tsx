@@ -1,3 +1,4 @@
+import { encodeTitle } from '@/app/utils/encodeTitle'
 import { useLocale } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -18,7 +19,7 @@ export default function FeaturePost({
   const localeActive = useLocale()
   return (
     <Link
-      href={`/${localeActive}/post/${id}`}
+      href={`/${localeActive}/post/${encodeTitle(title, localeActive)}`}
       className="flex  lg:flex-row items-start gap-4 hover:underline"
       prefetch={false}
     >
