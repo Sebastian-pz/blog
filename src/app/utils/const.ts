@@ -2,6 +2,7 @@ import { PostTypes } from './interfaces'
 
 import { posts as PostsInSpanish } from './locale/es/posts'
 import { posts as PostsInEnglish } from './locale/en/posts'
+import { encodeTitle } from './encodeTitle'
 
 export const DEFAULT_POST_LIMIT = 9
 
@@ -42,6 +43,13 @@ export function getFilteredPosts(lang: string, query: queryFilterI) {
 export function getPostById(lang: string, id: string) {
   const posts = getPosts(lang)
   return posts.find((post) => post.id === id) || posts[0]
+}
+
+export function getPostByTitle(lang: string, title: string) {
+  const posts = getPosts(lang)
+  return (
+    posts.find((post) => encodeTitle(post.title, lang) === title) || posts[0]
+  )
 }
 
 export function getPostsByType(lang: string, type: PostTypes) {

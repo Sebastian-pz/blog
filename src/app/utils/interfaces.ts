@@ -6,7 +6,7 @@ export enum PostTypes {
 }
 
 export interface postInterface {
-  id: number | string
+  id: string
   type: PostTypes
   title: string
   mediaType: string

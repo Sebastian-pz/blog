@@ -2,6 +2,7 @@ import { postInterface } from '@/app/utils/interfaces'
 import { useLocale } from 'next-intl'
 import Link from 'next/link'
 import Image from 'next/image'
+import { encodeTitle } from '@/app/utils/encodeTitle'
 
 interface propsComponent {
   post: postInterface
@@ -9,17 +10,19 @@ interface propsComponent {
 
 export default function Post({ post }: propsComponent) {
   const localeActive = useLocale()
-  const { title, description, id, image } = post
+  const { title, description, image } = post
 
   function summary(text: string, limit: number) {
     if (text.length > limit) return text.slice(0, limit) + '...'
     return text
   }
 
+  const linkUrl = `/${localeActive}/post/${encodeTitle(title, localeActive)}`
+
   return (
     <article className="group border bg-white border-primary-color-100 rounded-lg shadow-lg">
       <Link
-        href={`/${localeActive}/post/${id}`}
+        href={linkUrl}
         className="block h-48 overflow-hidden rounded-t-lg"
         prefetch={false}
       >
@@ -34,7 +37,7 @@ export default function Post({ post }: propsComponent) {
       <div className="space-y-2 mt-2">
         <h2 className="text-xl font-bold px-2">
           <Link
-            href={`/${localeActive}/post/${id}`}
+            href={linkUrl}
             className="hover:underline"
             prefetch={false}
           >

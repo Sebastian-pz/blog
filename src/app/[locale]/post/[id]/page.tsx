@@ -1,4 +1,4 @@
-import { getPostById } from '@/utilities/const'
+import { getPostByTitle } from '@/app/utils/const'
 import MediaComponent from '@/components/Media/MediaComponent'
 import DescriptionLoader from './DescriptionLoader'
 
@@ -20,7 +20,8 @@ export async function generateMetadata(props: {
   const query = searchParams.query
   
   const descriptionMaxLength = 150
-  const post = getPostById(defaultLanguage, '8ce398224bbc4120b17745f4db481cf9')
+  // const post = getPostById(defaultLanguage, searchParams.id as string)
+  const post = getPostByTitle(defaultLanguage, searchParams.id as string)
 
 
   return {
@@ -39,7 +40,8 @@ export default async function Page(props: {
   const { locale, id } = params
   
 
-  const post = getPostById(locale, id)
+  // const post = getPostById(locale, id)
+  const post = getPostByTitle(locale, id)
 
   if (post) {
     return (
