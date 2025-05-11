@@ -3,7 +3,7 @@
 import Post from '@/app/components/Post/Post'
 import {
   getFilteredPosts,
-  queryFilterI,
+  PostQueryFilter,
   DEFAULT_POST_LIMIT,
 } from '@/app/utils/const'
 import { useLocale } from 'next-intl'
@@ -21,7 +21,7 @@ export default function Page() {
   const page = Number(searchParams.get(searchParamsOptions.page))
   const tag = searchParams.get(searchParamsOptions.tag)
 
-  const queryConfig: queryFilterI = {
+  const queryConfig: PostQueryFilter = {
     page,
     tag,
   }
@@ -32,7 +32,7 @@ export default function Page() {
   if (totalPosts === 0 || !posts.length) redirect(`/${activeLocale}/empty-list`)
 
   return (
-    <main className="w-4/5 md:w-3/5 m-auto mt-40 min-h-screen">
+    <main className="max-w-[1200px] m-auto">
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((post, i) => {
           return <Post post={post} key={i} />

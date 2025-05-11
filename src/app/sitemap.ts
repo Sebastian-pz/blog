@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { posts } from './utils/locale/es/posts'
+import { encodeTitle } from './utils/encodeTitle'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -47,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 function getPostsPages(lang: string): MetadataRoute.Sitemap {
   return posts.map((post) => {
     return {
-      url: `https://www.sebastian-perez-dev.com/${lang}/post/${post.id}`,
+      url: `https://www.sebastian-perez-dev.com/${lang}/post/${encodeTitle(post.title, lang)}`,
       lastModified: new Date(post.creationDate),
       changeFrequency: 'never',
       priority: 0.5,

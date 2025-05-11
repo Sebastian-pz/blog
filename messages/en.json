@@ -9,8 +9,8 @@
     "search": "Search"
   },
   "about": {
-    "role": "Fullstack Developer 🌎",
-    "focused": "Focused on web development",
+    "role": "Software Developer 🌎",
+    "focused": "Focused on fullstack web development",
     "callToAction": "Contact me!",
     "introduction": "Programming since 2020, with experience in fullstack development, aiming to create scalable solutions to business problems.",
     "likeTo": "I like to bring things to code 👨🏼‍💻, animals 🐕, sunsets 🌄, and more...",
@@ -78,6 +78,7 @@
       "three": "Feeling part of a community: knowing that there are people willing to help and share their experience makes this world feel less lonely and more cozy, especially for those who are starting.",
       "four": "Accessing new opportunities: Sharing information freely helps democratize knowledge and allows more people to access the world of technology, regardless of their origin or resources."
     },
+    "paragraph": "By openly sharing our insights, code snippets, tutorials, and experiences, we create a more inclusive and innovative tech ecosystem. Whether it's through blog posts, open-source contributions, or mentoring, every piece of shared knowledge has the potential to make a significant impact.",
     "end": "You are making the development community a better, more collaborative and accessible place.Do not understand the positive impact they have on the lives of other developers.Keep like this!"
   },
   "headerSection": {
@@ -90,5 +91,13 @@
   "emptyPosts": {
     "title": "There are no posts to show...",
     "description": "It seems that there are no posts to display with the current filters. You can check this others tags to discover more content"
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 Sebastian Perez"
+  },
+  "not-found": {
+    "title": "Page not found",
+    "description": "Oops, it looks like the page you were looking for doesn't exist. Don't worry, you can head back to the blog's homepage and continue exploring.",
+    "callToAction": "Back to the homepage"
   }
 }

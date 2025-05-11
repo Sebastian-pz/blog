@@ -9,8 +9,8 @@
     "search": "Buscar"
   },
   "about": {
-    "role": "Desarrollador fullstack 🌎",
-    "focused": "Enfocado en el desarrollo web",
+    "role": "Software Developer 🌎",
+    "focused": "Enfocado en el desarrollo web fullstack.",
     "callToAction": "¡Contácteme!",
     "introduction": "Programando desde 2020, con experiencia en el desarrollo fullstack, buscando generar soluciones escalables a los problemas de las empresas.",
     "likeTo": "Me gusta llevar cosas del día a día a código 👨🏼‍💻, los animales 🐕, los atardeceres 🌄 y demás...",
@@ -78,6 +78,7 @@
       "three": "Sentirse parte de una comunidad: Saber que hay gente dispuesta a ayudar y compartir su experiencia hace que este mundo se sienta menos solitario y más acogedor, especialmente para los que están empezando.",
       "four": "Acceder a nuevas oportunidades: Compartir información libremente ayuda a democratizar el conocimiento y permite que más personas puedan acceder al mundo de la tecnología, sin importar su origen o recursos."
     },
+    "paragraph": "Al compartir abiertamente nuestros conocimientos, fragmentos de código, tutoriales y experiencias, creamos un ecosistema tecnológico más inclusivo e innovador. Ya sea a través de publicaciones en blogs, contribuciones de código abierto o tutorías, cada pieza de conocimiento compartida tiene el potencial de generar un impacto significativo.",
     "end": "Ustedes están haciendo que la comunidad de desarrollo sea un lugar mejor, más colaborativo y accesible. No subestimen el impacto positivo que tienen en la vida de otros desarrolladores."
   },
   "headerSection": {
@@ -90,5 +91,13 @@
   "emptyPosts": {
     "title": "No hay posts que mostrar...",
     "description": "Parece que no hay posts que mostrar con los filtros actuales. Puedes mirar estas otras etiquetas para encontrar más contenido"
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 Sebastian Pérez"
+  },
+  "not-found": {
+    "title": "Página no encontrada",
+    "description": "Oops, parece que la página que estás buscando no existe. No te preocupes, puedes volver al inicio y seguir navegando.",
+    "callToAction": "Volver al inicio"
   }
 }

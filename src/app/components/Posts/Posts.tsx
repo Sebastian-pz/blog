@@ -2,7 +2,7 @@ import { useLocale } from 'next-intl'
 
 import {
   getFilteredPosts,
-  queryFilterI,
+  PostQueryFilter,
   DEFAULT_POST_LIMIT,
 } from '@/app/utils/const'
 import Post from '@/components/Post/Post'
@@ -12,7 +12,7 @@ export default function Posts() {
   const localeActive = useLocale()
   const defaultPage = 1
 
-  const queryConfig: queryFilterI = {
+  const queryConfig: PostQueryFilter = {
     page: defaultPage,
   }
   const { posts, totalPosts } = getFilteredPosts(localeActive, queryConfig)

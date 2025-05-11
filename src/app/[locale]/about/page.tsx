@@ -10,7 +10,7 @@ import ExtendedInfo from '@/components/ExtendedInfo/ExtendedInfo'
 import profileImage from '@/public/profileImage.webp'
 import GitHubIcon from '@/public/svg/github.svg'
 import LinkedInIcon from '@/public/svg/linkedin.svg'
-import DownloadIcon from '@/public/svg/download.svg'
+// import DownloadIcon from '@/public/svg/download.svg'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 export default function MainPage() {
   const t = useTranslations('about')
 
-  const CV_ROUTE = t('cvRoute')
+  // const CV_ROUTE = t('cvRoute')
 
   return (
     <main className="m-auto  w-[95%] mt-10 rounded-xl md:w-[80%] xl:w-[65%]">
@@ -71,6 +71,7 @@ export default function MainPage() {
             link="https://github.com/Sebastian-pz"
             svg={GitHubIcon}
           />
+          {/* 
           <a
             download="CV-SebastianPerez.pdf"
             href={CV_ROUTE}
@@ -85,6 +86,7 @@ export default function MainPage() {
             />
             {t('cv')}
           </a>
+           */}
         </section>
       </div>
 

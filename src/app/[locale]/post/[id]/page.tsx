@@ -1,38 +1,47 @@
-import { useLocale } from 'next-intl'
-
-import { getPostById } from '@/utilities/const'
+import { getPostByTitle } from '@/app/utils/const'
 import MediaComponent from '@/components/Media/MediaComponent'
 import DescriptionLoader from './DescriptionLoader'
-import { ResolvingMetadata } from 'next'
 
-interface paramsInterface {
-  params: {
-    id: string
-  }
-}
+type Params = Promise<{slug: string,
+  locale: string,
+  id: string
+}>
+type SearchParams = Promise<{[key: string]: string | string[] | undefined}>
 
 const defaultLanguage = 'en'
-export async function generateMetadata(
-  { params }: paramsInterface,
-  parent: ResolvingMetadata
-) {
-  const id = params.id
+export async function generateMetadata(props: {
+  params: Params,
+  searchParams: SearchParams
+}) {
+
+  const params = await props.params
+  const searchParams = await props.searchParams
+  const slug = params.slug
+  const query = searchParams.query
+  
   const descriptionMaxLength = 150
-  const post = getPostById(defaultLanguage, id)
-  const previousImages = (await parent).openGraph?.images || []
+
+  // const post = getPostById(defaultLanguage, searchParams.id as string)
+  const post = getPostByTitle(defaultLanguage, searchParams.id as string)
 
   return {
     title: post.title,
     description: post.description[0].slice(0, descriptionMaxLength),
-    openGraph: {
-      images: [post.image, ...previousImages],
-    },
+    slug,
+    query
   }
 }
 
-export default function Page({ params }: paramsInterface) {
-  const activeLocale = useLocale()
-  const post = getPostById(activeLocale, params.id)
+export default async function Page(props: {
+  params: Params,
+  searchParams: SearchParams
+}) {
+  const params = await props.params
+  const { locale, id } = params
+  
+
+  // const post = getPostById(locale, id)
+  const post = getPostByTitle(locale, id)
 
   if (post) {
     return (

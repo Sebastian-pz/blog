@@ -1,8 +1,10 @@
+'use client'
+
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
 import LINK_LIST from './Constants'
 
-import LocaleSwitcher from '@/components/LocaleSwitcher/LocaleSwitcher'
+import LocaleSwitcher from '@/app/components/LocaleSwitcher/LocaleSwitcher'
 
 export default function Navbar() {
   const localeActive = useLocale()
@@ -29,7 +31,6 @@ export default function Navbar() {
           </Link>
         )
       })}
-      {/* <Search /> */}
       <LocaleSwitcher />
     </section>
   )

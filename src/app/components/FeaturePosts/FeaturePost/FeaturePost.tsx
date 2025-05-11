@@ -1,3 +1,4 @@
+import { encodeTitle } from '@/app/utils/encodeTitle'
 import { useLocale } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -18,7 +19,7 @@ export default function FeaturePost({
   const localeActive = useLocale()
   return (
     <Link
-      href={`/${localeActive}/post/${id}`}
+      href={`/${localeActive}/post/${encodeTitle(title, localeActive)}`}
       className="flex  lg:flex-row items-start gap-4 hover:underline"
       prefetch={false}
     >
@@ -30,8 +31,8 @@ export default function FeaturePost({
         className="h-20 w-20 rounded-lg object-cover"
       />
       <div>
-        <h3 className="text- font-bold">{title}</h3>
-        <p className="text-muted-foreground">{date}</p>
+        <h3 className="text-sm font-bold">{title}</h3>
+        <p className="text-muted-foreground text-xs">{date}</p>
       </div>
     </Link>
   )

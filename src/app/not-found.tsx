@@ -1,19 +1,21 @@
 import Link from 'next/link'
 import './global.css'
 
+import { useLocale, useTranslations } from 'next-intl'
+
 export default function NotFound() {
+
+  const t = useTranslations('not-found');  
+  const locale = useLocale();
+  
   return (
     <html>
       <body className="notFound">
         <section className="notFound__content">
-          <h1>404 - Page Not Found</h1>
-          <p>
-            Oops, it looks like the page you were looking for doesn't exist.
-            Don't worry, you can head back to the blog's homepage and continue
-            exploring.
-          </p>
-          <Link className="" href="/en">
-            Go to Blog
+          <h1>{t('title')}</h1>
+          <p>{t('description')}</p>
+          <Link className="" href={`/${locale}`}>
+            {t('callToAction')}
           </Link>
         </section>
       </body>

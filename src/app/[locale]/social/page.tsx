@@ -1,9 +1,12 @@
+import { Metadata } from 'next'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
+import Link from 'next/link'
+
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { Github, Linkedin, Twitter } from 'lucide-react'
-import Link from 'next/link'
-import { Metadata } from 'next'
+
+import { socialMediaProfiles } from './utils/constants'
 
 export const metadata: Metadata = {
   title: 'Social Sebastian Perez',
@@ -22,15 +25,6 @@ export const metadata: Metadata = {
 
 export default function Page() {
   const t = useTranslations('social')
-  const socialMediaProfiles = [
-    {
-      name: 'LinkedIn',
-      icon: Linkedin,
-      url: 'https://www.linkedin.com/in/sebastian-perez-zuluaga/',
-    },
-    { name: 'GitHub', icon: Github, url: 'https://github.com/sebastian-pz' },
-    { name: 'Twitter', icon: Twitter, url: 'https://twitter.com/sebastiantfa' },
-  ]
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -42,7 +36,7 @@ export default function Page() {
             className="flex flex-col items-center justify-center p-4 lg:w-60 lg:h-60"
           >
             <CardContent className="flex flex-col items-center space-y-2">
-              <profile.icon className="h-8 w-8 text-[#623fdf]" />
+              <Image alt={`profile ${profile.name} icon`} src={profile.icon}/>
               <h2 className="text-lg font-semibold">{profile.name}</h2>
               <Link href={profile.url} target="_blank" passHref>
                 <Button
@@ -65,13 +59,7 @@ export default function Page() {
           <li>{t('benefits.three')}</li>
           <li>{t('benefits.four')}</li>
         </ul>
-        <p>
-          By openly sharing our insights, code snippets, tutorials, and
-          experiences, we create a more inclusive and innovative tech ecosystem.
-          Whether it's through blog posts, open-source contributions, or
-          mentoring, every piece of shared knowledge has the potential to make a
-          significant impact.
-        </p>
+        <p>{t('paragraph')}</p>
         <p className="mt-4 font-semibold">{t('end')}</p>
       </section>
     </div>
