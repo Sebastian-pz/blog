@@ -20,9 +20,10 @@ export async function generateMetadata(props: {
   const query = searchParams.query
   
   const descriptionMaxLength = 150
+
   // const post = getPostById(defaultLanguage, searchParams.id as string)
   const post = getPostByTitle(defaultLanguage, searchParams.id as string)
-
+  const previousImages = (await parent).openGraph?.images || []
 
   return {
     title: post.title,
