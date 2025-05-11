@@ -3,7 +3,7 @@
 import Post from '@/app/components/Post/Post'
 import {
   getFilteredPosts,
-  queryFilterI,
+  PostQueryFilter,
   DEFAULT_POST_LIMIT,
 } from '@/app/utils/const'
 import { useLocale } from 'next-intl'
@@ -21,7 +21,7 @@ export default function Page() {
   const page = Number(searchParams.get(searchParamsOptions.page))
   const tag = searchParams.get(searchParamsOptions.tag)
 
-  const queryConfig: queryFilterI = {
+  const queryConfig: PostQueryFilter = {
     page,
     tag,
   }
