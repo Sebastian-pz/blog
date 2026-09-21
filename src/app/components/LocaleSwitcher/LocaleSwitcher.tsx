@@ -77,7 +77,7 @@ export default function LocaleSwitcher() {
   }
 
   return (
-    <div className="border-2 border-black shadow-[4.0px_4.0px_rgba(0,0,0)] bg-[#92caf5]">
+    <div className="border-3 border-ink bg-ice shadow-nb-sm">
       <label htmlFor="language-selector" className="sr-only">
         Change Language
       </label>
@@ -85,12 +85,12 @@ export default function LocaleSwitcher() {
         defaultValue={localeActive}
         name="language-selector"
         id="language-selector"
-        className="p-2 bg-transparent"
+        className="bg-transparent px-2 py-1.5 font-mono text-xs font-bold uppercase outline-hidden md:text-sm"
         onChange={handleLanguageChange}
         disabled={isPending}
       >
-        <option value="es">Español</option>
-        <option value="en">English</option>
+        <option value="es">ES</option>
+        <option value="en">EN</option>
       </select>
     </div>
   )

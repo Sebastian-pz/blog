@@ -7,7 +7,7 @@ import { notFound } from 'next/navigation'
 
 import FooterComponent from '@/app/components/footer/footer'
 import Navbar from '@/app/components/NavBar/NavBarComponent'
-import { roboto } from '@/app/ui/fonts'
+import { fontDisplay, fontMono, fontSans } from '@/app/ui/fonts'
 import { routing } from '@/i18n/routing'
 
 export const metadata: Metadata = {
@@ -38,12 +38,12 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${roboto.className} bg-bg-color`}>
+      <body
+        className={`${fontSans.variable} ${fontDisplay.variable} ${fontMono.variable} ${fontSans.className} bg-canvas text-ink`}
+      >
         <NextIntlClientProvider>
-          <header className="mb-20">
-            <Navbar />
-          </header>
-          {children}
+          <Navbar />
+          <div className="pt-24">{children}</div>
           <FooterComponent />
         </NextIntlClientProvider>
       </body>

@@ -17,22 +17,20 @@ export default function Pagination({ actualPage, pages, tag }: propsComponent) {
   const pagesToRender = Array(pages).fill(0)
 
   return (
-    <div className="flex justify-center items-center mt-20 ">
-      <ul className="flex gap-4">
+    <div className="mt-12 flex items-center justify-center">
+      <ul className="flex gap-3">
         {pagesToRender.map((_, i) => {
+          const current = actualPage === i + 1
           return (
-            <li key={`page${i}`} className="w-6 h-6">
+            <li key={`page${i}`}>
               <Link
                 href={getUrl(localeActive, i, tag)}
-                // href={`/${localeActive}/q?page=${i + 1}`}
-                className={`
-                  border  p-2
-                  hover:bg-primary-color-300 hover:shadow-[4.0px_4.0px_rgba(0,0,0)]
-                  hover:border-black
-                  hover:font-bold
-                  hover:scale-110
-                  ${actualPage === i + 1 && 'font-bold pointer-events-none shadow-[4.0px_4.0px_rgba(0,0,0)] border border-black bg-primary-color-300 '}`}
-                aria-disabled={i + 1 === actualPage}
+                className={`inline-flex h-10 min-w-10 items-center justify-center border-3 border-ink font-mono text-sm font-bold ${
+                  current
+                    ? 'pointer-events-none bg-sun shadow-nb-sm'
+                    : 'bg-paper shadow-nb-sm nb-press'
+                }`}
+                aria-disabled={current}
               >
                 {i + 1}
               </Link>

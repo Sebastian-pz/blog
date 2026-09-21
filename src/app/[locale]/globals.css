@@ -2,127 +2,196 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+  =============================================================================
+  NEO-BRUTALISM DESIGN TOKENS
+  =============================================================================
+  These custom properties are registered in @theme so Tailwind generates
+  utilities automatically:
+
+    --color-*     → bg-*, text-*, border-*
+    --shadow-*    → shadow-*
+    --radius-*    → rounded-*
+    --font-*      → font-*
+    --spacing-*   → p-*, m-*, gap-* (only extras beyond the default scale)
+
+  Usage examples:
+    bg-canvas     text-ink     border-ink
+    bg-sun        bg-hot       bg-ice       bg-lime      bg-blaze
+    shadow-nb     shadow-nb-sm shadow-nb-lg
+    rounded-nb    font-display font-mono
+
+  Visual rules (do not soften these):
+    1. Borders are ink and thick. Never hairline gray.
+    2. Shadows are hard offsets with zero blur.
+    3. Corners stay sharp (2px). No pills except tiny chips.
+    4. Hover "presses" the object: it moves toward the shadow.
+    5. Accents are flat, saturated blocks — one accent per surface.
+  =============================================================================
+*/
+
 @theme {
-  --color-border-color: #917cd8;
-  --color-secondary-color: #623fdf;
-  --color-bg-color: #f1f0ff;
-  --color-primary-color-100: #e0d9f9;
-  --color-primary-color-200: #c0b2f2;
-  --color-primary-color-300: #a18cec;
-  --color-primary-color-400: #8165e5;
-  --color-primary-color-500: #623fdf;
-  --color-primary-color-600: #4e32b2;
-  --color-primary-color-700: #3b2686;
-  --color-primary-color-800: #271959;
-  --color-primary-color-900: #140d2d;
-  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
-  --background-image-gradient-conic: conic-gradient(
-    from 180deg at 50% 50%,
-    var(--tw-gradient-stops)
-  );
+  /* --- Color: canvas & ink ---------------------------------------------- */
+  --color-canvas: #fff4dc;
+  --color-paper: #fffdf6;
+  --color-ink: #111111;
+  --color-muted: #3d3d3d;
+
+  /* --- Color: brand + accent blocks ------------------------------------- */
+  --color-brand: #6d4aff;
+  --color-brand-soft: #cbbdff;
+  --color-sun: #ffe14d;
+  --color-hot: #ff5c8a;
+  --color-ice: #7af0ff;
+  --color-lime: #c8ff3d;
+  --color-blaze: #ff7a1a;
+
+  /* --- Color: aliases for leftover class names -------------------------- */
+  --color-bg-color: var(--color-canvas);
+  --color-border-color: var(--color-ink);
+  --color-secondary-color: var(--color-brand);
+  --color-primary-color-100: #ede6ff;
+  --color-primary-color-200: #cbbdff;
+  --color-primary-color-300: #a48aff;
+  --color-primary-color-400: #8868ff;
+  --color-primary-color-500: #6d4aff;
+  --color-primary-color-600: #5536d6;
+  --color-primary-color-700: #3e249e;
+  --color-primary-color-800: #28186a;
+  --color-primary-color-900: #140c36;
+
+  /* --- Semantic shadcn-compatible colors (solid, not HSL channels) ------ */
+  --color-background: var(--color-canvas);
+  --color-foreground: var(--color-ink);
+  --color-card: var(--color-paper);
+  --color-card-foreground: var(--color-ink);
+  --color-popover: var(--color-paper);
+  --color-popover-foreground: var(--color-ink);
+  --color-primary: var(--color-ink);
+  --color-primary-foreground: var(--color-sun);
+  --color-secondary: var(--color-sun);
+  --color-secondary-foreground: var(--color-ink);
+  --color-accent: var(--color-ice);
+  --color-accent-foreground: var(--color-ink);
+  --color-muted-foreground: var(--color-muted);
+  --color-destructive: #e11d48;
+  --color-destructive-foreground: #fffdf6;
+  --color-border: var(--color-ink);
+  --color-input: var(--color-ink);
+  --color-ring: var(--color-ink);
+
+  /* --- Type ------------------------------------------------------------- */
+  --font-sans: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-syne), var(--font-grotesk), sans-serif;
+  --font-mono: var(--font-mono-nb), ui-monospace, monospace;
+
+  /* --- Shape ------------------------------------------------------------ */
+  --radius-nb: 2px;
+  --radius-sm: 2px;
+  --radius-md: 2px;
+  --radius-lg: 2px;
+  --radius-xl: 2px;
+
+  /* --- Hard shadows (zero blur) ----------------------------------------- */
+  --shadow-nb-sm: 3px 3px 0 0 #111111;
+  --shadow-nb: 6px 6px 0 0 #111111;
+  --shadow-nb-lg: 10px 10px 0 0 #111111;
+  --shadow-nb-pressed: 2px 2px 0 0 #111111;
+
+  /* --- Border widths ---------------------------------------------------- */
+  --border-width-3: 3px;
+  --border-width-nb: 3px;
 }
 
-@theme inline {
-  --color-background: hsl(var(--background));
-  --color-foreground: hsl(var(--foreground));
-  --color-card: hsl(var(--card));
-  --color-card-foreground: hsl(var(--card-foreground));
-  --color-popover: hsl(var(--popover));
-  --color-popover-foreground: hsl(var(--popover-foreground));
-  --color-primary: hsl(var(--primary));
-  --color-primary-foreground: hsl(var(--primary-foreground));
-  --color-secondary: hsl(var(--secondary));
-  --color-secondary-foreground: hsl(var(--secondary-foreground));
-  --color-muted: hsl(var(--muted));
-  --color-muted-foreground: hsl(var(--muted-foreground));
-  --color-accent: hsl(var(--accent));
-  --color-accent-foreground: hsl(var(--accent-foreground));
-  --color-destructive: hsl(var(--destructive));
-  --color-destructive-foreground: hsl(var(--destructive-foreground));
-  --color-border: hsl(var(--border));
-  --color-input: hsl(var(--input));
-  --color-ring: hsl(var(--ring));
-  --color-chart-1: hsl(var(--chart-1));
-  --color-chart-2: hsl(var(--chart-2));
-  --color-chart-3: hsl(var(--chart-3));
-  --color-chart-4: hsl(var(--chart-4));
-  --color-chart-5: hsl(var(--chart-5));
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
+/*
+  Layout utilities. Prefer these over one-off box-shadow / border strings.
+*/
+@utility nb-frame {
+  border: 3px solid var(--color-ink);
+  box-shadow: 6px 6px 0 0 var(--color-ink);
+  background-color: var(--color-paper);
+  border-radius: 2px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: #fffff0;
-}
-
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
+@utility nb-press {
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease;
+  &:hover,
+  &:focus-visible {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 0 0 var(--color-ink);
   }
-  .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+}
+
+@utility nb-stamp {
+  display: inline-block;
+  border: 3px solid var(--color-ink);
+  box-shadow: 4px 4px 0 0 var(--color-ink);
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+
+@utility nb-page {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  padding-block: 2rem;
+  @media (min-width: 768px) {
+    padding-inline: 1.5rem;
+    padding-block: 2.5rem;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    box-sizing: border-box;
+    border-color: var(--color-ink);
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--color-canvas);
+    background-image: radial-gradient(var(--color-ink) 0.7px, transparent 0.7px);
+    background-size: 16px 16px;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  ::selection {
+    background: var(--color-sun);
+    color: var(--color-ink);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
   }
 }

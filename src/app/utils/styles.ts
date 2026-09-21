@@ -1,7 +1,7 @@
 const styles = {
-  borders: 'border-slate-200',
-  secondary: 'bg-lime-300',
-  secondaryHover: 'hover:bg-lime-400',
+  borders: 'border-3 border-ink',
+  secondary: 'bg-lime',
+  secondaryHover: 'hover:bg-sun',
 }
 
 export default styles

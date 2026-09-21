@@ -4,12 +4,12 @@ export default function MainInfo() {
   const t = useTranslations('mainInfo')
 
   return (
-    <section className="bg-primary-color-100 rounded-lg p-4">
-      <h2 className="text-x text-primary-color-500 font-semibold">
+    <section className="nb-frame bg-lime p-5">
+      <h2 className="font-display text-xl font-extrabold uppercase">
         {t('title')}
       </h2>
-      <p className="text-sm mb-2  mt-3 leading-7">{t('description')}</p>
-      <p className="text-sm  mt-3 leading-7">{t('callToAction')}</p>
+      <p className="mt-3 text-sm leading-7">{t('description')}</p>
+      <p className="mt-3 text-sm leading-7 font-bold">{t('callToAction')}</p>
     </section>
   )
 }

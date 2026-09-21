@@ -40,25 +40,23 @@ export default function MainPage() {
   // const CV_ROUTE = t('cvRoute')
 
   return (
-    <main className="m-auto  w-[95%] mt-10 rounded-xl md:w-[80%] xl:w-[65%]">
-      <div className="flex flex-col gap-10 lg:flex-row justify-between items-center p-6 lg:px-12">
-        <div className="flex ">
-          <section className="flex items-center">
+    <main className="nb-page max-w-5xl">
+      <div className="nb-frame mb-8 flex flex-col items-center justify-between gap-8 bg-paper p-6 md:flex-row md:p-8">
+        <div className="flex items-center gap-4 md:gap-6">
             <Image
               src={profileImage.src}
               alt="profile image Sebastian Perez"
               width="500"
               height="500"
-              className="rounded-full  h-[110px] w-[110px] sm:h-[175px] sm:w-[175px] md:h-[200px] md:w-[200px] border-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)] border-black"
+              className="h-[110px] w-[110px] border-3 border-ink object-cover shadow-nb sm:h-[160px] sm:w-[160px] md:h-[200px] md:w-[200px]"
             />
-            <section className="ml-2 md:ml-6">
-              <h1 className="font-bold text-2xl mb-6 shadow-[4.0px_4.0px_rgba(0,0,0)] border-2 border-black bg-[#a8fca1] -rotate-6 px-2 p-2 md:px-4">
+            <section>
+              <h1 className="nb-stamp mb-3 rotate-[-6deg] bg-lime px-3 py-2 text-xl md:text-3xl">
                 Sebastian Pérez
               </h1>
-              <p className="hidden md:inline">{t('role')}</p>
-              <p>spezuluaga@gmail.com</p>
+              <p className="hidden font-mono text-sm uppercase md:block">{t('role')}</p>
+              <p className="mt-1 font-mono text-sm">spezuluaga@gmail.com</p>
             </section>
-          </section>
         </div>
         <section className="flex justify-center items-center">
           <Svg
@@ -90,7 +88,7 @@ export default function MainPage() {
         </section>
       </div>
 
-      <div className="border-b border-primary-color-800 mb-9" />
+      <div className="mb-9 h-0 border-b-3 border-ink" />
       <ExtendedInfo />
       <Experiences />
       <Projects />

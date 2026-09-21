@@ -6,14 +6,13 @@ export default function Page() {
   const t = useTranslations('emptyPosts')
 
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center">
-      <article className="w-full md:w-1/2 -mt-56 text-center">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl lg:mb-4 font-bold">
+    <div className="nb-page flex min-h-[60vh] flex-col items-center justify-center">
+      <article className="nb-frame w-full max-w-2xl bg-hot p-8 text-center">
+        <h1 className="font-display text-3xl font-extrabold uppercase md:text-5xl">
           {t('title')}
         </h1>
-        <p className="lg:text-lg">{t('description')}</p>
-
-        <div className="w-5/6 md:w-72 lg:w-[600px] m-auto mt-14">
+        <p className="mt-4 text-base md:text-lg">{t('description')}</p>
+        <div className="mx-auto mt-10 max-w-xl">
           <Tags />
         </div>
       </article>

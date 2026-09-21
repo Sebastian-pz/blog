@@ -7,8 +7,8 @@ export default function PostNavigation() {
 
   return (
     <>
-      <h2 className="text-center mt-6 text-lg font-bold">{t('title')}</h2>
-      <div className="h-6 mt-3 flex justify-center text-white">
+      <h2 className="mt-2 text-center font-display text-lg font-extrabold uppercase">{t('title')}</h2>
+      <div className="mt-4 flex flex-wrap justify-center gap-3">
         <PersonalizedLink
           href={`/${activeLocale}/experience`}
           label={t('experience')}
