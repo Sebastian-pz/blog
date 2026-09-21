@@ -1,6 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-border-color: #917cd8;
+  --color-secondary-color: #623fdf;
+  --color-bg-color: #f1f0ff;
+  --color-primary-color-100: #e0d9f9;
+  --color-primary-color-200: #c0b2f2;
+  --color-primary-color-300: #a18cec;
+  --color-primary-color-400: #8165e5;
+  --color-primary-color-500: #623fdf;
+  --color-primary-color-600: #4e32b2;
+  --color-primary-color-700: #3b2686;
+  --color-primary-color-800: #271959;
+  --color-primary-color-900: #140d2d;
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--tw-gradient-stops)
+  );
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+}
 
 * {
   box-sizing: border-box;
@@ -9,12 +59,6 @@
 }
 
 body {
-  /* background-image: radial-gradient(
-    circle,
-    #e1e7ff20 10%,
-    #acbbf480 50%,
-    #e1e7ff20 90%
-  ); */
   background-color: #fffff0;
 }
 

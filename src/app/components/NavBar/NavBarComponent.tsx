@@ -1,13 +1,12 @@
 'use client'
 
-import Link from 'next/link'
-import { useLocale, useTranslations } from 'next-intl'
+import { useTranslations } from 'next-intl'
 import LINK_LIST from './Constants'
 
 import LocaleSwitcher from '@/app/components/LocaleSwitcher/LocaleSwitcher'
+import { Link } from '@/i18n/navigation'
 
 export default function Navbar() {
-  const localeActive = useLocale()
   const t = useTranslations('navBar')
 
   const tRoutes = LINK_LIST.map((route) => {
@@ -23,7 +22,7 @@ export default function Navbar() {
         const { label, path, styles } = route
         return (
           <Link
-            href={`/${localeActive}${path}`}
+            href={path}
             key={index}
             className={`${styles} m-2 hover:text-primary-color-500 hover:font-semibold md:mx-6`}
           >

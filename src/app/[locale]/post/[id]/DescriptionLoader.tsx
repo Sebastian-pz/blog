@@ -9,8 +9,7 @@ export default function DescriptionLoader({ paragraph }: PropsComponent) {
   const hasSpecialTag = paragraph[0] === SPECIAL_CHAR
 
   if (hasSpecialTag) {
-    // eslint-disable-next-line no-unused-vars
-    const [_, specialTag, text] = paragraph.split('|')
+    const [, specialTag, text] = paragraph.split('|')
     return <SpecialTag tagType={specialTag as POSIBLE_TAGS} text={text} />
   }
 
