@@ -27,7 +27,7 @@ export default function Svg({ svg, label, link }: PropsComponent) {
     <Link
       href={link}
       target="_blank"
-      className="flex flex-col hover:font-bold border-2 border-black hover:bg-[#fbfd84] p-3 duration-500 mb-2 mx-3 bg-[#fcfdb9] hover:scale-110"
+      className="mx-2 mb-2 flex flex-col border-3 border-ink bg-sun p-3 font-mono text-xs uppercase nb-press shadow-nb-sm"
     >
       <Image
         src={svg.src}

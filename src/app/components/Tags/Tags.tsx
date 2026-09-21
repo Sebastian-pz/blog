@@ -9,8 +9,8 @@ export default function Tags() {
   const defaultTagsNumber = 7
 
   return (
-    <div className="rounded-lg border border-primary-color-100 bg-muted p-6 bg-white">
-      <h2 className="text-2xl font-bold">Popular Tags</h2>
+    <div className="nb-frame bg-paper p-5">
+      <h2 className="font-display text-2xl font-extrabold uppercase">Popular Tags</h2>
       <div className="mt-4 flex flex-wrap gap-2">
         {getTagValues(defaultTagsNumber).map((tagValue, i) => {
           return (

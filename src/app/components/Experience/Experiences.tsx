@@ -9,11 +9,11 @@ export default function Experiences() {
   const experiences = getExperience(localeActive)
 
   return (
-    <section className="mt-8 p-2">
-      <h2 className="text-center text-2xl md:text-3xl lg:text-4xl mb-4 font-bold ">
+    <section className="mt-10">
+      <h2 className="mb-3 text-center font-display text-2xl font-extrabold uppercase md:text-4xl">
         {t('title')}
       </h2>
-      <p className="text-center mb-12 text-lg font">{t('note')}</p>
+      <p className="mb-10 text-center text-base md:text-lg">{t('note')}</p>
 
       <section className="flex flex-col w-full justify-center items-center md:px-4 lg:px-10">
         {experiences.map((experience, index) => {

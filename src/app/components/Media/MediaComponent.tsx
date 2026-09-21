@@ -15,7 +15,7 @@ export default function MediaComponent(props: MediaComponentProps) {
       <Image
         src={media.src}
         alt={`post image about ${introductionParagraph}`}
-        className="m-auto mb-6 w-[90%] lg:w-3/5"
+        className="m-auto mb-6 w-full border-3 border-ink object-cover shadow-nb"
         width={600}
         height={600}
       />

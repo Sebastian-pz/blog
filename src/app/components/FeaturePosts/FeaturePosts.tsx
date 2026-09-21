@@ -9,8 +9,8 @@ export default function FeaturePosts() {
   const posts = getPostsByType(localeActive, PostTypes.experience).slice(0, 2)
 
   return (
-    <div className="rounded-lg border border-primary-color-100 bg-white bg-muted p-6">
-      <h2 className="text-2xl font-bold">{t('title')}</h2>
+    <div className="nb-frame bg-ice p-5">
+      <h2 className="font-display text-2xl font-extrabold uppercase">{t('title')}</h2>
       <div className="mt-4 space-y-4">
         {posts.map(({ creationDate, title, image, id }, i) => {
           return (

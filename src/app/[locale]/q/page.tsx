@@ -32,7 +32,7 @@ export default function Page() {
   if (totalPosts === 0 || !posts.length) redirect(`/${activeLocale}/empty-list`)
 
   return (
-    <main className="max-w-[1200px] m-auto">
+    <main className="nb-page">
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((post, i) => {
           return <Post post={post} key={i} />

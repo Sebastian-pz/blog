@@ -20,7 +20,7 @@ export default function FeaturePost({
   return (
     <Link
       href={`/${localeActive}/post/${encodeTitle(title, localeActive)}`}
-      className="flex  lg:flex-row items-start gap-4 hover:underline"
+      className="flex items-start gap-3"
       prefetch={false}
     >
       <Image
@@ -28,11 +28,11 @@ export default function FeaturePost({
         alt="Blog post cover image"
         width={80}
         height={80}
-        className="h-20 w-20 rounded-lg object-cover"
+        className="h-20 w-20 border-3 border-ink object-cover shadow-nb-sm"
       />
       <div>
-        <h3 className="text-sm font-bold">{title}</h3>
-        <p className="text-muted-foreground text-xs">{date}</p>
+        <h3 className="font-display text-sm font-extrabold leading-tight">{title}</h3>
+        <p className="mt-1 font-mono text-xs uppercase text-muted">{date}</p>
       </div>
     </Link>
   )

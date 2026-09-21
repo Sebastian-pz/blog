@@ -4,14 +4,14 @@ export default function ExtendedInfo() {
   const t = useTranslations('aboutExtendedInfo')
 
   return (
-    <section className="p-3 md:px-5 lg:px-10">
-      <p className="text-balance text-center">
+    <section className="nb-frame bg-paper p-5 md:p-8">
+      <p className="text-balance text-center text-base leading-7 md:text-lg">
         {t('introduction')}
-        <strong className="text-primary-color-400">
+        <strong className="bg-sun px-1">
           {t('experienceInYears') + ' '}
         </strong>
         {t('experienceComplement')}
-        <strong className="text-primary-color-400">
+        <strong className="bg-ice px-1">
           {' '}
           {t('englishLevel')}
         </strong>{' '}
