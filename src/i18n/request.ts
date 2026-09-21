@@ -1,12 +1,12 @@
-import { getRequestConfig } from 'next-intl/server'
-import { routingConstants } from '@/i18n/shared/config'
 import { notFound } from 'next/navigation'
-
-const { locales } = routingConstants
+import { getRequestConfig } from 'next-intl/server'
+import { hasLocale } from 'next-intl'
+import { routing } from './routing'
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const locale = await requestLocale
-  if (!locales.includes(locale as any)) notFound()
+  if (!hasLocale(routing.locales, locale)) notFound()
+
   return {
     locale,
     messages: (await import(`../../messages/${locale}.json`)).default,
