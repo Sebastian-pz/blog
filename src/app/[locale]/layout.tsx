@@ -5,6 +5,8 @@ import type { Metadata } from 'next'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
 
+import { getTranslations } from 'next-intl/server'
+
 import FooterComponent from '@/app/components/footer/footer'
 import Navbar from '@/app/components/NavBar/NavBarComponent'
 import { fontDisplay, fontMono, fontSans } from '@/app/ui/fonts'
@@ -36,14 +38,21 @@ export default async function RootLayout({
     notFound()
   }
 
+  const t = await getTranslations({ locale, namespace: 'a11y' })
+
   return (
     <html lang={locale}>
       <body
         className={`${fontSans.variable} ${fontDisplay.variable} ${fontMono.variable} ${fontSans.className} bg-canvas text-ink`}
       >
         <NextIntlClientProvider>
+          <a className="skip-link" href="#main-content">
+            {t('skipToContent')}
+          </a>
           <Navbar />
-          <div className="pt-24">{children}</div>
+          <main id="main-content" tabIndex={-1} className="pt-24">
+            {children}
+          </main>
           <FooterComponent />
         </NextIntlClientProvider>
       </body>

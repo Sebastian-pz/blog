@@ -6,7 +6,9 @@
     "home": "Inicio",
     "social": "Social",
     "about": "Acerca de mí",
-    "search": "Buscar"
+    "search": "Buscar",
+    "primary": "Principal",
+    "homeLink": "SPZ, inicio"
   },
   "about": {
     "role": "Software Developer 🌎",
@@ -17,7 +19,9 @@
     "workAvailability": "Escuchando ofertas",
     "workAvailabilityLabel": "Disponible",
     "cv": "Curriculum",
-    "cvRoute": "/CV-es-SebastianPerez.pdf"
+    "cvRoute": "/CV-es-SebastianPerez.pdf",
+    "portraitAlt": "Retrato de Sebastian Pérez",
+    "profiles": "Perfiles"
   },
   "aboutExtendedInfo": {
     "introduction": "5 años desarrollando aplicaciones y ",
@@ -28,12 +32,16 @@
   },
   "aboutExperience": {
     "title": "Experiencia profesional",
-    "note": "También he trabajado como freelance para empresas de LATAM y Estados Unidos y contribuido a proyectos open-source."
+    "note": "También he trabajado como freelance para empresas de LATAM y Estados Unidos y contribuido a proyectos open-source.",
+    "responsibilities": "Responsabilidades",
+    "technologies": "Tecnologías",
+    "relatedArticle": "artículo relacionado"
   },
   "aboutProjects": {
     "title": "Proyectos que he creado",
     "label": "Solo aparecen algunos de los que he creado, puedes ver más en GitHub",
-    "callToAction": "Click aquí"
+    "callToAction": "Click aquí",
+    "onGitHub": "en GitHub"
   },
   "aboutCV": {
     "title": "Descarga mi CV"
@@ -79,7 +87,8 @@
       "four": "Acceder a nuevas oportunidades: Compartir información libremente ayuda a democratizar el conocimiento y permite que más personas puedan acceder al mundo de la tecnología, sin importar su origen o recursos."
     },
     "paragraph": "Al compartir abiertamente nuestros conocimientos, fragmentos de código, tutoriales y experiencias, creamos un ecosistema tecnológico más inclusivo e innovador. Ya sea a través de publicaciones en blogs, contribuciones de código abierto o tutorías, cada pieza de conocimiento compartida tiene el potencial de generar un impacto significativo.",
-    "end": "Ustedes están haciendo que la comunidad de desarrollo sea un lugar mejor, más colaborativo y accesible. No subestimen el impacto positivo que tienen en la vida de otros desarrolladores."
+    "end": "Ustedes están haciendo que la comunidad de desarrollo sea un lugar mejor, más colaborativo y accesible. No subestimen el impacto positivo que tienen en la vida de otros desarrolladores.",
+    "follow": "Seguir"
   },
   "headerSection": {
     "title": "Sebastian Pérez blog",
@@ -93,11 +102,42 @@
     "description": "Parece que no hay posts que mostrar con los filtros actuales. Puedes mirar estas otras etiquetas para encontrar más contenido"
   },
   "footer": {
-    "copyright": "Copyright © 2025 Sebastian Pérez"
+    "copyright": "Copyright © 2025 Sebastian Pérez",
+    "social": "Perfiles sociales",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Correo a spezuluaga@gmail.com"
   },
   "not-found": {
     "title": "Página no encontrada",
     "description": "Oops, parece que la página que estás buscando no existe. No te preocupes, puedes volver al inicio y seguir navegando.",
     "callToAction": "Volver al inicio"
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido",
+    "changeLanguage": "Cambiar idioma",
+    "opensInNewTab": "se abre en una pestaña nueva",
+    "sidebar": "Más en este blog",
+    "latestPosts": "Últimos posts",
+    "backHome": "Volver al inicio"
+  },
+  "tags": {
+    "title": "Etiquetas populares"
+  },
+  "pagination": {
+    "label": "Paginación",
+    "goToPage": "Ir a la página {page}"
+  },
+  "tagResults": {
+    "title": "Posts con la etiqueta {tag}",
+    "titleAll": "Todos los posts"
+  },
+  "post": {
+    "author": "Autor",
+    "createdOn": "Creado el",
+    "cover": "Imagen de portada: {title}",
+    "videoTitle": "Video: {title}",
+    "articleImage": "Imagen del artículo",
+    "unavailable": "Este post no está disponible"
   }
 }

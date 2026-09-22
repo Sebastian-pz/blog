@@ -12,7 +12,7 @@ export default function NotFound() {
       <body
         className={`${fontSans.variable} ${fontDisplay.variable} ${fontMono.variable} ${fontSans.className} flex min-h-screen items-center justify-center bg-canvas text-ink`}
       >
-        <section className="nb-frame mx-4 max-w-lg bg-hot p-8 text-center">
+        <main className="nb-frame mx-4 max-w-lg bg-hot p-8 text-center">
           <p className="nb-stamp mb-4 rotate-[-8deg] bg-sun px-3 py-1 text-xs">404</p>
           <h1 className="font-display text-4xl font-extrabold uppercase">{t('title')}</h1>
           <p className="mt-4 text-base">{t('description')}</p>
@@ -22,7 +22,7 @@ export default function NotFound() {
           >
             {t('callToAction')}
           </Link>
-        </section>
+        </main>
       </body>
     </html>
   )
