@@ -20,7 +20,10 @@ export async function generateMetadata(props: { params: Params }) {
   const post = findPost(locale, id)
 
   if (!post) {
-    return { title: t('unavailable') }
+    return {
+      title: t('unavailable'),
+      robots: { index: false, follow: false },
+    }
   }
 
   return {

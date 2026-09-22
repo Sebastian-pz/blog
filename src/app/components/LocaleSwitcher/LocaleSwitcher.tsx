@@ -35,18 +35,21 @@ export default function LocaleSwitcher() {
     const match = currentPath.match(/^\/post\/(.+)$/)
     if (!match) return currentPath
 
-    const currentPost = getPostByTitle(currentLocale, match[1])
-    if (currentPost?.id) {
-      try {
-        const postInTargetLanguage = getPostById(targetLocale, currentPost.id)
-        return `/post/${encodeTitle(postInTargetLanguage.title, targetLocale)}`
-      } catch (error) {
-        console.error('Error switching locale for post:', error)
-        return currentPath
-      }
+    const requestedSlug = match[1]
+    const currentPost = getPostByTitle(currentLocale, requestedSlug)
+    // getPostByTitle falls back to the first post when the slug is unknown.
+    if (!currentPost?.id || encodeTitle(currentPost.title, currentLocale) !== requestedSlug) {
+      return currentPath
     }
 
-    return currentPath
+    try {
+      const postInTargetLanguage = getPostById(targetLocale, currentPost.id)
+      if (postInTargetLanguage.id !== currentPost.id) return currentPath
+      return `/post/${encodeTitle(postInTargetLanguage.title, targetLocale)}`
+    } catch (error) {
+      console.error('Error switching locale for post:', error)
+      return currentPath
+    }
   }
 
   /**
