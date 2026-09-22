@@ -4,7 +4,7 @@ export default function ExtendedInfo() {
   const t = useTranslations('aboutExtendedInfo')
 
   return (
-    <section className="nb-frame bg-paper p-5 md:p-8">
+    <div className="nb-frame bg-paper p-5 md:p-8">
       <p className="text-balance text-center text-base leading-7 md:text-lg">
         {t('introduction')}
         <strong className="bg-sun px-1">
@@ -17,6 +17,6 @@ export default function ExtendedInfo() {
         </strong>{' '}
         {t('englishStatus')}
       </p>
-    </section>
+    </div>
   )
 }

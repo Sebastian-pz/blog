@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from 'next-intl'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Project posts',
+  title: 'Experience posts',
   description:
     'Discover my journey as a full-stack developer, where I have transformed ideas into innovative web solutions. From creating dynamic web applications to diving into data analysis and automation with bots, I share my experience in agile methodologies, technical leadership, and open-source collaboration.',
   keywords: [

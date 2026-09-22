@@ -20,29 +20,27 @@ export default function Post({ post }: propsComponent) {
   const linkUrl = `/${localeActive}/post/${encodeTitle(title, localeActive)}`
 
   return (
-    <article className="nb-frame nb-press group overflow-hidden">
-      <Link
-        href={linkUrl}
-        className="block h-48 overflow-hidden border-b-3 border-ink"
-        prefetch={false}
-      >
+    <article className="nb-frame nb-press relative h-full overflow-hidden">
+      <div className="h-48 overflow-hidden border-b-3 border-ink">
         <Image
           src={image}
-          alt={`Post about ${title}`}
+          alt=""
           width={400}
           height={300}
           className="h-full w-full object-cover"
         />
-      </Link>
+      </div>
       <div className="space-y-2 p-3">
         <h2 className="font-display text-xl font-extrabold leading-tight">
-          <Link href={linkUrl} prefetch={false}>
+          <Link
+            href={linkUrl}
+            prefetch={false}
+            className="after:absolute after:inset-0 after:z-10"
+          >
             {summary(title, 60)}
           </Link>
         </h2>
-        <p className="text-sm text-muted">
-          {summary(description[0] as string, 100)}
-        </p>
+        <p className="text-sm text-muted">{summary(description[0] as string, 100)}</p>
       </div>
     </article>
   )

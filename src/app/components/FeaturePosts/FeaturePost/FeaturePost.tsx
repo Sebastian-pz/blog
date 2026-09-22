@@ -1,3 +1,4 @@
+import { toDateTimeAttribute } from '@/app/utils/dates'
 import { encodeTitle } from '@/app/utils/encodeTitle'
 import { useLocale } from 'next-intl'
 import Image from 'next/image'
@@ -17,6 +18,8 @@ export default function FeaturePost({
   id,
 }: propsComponent) {
   const localeActive = useLocale()
+  const published = toDateTimeAttribute(date)
+
   return (
     <Link
       href={`/${localeActive}/post/${encodeTitle(title, localeActive)}`}
@@ -25,14 +28,16 @@ export default function FeaturePost({
     >
       <Image
         src={image.src}
-        alt="Blog post cover image"
+        alt=""
         width={80}
         height={80}
         className="h-20 w-20 border-3 border-ink object-cover shadow-nb-sm"
       />
       <div>
         <h3 className="font-display text-sm font-extrabold leading-tight">{title}</h3>
-        <p className="mt-1 font-mono text-xs uppercase text-muted">{date}</p>
+        <p className="mt-1 font-mono text-xs uppercase text-muted">
+          {published ? <time dateTime={published}>{date}</time> : date}
+        </p>
       </div>
     </Link>
   )

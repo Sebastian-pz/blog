@@ -6,7 +6,7 @@ import {
   PostQueryFilter,
   DEFAULT_POST_LIMIT,
 } from '@/app/utils/const'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { redirect, useSearchParams } from 'next/navigation'
 import Pagination from '@/app/components/Pagination/Pagination'
 
@@ -16,9 +16,11 @@ const searchParamsOptions = {
 }
 
 export default function Page() {
+  const t = useTranslations('tagResults')
   const searchParams = useSearchParams()
   const activeLocale = useLocale()
-  const page = Number(searchParams.get(searchParamsOptions.page))
+  const rawPage = Number(searchParams.get(searchParamsOptions.page))
+  const page = Number.isFinite(rawPage) && rawPage > 0 ? rawPage : 1
   const tag = searchParams.get(searchParamsOptions.tag)
 
   const queryConfig: PostQueryFilter = {
@@ -32,12 +34,21 @@ export default function Page() {
   if (totalPosts === 0 || !posts.length) redirect(`/${activeLocale}/empty-list`)
 
   return (
-    <main className="nb-page">
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post, i) => {
-          return <Post post={post} key={i} />
+    <div className="nb-page">
+      <header className="nb-frame mb-8 bg-sun p-5 text-center md:p-8">
+        <h1 className="font-display text-2xl font-extrabold uppercase md:text-3xl">
+          {tag ? t('title', { tag }) : t('titleAll')}
+        </h1>
+      </header>
+      <ul className="grid list-none grid-cols-1 gap-8 p-0 sm:grid-cols-2 lg:grid-cols-3">
+        {posts.map((post) => {
+          return (
+            <li key={post.id} className="min-w-0">
+              <Post post={post} />
+            </li>
+          )
         })}
-      </div>
+      </ul>
       {shouldRenderPagination && (
         <Pagination
           pages={Math.ceil(totalPosts / DEFAULT_POST_LIMIT)}
@@ -45,6 +56,6 @@ export default function Page() {
           tag={tag}
         />
       )}
-    </main>
+    </div>
   )
 }

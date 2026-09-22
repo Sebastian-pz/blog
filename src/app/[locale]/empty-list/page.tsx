@@ -7,7 +7,7 @@ export default function Page() {
 
   return (
     <div className="nb-page flex min-h-[60vh] flex-col items-center justify-center">
-      <article className="nb-frame w-full max-w-2xl bg-hot p-8 text-center">
+      <div className="nb-frame w-full max-w-2xl bg-hot p-8 text-center">
         <h1 className="font-display text-3xl font-extrabold uppercase md:text-5xl">
           {t('title')}
         </h1>
@@ -15,7 +15,7 @@ export default function Page() {
         <div className="mx-auto mt-10 max-w-xl">
           <Tags />
         </div>
-      </article>
+      </div>
     </div>
   )
 }

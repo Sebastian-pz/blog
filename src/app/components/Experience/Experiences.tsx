@@ -9,17 +9,24 @@ export default function Experiences() {
   const experiences = getExperience(localeActive)
 
   return (
-    <section className="mt-10">
-      <h2 className="mb-3 text-center font-display text-2xl font-extrabold uppercase md:text-4xl">
+    <section aria-labelledby="professional-experience" className="mt-10">
+      <h2
+        id="professional-experience"
+        className="mb-3 text-center font-display text-2xl font-extrabold uppercase md:text-4xl"
+      >
         {t('title')}
       </h2>
       <p className="mb-10 text-center text-base md:text-lg">{t('note')}</p>
 
-      <section className="flex flex-col w-full justify-center items-center md:px-4 lg:px-10">
-        {experiences.map((experience, index) => {
-          return <ExperienceCard experience={experience} key={index} />
+      <ul className="flex w-full list-none flex-col items-center p-0 md:px-4 lg:px-10">
+        {experiences.map((experience) => {
+          return (
+            <li key={experience.title} className="w-full">
+              <ExperienceCard experience={experience} />
+            </li>
+          )
         })}
-      </section>
+      </ul>
     </section>
   )
 }

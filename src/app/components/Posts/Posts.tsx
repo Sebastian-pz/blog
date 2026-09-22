@@ -1,4 +1,4 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 import {
   getFilteredPosts,
@@ -9,6 +9,7 @@ import Post from '@/components/Post/Post'
 import Pagination from '@/components/Pagination/Pagination'
 
 export default function Posts() {
+  const t = useTranslations('a11y')
   const localeActive = useLocale()
   const defaultPage = 1
 
@@ -19,12 +20,16 @@ export default function Posts() {
   const shouldRenderPagination = totalPosts > DEFAULT_POST_LIMIT
 
   return (
-    <main>
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 2xl:grid-cols-3">
-        {posts.map((post, i) => {
-          return <Post post={post} key={i} />
+    <section aria-label={t('latestPosts')}>
+      <ul className="grid list-none grid-cols-1 gap-8 p-0 sm:grid-cols-2 2xl:grid-cols-3">
+        {posts.map((post) => {
+          return (
+            <li key={post.id} className="min-w-0">
+              <Post post={post} />
+            </li>
+          )
         })}
-      </div>
+      </ul>
       {shouldRenderPagination && (
         <Pagination
           actualPage={defaultPage}
@@ -32,6 +37,6 @@ export default function Posts() {
           tag={null}
         />
       )}
-    </main>
+    </section>
   )
 }

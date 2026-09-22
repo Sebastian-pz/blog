@@ -1,10 +1,9 @@
 import { Metadata } from 'next'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import Link from 'next/link'
 
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
+import ExternalLink from '@/components/ExternalLink/ExternalLink'
+import { buttonVariants } from '@/components/ui/button'
 
 import { socialMediaProfiles } from './utils/constants'
 
@@ -33,28 +32,26 @@ export default function Page() {
       <h1 className="mb-10 text-center font-display text-3xl font-extrabold uppercase md:text-5xl">
         {t('mainTitle')}
       </h1>
-      <div className="mb-14 flex flex-wrap justify-center gap-6">
+      <ul className="mb-14 flex list-none flex-wrap justify-center gap-6 p-0">
         {socialMediaProfiles.map((profile, index) => (
-          <Card
-            key={profile.name}
-            className={`flex h-56 w-56 flex-col items-center justify-center p-4 ${accents[index % accents.length]}`}
-          >
-            <CardContent className="flex flex-col items-center gap-3 p-0">
-              <Image alt={`profile ${profile.name} icon`} src={profile.icon} />
+          <li key={profile.name}>
+            <article
+              className={`nb-frame flex h-56 w-56 flex-col items-center justify-center gap-3 p-4 text-ink ${accents[index % accents.length]}`}
+            >
+              <Image alt="" src={profile.icon} />
               <h2 className="font-display text-lg font-extrabold uppercase">{profile.name}</h2>
-              <Link href={profile.url} target="_blank" passHref>
-                <Button
-                  aria-label={`Visit my ${profile.name} profile`}
-                >
-                  Follow
-                </Button>
-              </Link>
-            </CardContent>
-          </Card>
+              <ExternalLink href={profile.url} className={buttonVariants()}>
+                {t('follow')}
+                <span className="sr-only"> {profile.name}</span>
+              </ExternalLink>
+            </article>
+          </li>
         ))}
-      </div>
-      <section className="nb-frame bg-paper p-6 lg:p-12">
-        <h2 className="mb-4 font-display text-2xl font-extrabold uppercase">{t('title')}</h2>
+      </ul>
+      <section aria-labelledby="social-thanks" className="nb-frame bg-paper p-6 lg:p-12">
+        <h2 id="social-thanks" className="mb-4 font-display text-2xl font-extrabold uppercase">
+          {t('title')}
+        </h2>
         <p className="mb-4 leading-7">{t('introduction')}</p>
         <ul className="mb-4 list-disc space-y-3 pl-5">
           <li>{t('benefits.one')}</li>

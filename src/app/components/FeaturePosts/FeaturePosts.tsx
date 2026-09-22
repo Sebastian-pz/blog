@@ -9,21 +9,24 @@ export default function FeaturePosts() {
   const posts = getPostsByType(localeActive, PostTypes.experience).slice(0, 2)
 
   return (
-    <div className="nb-frame bg-ice p-5">
-      <h2 className="font-display text-2xl font-extrabold uppercase">{t('title')}</h2>
-      <div className="mt-4 space-y-4">
-        {posts.map(({ creationDate, title, image, id }, i) => {
+    <section aria-labelledby="featured-posts" className="nb-frame bg-ice p-5">
+      <h2 id="featured-posts" className="font-display text-2xl font-extrabold uppercase">
+        {t('title')}
+      </h2>
+      <ul className="mt-4 list-none space-y-4 p-0">
+        {posts.map(({ creationDate, title, image, id }) => {
           return (
-            <FeaturePost
-              id={id as string}
-              date={creationDate}
-              image={image}
-              title={title}
-              key={i}
-            />
+            <li key={id}>
+              <FeaturePost
+                id={id as string}
+                date={creationDate}
+                image={image}
+                title={title}
+              />
+            </li>
           )
         })}
-      </div>
-    </div>
+      </ul>
+    </section>
   )
 }
