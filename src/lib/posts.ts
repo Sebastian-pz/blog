@@ -31,7 +31,7 @@ function requireString(value: unknown, file: string, field: string): string {
 
 function loadLocale(locale: Locale): Post[] {
   const dir = path.join(CONTENT_DIR, locale)
-  return fs
+  const posts = fs
     .readdirSync(dir)
     .filter((file) => file.endsWith('.mdx'))
     .map((file) => {
@@ -52,10 +52,16 @@ function loadLocale(locale: Locale): Post[] {
       const date = requireString(data.date, file, 'date')
       if (!isIsoDate(date)) throw new Error(`${file} date must be YYYY-MM-DD`)
 
+      const slug = requireString(data.slug, file, 'slug')
+      const expectedSlug = file.replace(/\.mdx$/, '')
+      if (slug !== expectedSlug) {
+        throw new Error(`${file} slug must match the file name`)
+      }
+
       const body = content.trim()
       return {
         id: requireString(data.id, file, 'id'),
-        slug: requireString(data.slug, file, 'slug'),
+        slug,
         locale,
         type: type as PostType,
         title: requireString(data.title, file, 'title'),
@@ -69,6 +75,21 @@ function loadLocale(locale: Locale): Post[] {
         body,
       }
     })
+
+  const seenSlugs = new Set<string>()
+  const seenIds = new Set<string>()
+  for (const post of posts) {
+    if (seenSlugs.has(post.slug)) {
+      throw new Error(`Duplicate slug ${post.slug} in ${locale}`)
+    }
+    if (seenIds.has(post.id)) {
+      throw new Error(`Duplicate id ${post.id} in ${locale}`)
+    }
+    seenSlugs.add(post.slug)
+    seenIds.add(post.id)
+  }
+
+  return posts
 }
 
 function allPosts(): Post[] {

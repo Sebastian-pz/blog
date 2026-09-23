@@ -6,7 +6,7 @@ Repositorio: [Sebastian-pz/blog](https://github.com/Sebastian-pz/blog)
 
 ## Desarrollo
 
-Requiere Node 20.9 o superior y pnpm 11.5.
+Requiere Node 22.6 o superior y pnpm 11.5.
 
 ```bash
 git clone https://github.com/Sebastian-pz/blog.git

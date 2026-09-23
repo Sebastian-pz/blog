@@ -1,9 +1,13 @@
 import assert from 'node:assert/strict'
+import fs from 'node:fs'
+import path from 'node:path'
 import { test } from 'node:test'
+import matter from 'gray-matter'
 
 import { formatPostDate, isIsoDate } from './dates.ts'
 import { excerptFromMarkdown } from './excerpt.ts'
 import { findById, findBySlug } from './find-post.ts'
+import { buildLocaleQuery, postPathForLocale } from './locale-switch.ts'
 import { encodeTitle } from './slug.ts'
 
 test('encodeTitle keeps the slug already published for the generative AI article', () => {
@@ -47,6 +51,40 @@ test('excerptFromMarkdown uses the first paragraph and stops on a word', () => {
 
 test('excerptFromMarkdown keeps link text and drops the URL', () => {
   assert.equal(excerptFromMarkdown('Read [the notes](https://example.com) today.'), 'Read the notes today.')
+})
+
+test('a missing translation stays on the current article', () => {
+  const refs = [{ id: 'only-es', slug: 'solo', locale: 'es' }]
+  assert.equal(postPathForLocale('/post/solo', 'es', 'en', refs), null)
+  assert.equal(
+    postPathForLocale('/post/solo', 'es', 'en', [
+      ...refs,
+      { id: 'only-es', slug: 'only', locale: 'en' },
+    ]),
+    '/post/only',
+  )
+  assert.equal(postPathForLocale('/about', 'es', 'en', refs), '/about')
+})
+
+test('archive query keeps page and tag on their own', () => {
+  assert.equal(buildLocaleQuery('/q', '2', null), '/q?page=2')
+  assert.equal(buildLocaleQuery('/q', null, 'CI/CD'), '/q?tag=CI%2FCD')
+  assert.equal(buildLocaleQuery('/q', '2', 'Opinion'), '/q?page=2&tag=Opinion')
+})
+
+test('each article file name matches its slug and ids are unique per locale', () => {
+  const root = path.join(import.meta.dirname, '../../content')
+  for (const locale of ['en', 'es']) {
+    const ids = new Set<string>()
+    for (const file of fs.readdirSync(path.join(root, locale))) {
+      if (!file.endsWith('.mdx')) continue
+      const { data } = matter(fs.readFileSync(path.join(root, locale, file), 'utf8'))
+      assert.equal(data.slug, file.slice(0, -4))
+      assert.equal(typeof data.id, 'string')
+      assert.equal(ids.has(data.id), false)
+      ids.add(data.id)
+    }
+  }
 })
 
 test('a missed slug or id is null', () => {

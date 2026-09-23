@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation'
 import { ChangeEvent, useTransition } from 'react'
 
 import { usePathname, useRouter } from '@/i18n/navigation'
+import { buildLocaleQuery, postPathForLocale } from '@/lib/locale-switch'
 import type { PostRef } from '@/lib/post-types'
 
 type SupportedLocale = 'en' | 'es'
@@ -27,40 +28,15 @@ export default function LocaleSwitcher({ postRefs }: { postRefs: PostRef[] }) {
     tag: searchParams.get('tag'),
   }
 
-  const handlePostLocaleSwitch = (
-    currentPath: string,
-    currentLocale: SupportedLocale,
-    targetLocale: SupportedLocale,
-  ): string => {
-    const match = currentPath.match(/^\/post\/(.+)$/)
-    if (!match) return currentPath
-
-    const requestedSlug = decodeURIComponent(match[1])
-    const currentPost = postRefs.find(
-      (post) => post.locale === currentLocale && post.slug === requestedSlug,
-    )
-    if (!currentPost) return currentPath
-
-    const translated = postRefs.find(
-      (post) => post.locale === targetLocale && post.id === currentPost.id,
-    )
-    if (!translated) return currentPath
-    return `/post/${translated.slug}`
-  }
-
-  const buildFinalUrl = (baseUrl: string, params: QueryParams): string => {
-    const { page, tag } = params
-    if (page && tag) return `${baseUrl}?page=${page}&tag=${tag}`
-    return baseUrl
-  }
-
   const handleLanguageChange = (event: ChangeEvent<HTMLSelectElement>): void => {
     const nextLocale = event.target.value
     if (nextLocale !== 'en' && nextLocale !== 'es') return
     if (nextLocale === localeActive) return
 
-    const newRoute = handlePostLocaleSwitch(pathname, localeActive, nextLocale)
-    const finalUrl = buildFinalUrl(newRoute, queryParams)
+    const newRoute = postPathForLocale(pathname, localeActive, nextLocale, postRefs)
+    if (newRoute === null) return
+
+    const finalUrl = buildLocaleQuery(newRoute, queryParams.page, queryParams.tag)
 
     startTransition(() => {
       router.replace(finalUrl, { locale: nextLocale })
