@@ -1,11 +1,14 @@
+import { useLocale, useTranslations } from 'next-intl'
+
 import ProjectCard from '@/components/ProjectCard/ProjectCard'
-import PROJECTS from '@/utilities/ProjectsConstants'
-import { useTranslations } from 'next-intl'
+import { getProjects } from '@/utilities/ProjectsConstants'
 
 import Link from 'next/link'
 
 export default function Projects() {
   const t = useTranslations('aboutProjects')
+  const locale = useLocale()
+  const projects = getProjects(locale)
 
   return (
     <section className="my-10">
@@ -23,9 +26,9 @@ export default function Projects() {
         </Link>
       </section>
       <div className="flex w-full flex-wrap items-stretch justify-center gap-4">
-        {PROJECTS.map((project, index) => {
-          return <ProjectCard project={project} key={index} />
-        })}
+        {projects.map((project) => (
+          <ProjectCard project={project} key={project.title} />
+        ))}
       </div>
     </section>
   )

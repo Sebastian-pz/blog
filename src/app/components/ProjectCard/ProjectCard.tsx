@@ -6,12 +6,13 @@ interface propsComponent {
     title: string
     link: string
     description: string
+    dates: string
     src?: string
   }
 }
 
 export default function ProjectCard({ project }: propsComponent) {
-  const { title, description, link, src } = project
+  const { title, description, link, dates, src } = project
 
   return (
     <article className="nb-frame nb-press m-2 flex h-[240px] w-4/5 max-w-[300px] flex-col overflow-hidden xl:h-[300px] xl:w-[275px]">
@@ -25,7 +26,7 @@ export default function ProjectCard({ project }: propsComponent) {
       />
       {link ? (
         <h2 className="px-3 pt-3 font-display text-lg font-extrabold">
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noopener noreferrer">
             {title}
           </a>
         </h2>
@@ -34,6 +35,7 @@ export default function ProjectCard({ project }: propsComponent) {
           {title}
         </h2>
       )}
+      <p className="px-3 font-mono text-xs uppercase text-muted">{dates}</p>
       <p className="px-3 pb-3 text-sm text-muted">{description}</p>
     </article>
   )
