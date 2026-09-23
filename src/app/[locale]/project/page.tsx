@@ -1,6 +1,5 @@
 import FilteredPosts from '@/components/FilteredPosts/FilteredPosts'
-import { getPostsByType } from '@/utilities/const'
-import { PostTypes } from '@/utilities/interfaces'
+import { getPostsByType } from '@/lib/posts'
 import { Metadata } from 'next'
 import { useLocale, useTranslations } from 'next-intl'
 
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   const localeActive = useLocale()
-  const posts = getPostsByType(localeActive, PostTypes.project)
+  const posts = getPostsByType(localeActive, 'project')
 
   const t = useTranslations('filteredPostsProjects')
 

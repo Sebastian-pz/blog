@@ -1,37 +1,34 @@
 import Image from 'next/image'
-import styles from './MediaComponent.module.css'
 
 interface MediaComponentProps {
-  mediaType: string
-  media: string | any
-  introductionParagraph: String
+  mediaType: 'image' | 'video'
+  media: string
+  label: string
 }
 
-export default function MediaComponent(props: MediaComponentProps) {
-  const { media, mediaType, introductionParagraph } = props
-
+export default function MediaComponent({ media, mediaType, label }: MediaComponentProps) {
   if (mediaType === 'image') {
     return (
-      <Image
-        src={media.src}
-        alt={`post image about ${introductionParagraph}`}
-        className="m-auto mb-6 w-full border-3 border-ink object-cover shadow-nb"
-        width={600}
-        height={600}
-      />
+      <figure className="m-auto mb-6">
+        <Image
+          src={media}
+          alt={label}
+          className="w-full border-3 border-ink object-cover shadow-nb"
+          width={1200}
+          height={675}
+        />
+      </figure>
     )
   }
 
-  if (mediaType === 'video') {
-    return (
+  return (
+    <figure className="m-auto mb-6">
       <iframe
-        src={`${media}?si=APryLtmB175bPINH`}
-        title="YouTube video player"
-        frameBorder="0"
+        src={media}
+        title={label}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        className={`m-auto mb-6 ${styles.MediaComponent__video}`}
-        allowFullScreen={false}
+        className="mx-auto block aspect-video w-full border-3 border-ink"
       />
-    )
-  }
+    </figure>
+  )
 }

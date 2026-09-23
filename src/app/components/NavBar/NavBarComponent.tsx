@@ -5,8 +5,9 @@ import LINK_LIST from './Constants'
 
 import LocaleSwitcher from '@/app/components/LocaleSwitcher/LocaleSwitcher'
 import { Link, usePathname } from '@/i18n/navigation'
+import type { PostRef } from '@/lib/post-types'
 
-export default function Navbar() {
+export default function Navbar({ postRefs }: { postRefs: PostRef[] }) {
   const t = useTranslations('navBar')
   const pathname = usePathname()
 
@@ -42,7 +43,7 @@ export default function Navbar() {
               </Link>
             )
           })}
-          <LocaleSwitcher />
+          <LocaleSwitcher postRefs={postRefs} />
         </div>
       </nav>
     </header>

@@ -95,6 +95,19 @@
   "footer": {
     "copyright": "Copyright © 2025 Sebastian Perez"
   },
+  "post": {
+    "createdOn": "Published on",
+    "unavailable": "Article unavailable",
+    "cover": "Image for {title}",
+    "videoTitle": "Video: {title}"
+  },
+  "tagResults": {
+    "title": "Articles tagged {tag}",
+    "titleAll": "All articles"
+  },
+  "a11y": {
+    "changeLanguage": "Change language"
+  },
   "not-found": {
     "title": "Page not found",
     "description": "Oops, it looks like the page you were looking for doesn't exist. Don't worry, you can head back to the blog's homepage and continue exploring.",

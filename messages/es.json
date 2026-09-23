@@ -95,6 +95,19 @@
   "footer": {
     "copyright": "Copyright © 2025 Sebastian Pérez"
   },
+  "post": {
+    "createdOn": "Publicado el",
+    "unavailable": "Artículo no disponible",
+    "cover": "Imagen de {title}",
+    "videoTitle": "Vídeo: {title}"
+  },
+  "tagResults": {
+    "title": "Artículos etiquetados como {tag}",
+    "titleAll": "Todos los artículos"
+  },
+  "a11y": {
+    "changeLanguage": "Cambiar idioma"
+  },
   "not-found": {
     "title": "Página no encontrada",
     "description": "Oops, parece que la página que estás buscando no existe. No te preocupes, puedes volver al inicio y seguir navegando.",

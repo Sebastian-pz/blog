@@ -9,6 +9,7 @@ import FooterComponent from '@/app/components/footer/footer'
 import Navbar from '@/app/components/NavBar/NavBarComponent'
 import { fontDisplay, fontMono, fontSans } from '@/app/ui/fonts'
 import { routing } from '@/i18n/routing'
+import { getPostRefs } from '@/lib/posts'
 
 export const metadata: Metadata = {
   title: 'Blog - Sebastian Perez Dev',
@@ -36,13 +37,15 @@ export default async function RootLayout({
     notFound()
   }
 
+  const postRefs = getPostRefs()
+
   return (
     <html lang={locale}>
       <body
         className={`${fontSans.variable} ${fontDisplay.variable} ${fontMono.variable} ${fontSans.className} bg-canvas text-ink`}
       >
         <NextIntlClientProvider>
-          <Navbar />
+          <Navbar postRefs={postRefs} />
           <div className="pt-24">{children}</div>
           <FooterComponent />
         </NextIntlClientProvider>

@@ -1,57 +1,36 @@
 import { MetadataRoute } from 'next'
-import { posts } from './utils/locale/es/posts'
-import { encodeTitle } from './utils/encodeTitle'
+
+import { routing } from '@/i18n/routing'
+import { getPostMetas, latestPostDate } from '@/lib/posts'
+import { SITE_URL } from '@/lib/site'
+import type { PostType } from '@/lib/post-types'
+
+const sectionPaths: { path: string; type?: PostType }[] = [
+  { path: '' },
+  { path: '/about' },
+  { path: '/social' },
+  { path: '/experience', type: 'experience' },
+  { path: '/opinion', type: 'opinion' },
+  { path: '/project', type: 'project' },
+]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: 'https://www.sebastian-perez-dev.com/en',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
-      url: 'https://www.sebastian-perez-dev.com/es',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
-      url: 'https://www.sebastian-perez-dev.com/en/about',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.sebastian-perez-dev.com/es/about',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.sebastian-perez-dev.com/en/social',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.4,
-    },
-    {
-      url: 'https://www.sebastian-perez-dev.com/es/social',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.4,
-    },
-    ...getPostsPages('es'),
-    ...getPostsPages('en'),
-  ]
-}
+  const pages: MetadataRoute.Sitemap = routing.locales.flatMap((locale) =>
+    sectionPaths.map(({ path, type }) => {
+      const lastModified = latestPostDate(type)
+      return {
+        url: `${SITE_URL}/${locale}${path}`,
+        ...(lastModified ? { lastModified } : {}),
+      }
+    }),
+  )
 
-function getPostsPages(lang: string): MetadataRoute.Sitemap {
-  return posts.map((post) => {
-    return {
-      url: `https://www.sebastian-perez-dev.com/${lang}/post/${encodeTitle(post.title, lang)}`,
-      lastModified: new Date(post.creationDate),
-      changeFrequency: 'never',
-      priority: 0.5,
-    }
-  })
+  const posts: MetadataRoute.Sitemap = routing.locales.flatMap((locale) =>
+    getPostMetas(locale).map((post) => ({
+      url: `${SITE_URL}/${locale}/post/${post.slug}`,
+      lastModified: post.date,
+    })),
+  )
+
+  return [...pages, ...posts]
 }
