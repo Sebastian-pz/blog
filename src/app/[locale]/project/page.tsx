@@ -1,31 +1,27 @@
-import FilteredPosts from '@/components/FilteredPosts/FilteredPosts'
-import { getPostsByType } from '@/utilities/const'
-import { PostTypes } from '@/utilities/interfaces'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import { useLocale, useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 
-export const metadata: Metadata = {
-  title: 'Project posts',
-  description:
-    'Explore my diverse portfolio of projects, where I combine creativity and code to build innovative solutions. From intelligent bots to robust backends and elegant interfaces, discover how I can take your ideas to the next level with technologies like TypeScript, React, Node.js, and more.',
-  keywords: [
-    'Sebastian Perez',
-    'Software developer',
-    'Git',
-    'Repositories',
-    'TypeScript',
-    'JavaScript',
-    'NodeJS',
-    'React',
-    'NextJS',
-    'Python',
-    'Fullstack',
-  ],
+import FilteredPosts from '@/components/FilteredPosts/FilteredPosts'
+import { pageMetadata } from '@/lib/metadata'
+import { getPostsByType } from '@/lib/posts'
+
+type Params = Promise<{ locale: string }>
+
+export async function generateMetadata(props: { params: Params }): Promise<Metadata> {
+  const { locale } = await props.params
+  const t = await getTranslations({ locale, namespace: 'meta' })
+  return pageMetadata({
+    locale,
+    title: t('projectsTitle'),
+    description: t('projectsDescription'),
+    path: '/project',
+  })
 }
 
 export default function Page() {
   const localeActive = useLocale()
-  const posts = getPostsByType(localeActive, PostTypes.project)
+  const posts = getPostsByType(localeActive, 'project')
 
   const t = useTranslations('filteredPostsProjects')
 

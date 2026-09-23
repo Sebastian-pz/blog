@@ -2,6 +2,22 @@
   "index": {
     "title": "Hello World"
   },
+  "meta": {
+    "title": "Sebastian Pérez blog",
+    "description": "Articles and notes by Sebastian Pérez on software development.",
+    "aboutTitle": "About",
+    "aboutDescription": "Who I am, the work I have done, and what I have built.",
+    "experienceTitle": "Experience",
+    "experienceDescription": "Jobs where I built software for real problems.",
+    "opinionTitle": "Opinion",
+    "opinionDescription": "Notes on tools, practice, and the craft of building software.",
+    "projectsTitle": "Projects",
+    "projectsDescription": "Software projects I built to learn, or to use.",
+    "socialTitle": "Social",
+    "socialDescription": "Where to find me, and why sharing what you learn changes the craft.",
+    "archiveTitle": "Articles",
+    "archiveDescription": "Filterable list of articles on this blog."
+  },
   "navBar": {
     "home": "Home",
     "social": "Social",
@@ -12,7 +28,7 @@
     "role": "Software Developer 🌎",
     "focused": "Focused on fullstack web development",
     "callToAction": "Contact me!",
-    "introduction": "Programming since 2020, with experience in fullstack development, aiming to create scalable solutions to business problems.",
+    "introduction": "I have been programming since 2020. I build fullstack web software and turn business problems into something that can be maintained.",
     "likeTo": "I like to bring things to code 👨🏼‍💻, animals 🐕, sunsets 🌄, and more...",
     "workAvailability": "Open to offers",
     "workAvailabilityLabel": "Available",
@@ -20,11 +36,11 @@
     "cvRoute": "/CV-en-SebastianPerez.pdf"
   },
   "aboutExtendedInfo": {
-    "introduction": "5 years developing software applications and ",
-    "experienceInYears": "2 years professional experience focused on being a fullstack developer. ",
-    "experienceComplement": " Creating web solutions to real problems, working as a team with agile SCRUM methodologies, pair programming and others.",
+    "introduction": "I have been programming since 2020. ",
+    "experienceInYears": "Fullstack web development",
+    "experienceComplement": "for business problems, on a team and in pair programming.",
     "englishLevel": "English B2+",
-    "englishStatus": ", and currently continuing to study to improve."
+    "englishStatus": "and I am still studying it."
   },
   "aboutExperience": {
     "title": "Professional Experience",
@@ -46,23 +62,23 @@
   },
   "filteredPostsExperience": {
     "title": "My experiences working as a software developer 🧪",
-    "description": "In this experience section I tell about my professional career in world of software development.Through these posts, I share my experiences in different projects, teams and organizations, I talk about the technologies and methodologies that I have used, and, although I mention somewhat technical terms, my approach is more narrative to offer an overview of my path and learning..."
+    "description": "Jobs and commissions: what needed solving, what I used, and what came out of it."
   },
   "filteredPostsOpinion": {
     "title": "These are my opinions on things in the world of software development in general 🤔",
-    "description": "The Opinion section is more focused on expressing my 'thoughts' about the world of software development. I talk about a few news, trends, clean code, good practices, architectures and so on. Some of these topics are still beyond my control, so it is very likely that I will rely on experts (always leaving the credits to the person who shares their knowledge)."
+    "description": "Notes on tools, practice, and design decisions. When an idea is not mine, I leave the credit."
   },
   "filteredPostsProjects": {
     "title": "These are the projects I have been working on 👷🏻‍♂️",
-    "description": "In this section I present my personal projects in software development. They are projects that I have developed out of passion and curiosity, with the aim of learning and mastering new tools (or simply as a hobby). For example, creating administrative managers in Excel with VBA and then creating Bots using Python."
+    "description": "Projects I built to learn a tool, or because I needed them. They range from Excel macros to web applications."
   },
   "mainInfo": {
     "title": "Information about the blog",
-    "description": "In this blog, I f on sharing the latest updates about my projects, programming tips, and relevant industry information. Let's code, learn, and grow together! 💡👨‍💻",
+    "description": "I write down what I am building, notes from the work, and things I had to learn the hard way.",
     "callToAction": "If you have any suggestions, don't hesitate to contact me!"
   },
   "search": {
-    "title": "Buscar"
+    "title": "Search"
   },
   "downloadCV": {
     "tag": "Download CV",
@@ -93,7 +109,20 @@
     "description": "It seems that there are no posts to display with the current filters. You can check this others tags to discover more content"
   },
   "footer": {
-    "copyright": "Copyright © 2025 Sebastian Perez"
+    "copyright": "Copyright © 2026 Sebastian Perez"
+  },
+  "post": {
+    "createdOn": "Published on",
+    "unavailable": "Article unavailable",
+    "cover": "Image for {title}",
+    "videoTitle": "Video: {title}"
+  },
+  "tagResults": {
+    "title": "Articles tagged {tag}",
+    "titleAll": "All articles"
+  },
+  "a11y": {
+    "changeLanguage": "Change language"
   },
   "not-found": {
     "title": "Page not found",
