@@ -1,9 +1,8 @@
 import { useLocale, useTranslations } from 'next-intl'
 
+import ExternalLink from '@/components/ExternalLink/ExternalLink'
 import ProjectCard from '@/components/ProjectCard/ProjectCard'
 import { getProjects } from '@/utilities/ProjectsConstants'
-
-import Link from 'next/link'
 
 export default function Projects() {
   const t = useTranslations('aboutProjects')
@@ -17,19 +16,20 @@ export default function Projects() {
         <p className="mt-2 max-w-xl text-center text-sm text-muted">
           {t('label')}
         </p>
-        <Link
-          className="mt-3 border-3 border-ink bg-blaze px-4 py-2 font-display text-sm font-extrabold uppercase shadow-nb-sm nb-press"
+        <ExternalLink
           href="https://github.com/Sebastian-pz"
-          target="_blank"
+          className="mt-3 border-3 border-ink bg-blaze px-4 py-2 font-display text-sm font-extrabold uppercase shadow-nb-sm nb-press"
         >
           {t('callToAction')}
-        </Link>
+        </ExternalLink>
       </section>
-      <div className="flex w-full flex-wrap items-stretch justify-center gap-4">
+      <ul className="flex w-full list-none flex-wrap items-stretch justify-center gap-4 p-0">
         {projects.map((project) => (
-          <ProjectCard project={project} key={project.title} />
+          <li key={project.title}>
+            <ProjectCard project={project} />
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   )
 }

@@ -25,25 +25,32 @@ export default function FilteredPosts({ posts, title, description }: ComponentPr
 
       <PostNavigation />
 
-      <div className="mt-8 flex flex-col gap-6">
+      <ul className="mt-8 flex list-none flex-col gap-6 p-0">
         {posts.map((post) => (
-          <article key={post.id} className="nb-frame nb-press flex flex-col gap-4 p-4 sm:flex-row">
-            <Image
-              src={post.image}
-              alt={post.title}
-              className="h-40 w-full border-3 border-ink object-cover sm:h-36 sm:w-44"
-              width={200}
-              height={160}
-            />
-            <div>
-              <h2 className="mb-2 font-display text-lg font-extrabold md:text-xl">
-                <Link href={`/${localeActive}/post/${post.slug}`}>{post.title}</Link>
-              </h2>
-              <p className="text-sm text-muted md:text-base">{post.excerpt}</p>
-            </div>
-          </article>
+          <li key={post.id}>
+            <article className="nb-frame nb-press relative flex flex-col gap-4 p-4 sm:flex-row">
+              <Image
+                src={post.image}
+                alt=""
+                className="h-40 w-full border-3 border-ink object-cover sm:h-36 sm:w-44"
+                width={200}
+                height={160}
+              />
+              <div>
+                <h2 className="mb-2 font-display text-lg font-extrabold md:text-xl">
+                  <Link
+                    href={`/${localeActive}/post/${post.slug}`}
+                    className="after:absolute after:inset-0"
+                  >
+                    {post.title}
+                  </Link>
+                </h2>
+                <p className="text-sm text-muted md:text-base">{post.excerpt}</p>
+              </div>
+            </article>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   )
 }

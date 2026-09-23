@@ -22,9 +22,13 @@
     "home": "Home",
     "social": "Social",
     "about": "About",
-    "search": "Search"
+    "search": "Search",
+    "homeLink": "SPZ, home",
+    "primary": "Primary"
   },
   "about": {
+    "portraitAlt": "Portrait of Sebastian Perez",
+    "profiles": "Profiles",
     "role": "Software Developer 🌎",
     "focused": "Focused on fullstack web development",
     "callToAction": "Contact me!",
@@ -44,7 +48,10 @@
   },
   "aboutExperience": {
     "title": "Professional Experience",
-    "note": "I have also worked as a freelancer for companies in LATAM and the United States and have contributed to open source projects."
+    "note": "I have also worked as a freelancer for companies in LATAM and the United States and have contributed to open source projects.",
+    "relatedArticle": "related article",
+    "responsibilities": "Responsibilities",
+    "technologies": "Technologies"
   },
   "aboutProjects": {
     "title": "Projects I've Created",
@@ -95,7 +102,8 @@
       "four": "Accessing new opportunities: Sharing information freely helps democratize knowledge and allows more people to access the world of technology, regardless of their origin or resources."
     },
     "paragraph": "By openly sharing our insights, code snippets, tutorials, and experiences, we create a more inclusive and innovative tech ecosystem. Whether it's through blog posts, open-source contributions, or mentoring, every piece of shared knowledge has the potential to make a significant impact.",
-    "end": "You are making the development community a better, more collaborative and accessible place.Do not understand the positive impact they have on the lives of other developers.Keep like this!"
+    "end": "You are making the development community a better, more collaborative and accessible place.Do not understand the positive impact they have on the lives of other developers.Keep like this!",
+    "follow": "Follow"
   },
   "headerSection": {
     "title": "Sebastian Perez blog",
@@ -109,9 +117,14 @@
     "description": "It seems that there are no posts to display with the current filters. You can check this others tags to discover more content"
   },
   "footer": {
-    "copyright": "Copyright © 2026 Sebastian Perez"
+    "copyright": "Copyright © 2026 Sebastian Perez",
+    "social": "Social profiles",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Email spezuluaga@gmail.com"
   },
   "post": {
+    "author": "Author",
     "createdOn": "Published on",
     "unavailable": "Article unavailable",
     "cover": "Image for {title}",
@@ -121,8 +134,20 @@
     "title": "Articles tagged {tag}",
     "titleAll": "All articles"
   },
+  "pagination": {
+    "label": "Pagination",
+    "goToPage": "Go to page {page}"
+  },
+  "tags": {
+    "title": "Popular tags"
+  },
   "a11y": {
-    "changeLanguage": "Change language"
+    "changeLanguage": "Change language",
+    "skipToContent": "Skip to content",
+    "opensInNewTab": "opens in a new tab",
+    "sidebar": "More from the blog",
+    "latestPosts": "Latest posts",
+    "backHome": "Back to home"
   },
   "not-found": {
     "title": "Page not found",

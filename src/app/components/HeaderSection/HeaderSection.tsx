@@ -6,7 +6,10 @@ export default function HeaderSection() {
   return (
     <header className="mb-10 md:mb-14">
       <div className="relative">
-        <span className="nb-stamp absolute -left-1 -top-3 rotate-[-8deg] bg-hot px-2 py-1 text-[10px] md:text-xs">
+        <span
+          aria-hidden="true"
+          className="nb-stamp absolute -left-1 -top-3 rotate-[-8deg] bg-hot px-2 py-1 text-[10px] md:text-xs"
+        >
           DEV LOG
         </span>
         <div className="nb-frame bg-sun px-5 py-8 text-center md:px-10 md:py-12">

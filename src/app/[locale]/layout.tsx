@@ -54,6 +54,7 @@ export default async function RootLayout({
     notFound()
   }
 
+  const t = await getTranslations({ locale, namespace: 'a11y' })
   const postRefs = getPostRefs()
 
   return (
@@ -62,8 +63,13 @@ export default async function RootLayout({
         className={`${fontSans.variable} ${fontDisplay.variable} ${fontMono.variable} ${fontSans.className} bg-canvas text-ink`}
       >
         <NextIntlClientProvider>
+          <a className="skip-link" href="#main-content">
+            {t('skipToContent')}
+          </a>
           <Navbar postRefs={postRefs} />
-          <div className="pt-24">{children}</div>
+          <main id="main-content" tabIndex={-1} className="pt-24">
+            {children}
+          </main>
           <FooterComponent />
         </NextIntlClientProvider>
       </body>

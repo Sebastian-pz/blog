@@ -32,12 +32,12 @@ export default function MainPage() {
   // const CV_ROUTE = t('cvRoute')
 
   return (
-    <main className="nb-page max-w-5xl">
+    <div className="nb-page max-w-5xl">
       <div className="nb-frame mb-8 flex flex-col items-center justify-between gap-8 bg-paper p-6 md:flex-row md:p-8">
         <div className="flex items-center gap-4 md:gap-6">
             <Image
               src={profileImage.src}
-              alt="profile image Sebastian Perez"
+              alt={t('portraitAlt')}
               width="500"
               height="500"
               className="h-[110px] w-[110px] border-3 border-ink object-cover shadow-nb sm:h-[160px] sm:w-[160px] md:h-[200px] md:w-[200px]"
@@ -84,6 +84,6 @@ export default function MainPage() {
       <ExtendedInfo />
       <Experiences />
       <Projects />
-    </main>
+    </div>
   )
 }

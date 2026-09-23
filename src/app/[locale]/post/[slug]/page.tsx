@@ -76,7 +76,10 @@ export default async function Page(props: { params: Params }) {
           <h1 className="mb-3 font-display text-3xl font-extrabold uppercase md:text-4xl">
             {post.title}
           </h1>
-          <p className="font-mono text-sm uppercase">{post.author}</p>
+          <p className="font-mono text-sm uppercase">
+            <span className="sr-only">{t('author')}: </span>
+            {post.author}
+          </p>
           <p className="mb-6 font-mono text-xs uppercase text-muted">
             {t('createdOn')}{' '}
             <time dateTime={post.date}>{formatPostDate(post.date, locale)}</time>

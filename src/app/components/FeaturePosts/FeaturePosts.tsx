@@ -11,17 +11,13 @@ export default function FeaturePosts() {
   return (
     <div className="nb-frame bg-ice p-5">
       <h2 className="font-display text-2xl font-extrabold uppercase">{t('title')}</h2>
-      <div className="mt-4 space-y-4">
+      <ul className="mt-4 list-none space-y-4 p-0">
         {posts.map((post) => (
-          <FeaturePost
-            key={post.id}
-            slug={post.slug}
-            date={post.date}
-            image={post.image}
-            title={post.title}
-          />
+          <li key={post.id}>
+            <FeaturePost slug={post.slug} date={post.date} image={post.image} title={post.title} />
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   )
 }

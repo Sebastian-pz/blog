@@ -22,7 +22,7 @@ export default function FeaturePost({ date, image, title, slug }: FeaturePostPro
     >
       <Image
         src={image}
-        alt={title}
+        alt=""
         width={80}
         height={80}
         className="h-20 w-20 border-3 border-ink object-cover shadow-nb-sm"

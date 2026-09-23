@@ -22,9 +22,13 @@
     "home": "Inicio",
     "social": "Social",
     "about": "Acerca de mí",
-    "search": "Buscar"
+    "search": "Buscar",
+    "homeLink": "SPZ, inicio",
+    "primary": "Principal"
   },
   "about": {
+    "portraitAlt": "Retrato de Sebastian Pérez",
+    "profiles": "Perfiles",
     "role": "Software Developer 🌎",
     "focused": "Enfocado en el desarrollo web fullstack.",
     "callToAction": "¡Contácteme!",
@@ -44,7 +48,10 @@
   },
   "aboutExperience": {
     "title": "Experiencia profesional",
-    "note": "También he trabajado como freelance para empresas de LATAM y Estados Unidos y contribuido a proyectos open-source."
+    "note": "También he trabajado como freelance para empresas de LATAM y Estados Unidos y contribuido a proyectos open-source.",
+    "relatedArticle": "artículo relacionado",
+    "responsibilities": "Responsabilidades",
+    "technologies": "Tecnologías"
   },
   "aboutProjects": {
     "title": "Proyectos que he creado",
@@ -95,7 +102,8 @@
       "four": "Acceder a nuevas oportunidades: Compartir información libremente ayuda a democratizar el conocimiento y permite que más personas puedan acceder al mundo de la tecnología, sin importar su origen o recursos."
     },
     "paragraph": "Al compartir abiertamente nuestros conocimientos, fragmentos de código, tutoriales y experiencias, creamos un ecosistema tecnológico más inclusivo e innovador. Ya sea a través de publicaciones en blogs, contribuciones de código abierto o tutorías, cada pieza de conocimiento compartida tiene el potencial de generar un impacto significativo.",
-    "end": "Ustedes están haciendo que la comunidad de desarrollo sea un lugar mejor, más colaborativo y accesible. No subestimen el impacto positivo que tienen en la vida de otros desarrolladores."
+    "end": "Ustedes están haciendo que la comunidad de desarrollo sea un lugar mejor, más colaborativo y accesible. No subestimen el impacto positivo que tienen en la vida de otros desarrolladores.",
+    "follow": "Seguir"
   },
   "headerSection": {
     "title": "Sebastian Pérez blog",
@@ -109,9 +117,14 @@
     "description": "Parece que no hay posts que mostrar con los filtros actuales. Puedes mirar estas otras etiquetas para encontrar más contenido"
   },
   "footer": {
-    "copyright": "Copyright © 2026 Sebastian Pérez"
+    "copyright": "Copyright © 2026 Sebastian Pérez",
+    "social": "Perfiles sociales",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Correo a spezuluaga@gmail.com"
   },
   "post": {
+    "author": "Autor",
     "createdOn": "Publicado el",
     "unavailable": "Artículo no disponible",
     "cover": "Imagen de {title}",
@@ -121,8 +134,20 @@
     "title": "Artículos etiquetados como {tag}",
     "titleAll": "Todos los artículos"
   },
+  "pagination": {
+    "label": "Paginación",
+    "goToPage": "Ir a la página {page}"
+  },
+  "tags": {
+    "title": "Etiquetas populares"
+  },
   "a11y": {
-    "changeLanguage": "Cambiar idioma"
+    "changeLanguage": "Cambiar idioma",
+    "skipToContent": "Saltar al contenido",
+    "opensInNewTab": "se abre en una pestaña nueva",
+    "sidebar": "Más en este blog",
+    "latestPosts": "Últimos posts",
+    "backHome": "Volver al inicio"
   },
   "not-found": {
     "title": "Página no encontrada",
