@@ -1,5 +1,3 @@
-import { englishStopWords, spanishStopWords } from '@/app/utils/defaultStopWords'
-
 /**
  * Published article URLs store the slug this function produced.
  * Changing the stop-word lists would not rewrite those files.
@@ -7,8 +5,8 @@ import { englishStopWords, spanishStopWords } from '@/app/utils/defaultStopWords
 export type SupportedLanguage = 'en' | 'es'
 
 const stopWordsMap: Record<SupportedLanguage, string[]> = {
-  es: spanishStopWords,
-  en: englishStopWords,
+  es: ['de', 'la', 'el', 'los', 'las', 'un', 'una', 'unos', 'unas', 'al', 'del'],
+  en: ['a', 'an', 'the'],
 }
 
 function filterCommonWords(phrase: string, lang: string): string {

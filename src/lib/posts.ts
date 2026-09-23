@@ -6,6 +6,7 @@ import matter from 'gray-matter'
 
 import { isIsoDate } from './dates'
 import { excerptFromMarkdown } from './excerpt'
+import { findById, findBySlug } from './find-post'
 import type { Locale, MediaType, Post, PostMeta, PostRef, PostType } from './post-types'
 
 const CONTENT_DIR = path.join(process.cwd(), 'content')
@@ -108,11 +109,11 @@ export function getPostMetas(locale: string): PostMeta[] {
 }
 
 export function getPost(locale: string, slug: string): Post | null {
-  return postsFor(locale).find((post) => post.slug === slug) ?? null
+  return findBySlug(postsFor(locale), slug)
 }
 
 export function getPostById(locale: string, id: string): PostMeta | null {
-  const post = postsFor(locale).find((item) => item.id === id)
+  const post = findById(postsFor(locale), id)
   return post ? toMeta(post) : null
 }
 
