@@ -2,6 +2,22 @@
   "index": {
     "title": "Hello World"
   },
+  "meta": {
+    "title": "Sebastian Pérez blog",
+    "description": "Articles and notes by Sebastian Pérez on software development.",
+    "aboutTitle": "About",
+    "aboutDescription": "Who I am, the work I have done, and what I have built.",
+    "experienceTitle": "Experience",
+    "experienceDescription": "Jobs where I built software for real problems.",
+    "opinionTitle": "Opinion",
+    "opinionDescription": "Notes on tools, practice, and the craft of building software.",
+    "projectsTitle": "Projects",
+    "projectsDescription": "Software projects I built to learn, or to use.",
+    "socialTitle": "Social",
+    "socialDescription": "Where to find me, and why sharing what you learn changes the craft.",
+    "archiveTitle": "Articles",
+    "archiveDescription": "Filterable list of articles on this blog."
+  },
   "navBar": {
     "home": "Home",
     "social": "Social",

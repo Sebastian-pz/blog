@@ -1,9 +1,22 @@
+import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 
 import Pagination from '@/app/components/Pagination/Pagination'
 import Post from '@/app/components/Post/Post'
 import Tags from '@/app/components/Tags/Tags'
 import { DEFAULT_POST_LIMIT, getFilteredPosts } from '@/lib/posts'
+
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await props.params
+  const t = await getTranslations({ locale, namespace: 'meta' })
+  return {
+    title: t('archiveTitle'),
+    description: t('archiveDescription'),
+    robots: { index: false, follow: true },
+  }
+}
 
 type Params = Promise<{ locale: string }>
 type SearchParams = Promise<{ tag?: string; page?: string }>

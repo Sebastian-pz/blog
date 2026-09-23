@@ -1,6 +1,7 @@
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 
 import Svg from '@/components/svg/Svg'
 import Projects from '@/components/Project/Projects'
@@ -10,28 +11,19 @@ import ExtendedInfo from '@/components/ExtendedInfo/ExtendedInfo'
 import profileImage from '@/public/profileImage.webp'
 import GitHubIcon from '@/public/svg/github.svg'
 import LinkedInIcon from '@/public/svg/linkedin.svg'
-// import DownloadIcon from '@/public/svg/download.svg'
+import { pageMetadata } from '@/lib/metadata'
 
-export const metadata: Metadata = {
-  title: 'About',
-  description:
-    'In this section I talk a little about myself Sebastian Perez Software developer, who I am, where I studied, what I worked on and many other things.',
-  keywords: [
-    'Sebastian Perez',
-    'Software developer',
-    'About me',
-    'Portfolio',
-    'Python',
-    'TypeScript',
-    'Docker',
-    'Unit Testing',
-    'Git',
-    'programming',
-    'professional',
-    'freelance',
-    'open source',
-    'blog',
-  ],
+type Params = Promise<{ locale: string }>
+
+export async function generateMetadata(props: { params: Params }): Promise<Metadata> {
+  const { locale } = await props.params
+  const t = await getTranslations({ locale, namespace: 'meta' })
+  return pageMetadata({
+    locale,
+    title: t('aboutTitle'),
+    description: t('aboutDescription'),
+    path: '/about',
+  })
 }
 
 export default function MainPage() {

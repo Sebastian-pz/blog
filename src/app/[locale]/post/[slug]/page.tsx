@@ -4,9 +4,12 @@ import type { Metadata } from 'next'
 
 import MediaComponent from '@/components/Media/MediaComponent'
 import PostBody from '@/components/PostBody/PostBody'
-import { formatPostDate } from '@/lib/dates'
-import { getPost, getPostMetas } from '@/lib/posts'
 import { routing } from '@/i18n/routing'
+import { formatPostDate } from '@/lib/dates'
+import { articleLanguages } from '@/lib/metadata'
+import { getPost, getPostById, getPostMetas } from '@/lib/posts'
+import type { Locale } from '@/lib/post-types'
+import { SITE_URL } from '@/lib/site'
 
 type Params = Promise<{
   locale: string
@@ -31,9 +34,26 @@ export async function generateMetadata(props: { params: Params }): Promise<Metad
     }
   }
 
+  const otherLocale: Locale = locale === 'es' ? 'en' : 'es'
+  const translated = locale === 'en' || locale === 'es' ? getPostById(otherLocale, post.id) : null
+  const canonical = `${SITE_URL}/${locale}/post/${post.slug}`
+
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical,
+      languages: articleLanguages(post.locale, post.slug, translated),
+    },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: canonical,
+      type: 'article',
+      publishedTime: post.date,
+      images: [post.image],
+      locale: locale === 'es' ? 'es_ES' : 'en_US',
+    },
   }
 }
 

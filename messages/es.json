@@ -2,6 +2,22 @@
   "index": {
     "title": "Hola mundo"
   },
+  "meta": {
+    "title": "Blog de Sebastian Pérez",
+    "description": "Artículos y notas de Sebastian Pérez sobre desarrollo de software.",
+    "aboutTitle": "Acerca de mí",
+    "aboutDescription": "Quién soy, en qué he trabajado y qué he construido.",
+    "experienceTitle": "Experiencia",
+    "experienceDescription": "Trabajos en los que he construido software para problemas reales.",
+    "opinionTitle": "Opinión",
+    "opinionDescription": "Notas sobre herramientas, prácticas y el oficio de desarrollar software.",
+    "projectsTitle": "Proyectos",
+    "projectsDescription": "Proyectos de software que armé para aprender o para usarlos.",
+    "socialTitle": "Redes",
+    "socialDescription": "Dónde encontrarme, y por qué compartir lo que uno aprende cambia el oficio.",
+    "archiveTitle": "Artículos",
+    "archiveDescription": "Listado filtrable de los artículos del blog."
+  },
   "navBar": {
     "home": "Inicio",
     "social": "Social",
