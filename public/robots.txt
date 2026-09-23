@@ -1,3 +1,4 @@
-# Allow all crawlers
 User-agent: *
 Allow: /
+
+Sitemap: https://www.sebastian-perez-dev.com/sitemap.xml

@@ -3,9 +3,10 @@
 import { useLocale, useTranslations } from 'next-intl'
 import { useSearchParams } from 'next/navigation'
 import { ChangeEvent, useTransition } from 'react'
-import { getPostById, getPostByTitle } from '@/app/utils/const'
-import { encodeTitle } from '@/app/utils/encodeTitle'
+
 import { usePathname, useRouter } from '@/i18n/navigation'
+import { buildLocaleQuery, postPathForLocale } from '@/lib/locale-switch'
+import type { PostRef } from '@/lib/post-types'
 
 type SupportedLocale = 'en' | 'es'
 
@@ -14,7 +15,7 @@ interface QueryParams {
   tag: string | null
 }
 
-export default function LocaleSwitcher() {
+export default function LocaleSwitcher({ postRefs }: { postRefs: PostRef[] }) {
   const t = useTranslations('a11y')
   const [isPending, startTransition] = useTransition()
   const router = useRouter()
@@ -24,55 +25,18 @@ export default function LocaleSwitcher() {
 
   const queryParams: QueryParams = {
     page: searchParams.get('page'),
-    tag: searchParams.get('tag')
+    tag: searchParams.get('tag'),
   }
 
-  const handlePostLocaleSwitch = (
-    currentPath: string,
-    currentLocale: SupportedLocale,
-    targetLocale: SupportedLocale,
-  ): string => {
-    const match = currentPath.match(/^\/post\/(.+)$/)
-    if (!match) return currentPath
-
-    const requestedSlug = match[1]
-    const currentPost = getPostByTitle(currentLocale, requestedSlug)
-    // getPostByTitle falls back to the first post when the slug is unknown.
-    if (!currentPost?.id || encodeTitle(currentPost.title, currentLocale) !== requestedSlug) {
-      return currentPath
-    }
-
-    try {
-      const postInTargetLanguage = getPostById(targetLocale, currentPost.id)
-      if (postInTargetLanguage.id !== currentPost.id) return currentPath
-      return `/post/${encodeTitle(postInTargetLanguage.title, targetLocale)}`
-    } catch (error) {
-      console.error('Error switching locale for post:', error)
-      return currentPath
-    }
-  }
-
-  /**
-   * Builds the final URL with query parameters if needed
-   */
-  const buildFinalUrl = (baseUrl: string, params: QueryParams): string => {
-    const { page, tag } = params
-    if (page && tag) {
-      return `${baseUrl}?page=${page}&tag=${tag}`
-    }
-    return baseUrl
-  }
-
-  /**
-   * Handles the language selection change event
-   */
-  const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>): void => {
-    const nextLocale = e.target.value
+  const handleLanguageChange = (event: ChangeEvent<HTMLSelectElement>): void => {
+    const nextLocale = event.target.value
     if (nextLocale !== 'en' && nextLocale !== 'es') return
     if (nextLocale === localeActive) return
 
-    const newRoute = handlePostLocaleSwitch(pathname, localeActive, nextLocale)
-    const finalUrl = buildFinalUrl(newRoute, queryParams)
+    const newRoute = postPathForLocale(pathname, localeActive, nextLocale, postRefs)
+    if (newRoute === null) return
+
+    const finalUrl = buildLocaleQuery(newRoute, queryParams.page, queryParams.tag)
 
     startTransition(() => {
       router.replace(finalUrl, { locale: nextLocale })

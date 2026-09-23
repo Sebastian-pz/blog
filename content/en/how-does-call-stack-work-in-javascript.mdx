@@ -1,0 +1,34 @@
+---
+id: "3806f8aa09ae45fb978096e651733e47"
+slug: "how-does-call-stack-work-in-javascript"
+title: "How does the Call Stack work in JavaScript?"
+type: "opinion"
+mediaType: "video"
+image: "/blog/CallStack.webp"
+
+media: "https://www.youtube.com/embed/eiC58R16hb8?si=yLZCFhwKV5ZWu1ZO"
+date: "2024-08-10"
+author: "Sebastian Pérez"
+tags:
+  - "Opinion"
+  - "Tools"
+  - "NodeJS"
+  - "JavaScript"
+---
+The other day, I was browsing YouTube when I stumbled upon a video explaining how JavaScript works under the hood. Truth be told, it's a topic I've studied and understood before, but I wanted to refresh my knowledge. To my surprise, this video explained it so clearly and simply that I was hooked!
+
+## Why is understanding the Call Stack important? (The Single Thread Problem)
+
+Now, why is understanding the call stack so crucial? Mainly because JavaScript operates on a single thread, unlike languages like C# or Java, which can utilize multiple threads for executing their algorithms.
+
+Imagine JavaScript as a chef with only one hand 👨‍🍳. They can create many delicious dishes, but they can only work on one thing at a time. If they're busy chopping onions for an omelet, they can't simultaneously whisk eggs for dessert.
+
+Because JavaScript is single-threaded, any process that takes a long time effectively freezes the entire application. It's like the chef endlessly chopping onions while the rest of the kitchen comes to a standstill.
+
+## Additional resources to better understand the Call Stack
+
+Lydia Hallie's explanation is excellent, and the visuals make everything much easier to grasp. However, if you want to delve deeper or still have some lingering questions, here are some other resources you can explore:
+
+Another great explanation, but in Spanish [https://www.youtube.com/watch?v=ygA5U7Wgsg8](https://www.youtube.com/watch?v=ygA5U7Wgsg8)
+
+Understanding JavaScript in depth, 33 essential concepts (concept 1 covers the call stack): [https://github.com/leonardomso/33-js-concepts](https://github.com/leonardomso/33-js-concepts)

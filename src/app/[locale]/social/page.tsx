@@ -1,25 +1,25 @@
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
 
 import ExternalLink from '@/components/ExternalLink/ExternalLink'
 import { buttonVariants } from '@/components/ui/button'
 
+import { pageMetadata } from '@/lib/metadata'
 import { socialMediaProfiles } from './utils/constants'
 
-export const metadata: Metadata = {
-  title: 'Social Sebastian Perez',
-  description:
-    'Follow Sebastian Perez on social media (LinkedIn, X, GitHub) and discover other amazing creators. Find inspiration, software development tips, and connect with our community.',
-  keywords: [
-    'Sebastian Perez',
-    'Software developer',
-    'GitHub',
-    'LinkedIn',
-    'Twitter',
-    'X',
-    'connect',
-  ],
+type Params = Promise<{ locale: string }>
+
+export async function generateMetadata(props: { params: Params }): Promise<Metadata> {
+  const { locale } = await props.params
+  const t = await getTranslations({ locale, namespace: 'meta' })
+  return pageMetadata({
+    locale,
+    title: t('socialTitle'),
+    description: t('socialDescription'),
+    path: '/social',
+  })
 }
 
 export default function Page() {

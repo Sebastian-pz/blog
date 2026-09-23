@@ -9,12 +9,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   outputFileTracingRoot: __dirname,
+  transpilePackages: ['next-mdx-remote'],
   images: {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '*',
-        port: '',
+        hostname: 'images.spiceworks.com',
       },
     ],
   },

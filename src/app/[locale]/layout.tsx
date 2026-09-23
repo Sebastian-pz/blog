@@ -3,19 +3,35 @@ import './globals.css'
 import React from 'react'
 import type { Metadata } from 'next'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
-import { notFound } from 'next/navigation'
-
 import { getTranslations } from 'next-intl/server'
+import { notFound } from 'next/navigation'
 
 import FooterComponent from '@/app/components/footer/footer'
 import Navbar from '@/app/components/NavBar/NavBarComponent'
 import { fontDisplay, fontMono, fontSans } from '@/app/ui/fonts'
 import { routing } from '@/i18n/routing'
+import { getPostRefs } from '@/lib/posts'
+import { SITE_URL } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Blog - Sebastian Perez Dev',
-  description:
-    'Technology blog, created by Sebastian Perez. Find articles, tips and resources about web development and software in general.',
+export async function generateMetadata(props: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await props.params
+  const t = await getTranslations({ locale, namespace: 'meta' })
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: {
+      default: t('title'),
+      template: '%s · Sebastian Pérez',
+    },
+    description: t('description'),
+    openGraph: {
+      siteName: 'Sebastian Pérez',
+      type: 'website',
+      locale: locale === 'es' ? 'es_ES' : 'en_US',
+    },
+  }
 }
 
 export function generateStaticParams() {
@@ -39,6 +55,7 @@ export default async function RootLayout({
   }
 
   const t = await getTranslations({ locale, namespace: 'a11y' })
+  const postRefs = getPostRefs()
 
   return (
     <html lang={locale}>
@@ -49,7 +66,7 @@ export default async function RootLayout({
           <a className="skip-link" href="#main-content">
             {t('skipToContent')}
           </a>
-          <Navbar />
+          <Navbar postRefs={postRefs} />
           <main id="main-content" tabIndex={-1} className="pt-24">
             {children}
           </main>

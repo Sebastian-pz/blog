@@ -1,48 +1,49 @@
-# Mi Blog de Desarrollo
+# Blog de Sebastian Pérez
 
-¡Bienvenido a mi espacio digital! Soy un apasionado desarrollador de software enfocado en la web, estudiante de administración de empresas y contaduría pública. En este blog, comparto mis experiencias, proyectos y noticias relevantes en el mundo del desarrollo web.
+Sitio personal en Next.js (App Router), con la interfaz en español e inglés. Los artículos viven en `content/es` y `content/en` como MDX: un archivo por idioma, con el slug y la fecha en el frontmatter. Las dos traducciones de un mismo texto comparten `id`. Si una traducción no existe, el cambio de idioma se queda en el artículo actual.
 
-## Temas Destacados
+Repositorio: [Sebastian-pz/blog](https://github.com/Sebastian-pz/blog)
 
-- 🚀 Proyectos en los que estoy trabajando y en los que he trabajado.
-- 📚 Reflexiones sobre mi viaje como estudiante y profesional.
+## Desarrollo
 
-## Acerca de Mí
+Requiere Node 22.6 o superior y pnpm 11.5.
 
-¡Hola! Soy Sebastian Pérez, un entusiasta de la tecnología con un amor especial por los perros 🐶 y el deporte 🏋️. Estoy comprometido con la mejora continua y compartir conocimientos en la comunidad.
+```bash
+git clone https://github.com/Sebastian-pz/blog.git
+cd blog
+pnpm install
+pnpm dev
+```
 
-¡Gracias por visitar y espero que disfrutes explorando mi blog!
+El servidor queda en [http://localhost:3000](http://localhost:3000). `/` redirige a `/en`.
 
-[Háblame por LinkedIn](https://www.linkedin.com/in/sebastian-perez-zuluaga/) 😁
-[Revisa mi perfil de GitHub](https://github.com/Sebastian-pz) 👀
+```bash
+pnpm lint
+pnpm test
+pnpm build
+```
 
-## Cómo Empezar
+## Un artículo nuevo
 
-¡Es fácil poner en marcha este proyecto! Sigue estos pasos:
+Crea `content/<locale>/<slug>.mdx`. El slug del archivo y el del frontmatter tienen que coincidir, y no se recalculan a partir del título: cambiar el título no mueve la URL.
 
-1. Clona este repositorio:
+```md
+---
+id: "un-id-estable"
+slug: "mi-articulo"
+title: "Mi artículo"
+type: "opinion"
+mediaType: "image"
+image: "/blog/portada.webp"
+date: "2026-09-22"
+author: "Sebastian Pérez"
+tags:
+  - "Opinion"
+---
 
-   ```bash
-   git clone https://github.com/Sebatian-pz/blog.git
-   ```
+El cuerpo es Markdown. `##` es un subtítulo, `>` una nota y los enlaces van en Markdown.
+```
 
-2. Entra en la carpeta del proyecto:
+`type` es `opinion`, `experience` o `project`. `mediaType` es `image` o `video`. Si es un vídeo, añade `media` con la URL de embed. La imagen de portada va en `public/`.
 
-   ```bash
-   cd blog
-   ```
-
-3. Instala las dependencias necesarias para el proyecto:
-
-   ```bash
-     npm i
-   ```
-
-4. Inicia el servidor de desarrollo en el puerto 3000:
-
-   ```bash
-   npm run dev
-   ```
-
-5. ¡Comienza a codear!
-
+Para publicar el mismo texto en el otro idioma, copia el `id` y escribe el otro archivo con su propio slug.

@@ -222,8 +222,17 @@
     outline-offset: 3px;
   }
 
+  footer :focus-visible {
+    outline-color: var(--color-sun);
+  }
+
+  #main-content {
+    scroll-margin-top: 6rem;
+  }
+
   #main-content:focus {
-    outline: none;
+    outline: 3px solid var(--color-sun);
+    outline-offset: -6px;
   }
 
   ::selection {
