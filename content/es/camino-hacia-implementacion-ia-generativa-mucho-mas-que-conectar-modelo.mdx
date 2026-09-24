@@ -18,19 +18,19 @@ Me inscribí en el curso Fundamentos profesionales de IA generativa, de Microsof
 
 El curso junta familias que no se integran igual. Una GAN o un autoencoder variacional se entrenan: hace falta un conjunto de datos grande, curado y equilibrado entre clases. Si un generador de retratos ve muchas más imágenes de un grupo demográfico que de otros, la salida repite ese desbalance.
 
-Un transformer que se consume por API, como GPT o DALL·E, es otro contrato. No se entrena el modelo. Se le pasa un input y se paga la inferencia. Tratar los dos casos como "descargar el modelo y usarlo" mezcla el entrenamiento con la integración.
+Un modelo que se consume por API, como GPT o DALL·E, es otro contrato. No se entrena. Se le pasa un input y se paga la inferencia. GPT es un transformer. DALL·E 2 es un modelo de difusión. Tratar cualquiera de los dos como "descargar el modelo y usarlo" mezcla el entrenamiento con la integración.
 
 ## El prompt es el input
 
 En un modelo generativo, el prompt es la entrada que condiciona la salida. "Genera una imagen" y un prompt que fija sujeto, encuadre y restricciones no producen el mismo resultado. Un cambio chico en el texto cambia la generación.
 
-Afinar el prompt sube la cantidad de respuestas utilizables y suele bajar reintentos y tokens de salida. Eso baja el costo de la llamada. No cambia el costo de cómputo interno del modelo, y no sustituye un ajuste fino.
+Afinar el prompt sube la cantidad de respuestas utilizables y suele bajar reintentos y tokens de salida. Eso baja el costo de la llamada, porque se genera menos. El precio por token sigue igual, y un prompt mejor no sustituye un ajuste fino.
 
 ## Del notebook al tráfico real
 
 Google Colab y Jupyter alcanzan para probar. Atender peticiones de otras personas pide otra cuenta: memoria, cómputo y qué pasa cuando llega más de una petición a la vez.
 
-El ajuste fino tampoco es el paso de todos los productos. Ajustar hiperparámetros sobre un conjunto propio tiene sentido cuando el modelo preentrenado no cubre el caso. Cuando sí lo cubre, el trabajo es especificar el prompt, evaluar salidas y decidir qué se muestra. Ajustar por inercia deja un entrenamiento más que mantener.
+El ajuste fino tampoco es el paso de todos los productos. Sigue el entrenamiento del modelo preentrenado y actualiza sus pesos con un conjunto de datos propio, y tiene sentido cuando ese modelo no cubre el caso. Cuando sí lo cubre, el trabajo es especificar el prompt, evaluar salidas y decidir qué se muestra. Hacer ajuste fino por inercia deja otro entrenamiento que mantener.
 
 ## El sesgo sale de los datos y de las decisiones de diseño
 

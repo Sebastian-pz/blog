@@ -23,7 +23,7 @@ La universidad aprobó el proyecto. En el segundo semestre de 2023 pasó a produ
 
 - La simulación en el cliente: pasos del trámite, decisiones del usuario y estado del caso, en React y Redux.
 - La integración con la API: funciones de servicio reutilizables, para no dejar las llamadas HTTP repartidas en los componentes. Un cambio de contrato se tocaba en el servicio.
-- La sesión, validada en el cliente y en el servidor. El rol decidía qué rutas y qué acciones veía cada usuario. Al expirar el token, el cliente lo reemitía. Si no podía, cerraba la sesión.
+- La sesión, validada en el cliente y en el servidor. El rol decidía qué rutas y qué acciones veía cada usuario. Al expirar el token, el cliente pedía uno nuevo al servidor. Si esa petición fallaba, cerraba la sesión.
 - La interfaz, con el equipo, siguiendo el flujo del trámite.
 - En el servidor, también con el equipo: endpoints, conexión a la base de datos, carga de archivos e inicio de sesión.
 - Pair programming para revisar esa lógica antes de integrarla.

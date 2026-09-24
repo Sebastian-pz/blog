@@ -18,19 +18,19 @@ I enrolled in Microsoft's Professional Foundations of Generative AI course to so
 
 The course puts together families that are not integrated the same way. A GAN or a variational autoencoder is trained: it needs a large dataset, curated and balanced across classes. If a portrait generator sees many more images of one demographic group than of others, the output repeats that imbalance.
 
-A transformer consumed through an API, such as GPT or DALL·E, is a different contract. You do not train the model. You pass an input and pay for inference. Treating both cases as "download the model and use it" mixes training with integration.
+An API model, such as GPT or DALL·E, is a different contract. You do not train it. You pass an input and pay for inference. GPT is a transformer. DALL·E 2 is a diffusion model. Treating either one as "download the model and use it" mixes training with integration.
 
 ## The prompt is the input
 
 In a generative model, the prompt is the input that conditions the output. "Generate an image" and a prompt that fixes subject, framing, and constraints do not produce the same result. A small change in the text changes the generation.
 
-Tightening the prompt raises the number of usable responses and usually cuts retries and output tokens. That lowers the cost of the call. It does not change the model's internal compute cost, and it does not replace fine-tuning.
+Tightening the prompt raises the number of usable responses and usually cuts retries and output tokens. That lowers the cost of the call, because you generate less. The price per token stays the same, and a better prompt does not replace fine-tuning.
 
 ## From a notebook to real traffic
 
 Google Colab and Jupyter are enough to try something. Serving other people's requests is a different account: memory, compute, and what happens when more than one request arrives at once.
 
-Fine-tuning is not the step every product takes. Tuning hyperparameters on your own dataset makes sense when the pretrained model does not cover the case. When it does, the work is specifying the prompt, evaluating outputs, and deciding what gets shown. Tuning out of habit leaves another training run to maintain.
+Fine-tuning is not the step every product takes. It keeps training the pretrained model and updates its weights on a dataset you supply, which makes sense when that model does not cover the case. When it does, the work is specifying the prompt, evaluating outputs, and deciding what gets shown. Fine-tuning out of habit leaves another training run to maintain.
 
 ## Bias comes from the data and from design decisions
 

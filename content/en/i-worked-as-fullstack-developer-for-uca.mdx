@@ -23,7 +23,7 @@ The university approved the project. In the second semester of 2023 it went to p
 
 - The simulation on the client: steps of the procedure, the user's decisions, and the case state, in React and Redux.
 - The API integration: reusable service functions, so HTTP calls were not scattered through components. A contract change was made in the service.
-- The session, validated on the client and on the server. The role decided which routes and which actions each user saw. When the token expired, the client reissued it. If it could not, it signed the user out.
+- The session, validated on the client and on the server. The role decided which routes and which actions each user saw. When the token expired, the client asked the server for a new one. If that request failed, it signed the user out.
 - The interface, with the team, following the procedure's flow.
 - On the server, also with the team: endpoints, the database connection, file upload, and sign-in.
 - Pair programming to review that logic before integrating it.
