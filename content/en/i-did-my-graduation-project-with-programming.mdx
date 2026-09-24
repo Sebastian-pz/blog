@@ -1,7 +1,7 @@
 ---
 id: "3036dd4b2fbb4b0496571af11af2aa6d"
 slug: "i-did-my-graduation-project-with-programming"
-title: "I Did My Graduation Project with Programming!"
+title: "Degree project: analyzing brand posts in TypeScript"
 type: "project"
 mediaType: "image"
 image: "/blog/degree.webp"
@@ -12,44 +12,26 @@ tags:
   - "Opinion"
   - "Tools"
 ---
-My graduation project was one of the most time-consuming tasks for me this year. I wanted to create something meaningful and not so commonly seen, and in some way, I wanted to use programming tools.
+The degree project took more of my time that year than anything else. I wanted to use programming to read how clothing brands publish, instead of only describing it in prose.
 
-To achieve this, I created an algorithm based on 'classes' using TypeScript that allowed me to analyze the content published by brands on various social media platforms.
+I wrote a TypeScript program, organized in classes, that analyzes a brand's posts. The measures are concrete: dominant color, posting cadence, and interactions by kind of post.
 
-In short, the goal of this algorithm was to identify behavioral patterns, color patterns, posting frequency patterns, and overall how users interact with popular clothing brands on social media.
+At first it depended on a library that read accounts dynamically. I removed it because it did not meet the degree project's submission rules. The analysis stayed on a fixed set of posts.
 
-Although initially the algorithm was tied to a dependency that allowed dynamic examination of different social media accounts, this idea had to be discarded because it did not comply with the policies for presenting the graduation project.
+## Input
 
-Once the program was completed, it provides results on the primary color range for products, frequent posting times, determined content frequency, patterns that may indicate 'success' or 'failure' of a post, post categories that generate more interactions, content used to improve social media visibility, and more.
+For each brand I took the latest 150 posts. Each one was classified as product, meme, or phrase, with date, time, and dominant colors.
 
-It became a very comprehensive tool that helps understand the practices of successful companies on social media.
+## What it computes
 
-For the original exercise, the last 150 posts of the company being analyzed were taken. From there, posts were divided into categories (products, memes, or quotes) and other data was added for categorization: date, time, and primary colors.
+- categories with the most interactions
+- colors with the most interactions
+- posts with the most interactions
+- how many days pass between posts of each type
+- deviation and chi-square
+- the potential loss I defined in the project: interactions missed when the colors fall outside the category's palette
+- categories present in the advertising pieces
 
-Some examples of the functions of the algorithm include:
+That describes the pattern of a brand that already has an audience. It is there to compare one brand with another. The program does not include an experiment showing that copying the pattern works for a smaller brand.
 
-✅ Identifying categories with the highest number of interactions.
-
-✅ Identifying colors with the highest number of interactions.
-
-✅ Identifying posts with the highest number of interactions.
-
-✅ Determining the frequency in days with which each type of content is posted.
-
-✅ Deviations and Xi².
-
-✅ Assessing potential loss from using colors not aligned with the category.
-
-✅ Identifying categories used in advertising strategies.
-
-Thanks to this tool, one can observe how the strategies of established companies work and try to replicate them in smaller companies or those just entering the market.
-
-Overall, it provides an overview of the content strategies that work for large companies with an established audience.
-
-Creating the tests was the most satisfying part...
-
-The algorithm is now available for our graduation project advisor to use with students.
-
-You can see the repo with all the information here:
-
-[https://github.com/Sebastian-pz/TDG-2023](https://github.com/Sebastian-pz/TDG-2023)
+Writing the tests was the part of the build I enjoyed most. The repository stayed with the advisor so other students could use it: [Sebastian-pz/TDG-2023](https://github.com/Sebastian-pz/TDG-2023).

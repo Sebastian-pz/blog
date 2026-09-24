@@ -1,7 +1,7 @@
 ---
 id: "3806f8aa09ae45fb978096e651733e47"
 slug: "como-funciona-callstack-en-javascript"
-title: "¿Cómo funciona el CallStack en JavaScript?"
+title: "Cómo funciona la pila de llamadas en JavaScript"
 type: "opinion"
 mediaType: "video"
 image: "/blog/CallStack.webp"
@@ -15,22 +15,22 @@ tags:
   - "NodeJS"
   - "JavaScript"
 ---
-El otro día, mientras navegaba por YouTube, me topé con un video que hablaba de cómo funciona JavaScript por debajo de la mesa. La verdad es un tema que ya había estudiado y entendido con anterioridad, pero por reforzar conocimientos quise entrar a ver el contenido, y me llevé con la sorpresa de que este video lo explicaba de forma tan clara y sencilla que me encantó.
+Repasé el modelo de ejecución de JavaScript con el video de Lydia Hallie. Ya lo había estudiado. Esta vez me quedé con la relación entre la pila de llamadas y el bucle de eventos.
 
-## ¿Por qué entender el CallStack es importante? (el problema de el hilo único).
+## La pila de llamadas
 
-Ahora, ¿por qué es importante entender el call stack? Principalmente porque JS funciona con un solo hilo, a diferencia de otros lenguajes como C# o Java que pueden hacer uso de multi hilos para la ejecución de sus algoritmos.
+La pila de llamadas guarda el marco de la función en ejecución y los marcos de quien la invocó. Cada llamada apila un marco. Cada retorno lo desapila. El orden es LIFO: sale primero el último marco que entró.
 
-Imagina que JavaScript es un chef con una sola mano 👨‍🍳. Puede hacer muchas cosas deliciosas, pero solo puede hacer una a la vez. Si se pone a cortar cebolla para una tortilla, mientras tanto no puede estar batiendo huevos para el postre.
+Si una función sigue llamándose sin retornar, como una recursión sin caso base, la pila crece hasta que el motor corta la ejecución por desbordamiento.
 
-Entender que como JS es single threaded, cuando un proceso toma mucho tiempo se está congelando la aplicación, es tiempo muerto que todo se queda parado.
+## Un hilo, y cuándo se bloquea
 
-Entonces, si un proceso se vuelve muy pesado y tarda mucho en ejecutarse, ¡todo se paraliza! Es como si el chef se quedara picando cebolla eternamente y el resto de la cocina se detuviera por completo.
+En un realm del navegador, y en el hilo principal de Node.js, ese código JavaScript tiene una sola pila. Java y C# pueden ejecutar varios hilos a la vez. Aquí el runtime sí hace trabajo concurrente —temporizadores, red, disco—, pero el callback vuelve a esta pila. El bucle de eventos toma la siguiente tarea cuando la pila está vacía.
 
-## Recursos adicionales para entender un poco mejor qué es el callstack
+Una función síncrona larga ocupa la pila hasta retornar. En el navegador, mientras tanto, no se pinta el siguiente frame ni se atiende un click. En Node.js no corre el siguiente callback, incluido un `setTimeout` que ya venció. El trabajo asíncrono espera en la cola. No corre en paralelo dentro de esa pila.
 
-La explicación de Lydia Hallie es bastante buena y la ayuda gráfica hace que todo sea mucho más fácil de entender, pero si quieres aprender un poco más o aún no te quedó del todo claro, aquí hay otros recursos que puedes explorar.
+Web Workers, y `worker_threads` en Node.js, son otro hilo con su propia pila. No cambian el modelo del hilo principal.
 
-Otra muy buena explicación, pero en español: [https://www.youtube.com/watch?v=ygA5U7Wgsg8](https://www.youtube.com/watch?v=ygA5U7Wgsg8)
+## Para seguir
 
-Entender más en profundidad JavaScript, 33 conceptos muy importantes (el concepto 1 habla del callstack): [https://github.com/leonardomso/33-js-concepts](https://github.com/leonardomso/33-js-concepts)
+La explicación de Hallie es la del video de arriba. En español está [esta otra](https://www.youtube.com/watch?v=ygA5U7Wgsg8). El primer punto de [33 concepts every JavaScript developer should know](https://github.com/leonardomso/33-js-concepts) es la pila de llamadas.

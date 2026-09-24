@@ -1,7 +1,7 @@
 ---
 id: "2bb2193700824b11bcc33c9dc5dd3c65"
 slug: "i-worked-as-fullstack-developer-for-uca"
-title: "I Worked as a Fullstack Developer for UCA 🎓"
+title: "A legal-procedure simulator for UCA"
 type: "experience"
 mediaType: "image"
 image: "/blog/UnderConstruction.webp"
@@ -13,32 +13,21 @@ tags:
   - "React"
   - "CI/CD"
 ---
-In January 2023, I joined a group of developers tasked with creating a web application for the Universidad Católica Argentina (UCA), an application designed to educate their students.
+In January 2023 I joined a team building a web app for Universidad Católica Argentina. The product simulates legal procedures: the sequence a law student walks through once they practice. The point was to rehearse the procedure and the tool before starting work.
 
-I was hired as a fullstack developer, responsible for both frontend and backend development. The application aimed to simulate processes that law students would commonly face when entering the professional world. In short, our role was to recreate processes that legal professionals handle in their daily work.
+I was hired as a fullstack developer. We worked in short iterations and with pair programming. The stack was Python, Node.js, TypeScript, Express, React, Redux, and Material UI.
 
-This way, students could better mentally prepare and adapt to the tools and situations they would encounter in the future.
+The university approved the project. In the second semester of 2023 it went to production, and students started using it.
 
-During this job, I used Agile methodology, pair programming, and the stack of Python, NodeJS, TypeScript, Express, React, Redux, MaterialUI, and more.
+## What I did in the code
 
-Finally, the project was presented to the university and the result was its approval. In semester 2 (SII-2023), the application went into production and began being used by students.
+- The simulation on the client: steps of the procedure, the user's decisions, and the case state, in React and Redux.
+- The API integration: reusable service functions, so HTTP calls were not scattered through components. A contract change was made in the service.
+- The session, validated on the client and on the server. The role decided which routes and which actions each user saw. When the token expired, the client reissued it. If it could not, it signed the user out.
+- The interface, with the team, following the procedure's flow.
+- On the server, also with the team: endpoints, the database connection, file upload, and sign-in.
+- Pair programming to review that logic before integrating it.
 
-## Some of my responsibilities in this job were:
+The domain was not mine. Each screen had to follow a legal procedure, and that is what the engagement taught me.
 
-✅ Frontend Logic Development: Implemented the main logic functions in the frontend, ensuring that the code was simple, scalable, and maintainable.
-
-✅ Frontend and API Integration: Connected the frontend with the API, creating reusable functions and corresponding application services to promote best practices and facilitate future refactorings.
-
-✅ User Session Management: Managed user sessions with appropriate validations, both in the backend and frontend, ensuring that each user had access to specific functions and renderings according to their role. Implemented a token re-authentication and automatic logout system based on token expiration.
-
-✅ User Interface Development: With the help of my colleagues, designed clean user interfaces aligned with the nature of the application, prioritizing user intuition and ease of use.
-
-✅ Request Handling and Backend Development: Supported and developed with the team the responsibilities of handling requests, developing the API, establishing database connections, file management, and creating the login system, among other tasks.
-
-✅ Code Optimization: Ensured that the developed code was optimal, following good programming practices and keeping it easy to understand to facilitate teamwork and future maintenance.
-
-✅ Collaboration and Pair Programming: Actively participated in pair programming during the project development, collaborating with my colleagues to solve problems, share knowledge, and improve code quality together.
-
-Undoubtedly, one of the experiences where I have learned the most as a programmer.
-
-Just want to say thank you to UCA for giving me this opportunity 💚.
+Thanks to UCA.

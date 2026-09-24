@@ -1,7 +1,7 @@
 ---
 id: "930a849815984e8a95d4f54f132aac29"
 slug: "i-created-sales-inventory-and-payroll-system-using-visual-basic-for-apps"
-title: "I Created a Sales, Inventory, and Payroll System Using Visual Basic for Apps 🧮"
+title: "Sales, inventory, and payroll for a bar, automated with VBA"
 type: "experience"
 mediaType: "image"
 image: "/blog/bar-vb.webp"
@@ -12,20 +12,20 @@ tags:
   - "Opinion"
   - "Tools"
 ---
-I intervened in a bar to improve their situation and management. The business had no information system in place, no inventories, payroll, accounting books, or supplier records, etc.
+A bar had no information system: no inventory, no payroll, no accounting books, and no supplier records.
 
-Initially, my intervention was focused on creating a temporary file (an algorithm) to manage sales, inventory, and payroll (because the company had already paid for the development of a software, so they would only use this Excel file for a short period of time).
+The place had already paid for other software, so my deliverable was temporary. I built an Excel workbook for sales, inventory, and payroll until that software arrived.
 
-I was responsible for creating the necessary algorithms to determine each table's payments, automate inventory deductions, and automatically record cash income or increases in accounts receivable (accounting tasks).
+Three procedures ended up in VBA:
 
-Yes, besides using my programming knowledge, I also used my skills as an administrator and financial accountant to help them with their issues (which were many, as mentioned earlier).
+- compute the total for each table
+- decrement inventory when a sale is recorded
+- record the inflow as cash or as an increase in accounts receivable
 
-Once I developed the Excel file with macros to handle these functions, I noticed it was common for bills in such businesses to be paid separately. So, while my work was functional and what they had asked for, I decided to personalize it further to make their lives easier.
+Part of the work was accounting. The accounts had to be named, not just moved between cells.
 
-So yes, I intervened in many ways in this bar, and the most important achievement was that they now have the necessary tools to create the basic accounting records required to comply with DIAN and IyC.
+Once the workbook was in use I saw that this place often splits a table's bill. I added the split payment, even though it was not in the original request.
 
-I really enjoyed doing this work, both as a programmer and a financial 'expert', and felt that I made a significant contribution to the business.
+With that, they could assemble the basic records needed to answer the DIAN (Colombia's tax authority) and the industry-and-commerce tax. It does not close the business's books. It leaves the record that did not exist.
 
-Regarding the development, primarily Excel and its macros programmed in VBA were used (later I found out that you can also program in Excel with Python 🤦🏻‍♂️, maybe next time). The development of this algorithm was not very complex; it was about adapting to the local needs and writing code to meet them.
-
-I wish them much success, and thank you for the opportunity given.
+The build was Excel and VBA macros. There was little branching: the procedure follows how the place operates. Excel can also be automated with Python. I did not use that here.

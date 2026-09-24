@@ -1,7 +1,7 @@
 ---
 id: "3ae67a3496d74fdfa5c16f6cbef1ed73"
 slug: "what-was-it-like-working-with-visual-basic-for-first-time-at-regional-office-of-multinational"
-title: "What Was It Like Working with Visual Basic for the First Time at the Regional Office of a Multinational?"
+title: "Using VBA for the first time at a multinational's regional office"
 type: "opinion"
 mediaType: "image"
 image: "/blog/opinionAboutVB.webp"
@@ -13,26 +13,18 @@ tags:
   - "Tools"
   - "CleanCode"
 ---
-What do you think my experience was like working for a multinational company, on a regional project, with a programming language I had never used before, and with a high level of confidentiality?
+The engagement is described in [Validating job profiles with VBA during a platform migration](/en/post/i-worked-for-multinational-using-programming-visual-basic-for-apps). This note is about doing it without knowing the language, and with little information on the way in.
 
-Initially, if you haven't read the article about my experience as a developer for the company, here's the link for you to check it out first:
+They contacted me without the detail. I knew data had to be unified. I did not know which company, or which fields, until I was inside.
 
-The link will be added when the blog is updated 😬
+The user was human resources, and the result carried legal weight: it said whether a person met the job profile. Every field had to match its source, because the record was going to be used in an audit.
 
-As I mentioned in that article, my experience working for this company was curious. Initially, they contacted me while avoiding giving too much information. I knew my job was to unify information, but nothing in detail.
+The procedure replaced a manual search. Rebuilding one regional employee's record took hours. Afterward, the lookup was by name, national ID, or email, and the consolidated file came back in seconds.
 
-It was quite interesting working with a company directly helping the HR sector (in the legal environment). It was very different from what I had done before. There was a lot at stake, and the processes were carried out in very different ways. It was also the time I worked with the most data, and everything had to be handled in detail and optimized.
+I did not know Visual Basic. Adapting took less time than I expected because the problem was data and rules: read workbooks, compare them with the job profile, and write two lists. VBA was the language available in Excel, which is where the information already lived.
 
-The result of this work made me feel accomplished. Achieving, through programming, that a really tedious and time-consuming process became a matter of a few clicks is something I find truly rewarding. Comparing the fact that previously, obtaining information about a regional employee took hours (literally) and now it can be done in a few seconds by typing their name, ID, or email and clicking a button, is something that excites me.
+The code solves the case and mixes file reading with the business rule. If I did it again, I would separate those two parts. The deliverable was still used.
 
-Honestly, I thought it would be a more difficult process; however, due to my previous programming knowledge, it didn't take me long to adapt to using VBA.
+Taking the job without knowing the language was worth it for the domain. I saw how a profile is validated when the data is not in a database, but in files.
 
-I made the tool relatively simply. Perhaps I missed using some best practices, but it was a job that I found rewarding, and when I finished it, I felt proud of it.
-
-## Personal Mini Reflection
-
-The last thing I want to say is that sometimes taking on new challenges can be a bit scary, but at least in the programming world, it is totally worth it. As I mentioned earlier, I entered this project without knowing anything about Visual Basic, and in the end, it was completed with a lot of learning along the way. I am very happy with what I achieved there.
-
-Thanks to the company in question!
-
-I hope they are better prepared for their next audits 🤣
+I hope the next audit cycle does not find them with the workbooks scattered again.

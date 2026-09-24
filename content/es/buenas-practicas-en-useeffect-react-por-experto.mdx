@@ -1,7 +1,7 @@
 ---
 id: "fc2aaada30594ed9a39fa1928d267655"
 slug: "buenas-practicas-en-useeffect-react-por-experto"
-title: "Buenas prácticas en los useEffect de React por un experto"
+title: "Funciones con nombre en useEffect: legibilidad y stack trace"
 type: "opinion"
 mediaType: "image"
 image: "/blog/useEffect.webp"
@@ -11,28 +11,20 @@ tags:
   - "CleanCode"
   - "Opinion"
 ---
-Utilizar funciones con nombres dentro del hook useEffect de react suena un poco... raro ¿no? Pues no, o al menos no lo es para Cory House.
+Cory House publicó en X que el primer argumento de `useEffect` conviene que sea una función con nombre, no un arrow anónimo. Me metí en el hilo porque choca con lo que más se ve: el callback escrito inline.
 
-Hace relativamente poco vi una publicación en X que hablaba de utilizar funciones con nombre dentro del hook useEffect en React (sí, como primer parámetro). Me pareció interesante la idea, así que me adentré en el hilo para ver qué tenían que decir al respecto.
+El efecto se lee antes cuando el nombre dice qué sincroniza. `syncSession` se entiende antes que un callback de quince líneas. Quien no estaba de acuerdo decía que el nombre es ceremonia y que un comentario basta.
 
-Es una manera de mejorar la legibilidad del código, haciendo más simple entender qué es lo que hace un useEffect que tengamos en nuestra aplicación, y sí, viéndolo desde este lado tiene sentido, sin embargo, no terminó de convencer a algunos que argumentaban que estaban haciendo más complicado el desarrollo.
+House da tres razones. Las comparto en distinto grado:
 
-Por un lado, tenemos la parte de la legibilidad (que sí, es más legible desde mi perspectiva), sin embargo, también tenemos que tener en cuenta el tema de las convenciones, es mucho más común ver que este hook es utilizado pasando como parámetro simplemente un arrow function, así que entiendo el choque de opiniones que puede generar este tema.
+- El código cambia cuando cambia el comportamiento. El comentario no. Un comentario que describe el efecto de hace varios refactors queda mintiendo.
+- Una función con nombre aparece en el stack trace. El frame dice `syncSession`, no una función anónima. Eso acorta la depuración y el registro del error.
+- El comentario completa al nombre cuando el nombre no alcanza. No lo reemplaza.
 
-Otras personas dicen que todo se soluciona con un simple comentario que explique qué hace el useEffect en cuestión, es decir, comentario VS ponerle nombre a la función, a lo que el autor del post nos comenta lo siguiente:
+El otro reclamo del hilo es que nombrar el efecto lo vuelve más difícil. El nombre no añade ramas. Obliga a decir qué hace el efecto, y se nota cuando hacía más de una cosa.
 
-✅ El código tiende a mantenerse actualizado, mientras que los comentarios suelen quedar obsoletos. Por tanto, los comentarios 'mienten' con más frecuencia que el código.
+Yo no pasé el callback a función con nombre. Dejo el arrow y dentro llamo a una función declarada aparte: `useEffect` ejecuta `syncSession(userId)` y lista `userId` como dependencia. El cuerpo del efecto queda corto y `syncSession` se puede probar sin montar el componente.
 
-✅ Las funciones nombradas mejoran el seguimiento de la pila (stack trace), lo que mejora la depuración y el registro de errores.
+El límite está en el frame. Si la excepción sale de `syncSession`, el stack muestra ese nombre. Si sale del arrow, ese frame sigue anónimo. Nombrar el propio callback, como propone House, cubre ese caso. Para los efectos que escribo, la función externa me alcanza.
 
-✅ Los comentarios no deben reemplazar el nombre de una función; deben aumentar el nombre de la función en casos excepcionales en los que el nombre por sí solo no sea suficiente.
-
-También están las personas que se quejan de que ahora los useEffect gracias a este cambio se vuelven demasiado complejos... Eso de encontrarles un nombre correcto es más complicado de lo que parece 🤣.
-
-Por mi parte, creo que prefiero seguir utilizando un arrow function con una función dentro que posteriormente llamaré. Quizá no es la solución más óptima, pero considero que es bastante decente y legible 🤯.
-
-Créditos a Cory House @housecor en X, de donde vi esta publicación.
-
-¿Cuál es tu opinión al respecto? ¿Está bien utilizar funciones nombradas o es mejor utilizar las típicas funciones flecha?
-
-Link a la publicación original: [https://twitter.com/housecor/status/1753777632976461954](https://twitter.com/housecor/status/1753777632976461954)
+La publicación original está en [este post de @housecor](https://twitter.com/housecor/status/1753777632976461954).

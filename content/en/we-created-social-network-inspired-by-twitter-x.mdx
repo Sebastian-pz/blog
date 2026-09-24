@@ -1,7 +1,7 @@
 ---
 id: "a17fbef4cb244ce3b2a107bf7fde4482"
 slug: "we-created-social-network-inspired-by-twitter-x"
-title: "We Created a Social Network Inspired by Twitter (X) 🦆!"
+title: "Ducker, a social app with Express, JWT, and WebSockets"
 type: "project"
 mediaType: "image"
 image: "/blog/ducker.webp"
@@ -13,22 +13,18 @@ tags:
   - "WebSockets"
   - "CI/CD"
 ---
-At the end of 2022, I proposed to my programmer friends Matias Straface and Mesila Hellrigl to create a social network inspired by the then Twitter, and in the first days of 2023, we got started on it.
+In late 2022 I asked Matias Straface and Mesila Hellrigl to build a social app based on what was then Twitter. We started in the first days of 2023. We called it Ducker. The name says it is a clone.
 
-The name is directly a parody to allude to it being a copy of Twitter (we decided to name it Ducker 🦆).
+With what we knew, we moved fast. After a couple of days of pair programming, the backend could already publish, authenticate, and persist.
 
-With the knowledge we had at that time, it wasn’t difficult to advance quickly on the project. In fact, it was progressing much faster than we expected.
+The API is Express on Node.js. Data lives in MongoDB. Sessions use JWT and the Google Auth Library. CORS allows the client's origin. Where a change had to arrive without a reload, we used WebSockets.
 
-In the blink of an eye, we had already completed most of the backend (seriously, in a couple of days of pair programming it was almost 90% done). This was the motivation we needed to put even more determination into the project.
+We moved to the interface after that. The visual reference was Twitter, plus the changes we wanted to try. Within about a week most views were up and the client was calling the API. Posting a Quak, liking, commenting, and favoriting worked.
 
-Next, once the Ducker API was finished, we went straight to the visual aspects. We wanted to make it very similar to Twitter; however, we also wanted to experiment on our own, see what we could change, and what we could improve (from our perspective).
+The profile came next: photo, name, description, location, and interests. By then the API contract was familiar, and that part did not change it.
 
-Just like with the backend, the frontend progressed quickly. Within a week, most of the views were done, the API connections were ready, and we had the main social network actions functioning: posting Quaks, liking, commenting, and favoriting.
+The rest was adjusting Sass and fixing bugs. There were fewer than I expected. I did not count them.
 
-The next part we worked on was the profile section, allowing users to personalize their profile with a photo, name, description, location, interests, and more. This part didn’t pose a major challenge for Team Ducker; by this point, we were very comfortable working on the project.
+Stack: TypeScript on the client and the server, React, Sass, Express, MongoDB, JWT, Google Auth Library, CORS, and WebSockets. Files we did not migrate stayed in JavaScript.
 
-From then on, it was all about refining details, improving visual aspects, and fixing bugs (which surprisingly weren’t many).
-
-Oh, of course, the stack is the usual: TypeScript, JavaScript, NodeJS, React, SASS, Express, JWT, MongoDB, Google Auth Library, Cors, WebSockets, and others.
-
-I want to thank my Team Ducker mates Mati and Meli, first of all for joining the project, second because when we transitioned to the frontend, my CSS skills weren’t as developed as they are now. They were incredibly patient and explained things to me gradually, and third, for being so cool and making this project a very enjoyable and fun experience.
+My CSS at the time was weaker than Mati's and Meli's. On the interface they walked me through layout and specificity while we programmed.

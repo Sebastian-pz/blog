@@ -1,7 +1,7 @@
 ---
 id: "2bb2193700824b11bcc33c9dc5dd3c65"
 slug: "trabaje-como-desarrollador-fullstack-para-uca"
-title: "Trabajé como desarrollador fullstack para la UCA 🎓"
+title: "Simulador de trámites jurídicos para la UCA"
 type: "experience"
 mediaType: "image"
 image: "/blog/UnderConstruction.webp"
@@ -13,32 +13,21 @@ tags:
   - "React"
   - "CI/CD"
 ---
-En enero de 2023 entré a ser parte de un grupo de programadores que se iban a encargar de desarrollar una aplicación web para la Universidad Católica Argentina (UCA), una aplicación que les serviría para educar a sus estudiantes.
+En enero de 2023 entré a un equipo que construía una aplicación web para la Universidad Católica Argentina. El producto simula trámites jurídicos: la secuencia que un estudiante de derecho recorre cuando ejerce. La idea era que practicara el procedimiento y la herramienta antes de salir a trabajar.
 
-Se me contrató como desarrollador fullstack, encargado de interactuar con frontend y backend, la aplicación en sí era realizar un simulador de unos procesos a los que los estudiantes de derecho se enfrentarían comúnmente cuando salieran al mundo laboral. En pocas palabras nuestro rol fue recrear unos procesos que llevan a cabo los profesionales de derecho en su día a día.
+Me contrataron como desarrollador fullstack. Trabajamos en iteraciones cortas y con pair programming. El stack era Python, Node.js, TypeScript, Express, React, Redux y Material UI.
 
-De este modo, los estudiantes se podían ir mentalizando y adecuando de mejor manera a las herramientas y situaciones con los que iban a tener que lidiar en un futuro.
+La universidad aprobó el proyecto. En el segundo semestre de 2023 pasó a producción y lo empezaron a usar los estudiantes.
 
-Durante este trabajo, utilicé la modalidad Agile, pair programming, y el stack de Python, NodeJS, TypeScript, express, React, Redux, MaterialUI y demás.
+## Qué hice en el código
 
-Finalmente, el proyecto se expuso a la universidad y el resultado fue la aprobación. En el semestre 2 (SII-2023) la aplicación entró en producción y empezó a ser utilizada por los estudiantes.
+- La simulación en el cliente: pasos del trámite, decisiones del usuario y estado del caso, en React y Redux.
+- La integración con la API: funciones de servicio reutilizables, para no dejar las llamadas HTTP repartidas en los componentes. Un cambio de contrato se tocaba en el servicio.
+- La sesión, validada en el cliente y en el servidor. El rol decidía qué rutas y qué acciones veía cada usuario. Al expirar el token, el cliente lo reemitía. Si no podía, cerraba la sesión.
+- La interfaz, con el equipo, siguiendo el flujo del trámite.
+- En el servidor, también con el equipo: endpoints, conexión a la base de datos, carga de archivos e inicio de sesión.
+- Pair programming para revisar esa lógica antes de integrarla.
 
-## Algunas de mis responsabilidades en el proyecto fueron:
+El dominio no era mío. Cada pantalla tenía que respetar un procedimiento jurídico, y eso es lo que más me enseñó el encargo.
 
-✅ Desarrollo de lógica Frontend: Implementé las principales funciones de la lógica en el frontend, asegurando que el código fuera sencillo, escalable y mantenible.
-
-✅ Integración Frontend y API: Conecté el frontend con la API, creando funciones reutilizables y los correspondientes servicios de la aplicación para promover mejores prácticas y facilitar futuras refactorizaciones.
-
-✅ Gestión de sesiones de usuario: Administré las sesiones de usuario con validaciones correspondientes, tanto en el backend como en el frontend, asegurando que cada usuario tuviera acceso a funciones y renderizados específicos según su rol. Implementé un sistema de retokenización y cierre de sesión automático basado en la expiración del token.
-
-✅ Desarrollo de interfaces de usuario: Con ayuda de mis compañeros diseñé interfaces de usuario limpias y acordes a la naturaleza de la aplicación, priorizando la intuición y comodidad de uso para los usuarios.
-
-✅ Manejo de solicitudes y desarrollo backend: Apoyé y desarrollé en conjunto con el equipo de trabajo las responsabilidades de manejar las solicitudes, desarrollar la API, establecer conexiones con la base de datos, manejo de archivos y crear el sistema de inicio de sesión, entre otras tareas.
-
-✅ Optimización del código: Procuré que el código desarrollado fuera óptimo, siguiendo buenas prácticas de programación y manteniéndolo sencillo de entender para facilitar el trabajo en equipo y el mantenimiento futuro.
-
-✅ Colaboración y pair programming: Durante el desarrollo del proyecto participé activamente en pair programming, colaborando con mis compañeros para resolver problemas, compartir conocimientos y mejorar la calidad del código de manera conjunta.
-
-Sin duda alguna, una de las experiencias en las que más he aprendido como programador.
-
-Solo queda decir gracias a la UCA por brindarme esa oportunidad 💚.
+Gracias a la UCA.
