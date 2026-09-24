@@ -125,6 +125,20 @@
   }
 }
 
+/* Ink surfaces hide the default ink shadow, so the offset uses paper. */
+@utility nb-press-on-ink {
+  box-shadow: 3px 3px 0 0 var(--color-paper);
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease;
+  &:hover,
+  &:focus-visible,
+  &:focus-within {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 0 var(--color-paper);
+  }
+}
+
 @utility skip-link {
   position: absolute;
   width: 1px;
@@ -195,7 +209,10 @@
 
   body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+    min-height: 100dvh;
     background-color: var(--color-canvas);
     background-image: radial-gradient(var(--color-ink) 0.7px, transparent 0.7px);
     background-size: 16px 16px;
@@ -227,6 +244,7 @@
   }
 
   #main-content {
+    flex: 1 0 auto;
     scroll-margin-top: 6rem;
   }
 

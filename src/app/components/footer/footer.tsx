@@ -5,6 +5,9 @@ import linkedinSVG from '@/public/svg/linkedin.svg'
 import githubSVG from '@/public/svg/github.svg'
 import gmailSVG from '@/public/svg/gmail.svg'
 
+const socialLinkClass =
+  'inline-flex size-11 shrink-0 items-center justify-center border-3 border-paper nb-press-on-ink'
+
 export default function FooterComponent() {
   const t = useTranslations('footer')
   const tA11y = useTranslations('a11y')
@@ -22,9 +25,15 @@ export default function FooterComponent() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`${t('linkedin')} (${newTab})`}
-                className="border-3 border-paper bg-sun p-2 nb-press shadow-nb-sm"
+                className={`${socialLinkClass} bg-sun`}
               >
-                <Image width={20} height={20} src={linkedinSVG.src} alt="" />
+                <Image
+                  width={20}
+                  height={20}
+                  src={linkedinSVG.src}
+                  alt=""
+                  className="size-5 max-w-none"
+                />
               </a>
             </li>
             <li>
@@ -33,18 +42,30 @@ export default function FooterComponent() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`${t('github')} (${newTab})`}
-                className="border-3 border-paper bg-ice p-2 nb-press shadow-nb-sm"
+                className={`${socialLinkClass} bg-ice`}
               >
-                <Image width={20} height={20} src={githubSVG.src} alt="" />
+                <Image
+                  width={20}
+                  height={20}
+                  src={githubSVG.src}
+                  alt=""
+                  className="size-5 max-w-none"
+                />
               </a>
             </li>
             <li>
               <a
                 href="mailto:spezuluaga@gmail.com"
                 aria-label={t('email')}
-                className="border-3 border-paper bg-hot p-2 nb-press shadow-nb-sm"
+                className={`${socialLinkClass} bg-hot`}
               >
-                <Image width={20} height={20} src={gmailSVG.src} alt="" />
+                <Image
+                  width={20}
+                  height={20}
+                  src={gmailSVG.src}
+                  alt=""
+                  className="size-5 max-w-none"
+                />
               </a>
             </li>
           </ul>
