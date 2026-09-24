@@ -1,7 +1,7 @@
 ---
 id: "8ce398224bbc4120b17745f4db481cf9"
 slug: "crear-y-utilizar-tus-propios-paquetes-npm"
-title: "Crear y utilizar tus propios paquetes de NPM"
+title: "Un paquete de npm para no repetir el código de xlsx"
 type: "opinion"
 mediaType: "image"
 image: "/blog/npmPackages.webp"
@@ -13,24 +13,10 @@ tags:
   - "NodeJS"
   - "JavaScript"
 ---
-En el mundo del desarrollo de software, la eficiencia y la escalabilidad no son solo deseables, son imprescindibles. Como desarrolladores, buscamos constantemente herramientas y estrategias para optimizar nuestro flujo de trabajo y crear aplicaciones robustas y mantenibles.
+En varios proyectos repetía el mismo código para leer y escribir Excel con `xlsx`. La librería cubre el formato. Cada uso repetía el mismo armado: abrir el libro, ubicar la hoja, mapear celdas y devolver la estructura que el resto de la aplicación esperaba. Eso no era lógica de cada producto. Era el mismo adaptador.
 
-En el ecosistema de desarrollo web, una de estas estrategias, a menudo subestimada, es la creación y utilización de paquetes NPM propios.
+Lo moví a un paquete de npm. El paquete envuelve las llamadas a `xlsx` que yo necesitaba y expone menos funciones. El proyecto consumidor importa esa API y no configura la librería.
 
-Mi trayectoria como desarrollador full-stack me ha expuesto a una amplia gama de proyectos. A lo largo de este viaje, he aprendido que la reutilización de código no es simplemente una "buena práctica", sino una necesidad estratégica. En innumerables ocasiones, me encontré repitiendo la misma lógica y funciones en diferentes proyectos, lo que me llevó a la idea: la necesidad de centralizar y reutilizar mi propio código.
+Publicarlo cambia el mantenimiento. Una corrección del parseo vive en el paquete, con su versión. Los otros repositorios la reciben al actualizar la dependencia, en lugar de copiar el parche.
 
-Un caso paradigmático fue mi experiencia con el paquete "xlsx". Si bien es una herramienta poderosa para manejar archivos Excel, su sintaxis a veces compleja y la necesidad de código adicional para adaptarlo a mis necesidades me hicieron replantearme mi enfoque. Decidí entonces encapsular la lógica específica que necesitaba en un paquete NPM propio, extendiendo así la funcionalidad de "xlsx" y creando una herramienta a medida para mis proyectos.
-
-## Algunos de los beneficios de crear tus propios paquetes NPM son:
-
-• Código más limpio y legible: La abstracción de la lógica compleja en un paquete independiente hizo que mi código fuera más conciso y fácil de entender.
-
-• Desarrollo acelerado: La reutilización de mi propio código a través de un paquete NPM aceleró significativamente el desarrollo de nuevas funcionalidades.
-
-• Mantenimiento simplificado: Las actualizaciones o correcciones se centralizaron en el paquete, facilitando la actualización de todos los proyectos que lo utilizaban.
-
-Crear y publicar mi propio paquete NPM no solo optimizó mi flujo de trabajo, sino que también me empoderó como desarrollador. Me permitió tomar el control de mi ecosistema de desarrollo y crear soluciones personalizadas para los desafíos recurrentes.
-
-Utilicé un tutorial que en este momento no encuentro, pero vi este y me parece que está bastante acertado (está en español):
-
-[https://www.youtube.com/watch?v=SgmkNLFFCjM](https://www.youtube.com/watch?v=SgmkNLFFCjM)
+El tutorial que seguí ya no lo encuentro. [Este, en español](https://www.youtube.com/watch?v=SgmkNLFFCjM), recorre el mismo proceso: empaquetar, versionar y publicar.

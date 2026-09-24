@@ -1,7 +1,7 @@
 ---
 id: "fc2aaada30594ed9a39fa1928d267655"
 slug: "best-practices-for-reacts-useeffect-by-expert"
-title: "Best Practices for React's useEffect by an Expert"
+title: "Named functions in useEffect: readability and the stack trace"
 type: "opinion"
 mediaType: "image"
 image: "/blog/useEffect.webp"
@@ -11,28 +11,20 @@ tags:
   - "CleanCode"
   - "Opinion"
 ---
-Using named functions within the useEffect hook in React sounds a bit... odd, doesn't it? Well, not for Cory House.
+Cory House posted on X that the first argument to `useEffect` should be a named function, not an anonymous arrow. I followed the thread because that clashes with what shows up most often: the callback written inline.
 
-Not long ago, I saw a post on X discussing the use of named functions within the useEffect hook in React (yes, as the first parameter). The idea intrigued me, so I delved into the thread to see what people had to say about it.
+An effect is readable sooner when the name says what it synchronizes. `syncSession` lands before a fifteen-line callback. People who disagreed called the name ceremony, and said a comment is enough.
 
-It's a way to improve code readability, making it easier to understand what a useEffect is doing in our application. And yes, from this perspective, it makes sense. However, it didn't convince everyone, with some arguing that it complicates development.
+House gives three reasons. I share them to different degrees:
 
-On one hand, we have the readability aspect (which, yes, is more readable from my point of view). On the other hand, we have to consider conventions—it's much more common to see this hook used with a simple arrow function as a parameter. So, I understand the clash of opinions on this topic.
+- Code changes when the behavior changes. A comment does not. A comment that describes the effect from several refactors ago is lying.
+- A named function shows up in the stack trace. The frame says `syncSession`, not an anonymous function. That shortens debugging and the error log.
+- A comment completes the name when the name is not enough. It does not replace it.
 
-Some people say that a simple comment explaining what the useEffect does solves everything. In other words, comment VS naming the function, to which the author of the post responds with the following:
+The other complaint in the thread is that naming the effect makes it harder. The name adds no branches. It forces you to say what the effect does, and that shows when the effect was doing more than one thing.
 
-✅ Code tends to stay up to date, whereas comments often become outdated. Therefore, comments 'lie' more frequently than code.
+I did not switch the callback to a named function. I keep the arrow and call a function declared outside it: `useEffect` runs `syncSession(userId)` and lists `userId` as a dependency. The effect body stays short, and `syncSession` can be tested without mounting the component.
 
-✅ Named functions improve stack tracking, enhancing debugging and error logging.
+The limit is the frame. If the exception is thrown from `syncSession`, the stack shows that name. If it is thrown from the arrow, that frame stays anonymous. Naming the callback itself, as House suggests, covers that case. For the effects I write, the outer function is enough.
 
-✅ Comments should not replace a function name; they should complement the function name in exceptional cases where the name alone is not sufficient.
-
-There are also those who complain that now, thanks to this change, useEffects become too complex... Finding the right name for a function is harder than it seems 🤣.
-
-As for me, I think I prefer to continue using an arrow function with an inner function that I'll call later. It may not be the most optimal solution, but I find it quite decent and readable 🤯.
-
-Credits to Cory House @housecor on X, where I saw this post.
-
-What is your opinion on this? Is it better to use named functions or stick with typical arrow functions?
-
-Link to the original post: [https://twitter.com/housecor/status/1753777632976461954](https://twitter.com/housecor/status/1753777632976461954)
+The original post is [this one from @housecor](https://twitter.com/housecor/status/1753777632976461954).

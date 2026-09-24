@@ -1,7 +1,7 @@
 ---
 id: "f66d239b17b14cdda4889da32608cad4"
 slug: "ai-left-me-speechless-my-first-experience-with-chatbots"
-title: "AI Left Me Speechless: My First Experience with Chatbots 🤖"
+title: "My first Python chatbot, trained on the company's own text"
 type: "opinion"
 mediaType: "image"
 image: "/blog/ChatBot.webp"
@@ -12,12 +12,10 @@ tags:
   - "Experience"
   - "Backend"
 ---
-Recently, a friend reached out to me for a small project at a startup. They needed a chatbot, and although I had never created one before, curiosity got the better of me (thankfully, my bosses gave me the freedom to explore!).
+A friend called me about a short job at a startup. They needed a chatbot, and I had never built one. The engagement left the implementation up to me.
 
-So, I dived into the world of AI with Python as my travel companion. Two libraries became my allies: one for the 'mind' of the chatbot, processing language and responding, and the other to give it 'life', launching it and connecting it.
+I wrote it in Python, with two libraries. The first handled the message: it compared the text with the training examples and returned a reply. The second exposed that component so someone could actually talk to it.
 
-What blew my mind was the AI's ability to learn. I simply trained an algorithm with company information, and it was able to answer customer questions! 🤯
+Training stayed narrow. I fed it the company's own text, and the model answered customer questions from that material. It did not query a database or any other system. The reply came from the example set.
 
-Of course, the bot is still basic. The information was limited, and connecting it to databases is the next challenge. But seeing how with just a few lines of code, the AI brought a chatbot to life, interpreting and responding, left me speechless.
-
-How far can we go using AIs? I don't know, just wow.
+The bot stopped there. The material was small, and plenty of questions fell outside its coverage. The step I did not reach was connecting it to a database, so a reply could come from a query rather than from the trained text alone.

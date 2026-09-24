@@ -1,7 +1,7 @@
 ---
 id: "a17fbef4cb244ce3b2a107bf7fde4482"
 slug: "creamos-red-social-inspirada-en-twitter-x"
-title: "¡Creamos una red social inspirada en Twitter (X) 🦆!"
+title: "Ducker, una red social con Express, JWT y WebSockets"
 type: "project"
 mediaType: "image"
 image: "/blog/ducker.webp"
@@ -13,22 +13,18 @@ tags:
   - "WebSockets"
   - "CI/CD"
 ---
-Para finales del año 2022 les propuse a mis amigos programadores Matias Straface y Mesila Hellrigl hacer una red social inspirada en el entonces Twitter y los primeros días del 2023 nos pusimos manos en ello.
+A finales de 2022 les propuse a Matias Straface y Mesila Hellrigl hacer una red social a partir de lo que entonces era Twitter. Arrancamos los primeros días de 2023. La llamamos Ducker. El nombre dice que es un clon.
 
-El nombre es directamente una parodia para hacer alusión a que es una copia de Twitter (decidimos nombrarlo Ducker 🦆).
+Con lo que sabíamos avanzamos rápido. En un par de días de pair programming el backend ya permitía publicar, autenticar y persistir.
 
-Con los conocimientos que teníamos hasta ese momento realmente no se nos complicó avanzar rápidamente en el proyecto, de hecho, estaba avanzando mucho más rápido de lo que esperábamos.
+La API es Express sobre Node.js. Los datos están en MongoDB. La sesión usa JWT y también Google Auth Library. CORS acepta el origen del cliente. Donde un cambio tenía que llegar sin recargar, usamos WebSockets.
 
-En un abrir y cerrar de ojos ya habíamos terminado la mayor parte de del backend (en serio, en un par de días de pair programming estaba casi un 90% listo), eso fue la motivación que necesitábamos para meterle aun más determinación a ese proyecto.
+Después pasamos a la interfaz. La referencia visual era Twitter, con lo que queríamos cambiar. En cerca de una semana estaban la mayoría de las vistas y el cliente ya llamaba a la API. Funcionaban publicar un Cuak, dar me gusta, comentar y marcar favorito.
 
-Lo siguiente, una vez terminada la API de Ducker, fue meternos directamente con lo visual, queríamos hacerlo muy similar a Twitter; sin embargo, también queríamos experimentar por nuestra cuenta, ver qué podíamos cambiar, qué podíamos llegar a mejorar (desde nuestro punto de vista).
+El perfil vino luego: foto, nombre, descripción, ubicación e intereses. A esa altura el contrato de la API ya nos era familiar y esa parte no lo cambió.
 
-De igual manera que con el back, el front avanzó rápidamente, en cuestión de una semana la mayoría de las vistas estaban hechas, las conexiones con la API estaban listas y ya teníamos funcionando las principales acciones de la red social; realizar Cuaks, dar me gustas, comentar y marcar como favorito.
+El resto fue ajustar Sass y corregir bugs. Hubo menos de los que esperaba. No los conté.
 
-La siguiente parte que hicimos fue la correspondiente al perfil, el poder personalizar su perfil con foto, nombre, descripción, localización, intereses y demás. Esta parte tampoco significó un mayor reto para el Team Ducker, para este momento ya nos encontrábamos muy cómodos trabajando con el proyecto.
+Stack: TypeScript en cliente y servidor, React, Sass, Express, MongoDB, JWT, Google Auth Library, CORS y WebSockets. Los archivos que no migramos quedaron en JavaScript.
 
-Ya de ahí en adelante fue ir realizando detalles, mejorando apartados visuales y corrigiendo bugs (que sorprendentemente no fueron muchos).
-
-Ah, claro, el Stack es el de siempre: TypeScript, JavaScript, NodeJS, React, SASS, Express, JWT, MongoDB, Google Auth Library, Cors, WebSockets y otros.
-
-Quiero agradecer a mis compañeros de Team Ducker Mati y Meli, primero que todo por sumarse al proyecto, segundo porque al momento de transicionar al front, mis habilidades con el CSS no estaban tan trabajadas como sí lo están ahora, me tuvieron toda la paciencia del mundo y me fueron explicando poco a poco, y tercero, por ser tan buena onda y hacer de este proyecto un trabajo muy ameno y divertido.
+Mi CSS en ese momento era más flojo que el de Mati y Meli. En la interfaz me fueron explicando layout y especificidad mientras programábamos.

@@ -1,7 +1,7 @@
 ---
 id: "5c9ef6fa3e12415ca8a853150643b993"
 slug: "trabaje-para-multinacional-utilizando-programacion-visual-basic-for-apps"
-title: "¡Trabajé para una multinacional utilizando programación (Visual Basic for Apps) 🦖!"
+title: "Validación de perfiles de cargo con VBA en una migración"
 type: "experience"
 mediaType: "image"
 image: "/blog/firstTimeVisualBasic.webp"
@@ -12,24 +12,18 @@ tags:
   - "CleanCode"
   - "Tools"
 ---
-Debido a contactos en mi universidad, una empresa se comunicó conmigo para ayudarles con un problema que tenían sobre la validación de unos perfiles en Excel.
+Por un contacto de la universidad, la regional de una multinacional me pidió validar perfiles de cargo que tenían en Excel. La llamo Empresa A.
 
-Inicialmente, para 'Empresa A' (como la llamaré para salvaguardar su privacidad), una empresa internacional muy grande en el país, me contactó específicamente una regional para ayudar con un proceso de transición de plataformas por el que estaban pasando (no lo estaban llevando muy bien y era un proceso que se tenía que llevar a cabo de manera urgente).
+Estaban migrando de plataforma. La ficha de cada empleado estaba repartida en varios libros y sistemas, y el plazo era corto.
 
-Su problema de manera general era que había mucha información dispersa en muchas partes, muchos archivos y muchas plataformas.
+El trabajo fue consolidar esos datos y comprobar, con VBA (Visual Basic for Applications), si la persona cumplía los requisitos del cargo.
 
-Mi función entonces fue unificar la información de diferentes Excels y plataformas de manera automática, juntando la información de los empleados y utilizando diferentes algoritmos con VBA (Visual Basic for Applications) para confirmar si ellos cumplían con los requerimientos del cargo que ocupaban.
+Si no los cumplía, el procedimiento avisaba a recursos humanos y la dejaba en la lista de perfiles incompletos. El jefe de sección recibía ese listado para decidir si debía completar el perfil. Si lo cumplía, quedaba en la lista de perfiles al día, sin otra acción.
 
-En el caso de que un empleado NO cumpliera con el perfil del cargo, lo que hacía era alertar al responsable de recursos humanos y lo ponía en una lista de personas que no eran 'válidas'. De ahí se notificaba a cada jefe de sección para que se encargara de mandar al empleado a completar su perfil si el caso así lo requería.
+De las dos listas salían conteos: sectores con más incumplimientos, requisitos que más fallaban y roles con más personas fuera de perfil.
 
-En el mejor de los casos, cuando el empleado sí cumpliera con el perfil, se añadía a la lista de los que están en orden o al corriente con la empresa y no era necesario realizar ninguna intervención.
+Cada validación se guardaba en una carpeta de OneDrive y en la plataforma nueva. La ficha del empleado quedaba en un solo lugar.
 
-De estas dos listas, también se sacaban estadísticas que permitían definir diversos temas de interés, por ejemplo cuáles eran los sectores más afectados, cuáles eran los requisitos más críticos, qué roles estaban en mayor riesgo, y demás.
+El cálculo era simple. El volumen no: recursos humanos abría los archivos a mano. Armar la ficha de un empleado llevaba más de una hora, libro por libro y sistema por sistema. Con el procedimiento, la consulta es por nombre, cédula o correo.
 
-Una vez esto se validaba (empleado vs perfil de cargo) se juntaba la información y se almacenaban los archivos completos en una carpeta de OneDrive y en la nueva plataforma, de modo que toda la información de cada empleado quedaba disponible en un solo lugar.
-
-En general no era difícil, solo que eran demasiados archivos que revisar uno a uno, de ahí el por qué necesitaban automatizar ese proceso.
-
-Después de haber desarrollado todo el algoritmo para la empresa, se logró una optimización de los tiempos de consulta de información en más de un 99%. Pasando de demorar más de 1 hora por empleado a tardar lo de un par de clics (pues antes era buscar Excel por Excel y plataforma por plataforma).
-
-De esto, cabe resaltar que la empresa intervenida tenía problemas en cuanto al cumplimiento de sus perfiles y gracias al desarrollo del programa se logró ir mejorando progresivamente este punto y así poder responder de mejor manera a sus procesos de auditorias.
+Eso les dejó un inventario del cumplimiento de perfiles, que es lo que una auditoría pide revisar. El seguimiento posterior lo hicieron ellos. El programa hace visible el incumplimiento. No lo corrige.

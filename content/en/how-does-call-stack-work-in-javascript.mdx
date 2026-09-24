@@ -1,7 +1,7 @@
 ---
 id: "3806f8aa09ae45fb978096e651733e47"
 slug: "how-does-call-stack-work-in-javascript"
-title: "How does the Call Stack work in JavaScript?"
+title: "How the call stack works in JavaScript"
 type: "opinion"
 mediaType: "video"
 image: "/blog/CallStack.webp"
@@ -15,20 +15,22 @@ tags:
   - "NodeJS"
   - "JavaScript"
 ---
-The other day, I was browsing YouTube when I stumbled upon a video explaining how JavaScript works under the hood. Truth be told, it's a topic I've studied and understood before, but I wanted to refresh my knowledge. To my surprise, this video explained it so clearly and simply that I was hooked!
+I went back over JavaScript's execution model with Lydia Hallie's video. I had studied it before. This time I stayed with the relationship between the call stack and the event loop.
 
-## Why is understanding the Call Stack important? (The Single Thread Problem)
+## The call stack
 
-Now, why is understanding the call stack so crucial? Mainly because JavaScript operates on a single thread, unlike languages like C# or Java, which can utilize multiple threads for executing their algorithms.
+The call stack holds the frame of the function that is running and the frames of whoever called it. Each call pushes a frame. Each return pops one. The order is LIFO: the last frame in is the first frame out.
 
-Imagine JavaScript as a chef with only one hand 👨‍🍳. They can create many delicious dishes, but they can only work on one thing at a time. If they're busy chopping onions for an omelet, they can't simultaneously whisk eggs for dessert.
+If a function keeps calling without returning, as in recursion with no base case, the stack grows until the engine aborts the run with a stack overflow.
 
-Because JavaScript is single-threaded, any process that takes a long time effectively freezes the entire application. It's like the chef endlessly chopping onions while the rest of the kitchen comes to a standstill.
+## One thread, and when it blocks
 
-## Additional resources to better understand the Call Stack
+In a browser realm, and on Node.js's main thread, that JavaScript has a single stack. Java and C# can run several threads at once. The runtime here does concurrent work — timers, network, disk — but the callback comes back to this stack. The event loop takes the next task when the stack is empty.
 
-Lydia Hallie's explanation is excellent, and the visuals make everything much easier to grasp. However, if you want to delve deeper or still have some lingering questions, here are some other resources you can explore:
+A long synchronous function holds the stack until it returns. In the browser, the next frame is not painted and a click is not handled while that lasts. On Node.js, the next callback does not run, including a `setTimeout` that has already come due. Async work waits on the queue. It does not run in parallel on that stack.
 
-Another great explanation, but in Spanish [https://www.youtube.com/watch?v=ygA5U7Wgsg8](https://www.youtube.com/watch?v=ygA5U7Wgsg8)
+Web Workers, and `worker_threads` in Node.js, are another thread with their own stack. They do not change the main thread's model.
 
-Understanding JavaScript in depth, 33 essential concepts (concept 1 covers the call stack): [https://github.com/leonardomso/33-js-concepts](https://github.com/leonardomso/33-js-concepts)
+## Further reading
+
+Hallie's explanation is the video above. There is [another one in Spanish](https://www.youtube.com/watch?v=ygA5U7Wgsg8). [33 concepts every JavaScript developer should know](https://github.com/leonardomso/33-js-concepts) covers the call stack.

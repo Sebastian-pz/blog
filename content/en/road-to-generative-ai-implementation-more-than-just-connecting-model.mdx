@@ -1,7 +1,7 @@
 ---
 id: "e143b6e16309449086f2b86d4a5d8fb8"
 slug: "road-to-generative-ai-implementation-more-than-just-connecting-model"
-title: "The Road to Generative AI Implementation: More Than Just Connecting a Model"
+title: "What implementing generative AI takes besides calling the model"
 type: "opinion"
 mediaType: "image"
 image: "/blog/generativeAI.webp"
@@ -12,38 +12,32 @@ tags:
   - "Fullstack"
   - "Tools"
 ---
-Artificial Intelligence (AI), especially generative AI, is revolutionizing how we create and consume content. In my quest to stay current with these emerging technologies, I enrolled in Microsoft's Professional Foundations of Generative AI course. While many think that implementing AI is just a matter of 'connecting' a pre-trained model, the reality is much more complex. Understanding what's behind these tools is crucial to effectively harnessing their full potential.
+I enrolled in Microsoft's Professional Foundations of Generative AI course to sort out what sits behind these tools. Calling a pretrained model and displaying the response is the visible part. The work is in the data, the input, the cost of each inference, and the bias of the output.
 
-## More Than Just Connecting Models
+## Training a model and calling an API are different jobs
 
-When we talk about implementing a generative AI model, such as a Generative Adversarial Network (GAN) or a Variational Autoencoder (VAE), it's easy to fall into the trap of thinking that it's enough to download and use them as they are. However, this approach overlooks many technical and ethical aspects that cannot be ignored.
+The course puts together families that are not integrated the same way. A GAN or a variational autoencoder is trained: it needs a large dataset, curated and balanced across classes. If a portrait generator sees many more images of one demographic group than of others, the output repeats that imbalance.
 
-First, there's the issue of data quality. AI models, like GANs or VAEs, need large, well-prepared datasets to train properly. These datasets must be curated and balanced to avoid biases that affect the model's output. For example, if you're training a model to generate images of people, but your dataset is unbalanced (containing more images of a single demographic group), the generated results will reflect that bias.
+An API model, such as GPT or DALL·E, is a different contract. You do not train it. You pass an input and pay for inference. GPT is a transformer. DALL·E 2 is a diffusion model. Treating either one as "download the model and use it" mixes training with integration.
 
-## Prompts: The New Cornerstone of Generative AI
+## The prompt is the input
 
-The use of prompts is at the heart of generative models. A prompt is simply the input we provide to the model so that it can generate a response. In generative AI, learning to structure prompts accurately is key. It's not just about giving a vague instruction like 'generate an image', but detailing the characteristics you want to see in the result. Small variations in prompts can lead to very different outcomes.
+In a generative model, the prompt is the input that conditions the output. "Generate an image" and a prompt that fixes subject, framing, and constraints do not produce the same result. A small change in the text changes the generation.
 
-With tools like GPT and DALL-E, creating efficient prompts is a skill that not only impacts the quality of the generated content but also the efficiency of the models. By refining the prompts, we are optimizing the inference process, making it more effective and less computationally expensive.
+Tightening the prompt raises the number of usable responses and usually cuts retries and output tokens. That lowers the cost of the call, because you generate less. The price per token stays the same, and a better prompt does not replace fine-tuning.
 
-## Infrastructure and Optimization: A Complex World
+## From a notebook to real traffic
 
-One aspect that cannot be overlooked is the infrastructure needed to run these models. Notebooks like Google Colab or Jupyter Notebooks have facilitated access to AI development environments, but it is important to understand that these only offer a starting point. When implementing AI in production, hardware requirements increase considerably.
+Google Colab and Jupyter are enough to try something. Serving other people's requests is a different account: memory, compute, and what happens when more than one request arrives at once.
 
-Generative models, especially those with complex architectures like GANs or Transformers, are demanding in terms of processing. It is essential to optimize not only the model itself but also the infrastructure on which it will run. Factors such as memory consumption, computing power, and scalability must be carefully planned.
+Fine-tuning is not the step every product takes. It keeps training the pretrained model and updates its weights on a dataset you supply, which makes sense when that model does not cover the case. When it does, the work is specifying the prompt, evaluating outputs, and deciding what gets shown. Fine-tuning out of habit leaves another training run to maintain.
 
-In addition, the challenge of 'fine-tuning' arises. Many pre-trained models need to be fine-tuned to the specific needs of each use case. This involves more than just running the model; it requires an iterative process of testing and adjustment, where hyperparameters, datasets, and optimization techniques are adjusted.
+## Bias comes from the data and from design decisions
 
-## Bias in AI: A Necessary Debate
+In the course I ran into the line "the biggest bias in AI is the human inferiority complex." I do not share it. Wariness that a model might replace a task is a labor question. The bias that reaches the user comes from the training set and from whoever labels, filters, or defines the loss function.
 
-During the course, I came across the phrase 'The biggest bias in AI is the human inferiority complex.' Personally, I do not share this statement. While it is true that there is some resistance to AI for fear of replacing human skills, I believe that the real challenge lies in how we reduce the intrinsic bias in the models themselves.
+In a GAN, the generator tries to produce samples the discriminator classifies as real. If the discriminator was trained on biased data, it learns that distribution and the generator reproduces it.
 
-The bias of an AI model can arise from the data it has been trained on or even from decisions developers make during its creation. For example, in GANs, where a generator model tries to fool a discriminator, bias can manifest in how the discriminator 'learns' to evaluate the generated content. If the discriminator has been trained on biased data, the generator will produce content reflecting those same biases.
+## What has to be decided when integrating one
 
-## Where Are We Going?
-
-The distinction between human-generated and AI-generated content will become increasingly blurred. Models like Transformers have shown that it is possible to generate text, images, and even videos that mimic human creations with remarkable accuracy. Implementing AI in real-world projects requires not only connecting a model but also addressing all these complexities that lie beneath the surface.
-
-Generative AI is not a passing fad, but a technology that is shaping the present and future of content creation and software development. For those of us in this field, it is essential to not only learn how to use these tools but also understand the implications they have on the quality of what we develop.
-
-What do you think about the challenges presented by generative AI? How prepared are we to integrate it ethically and efficiently into our solutions?
+A transformer already generates text, images, and video that are hard to tell apart from human work. Integrating one means choosing the model, the data, the input, the cost per inference, and how the bias of the output is reviewed. The course is useful for naming those pieces.
